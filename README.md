@@ -8,6 +8,8 @@ This package for Sublime Text provides two color schemes (light and dark) simila
 1. Open the packages directory of Sublime Text, e.g. by using `Preferences -> Browse Packages` within Sublime Text.
 2. Navigate to the `User` directory and copy the `.tmTheme` files from this repository to it.
 
+Alternatively you can use [Package Control](https://sublime.wbond.net/installation) for installation. The color scheme is listed as `Brackets Color Scheme` in the packages list.
+
 ## Screenshots
 
 ### HTML
