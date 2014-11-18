@@ -189,7 +189,7 @@
             <key>name</key>
             <string>Tag start/end</string>
             <key>scope</key>
-            <string>punctuation.definition.tag.begin, punctuation.definition.tag.end</string>
+            <string>punctuation.definition.tag.begin, punctuation.definition.tag.end, punctuation.definition.tag.html</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -211,7 +211,7 @@
             <key>name</key>
             <string>CSS selector</string>
             <key>scope</key>
-            <string>meta.selector.css, meta.selector.css entity.other.attribute-name.class.css, meta.selector.css entity.other.attribute-name.id.css, meta.selector.css meta.attribute-selector.css entity.other.attribute-name.attribute.css, meta.selector.css meta.attribute-selector.css string.unquoted.attribute-value.css</string>
+            <string>meta.selector.css entity.name.tag.css, meta.selector.css entity.other.attribute-name.class.css, meta.selector.css entity.other.attribute-name.id.css, meta.selector.css meta.attribute-selector.css entity.other.attribute-name.attribute.css, meta.selector.css meta.attribute-selector.css string.unquoted.attribute-value.css</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -238,6 +238,17 @@
             <dict>
                 <key>foreground</key>
                 <string>#535353</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>CSS at-rule</string>
+            <key>scope</key>
+            <string>keyword.control.at-rule</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#8757ad</string>
             </dict>
         </dict>
         <dict>
