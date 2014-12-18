@@ -28,7 +28,7 @@ Syntax highlighting is optimized for following programming languages:
 The following colors are used:
 
 |                 | Brackets Light | Brackets Dark |
-| --------------- | -------------- | ------------- |
+| --------------- | :------------: | :-----------: |
 | Background      | #f8f8f8        | #1d1f21       |
 | Default text    | #535353        | #dddddd       |
 | Blue            | #446fbd        | #6c9ef8       |
