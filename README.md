@@ -9,7 +9,8 @@ An installation via [Package Control](https://sublime.wbond.net/installation) is
 Alternatively you can perform a manual installation:
 
 1. Open the packages directory of Sublime Text, e.g. by using `Preferences > Browse Packages...` within Sublime Text.
-2. [Download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository or clone it using the command `git clone https://github.com/jwortmann/brackets-color-scheme.git "Brackets Color Scheme"`
+2. [Download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository or clone it using the command
+    git clone https://github.com/jwortmann/brackets-color-scheme.git "Brackets Color Scheme"
 
 ## Screenshots
 
@@ -23,6 +24,18 @@ Syntax highlighting is optimized for following programming languages:
 * HTML/CSS/JavaScript
 * Java
 * LaTeX
+
+The following colors are used:
+
+|                 | Brackets Light | Brackets Dark |
+| --------------- | -------------- | ------------- |
+| Background      | #f8f8f8        | #1d1f21       |
+| Default text    | #535353        | #dddddd       |
+| Blue            | #446fbd        | #6c9ef8       |
+| Green           | #6d8600        | #85a300       |
+| Orange          | #e88501        | #d89333       |
+| Purple          | #8757ad        | #b77fdb       |
+| Gray (Comments) | #949494        | #767676       |
 
 ## License
 
