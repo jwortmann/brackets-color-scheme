@@ -10,6 +10,7 @@ Alternatively you can perform a manual installation:
 
 1. Open the packages directory of Sublime Text, e.g. by using `Preferences > Browse Packages...` within Sublime Text.
 2. [Download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository or clone it using the command
+
     git clone https://github.com/jwortmann/brackets-color-scheme.git "Brackets Color Scheme"
 
 ## Screenshots
