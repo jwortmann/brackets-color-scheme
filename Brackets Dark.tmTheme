@@ -242,7 +242,7 @@
             <key>name</key>
             <string>CSS at-rule</string>
             <key>scope</key>
-            <string>keyword.control.at-rule</string>
+            <string>keyword.control.at-rule, meta.at-rule support.type.property-name</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -468,6 +468,6 @@
         </dict>
     </array>
     <key>uuid</key>
-    <string>230956cd-e786-41b4-99e9-207aeeeeb21c</string>
+    <string>9bf0eac5-989a-402e-b4e3-c18caf864d3b</string>
 </dict>
 </plist>
