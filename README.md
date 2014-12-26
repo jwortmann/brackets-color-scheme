@@ -16,6 +16,7 @@ Alternatively you can perform a manual installation:
 ## Screenshots
 
 ![Brackets Light](http://i.imgur.com/5HoE6I2.png)
+
 ![Brackets Dark](http://i.imgur.com/HZ0acdw.png)
 
 ## Features
@@ -26,18 +27,6 @@ Syntax highlighting is optimized for following programming languages:
 * Java
 * LaTeX
 
-The following colors are used:
-
-|                 | Brackets Light | Brackets Dark |
-| --------------- | :------------: | :-----------: |
-| Background      | #f8f8f8        | #1d1f21       |
-| Default text    | #535353        | #dddddd       |
-| Blue            | #446fbd        | #6c9ef8       |
-| Green           | #6d8600        | #85a300       |
-| Orange          | #e88501        | #d89333       |
-| Purple          | #8757ad        | #b77fdb       |
-| Gray (Comments) | #949494        | #767676       |
-
 ## License
 
-The MIT License
+MIT License
