@@ -1,0 +1,264 @@
+{
+    "name": "Brackets Light",
+    "author": "Janos Wortmann",
+    "variables":
+    {
+        "blue": "#446FBD",
+        "blue2": "#ABDFFA",
+        "green": "#6D8600",
+        "grey": "#949494",
+        "grey2": "#535353",
+        "grey3": "#EBEFEF",
+        "grey4": "#121212",
+        "grey5": "#FFFFFF",
+        "grey6": "#D5DEE3",
+        "orange": "#E88501",
+        "orange2": "#F7C44E",
+        "red": "#DC322F",
+        "violet": "#8757AD",
+        "white": "#F8F8F8",
+        "black": "#000000"
+    },
+    "globals":
+    {
+        "background": "var(white)",
+        "foreground": "var(grey2)",
+        "caret": "var(black)",
+        "line_highlight": "var(grey3)",
+        "fold_marker": "var(grey5)",
+        "gutter_foreground": "var(grey)",
+        "selection": "var(blue2)",
+        "inactive_selection": "var(grey6)",
+        "selection_corner_style": "round",
+        "selection_corner_radius": "2",
+        "find_highlight": "var(orange2)",
+        "find_highlight_foreground": "var(grey4)",
+        "brackets_options": "underline",
+        "bracket_contents_options": "",
+        "tags_options": "stippled_underline"
+    },
+    "rules":
+    [
+        // common rules
+        {
+            "name": "Comments",
+            "scope": "comment",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Numeric literals",
+            "scope": "constant.numeric",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Language-specific constants",
+            "scope": "constant.language, constant.character",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Other constants",
+            "scope": "constant.other",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Strings",
+            "scope": "string",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Keywords",
+            "scope": "keyword",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "Data structures, types and other constructs",
+            "scope": "entity.name",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Types and definition/declaration keywords",
+            "scope": "storage.type",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Storage modifiers",
+            "scope": "storage.modifier",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Library and user constructs",
+            "scope": "support",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Language-specific variables",
+            "scope": "variable.language",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Parameters to functions or methods",
+            "scope": "variable.parameter",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Separators",
+            "scope": "punctuation.separator",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "Illegal statements",
+            "scope": "invalid.illegal",
+            "foreground": "var(red)"
+        },
+        // HTML/XML specific rules
+        {
+            "name": "HTML/XML tags",
+            "scope": "entity.name.tag, punctuation.definition.tag",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "HTML/XML tag attribute identifiers",
+            "scope": "meta.tag entity.other.attribute-name",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "HTML declaration tag",
+            "scope": "meta.tag.sgml.html punctuation.definition.tag.html, entity.name.tag.doctype.html, string.quoted.double.doctype.identifiers-and-DTDs.html",
+            "foreground": "var(grey2)"
+        },
+        // CSS specific rules
+        {
+            "name": "CSS selectors",
+            "scope": "meta.selector.css entity.other.attribute-name",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CSS properties",
+            "scope": "support.type.property-name.css",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "CSS property values",
+            "scope": "support.constant.property-value.css, constant.other.color.rgb-value.css",
+            "foreground": "var(orange)",
+            "font_style": ""
+        },
+        {
+            "name": "CSS units of numeric literals",
+            "scope": "constant.numeric.css keyword.other.unit.css",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "CSS variable name declarations",
+            "scope": "support.type.custom-property.css",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "CSS function calls",
+            "scope": "meta.function-call.css support.function",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS at-rule",
+            "scope": "keyword.control.at-rule",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "CSS vendor prefixes",
+            "scope": "support.type.vendor-prefix.css",
+            "foreground": "var(grey2)"
+        },
+        // JavaScript specific rules
+        {
+            "name": "JavaScript functions",
+            "scope": "variable.function.js",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "JavaScript jQuery function symbol",
+            "scope": "punctuation.dollar.js",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "JavaScript map key-names",
+            "scope": "meta.object-literal.key.js",
+            "foreground": "var(violet)"
+        },
+        // LaTeX specific rules
+        {
+            "name": "LaTeX environments",
+            "scope": "variable.parameter.function.latex",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "LaTeX labels and references",
+            "scope": "entity.name.label.latex, constant.other.reference.latex",
+            "foreground": "var(violet)",
+            "font_style": "italic"
+        },
+        {
+            "name": "LaTeX inline math punctuations",
+            "scope": "string.other.math.latex",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "LaTeX parenthesis",
+            "scope": "constant.character.parenthesis.tex",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "LaTeX whitespace keywords",
+            "scope": "constant.character.escape.tex",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "LaTeX array delimiters",
+            "scope": "constant.character.ampersand.tex, constant.character.newline.latex",
+            "foreground": "var(blue)"
+        },
+        // GitGutter rules
+        {
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter",
+            "foreground": "#F92672"
+        },
+        {
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter",
+            "foreground": "#A6E22E"
+        },
+        {
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter",
+            "foreground": "#967EFB"
+        },
+        {
+            "name": "GitGutter ignored",
+            "scope": "markup.ignored.git_gutter",
+            "foreground": "#565656"
+        },
+        {
+            "name": "GitGutter untracked",
+            "scope": "markup.untracked.git_gutter",
+            "foreground": "#565656"
+        },
+        // SublimeLinter console output rules
+        {
+            "name": "SublimeLinter Error",
+            "scope": "region.redish markup.error, markup.error.sublime_linter",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "SublimeLinter Warning",
+            "scope": "region.yellowish markup.warning, markup.warning.sublime_linter",
+            "foreground": "var(orange)"
+        }
+    ]
+}
