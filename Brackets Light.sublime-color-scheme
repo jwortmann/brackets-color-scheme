@@ -128,8 +128,8 @@
             "foreground": "var(green)"
         },
         {
-            "name": "HTML declaration tag",
-            "scope": "meta.tag.sgml.html punctuation.definition.tag.html, entity.name.tag.doctype.html, string.quoted.double.doctype.identifiers-and-DTDs.html",
+            "name": "HTML/XML declaration tag",
+            "scope": "entity.name.tag.doctype.html, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.end.xml, text.xml meta.tag.sgml.doctype.xml punctuation.definition.tag.end.xml, text.xml meta.tag.preprocessor.xml entity.other.attribute-name.localname.xml",
             "foreground": "var(grey2)"
         },
         // CSS specific rules
@@ -198,10 +198,15 @@
             "font_style": "italic"
         },
         {
-            "name": "LaTeX labels and references",
-            "scope": "entity.name.label.latex, constant.other.reference.latex",
+            "name": "LaTeX labels, references and citations",
+            "scope": "entity.name.label.latex, constant.other.reference.latex, constant.other.citation.latex",
             "foreground": "var(violet)",
             "font_style": "italic"
+        },
+        {
+            "name": "LaTeX numeric literals",
+            "scope": "text.tex.latex constant.numeric",
+            "foreground": "var(grey2)"
         },
         {
             "name": "LaTeX inline math punctuations",
@@ -210,17 +215,27 @@
         },
         {
             "name": "LaTeX parenthesis",
-            "scope": "constant.character.parenthesis.tex",
+            "scope": "constant.character.parenthesis.tex, constant.character.bracket.tex",
             "foreground": "var(grey2)"
         },
         {
-            "name": "LaTeX whitespace keywords",
-            "scope": "constant.character.escape.tex",
+            "name": "LaTeX brace character",
+            "scope": "constant.character.brace.escape.tex",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "LaTeX whitespace characters",
+            "scope": "constant.character.space.tex, constant.character.escape.tex",
             "foreground": "var(blue)"
         },
         {
             "name": "LaTeX array delimiters",
             "scope": "constant.character.ampersand.tex, constant.character.newline.latex",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "LaTeX user command declarations",
+            "scope": "support.function.latex entity.name.newcommand",
             "foreground": "var(blue)"
         },
         // GitGutter rules
