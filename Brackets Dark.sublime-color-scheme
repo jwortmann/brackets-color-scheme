@@ -3,36 +3,36 @@
     "author": "Janos Wortmann",
     "variables":
     {
+        "backgroundcolor": "#1D1F21",
+        "textcolor": "#DDDDDD",
+        "caretcolor": "#C5C8C6",
         "blue": "#6C9EF8",
         "blue2": "#0050A0",
         "green": "#85A300",
         "grey": "#767676",
-        "grey2": "#1D1F21",
-        "grey3": "#2F2F2F",
-        "grey4": "#121212",
-        "grey5": "#444444",
-        "grey6": "#333F48",
+        "grey2": "#2F2F2F",
+        "grey3": "#121212",
+        "grey4": "#444444",
+        "grey5": "#333F48",
         "orange": "#D89333",
         "orange2": "#F6A644",
         "red": "#DC322F",
-        "violet": "#B77FDB",
-        "white": "#DDDDDD",
-        "white2": "#C5C8C6"
+        "violet": "#B77FDB"
     },
     "globals":
     {
-        "background": "var(grey2)",
-        "foreground": "var(white)",
-        "caret": "var(white2)",
-        "line_highlight": "var(grey3)",
-        "fold_marker": "var(grey5)",
+        "background": "var(backgroundcolor)",
+        "foreground": "var(textcolor)",
+        "caret": "var(caretcolor)",
+        "line_highlight": "var(grey2)",
+        "fold_marker": "var(grey4)",
         "gutter_foreground": "var(grey)",
         "selection": "var(blue2)",
-        "inactive_selection": "var(grey6)",
+        "inactive_selection": "var(grey5)",
         "selection_corner_style": "round",
         "selection_corner_radius": "2",
         "find_highlight": "var(orange2)",
-        "find_highlight_foreground": "var(grey4)",
+        "find_highlight_foreground": "var(grey3)",
         "brackets_options": "underline",
         "bracket_contents_options": "",
         "tags_options": "stippled_underline"
@@ -74,7 +74,7 @@
         {
             "name": "Operators",
             "scope": "keyword.operator",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Data structures, types and other constructs",
@@ -102,6 +102,11 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Function or method calls",
+            "scope": "variable.function",
+            "foreground": "var(violet)"
+        },
+        {
             "name": "Parameters to functions or methods",
             "scope": "variable.parameter",
             "foreground": "var(orange)"
@@ -109,7 +114,7 @@
         {
             "name": "Separators",
             "scope": "punctuation.separator",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Illegal statements",
@@ -124,18 +129,18 @@
         },
         {
             "name": "HTML/XML tag attribute identifiers",
-            "scope": "meta.tag entity.other.attribute-name",
+            "scope": "entity.other.attribute-name",
             "foreground": "var(green)"
         },
         {
             "name": "HTML/XML declaration tag",
             "scope": "entity.name.tag.doctype.html, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.end.xml, text.xml meta.tag.sgml.doctype.xml punctuation.definition.tag.end.xml, text.xml meta.tag.preprocessor.xml entity.other.attribute-name.localname.xml",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         // CSS specific rules
         {
-            "name": "CSS selectors",
-            "scope": "meta.selector.css entity.other.attribute-name",
+            "name": "CSS selectors class/id",
+            "scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css",
             "foreground": "var(blue)"
         },
         {
@@ -157,11 +162,11 @@
         {
             "name": "CSS variable name declarations",
             "scope": "support.type.custom-property.css",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "CSS function calls",
-            "scope": "meta.function-call.css support.function",
+            "scope": "support.function.font-face.css, support.function.url.css",
             "foreground": "var(orange)"
         },
         {
@@ -172,22 +177,23 @@
         {
             "name": "CSS vendor prefixes",
             "scope": "support.type.vendor-prefix.css",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         // JavaScript specific rules
         {
-            "name": "JavaScript functions",
-            "scope": "variable.function.js",
-            "foreground": "var(violet)"
-        },
-        {
             "name": "JavaScript jQuery function symbol",
             "scope": "punctuation.dollar.js",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "JavaScript map key-names",
             "scope": "meta.object-literal.key.js",
+            "foreground": "var(violet)"
+        },
+        // JSON specific rules
+        {
+            "name": "JSON dictionary key",
+            "scope": "meta.structure.dictionary.key.json string",
             "foreground": "var(violet)"
         },
         // LaTeX specific rules
@@ -206,7 +212,7 @@
         {
             "name": "LaTeX numeric literals",
             "scope": "text.tex.latex constant.numeric",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "LaTeX inline math punctuations",
@@ -216,7 +222,7 @@
         {
             "name": "LaTeX parenthesis",
             "scope": "constant.character.parenthesis.tex, constant.character.bracket.tex",
-            "foreground": "var(white)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "LaTeX brace character",
