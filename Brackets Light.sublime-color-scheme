@@ -17,7 +17,9 @@
         "foreground": "var(textcolor)",
         "caret": "#000000",
         "line_highlight": "#EBEFEF",
+        "misspelling": "var(red)",
         "fold_marker": "#FFFFFF",
+        "accent": "var(blue)",
         "gutter_foreground": "var(grey)",
         "selection": "#ABDFFA",
         "inactive_selection": "#D5DEE3",
@@ -38,7 +40,7 @@
             "foreground": "var(grey)"
         },
         {
-            "name": "Numeric literals",
+            "name": "Numbers",
             "scope": "constant.numeric",
             "foreground": "var(green)"
         },
@@ -99,7 +101,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Parameters to functions or methods",
+            "name": "Function or method arguments",
             "scope": "variable.parameter",
             "foreground": "var(orange)"
         },
@@ -123,11 +125,6 @@
             "name": "HTML/XML tag attribute identifiers",
             "scope": "entity.other.attribute-name",
             "foreground": "var(green)"
-        },
-        {
-            "name": "HTML/XML declaration tag",
-            "scope": "entity.name.tag.doctype.html, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.end.xml, text.xml meta.tag.sgml.doctype.xml punctuation.definition.tag.end.xml, text.xml meta.tag.preprocessor.xml entity.other.attribute-name.localname.xml",
-            "foreground": "var(textcolor)"
         },
         // CSS specific rules
         {
@@ -173,8 +170,8 @@
         },
         // JavaScript specific rules
         {
-            "name": "JavaScript jQuery function symbol",
-            "scope": "punctuation.dollar.js",
+            "name": "JavaScript jQuery Dollar",
+            "scope": "variable.other.dollar.only.js",
             "foreground": "var(textcolor)"
         },
         {
