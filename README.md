@@ -1,7 +1,7 @@
 # Brackets Color Scheme
 [![License](https://img.shields.io/github/license/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE) [![Version](https://img.shields.io/github/release/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/tags) [![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme.svg)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
 
-This package for [Sublime Text](https://www.sublimetext.com/) provides two color schemes (light and dark) similar to the [Adobe Brackets](http://brackets.io/) text editor.
+This package for [Sublime Text 3](https://www.sublimetext.com/) provides two color schemes (light and dark) similar to the [Adobe Brackets](http://brackets.io/) text editor.
 
 ## Installation
 
