@@ -181,8 +181,8 @@
         },
         // JSON specific rules
         {
-            "name": "JSON dictionary key",
-            "scope": "meta.structure.dictionary.key.json string",
+            "name": "JSON key",
+            "scope": "meta.structure.dictionary.key.json string, meta.mapping.key.json string",
             "foreground": "var(violet)"
         },
         // LaTeX specific rules
