@@ -37,6 +37,27 @@
     },
     "rules":
     [
+        // diff rules
+        {
+            "scope": "diff.deleted",
+            "background": "color(var(red) alpha(0.15))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "scope": "diff.deleted.char",
+            "background": "color(var(red) alpha(0.40))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted",
+            "background": "color(var(green) alpha(0.15))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted.char",
+            "background": "color(var(green) alpha(0.40))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
         // common rules
         {
             "name": "Comments",
