@@ -8,6 +8,7 @@
         "green": "#85A300",
         "grey": "#767676",
         "orange": "#D89333",
+        "pink": "#D85896",
         "red": "#DC322F",
         "violet": "#B77FDB"
     },
@@ -257,6 +258,38 @@
             "name": "LaTeX user command declarations",
             "scope": "support.function.latex entity.name.newcommand",
             "foreground": "var(blue)"
+        },
+        // Markdown specific rules
+        {
+            "name": "Markdown headings",
+            "scope": "markup.heading, entity.name.section.markdown",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Markdown quote",
+            "scope": "markup.quote",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Markdown preformatted text",
+            "scope": "markup.raw",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Markdown horizontal rule",
+            "scope": "punctuation.definition.thematic-break.markdown",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown link description",
+            "scope": "meta.link.inline.description, meta.link.reference.description, meta.image.inline.description, punctuation.definition.link.begin.markdown, punctuation.definition.link.end.markdown, punctuation.definition.image.begin.markdown, punctuation.definition.image.end.markdown",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown link url",
+            "scope": "markup.underline.link, constant.other.reference.link.markdown, punctuation.definition.metadata.begin.markdown, punctuation.definition.metadata.end.markdown, punctuation.definition.constant.begin.markdown, punctuation.definition.constant.end.markdown",
+            "foreground": "var(orange)",
+            "font_style": ""
         },
         // GitGutter rules
         {
