@@ -38,27 +38,6 @@
     },
     "rules":
     [
-        // diff rules
-        {
-            "scope": "diff.deleted",
-            "background": "color(var(red) alpha(0.15))",
-            "foreground_adjust": "lightness(- 10%)"
-        },
-        {
-            "scope": "diff.deleted.char",
-            "background": "color(var(red) alpha(0.40))",
-            "foreground_adjust": "lightness(- 10%)"
-        },
-        {
-            "scope": "diff.inserted",
-            "background": "color(var(green) alpha(0.15))",
-            "foreground_adjust": "lightness(- 10%)"
-        },
-        {
-            "scope": "diff.inserted.char",
-            "background": "color(var(green) alpha(0.40))",
-            "foreground_adjust": "lightness(- 10%)"
-        },
         // common rules
         {
             "name": "Comments",
@@ -66,14 +45,19 @@
             "foreground": "var(grey)"
         },
         {
-            "name": "Numbers",
-            "scope": "constant.numeric",
-            "foreground": "var(green)"
+            "name": "Language-specific characters",
+            "scope": "constant.character",
+            "foreground": "var(orange)"
         },
         {
             "name": "Language-specific constants",
-            "scope": "constant.language, constant.character",
+            "scope": "constant.language",
             "foreground": "var(orange)"
+        },
+        {
+            "name": "Numbers",
+            "scope": "constant.numeric",
+            "foreground": "var(green)"
         },
         {
             "name": "Other constants",
@@ -82,9 +66,38 @@
             "font_style": "italic"
         },
         {
-            "name": "Strings",
-            "scope": "string",
-            "foreground": "var(orange)"
+            "name": "Diff deleted line",
+            "scope": "diff.deleted",
+            "background": "color(var(red) alpha(0.15))",
+            "foreground_adjust": "lightness(- 10%)"
+        },
+        {
+            "name": "Diff deleted region",
+            "scope": "diff.deleted.char",
+            "background": "color(var(red) alpha(0.40))",
+            "foreground_adjust": "lightness(- 10%)"
+        },
+        {
+            "name": "Diff inserted line",
+            "scope": "diff.inserted",
+            "background": "color(var(green) alpha(0.15))",
+            "foreground_adjust": "lightness(- 10%)"
+        },
+        {
+            "name": "Diff inserted region",
+            "scope": "diff.inserted.char",
+            "background": "color(var(green) alpha(0.40))",
+            "foreground_adjust": "lightness(- 10%)"
+        },
+        {
+            "name": "Data structures, types and other constructs",
+            "scope": "entity.name",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Illegal statements",
+            "scope": "invalid.illegal",
+            "foreground": "var(red)"
         },
         {
             "name": "Keywords",
@@ -97,39 +110,9 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Data structures, types and other constructs",
-            "scope": "entity.name",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Types and definition/declaration keywords",
-            "scope": "storage.type",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Storage modifiers",
-            "scope": "storage.modifier",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Library and user constructs",
-            "scope": "support",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Language-specific variables",
-            "scope": "variable.language",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Function or method calls",
-            "scope": "variable.function",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Function or method arguments",
-            "scope": "variable.parameter",
-            "foreground": "var(orange)"
+            "name": "Annotation symbols",
+            "scope": "punctuation.definition.annotation",
+            "foreground": "var(pink)"
         },
         {
             "name": "Separators",
@@ -137,9 +120,44 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Illegal statements",
-            "scope": "invalid.illegal",
-            "foreground": "var(red)"
+            "name": "Storage modifiers",
+            "scope": "storage.modifier",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Types and definition/declaration keywords",
+            "scope": "storage.type",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Strings",
+            "scope": "string",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Library and user constructs",
+            "scope": "support",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Annotations",
+            "scope": "variable.annotation",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Function or method calls",
+            "scope": "variable.function",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Language-specific variables",
+            "scope": "variable.language",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function or method arguments",
+            "scope": "variable.parameter",
+            "foreground": "var(orange)"
         },
         // HTML/XML specific rules
         {
@@ -201,13 +219,13 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "JavaScript map key-names",
+            "name": "JavaScript map keys",
             "scope": "meta.object-literal.key.js",
             "foreground": "var(violet)"
         },
         // JSON specific rules
         {
-            "name": "JSON key",
+            "name": "JSON dictionary keys",
             "scope": "meta.structure.dictionary.key.json string, meta.mapping.key.json string",
             "foreground": "var(violet)"
         },
@@ -219,8 +237,8 @@
             "font_style": "italic"
         },
         {
-            "name": "LaTeX labels, references and citations",
-            "scope": "entity.name.label.latex, constant.other.reference.latex, constant.other.citation.latex",
+            "name": "LaTeX citations, references and labels",
+            "scope": "constant.other.citation.latex, constant.other.reference.latex, entity.name.label.latex",
             "foreground": "var(violet)",
             "font_style": "italic"
         },
@@ -266,7 +284,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Markdown quote",
+            "name": "Markdown quotes",
             "scope": "markup.quote",
             "foreground": "var(blue)"
         },
@@ -276,20 +294,44 @@
             "foreground": "var(grey)"
         },
         {
-            "name": "Markdown horizontal rule",
+            "name": "Markdown horizontal rules",
             "scope": "punctuation.definition.thematic-break.markdown",
             "foreground": "var(orange)"
         },
         {
-            "name": "Markdown link description",
-            "scope": "meta.link.inline.description, meta.link.reference.description, meta.image.inline.description, punctuation.definition.link.begin.markdown, punctuation.definition.link.end.markdown, punctuation.definition.image.begin.markdown, punctuation.definition.image.end.markdown",
+            "name": "Markdown links and images",
+            "scope": "text.html.markdown meta.link, text.html.markdown meta.image",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown link descriptions",
+            "scope": "meta.link.inline.description.markdown, meta.link.reference.description.markdown, meta.link.reference.literal.description.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown link url",
-            "scope": "markup.underline.link, constant.other.reference.link.markdown, punctuation.definition.metadata.begin.markdown, punctuation.definition.metadata.end.markdown, punctuation.definition.constant.begin.markdown, punctuation.definition.constant.end.markdown",
-            "foreground": "var(orange)",
-            "font_style": ""
+            "name": "Markdown image descriptions",
+            "scope": "meta.image.inline.description.markdown, meta.image.reference.description.markdown",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown link description brackets",
+            "scope": "text.html.markdown punctuation.definition.link",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown image description brackets",
+            "scope": "text.html.markdown punctuation.definition.image",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown reference description brackets",
+            "scope": "meta.link.reference.def.markdown punctuation.definition",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown email address",
+            "scope": "text.html.markdown meta.link.email",
+            "foreground": "var(violet)"
         },
         // GitGutter rules
         {
@@ -320,12 +362,12 @@
         // SublimeLinter console output rules
         {
             "name": "SublimeLinter Error",
-            "scope": "region.redish markup.error, markup.error.sublime_linter",
+            "scope": "markup.error.sublime_linter, region.redish markup.error",
             "foreground": "var(red)"
         },
         {
             "name": "SublimeLinter Warning",
-            "scope": "region.yellowish markup.warning, markup.warning.sublime_linter",
+            "scope": "markup.warning.sublime_linter, region.yellowish markup.warning",
             "foreground": "var(orange)"
         }
     ]
