@@ -4,13 +4,15 @@
     "variables":
     {
         "textcolor": "#DDDDDD",
-        "blue": "#6C9EF8",
-        "green": "#85A300",
-        "grey": "#767676",
-        "orange": "#D89333",
-        "pink": "#D85896",
-        "red": "#DC322F",
-        "violet": "#B77FDB"
+        "blue":      "#6C9EF8",
+        "green":     "#85A300",
+        "green2":    "#229922",
+        "grey":      "#767676",
+        "orange":    "#D89333",
+        "pink":      "#D85896",
+        "red":       "#DC322F",
+        "red2":      "#DD4444",
+        "violet":    "#B77FDB"
     },
     "globals":
     {
@@ -23,9 +25,9 @@
         "accent": "var(blue)",
         "gutter_foreground": "var(grey)",
         "line_diff_width": "3",
-        "line_diff_added": "var(green)",
+        "line_diff_added": "var(green2)",
         "line_diff_modified": "var(orange)",
-        "line_diff_deleted": "var(red)",
+        "line_diff_deleted": "var(red2)",
         "selection": "#0050A0",
         "inactive_selection": "#333F48",
         "selection_corner_style": "round",
@@ -68,25 +70,25 @@
         {
             "name": "Diff deleted line",
             "scope": "diff.deleted",
-            "background": "color(var(red) alpha(0.15))",
+            "background": "color(var(red2) alpha(0.15))",
             "foreground_adjust": "lightness(+ 5%)"
         },
         {
             "name": "Diff deleted region",
             "scope": "diff.deleted.char",
-            "background": "color(var(red) alpha(0.40))",
+            "background": "color(var(red2) alpha(0.40))",
             "foreground_adjust": "lightness(+ 5%)"
         },
         {
             "name": "Diff inserted line",
             "scope": "diff.inserted",
-            "background": "color(var(green) alpha(0.15))",
+            "background": "color(var(green2) alpha(0.15))",
             "foreground_adjust": "lightness(+ 5%)"
         },
         {
             "name": "Diff inserted region",
             "scope": "diff.inserted.char",
-            "background": "color(var(green) alpha(0.40))",
+            "background": "color(var(green2) alpha(0.40))",
             "foreground_adjust": "lightness(+ 5%)"
         },
         {
@@ -331,6 +333,47 @@
         {
             "name": "Markdown email address",
             "scope": "text.html.markdown meta.link.email",
+            "foreground": "var(violet)"
+        },
+        // Diff (normal/unified) specific rules
+        {
+            "name": "Diff changed lines",
+            "scope": "markup.changed.diff",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Diff deleted lines",
+            "scope": "markup.deleted.diff",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Diff inserted lines",
+            "scope": "markup.inserted.diff",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Diff header from-file",
+            "scope": "meta.diff.header.from-file",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Diff header to-file",
+            "scope": "meta.diff.header.to-file",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Diff index",
+            "scope": "meta.diff.index",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Diff range information",
+            "scope": "meta.diff.range",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Diff separator lines",
+            "scope": "meta.separator.diff",
             "foreground": "var(violet)"
         },
         // GitGutter rules

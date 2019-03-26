@@ -25,12 +25,14 @@ Alternatively you can perform a manual installation:
 |      | Brackets Light | Brackets Dark |
 | ---- | -------------- | ------------- |
 | Background | ![Background](http://via.placeholder.com/20/f8f8f8/f8f8f8) `#F8F8F8` | ![Background](http://via.placeholder.com/20/1d1f21/1d1f21) `#1D1F21` |
-| Text | ![Text](http://via.placeholder.com/20/535353/535353) `#535353` | ![Text](http://via.placeholder.com/20/dddddd/dddddd) `#DDDDDD` |
+| Plain text | ![Plain text](http://via.placeholder.com/20/535353/535353) `#535353` | ![Plain text](http://via.placeholder.com/20/dddddd/dddddd) `#DDDDDD` |
 | Comment | ![Comment](http://via.placeholder.com/20/949494/949494) `#949494` | ![Comment](http://via.placeholder.com/20/767676/767676) `#767676` |
 | Blue | ![Blue](http://via.placeholder.com/20/446fbd/446fbd) `#446FBD` | ![Blue](http://via.placeholder.com/20/6c9ef8/6c9ef8) `#6C9EF8` |
 | Orange | ![Orange](http://via.placeholder.com/20/e88501/e88501) `#E88501` | ![Orange](http://via.placeholder.com/20/d89333/d89333) `#D89333` |
 | Green | ![Green](http://via.placeholder.com/20/6d8600/6d8600) `#6D8600` | ![Green](http://via.placeholder.com/20/85a300/85a300) `#85A300` |
 | Violet | ![Violet](http://via.placeholder.com/20/8757ad/8757ad) `#8757AD` | ![Violet](http://via.placeholder.com/20/b77fdb/b77fdb) `#B77FDB` |
+| Diff inserted | ![Diff inserted](http://via.placeholder.com/20/229922/229922) `#229922` | ![Diff inserted](http://via.placeholder.com/20/229922/229922) `#229922` |
+| Diff deleted | ![Diff deleted](http://via.placeholder.com/20/dc322f/dc322f) `#DC322F` | ![Diff deleted](http://via.placeholder.com/20/dc322f/dc322f) `#DC322F` |
 
 ## Customization and backward compatibility
 
