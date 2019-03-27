@@ -8,7 +8,7 @@ This package for [Sublime Text 3](https://www.sublimetext.com/) provides two col
 The color scheme can be installed via Sublime Text's package manager [Package Control](https://sublime.wbond.net/installation).
 From the Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
 
-Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into your user directory.
+Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into your user directory of Sublime Text.
 To access the user directory, choose `Preferences > Browse Packages...` within Sublime Text and open the folder `User`.
 Notice that there will be no automatic updates for the package without using Package Control.
 
@@ -39,7 +39,7 @@ The color scheme can be activated under `Preferences > Color Scheme...`.
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
 The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/3/color_schemes.html#customization).
 
-For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into your user directory.
+For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into your user directory of Sublime Text.
 
 ## License
 
