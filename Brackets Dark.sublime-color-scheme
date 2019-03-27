@@ -168,14 +168,19 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "HTML/XML tag attribute identifiers",
-            "scope": "entity.other.attribute-name",
+            "name": "HTML/XML tag attribute names",
+            "scope": "text.html entity.other.attribute-name, text.xml entity.other.attribute-name",
             "foreground": "var(green)"
         },
         // CSS specific rules
         {
-            "name": "CSS selectors class/id",
-            "scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css",
+            "name": "CSS selectors",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CSS namespace prefixes",
+            "scope": "entity.other.namespace-prefix",
             "foreground": "var(blue)"
         },
         {
@@ -184,8 +189,18 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "CSS media type",
+            "scope": "support.constant.media.css",
+            "foreground": "var(green)"
+        },
+        {
             "name": "CSS property values",
-            "scope": "support.constant.property-value.css, constant.other.color.rgb-value.css",
+            "scope": "support.constant.font-name.css, support.constant.property-value.css",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS color values",
+            "scope": "source.css constant.other.color",
             "foreground": "var(orange)",
             "font_style": ""
         },
@@ -201,13 +216,18 @@
         },
         {
             "name": "CSS function calls",
-            "scope": "support.function.font-face.css, support.function.url.css",
+            "scope": "source.css support.function",
             "foreground": "var(orange)"
         },
         {
             "name": "CSS at-rule",
-            "scope": "keyword.control.at-rule",
+            "scope": "source.css keyword.control.at-rule",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "CSS logic operators",
+            "scope": "source.css keyword.operator.logic",
+            "foreground": "var(blue)"
         },
         {
             "name": "CSS vendor prefixes",
@@ -316,6 +336,11 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "Markdown footnotes",
+            "scope": "meta.link.reference.literal.footnote-id.markdown",
+            "foreground": "var(violet)"
+        },
+        {
             "name": "Markdown link description brackets",
             "scope": "text.html.markdown punctuation.definition.link",
             "foreground": "var(violet)"
@@ -326,13 +351,24 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown reference description brackets",
-            "scope": "meta.link.reference.def.markdown punctuation.definition",
+            "name": "Markdown reference definition text",
+            "scope": "entity.name.reference.link.markdown",
+            "foreground": "var(violet)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown reference definition brackets",
+            "scope": "text.html.markdown meta.link.reference.def punctuation.definition.constant",
             "foreground": "var(violet)"
         },
         {
             "name": "Markdown email address",
             "scope": "text.html.markdown meta.link.email",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown internet link",
+            "scope": "text.html.markdown meta.link.inet",
             "foreground": "var(violet)"
         },
         // Diff (normal/unified) specific rules
@@ -376,6 +412,17 @@
             "scope": "meta.separator.diff",
             "foreground": "var(violet)"
         },
+        // Rust specific rules
+        {
+            "name": "Rust annotation parameters",
+            "scope": "meta.annotation.parameters.rust",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Rust numeric type identifiers",
+            "scope": "storage.type.numeric.rust",
+            "foreground": "var(green)"
+        },
         // GitGutter rules
         {
             "name": "GitGutter deleted",
@@ -402,16 +449,26 @@
             "scope": "markup.untracked.git_gutter",
             "foreground": "#565656"
         },
-        // SublimeLinter console output rules
+        // SublimeLinter rules
         {
-            "name": "SublimeLinter Error",
-            "scope": "markup.error.sublime_linter, region.redish markup.error",
+            "name": "SublimeLinter error",
+            "scope": "markup.error.sublime_linter",
             "foreground": "var(red)"
         },
         {
-            "name": "SublimeLinter Warning",
-            "scope": "markup.warning.sublime_linter, region.yellowish markup.warning",
+            "name": "SublimeLinter warning",
+            "scope": "markup.warning.sublime_linter",
             "foreground": "var(orange)"
+        },
+        {
+            "name": "SublimeLinter console output filename",
+            "scope": "entity.name.filename.sublime_linter",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "SublimeLinter console output message",
+            "scope": "markup.quote.linter-message.sublime_linter",
+            "foreground": "var(textcolor)"
         }
     ]
 }
