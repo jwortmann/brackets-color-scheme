@@ -175,12 +175,12 @@
         // CSS specific rules
         {
             "name": "CSS selectors",
-            "scope": "entity.other.attribute-name",
+            "scope": "source.css entity.other.attribute-name",
             "foreground": "var(blue)"
         },
         {
             "name": "CSS namespace prefixes",
-            "scope": "entity.other.namespace-prefix",
+            "scope": "source.css entity.other.namespace-prefix",
             "foreground": "var(blue)"
         },
         {
