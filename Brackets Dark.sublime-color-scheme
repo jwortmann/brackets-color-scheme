@@ -169,18 +169,18 @@
         },
         {
             "name": "HTML/XML tag attribute names",
-            "scope": "text.html entity.other.attribute-name, text.xml entity.other.attribute-name",
+            "scope": "text entity.other.attribute-name",
             "foreground": "var(green)"
         },
         // CSS specific rules
         {
             "name": "CSS selectors",
-            "scope": "source.css entity.other.attribute-name",
+            "scope": "source entity.other.attribute-name",
             "foreground": "var(blue)"
         },
         {
             "name": "CSS namespace prefixes",
-            "scope": "source.css entity.other.namespace-prefix",
+            "scope": "entity.other.namespace-prefix.css",
             "foreground": "var(blue)"
         },
         {
@@ -200,7 +200,7 @@
         },
         {
             "name": "CSS color values",
-            "scope": "source.css constant.other.color",
+            "scope": "constant.other.color",
             "foreground": "var(orange)",
             "font_style": ""
         },
@@ -221,12 +221,12 @@
         },
         {
             "name": "CSS at-rule",
-            "scope": "source.css keyword.control.at-rule",
+            "scope": "keyword.control.at-rule",
             "foreground": "var(violet)"
         },
         {
             "name": "CSS logic operators",
-            "scope": "source.css keyword.operator.logic",
+            "scope": "keyword.operator.logic.css, keyword.operator.logic.media.css",
             "foreground": "var(blue)"
         },
         {
