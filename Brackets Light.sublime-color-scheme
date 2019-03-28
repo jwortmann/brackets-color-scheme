@@ -132,6 +132,11 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Numeric type identifiers",
+            "scope": "storage.type.numeric",
+            "foreground": "var(green)"
+        },
+        {
             "name": "Strings",
             "scope": "string",
             "foreground": "var(orange)"
@@ -418,9 +423,10 @@
             "scope": "meta.annotation.parameters.rust",
             "foreground": "var(pink)"
         },
+        // ShellScript (Bash) specific rules
         {
-            "name": "Rust numeric type identifiers",
-            "scope": "storage.type.numeric.rust",
+            "name": "Bash command options",
+            "scope": "variable.parameter.option.shell",
             "foreground": "var(green)"
         },
         // GitGutter rules
