@@ -166,17 +166,6 @@
             "scope": "variable.parameter",
             "foreground": "var(orange)"
         },
-        // HTML/XML specific rules
-        {
-            "name": "HTML/XML tags",
-            "scope": "entity.name.tag, punctuation.definition.tag",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "HTML/XML tag attribute names",
-            "scope": "text entity.other.attribute-name",
-            "foreground": "var(green)"
-        },
         // CSS specific rules
         {
             "name": "CSS selectors",
@@ -238,6 +227,69 @@
             "name": "CSS vendor prefixes",
             "scope": "support.type.vendor-prefix.css",
             "foreground": "var(textcolor)"
+        },
+        // Diff (normal/unified) specific rules
+        {
+            "name": "Diff changed lines",
+            "scope": "markup.changed.diff",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Diff deleted lines",
+            "scope": "markup.deleted.diff",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Diff inserted lines",
+            "scope": "markup.inserted.diff",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Diff header from-file",
+            "scope": "meta.diff.header.from-file",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Diff header to-file",
+            "scope": "meta.diff.header.to-file",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Diff index",
+            "scope": "meta.diff.index",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Diff range information",
+            "scope": "meta.diff.range",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Diff separator lines",
+            "scope": "meta.separator.diff",
+            "foreground": "var(violet)"
+        },
+        // Fortran specific rules
+        {
+            "name": "Fortran type declaration colons",
+            "scope": "keyword.control.double-colon.fortran",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Fortran logical operators",
+            "scope": "keyword.operator.logical.fortran",
+            "foreground": "var(blue)"
+        },
+        // HTML/XML specific rules
+        {
+            "name": "HTML/XML tags",
+            "scope": "entity.name.tag, punctuation.definition.tag",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "HTML/XML tag attribute names",
+            "scope": "text entity.other.attribute-name",
+            "foreground": "var(green)"
         },
         // JavaScript specific rules
         {
@@ -374,47 +426,6 @@
         {
             "name": "Markdown internet link",
             "scope": "text.html.markdown meta.link.inet",
-            "foreground": "var(violet)"
-        },
-        // Diff (normal/unified) specific rules
-        {
-            "name": "Diff changed lines",
-            "scope": "markup.changed.diff",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Diff deleted lines",
-            "scope": "markup.deleted.diff",
-            "foreground": "var(red2)"
-        },
-        {
-            "name": "Diff inserted lines",
-            "scope": "markup.inserted.diff",
-            "foreground": "var(green2)"
-        },
-        {
-            "name": "Diff header from-file",
-            "scope": "meta.diff.header.from-file",
-            "foreground": "var(red2)"
-        },
-        {
-            "name": "Diff header to-file",
-            "scope": "meta.diff.header.to-file",
-            "foreground": "var(green2)"
-        },
-        {
-            "name": "Diff index",
-            "scope": "meta.diff.index",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Diff range information",
-            "scope": "meta.diff.range",
-            "foreground": "var(grey)"
-        },
-        {
-            "name": "Diff separator lines",
-            "scope": "meta.separator.diff",
             "foreground": "var(violet)"
         },
         // Rust specific rules
