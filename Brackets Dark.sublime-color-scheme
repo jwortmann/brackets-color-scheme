@@ -428,6 +428,12 @@
             "scope": "text.html.markdown meta.link.inet",
             "foreground": "var(violet)"
         },
+        // Python specific rules
+        {
+            "name": "Python logical operators",
+            "scope": "keyword.operator.logical.python",
+            "foreground": "var(blue)"
+        },
         // Rust specific rules
         {
             "name": "Rust annotation parameters",
