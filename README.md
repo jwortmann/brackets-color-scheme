@@ -1,5 +1,8 @@
 # Brackets Color Scheme
-[![License](https://img.shields.io/github/license/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE) [![Version](https://img.shields.io/github/release/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/tags) [![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme.svg)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
+
+[![License](https://img.shields.io/github/license/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE)
+[![Version](https://img.shields.io/github/release/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/tags)
+[![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme.svg)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
 
 This package for [Sublime Text 3](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the default themes of [Adobe Brackets](http://brackets.io/).
 
@@ -32,7 +35,7 @@ The color scheme can be activated under `Preferences > Color Scheme...`.
 | Green | ![Green](http://via.placeholder.com/20/6d8600/6d8600) `#6D8600` | ![Green](http://via.placeholder.com/20/85a300/85a300) `#85A300` |
 | Violet | ![Violet](http://via.placeholder.com/20/8757ad/8757ad) `#8757AD` | ![Violet](http://via.placeholder.com/20/b77fdb/b77fdb) `#B77FDB` |
 | Diff inserted | ![Diff inserted](http://via.placeholder.com/20/229922/229922) `#229922` | ![Diff inserted](http://via.placeholder.com/20/229922/229922) `#229922` |
-| Diff deleted | ![Diff deleted](http://via.placeholder.com/20/dc322f/dc322f) `#DC322F` | ![Diff deleted](http://via.placeholder.com/20/dc322f/dc322f) `#DC322F` |
+| Diff deleted | ![Diff deleted](http://via.placeholder.com/20/dd4444/dd4444) `#DD4444` | ![Diff deleted](http://via.placeholder.com/20/dd4444/dd4444) `#DD4444` |
 
 ## Customization and backward compatibility
 
