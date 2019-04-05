@@ -271,6 +271,11 @@
         },
         // Fortran specific rules
         {
+            "name": "Fortran format descriptors",
+            "scope": "constant.numeric.format-descriptor.fortran, meta.format-string.fortran",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "Fortran type declaration colons",
             "scope": "keyword.control.double-colon.fortran",
             "foreground": "var(textcolor)"
@@ -291,6 +296,22 @@
             "scope": "text entity.other.attribute-name",
             "foreground": "var(green)"
         },
+        // INI file specific rules
+        {
+            "name": "INI section names",
+            "scope": "entity.section.ini, punctuation.definition.section.ini",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "INI key names",
+            "scope": "keyword.name.ini",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "INI key values",
+            "scope": "string.name.value.ini",
+            "foreground": "var(blue)"
+        },
         // JavaScript specific rules
         {
             "name": "JavaScript jQuery Dollar",
@@ -298,14 +319,14 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "JavaScript map keys",
+            "name": "JavaScript keys",
             "scope": "meta.object-literal.key.js",
             "foreground": "var(violet)"
         },
         // JSON specific rules
         {
-            "name": "JSON dictionary keys",
-            "scope": "meta.structure.dictionary.key.json string, meta.mapping.key.json string",
+            "name": "JSON keys",
+            "scope": "meta.mapping.key.json string, meta.structure.dictionary.key.json string",
             "foreground": "var(violet)"
         },
         // LaTeX specific rules
