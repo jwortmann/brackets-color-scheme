@@ -97,6 +97,11 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "Tag names",
+            "scope": "entity.name.tag",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "Illegal statements",
             "scope": "invalid.illegal",
             "foreground": "var(red)"
@@ -107,14 +112,29 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Operators",
+            "name": "Operators (symbolic)",
             "scope": "keyword.operator",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Operators (written)",
+            "scope": "keyword.operator.word",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Accessor symbols",
+            "scope": "punctuation.accessor",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Annotation symbols",
             "scope": "punctuation.definition.annotation",
             "foreground": "var(pink)"
+        },
+        {
+            "name": "Tag punctuations",
+            "scope": "punctuation.definition.tag",
+            "foreground": "var(blue)"
         },
         {
             "name": "Separators",
@@ -165,6 +185,12 @@
             "name": "Function or method arguments",
             "scope": "variable.parameter",
             "foreground": "var(orange)"
+        },
+        // C# specific rules
+        {
+            "name": "C# new operator",
+            "scope": "keyword.operator.new.cs",
+            "foreground": "var(blue)"
         },
         // CSS specific rules
         {
@@ -287,11 +313,6 @@
         },
         // HTML/XML specific rules
         {
-            "name": "HTML/XML tags",
-            "scope": "entity.name.tag, punctuation.definition.tag",
-            "foreground": "var(blue)"
-        },
-        {
             "name": "HTML/XML tag attribute names",
             "scope": "text entity.other.attribute-name",
             "foreground": "var(green)"
@@ -312,16 +333,32 @@
             "scope": "string.name.value.ini",
             "foreground": "var(blue)"
         },
+        // Java specific rules
+        {
+            "name": "Java lambda functions",
+            "scope": "storage.type.function.anonymous.java",
+            "foreground": "var(textcolor)"
+        },
         // JavaScript specific rules
         {
-            "name": "JavaScript jQuery Dollar",
-            "scope": "variable.other.dollar.only.js",
+            "name": "JavaScript generator function symbol",
+            "scope": "keyword.generator.asterisk.js",
             "foreground": "var(textcolor)"
         },
         {
             "name": "JavaScript keys",
-            "scope": "meta.object-literal.key.js",
+            "scope": "meta.object-literal.key.js, meta.object-literal.key.js string, meta.object-literal.key.dollar.js",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "JavaScript arrow function symbol",
+            "scope": "storage.type.function.arrow.js",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "JavaScript jQuery Dollar",
+            "scope": "variable.other.dollar.only.js",
+            "foreground": "var(textcolor)"
         },
         // JSON specific rules
         {
