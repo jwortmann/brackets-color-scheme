@@ -97,6 +97,11 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "Section names",
+            "scope": "entity.name.section",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "Tag names",
             "scope": "entity.name.tag",
             "foreground": "var(blue)"
@@ -380,9 +385,19 @@
             "font_style": "italic"
         },
         {
-            "name": "LaTeX numeric literals",
-            "scope": "text.tex.latex constant.numeric",
+            "name": "LaTeX array column parameter",
+            "scope": "constant.numeric.array-count.latex",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "LaTeX numbers",
+            "scope": "constant.numeric.math.tex",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "LaTeX newline spacing parameter",
+            "scope": "constant.numeric.newline.latex",
+            "foreground": "var(blue)"
         },
         {
             "name": "LaTeX inline math punctuations",
@@ -411,23 +426,34 @@
         },
         {
             "name": "LaTeX user command declarations",
-            "scope": "support.function.latex entity.name.newcommand",
+            "scope": "entity.name.newcommand.latex",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "LaTeX puncutation braces",
+            "scope": "punctuation.definition.group.brace.begin.latex, punctuation.definition.group.brace.end.latex",
+            "foreground": "var(textcolor)"
+        },
+        // Lua specific rules
+        {
+            "name": "Lua logical operators",
+            "scope": "keyword.operator.logical.lua",
             "foreground": "var(blue)"
         },
         // Markdown specific rules
         {
             "name": "Markdown headings",
-            "scope": "markup.heading, entity.name.section.markdown",
+            "scope": "markup.heading.markdown",
             "foreground": "var(pink)"
         },
         {
             "name": "Markdown quotes",
-            "scope": "markup.quote",
+            "scope": "markup.quote.markdown",
             "foreground": "var(blue)"
         },
         {
             "name": "Markdown preformatted text",
-            "scope": "markup.raw",
+            "scope": "markup.raw.inline.markdown, markup.raw.block.markdown, markup.raw.code-fence.markdown-gfm",
             "foreground": "var(grey)"
         },
         {
@@ -503,6 +529,27 @@
             "name": "Bash command options",
             "scope": "variable.parameter.option.shell",
             "foreground": "var(green)"
+        },
+        // Textile specific rules
+        {
+            "name": "Textile deleted",
+            "scope": "markup.deleted.textile",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Textile headings",
+            "scope": "markup.heading.textile",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Textile inserted",
+            "scope": "markup.inserted.textile",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Textile quotes",
+            "scope": "markup.quote.textile",
+            "foreground": "var(blue)"
         },
         // GitGutter rules
         {
