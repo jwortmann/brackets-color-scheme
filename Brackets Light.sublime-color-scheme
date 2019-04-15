@@ -40,7 +40,6 @@
     },
     "rules":
     [
-        // common rules
         {
             "name": "Comments",
             "scope": "comment",
@@ -62,8 +61,19 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Other constants",
+            "name": "Misc constants",
             "scope": "constant.other",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Enums",
+            "scope": "constant.other.enum",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Placeholder symbols in strings",
+            "scope": "constant.other.placeholder",
             "foreground": "var(orange)",
             "font_style": "italic"
         },
@@ -193,9 +203,20 @@
         },
         // C# specific rules
         {
-            "name": "C# new operator",
+            "name": "C# keyword: new",
             "scope": "keyword.operator.new.cs",
             "foreground": "var(blue)"
+        },
+        {
+            "name": "C# lambda functions",
+            "scope": "storage.type.function.lambda.cs",
+            "foreground": "var(textcolor)"
+        },
+        // Clojure specific rules
+        {
+            "name": "Clojure decimal separator",
+            "scope": "punctuation.separator.decimal.clojure",
+            "foreground": "var(green)"
         },
         // CSS specific rules
         {
@@ -224,13 +245,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "CSS color values",
-            "scope": "constant.other.color",
-            "foreground": "var(orange)",
-            "font_style": ""
-        },
-        {
-            "name": "CSS units of numeric literals",
+            "name": "CSS units",
             "scope": "constant.numeric.css keyword.other.unit.css",
             "foreground": "var(green)"
         },
@@ -259,7 +274,7 @@
             "scope": "support.type.vendor-prefix.css",
             "foreground": "var(textcolor)"
         },
-        // Diff (normal/unified) specific rules
+        // Diff specific rules
         {
             "name": "Diff changed lines",
             "scope": "markup.changed.diff",
@@ -322,7 +337,7 @@
             "scope": "text entity.other.attribute-name",
             "foreground": "var(green)"
         },
-        // INI file specific rules
+        // INI specific rules
         {
             "name": "INI section names",
             "scope": "entity.section.ini, punctuation.definition.section.ini",
@@ -339,6 +354,12 @@
             "foreground": "var(blue)"
         },
         // Java specific rules
+        {
+            "name": "Java enum values and other constants",
+            "scope": "constant.other.java",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
         {
             "name": "Java lambda functions",
             "scope": "storage.type.function.anonymous.java",
@@ -443,7 +464,7 @@
         // Markdown specific rules
         {
             "name": "Markdown headings",
-            "scope": "markup.heading.markdown",
+            "scope": "markup.heading.markdown, markup.heading.1.markdown, markup.heading.2.markdown, markup.heading.1.setext.markdown, markup.heading.2.setext.markdown",
             "foreground": "var(pink)"
         },
         {
@@ -457,59 +478,83 @@
             "foreground": "var(grey)"
         },
         {
+            "name": "Markdown code block punctuation",
+            "scope": "punctuation.definition.raw.code-fence.begin.markdown, punctuation.definition.raw.code-fence.end.markdown",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Markdown code block language",
+            "scope": "constant.other.language-name.markdown",
+            "foreground": "var(grey)"
+        },
+        {
             "name": "Markdown horizontal rules",
             "scope": "punctuation.definition.thematic-break.markdown",
             "foreground": "var(orange)"
         },
         {
-            "name": "Markdown links and images",
-            "scope": "text.html.markdown meta.link, text.html.markdown meta.image",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Markdown link descriptions",
+            "name": "Markdown inline & reference-style link text",
             "scope": "meta.link.inline.description.markdown, meta.link.reference.description.markdown, meta.link.reference.literal.description.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown image descriptions",
-            "scope": "meta.image.inline.description.markdown, meta.image.reference.description.markdown",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Markdown footnotes",
+            "name": "Markdown footnote-id",
             "scope": "meta.link.reference.literal.footnote-id.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown link description brackets",
-            "scope": "text.html.markdown punctuation.definition.link",
+            "name": "Markdown inline & reference-style image alt-text",
+            "scope": "meta.image.inline.description.markdown, meta.image.reference.description.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown image description brackets",
-            "scope": "text.html.markdown punctuation.definition.image",
+            "name": "Markdown inline & reference-style link/footnote text punctuation",
+            "scope": "meta.link punctuation.definition.link.begin.markdown, meta.link punctuation.definition.link.end.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown reference definition text",
-            "scope": "entity.name.reference.link.markdown",
-            "foreground": "var(violet)",
-            "font_style": "italic"
-        },
-        {
-            "name": "Markdown reference definition brackets",
-            "scope": "text.html.markdown meta.link.reference.def punctuation.definition.constant",
+            "name": "Markdown image alt-text punctuation",
+            "scope": "punctuation.definition.image.begin.markdown, punctuation.definition.image.end.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown email address",
-            "scope": "text.html.markdown meta.link.email",
+            "name": "Markdown inline link/image address",
+            "scope": "meta.link.inline.markdown markup.underline.link.markdown, meta.image.inline.markdown markup.underline.link.image.markdown",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown inline link/image address punctuation",
+            "scope": "punctuation.definition.metadata.begin.markdown, punctuation.definition.metadata.end.markdown",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown reference-style link/image id punctuation",
+            "scope": "meta.link.reference.markdown punctuation.definition.constant.begin.markdown, meta.link.reference.markdown punctuation.definition.constant.end.markdown, meta.link.reference.literal.markdown punctuation.definition.constant.begin.markdown, meta.link.reference.literal.markdown punctuation.definition.constant.end.markdown, meta.image.reference.markdown punctuation.definition.constant.begin.markdown, meta.image.reference.markdown punctuation.definition.constant.end.markdown",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown reference definition link address",
+            "scope": "meta.link.reference.def.markdown markup.underline.link.markdown",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown reference definition link address punctuation",
+            "scope": "meta.link.reference.def.markdown punctuation.definition.link.begin.markdown, meta.link.reference.def.markdown punctuation.definition.link.end.markdown",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown reference definition link/footnote id punctuation",
+            "scope": "meta.link.reference.def punctuation.definition.constant.begin.markdown, meta.link.reference.def punctuation.definition.constant.end.markdown",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown internet link",
-            "scope": "text.html.markdown meta.link.inet",
+            "name": "Markdown automatic link/email",
+            "scope": "meta.link.inet.markdown markup.underline.link.markdown, meta.link.email.lt-gt.markdown markup.underline.link.markdown",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown automatic link/email punctuation",
+            "scope": "meta.link.inet.markdown punctuation.definition.link.begin.markdown, meta.link.inet.markdown punctuation.definition.link.end.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.begin.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.end.markdown",
             "foreground": "var(violet)"
         },
         // Python specific rules
@@ -518,17 +563,59 @@
             "scope": "keyword.operator.logical.python",
             "foreground": "var(blue)"
         },
+        // Regular Expression specific rules
+        {
+            "name": "RegEx embedded in JavaScript, Python",
+            "scope": "string.regexp.js - punctuation.definition.string, source.regexp.python",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "RegEx character set",
+            "scope": "constant.other.range.regexp, constant.other.character-class.set.regexp, meta.set.regexp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "RegEx group and set punctuation",
+            "scope": "keyword.control.group.regexp, keyword.control.set.regexp, punctuation.definition.group.begin.regexp, punctuation.definition.group.end.regexp, punctuation.definition.character-class.begin.regexp, punctuation.definition.character-class.end.regexp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "RegEx quantifiers and operators",
+            "scope": "keyword.operator.quantifier.regexp, keyword.operator.negation.regexp, keyword.operator.alternation.regexp, keyword.operator.or.regexp, keyword.operator.intersection.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RegEx mode, lookbehind, lookahead",
+            "scope": "storage.modifier.mode.regexp, constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, punctuation.definition.group.no-capture.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RegEx references and conditionals",
+            "scope": "keyword.other.named-capture-group.regexp, entity.name.capture-group.regexp, keyword.other.backref-and-recursion.regexp, keyword.other.backref-and-recursion.conditional.regexp, keyword.other.conditional.regexp, keyword.other.conditional.definition.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RegEx character classes and anchors",
+            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, keyword.other.any.regexp, keyword.control.anchors.regexp",
+            "foreground": "var(violet)"
+        },
         // Rust specific rules
         {
             "name": "Rust annotation parameters",
             "scope": "meta.annotation.parameters.rust",
             "foreground": "var(pink)"
         },
-        // ShellScript (Bash) specific rules
+        // ShellScript specific rules
         {
-            "name": "Bash command options",
+            "name": "ShellScript command options",
             "scope": "variable.parameter.option.shell",
             "foreground": "var(green)"
+        },
+        // Sublime-syntax specific rules
+        {
+            "name": "Sublime-syntax include",
+            "scope": "keyword.operator.include.sublime-syntax",
+            "foreground": "var(blue)"
         },
         // Textile specific rules
         {
