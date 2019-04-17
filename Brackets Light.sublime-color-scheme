@@ -565,39 +565,45 @@
         },
         // Regular Expression specific rules
         {
-            "name": "RegEx embedded in JavaScript, Python",
-            "scope": "string.regexp.js - punctuation.definition.string, source.regexp.python",
+            "name": "RegExp embedded in other languages",
+            "scope": "source.regexp, string.regexp.js - punctuation.definition.string, string.regexp.clojure - punctuation.definition.string",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "RegEx character set",
+            "name": "RegExp character set",
             "scope": "constant.other.range.regexp, constant.other.character-class.set.regexp, meta.set.regexp",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "RegEx group and set punctuation",
+            "name": "RegExp group and set punctuation",
             "scope": "keyword.control.group.regexp, keyword.control.set.regexp, punctuation.definition.group.begin.regexp, punctuation.definition.group.end.regexp, punctuation.definition.character-class.begin.regexp, punctuation.definition.character-class.end.regexp",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "RegEx quantifiers and operators",
+            "name": "RegExp quantifiers and operators",
             "scope": "keyword.operator.quantifier.regexp, keyword.operator.negation.regexp, keyword.operator.alternation.regexp, keyword.operator.or.regexp, keyword.operator.intersection.regexp",
             "foreground": "var(blue)"
         },
         {
-            "name": "RegEx mode, lookbehind, lookahead",
+            "name": "RegExp assertions and mode modifiers",
             "scope": "storage.modifier.mode.regexp, constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, punctuation.definition.group.no-capture.regexp",
             "foreground": "var(blue)"
         },
         {
-            "name": "RegEx references and conditionals",
+            "name": "RegExp references and conditionals",
             "scope": "keyword.other.named-capture-group.regexp, entity.name.capture-group.regexp, keyword.other.backref-and-recursion.regexp, keyword.other.backref-and-recursion.conditional.regexp, keyword.other.conditional.regexp, keyword.other.conditional.definition.regexp",
             "foreground": "var(blue)"
         },
         {
-            "name": "RegEx character classes and anchors",
-            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, keyword.other.any.regexp, keyword.control.anchors.regexp",
+            "name": "RegExp character classes and anchors",
+            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, keyword.other.any.regexp, keyword.control.anchor.regexp, keyword.control.anchors.regexp",
             "foreground": "var(violet)"
+        },
+        // reStructuredText specific rules
+        {
+            "name": "reStructuredText headings",
+            "scope": "punctuation.definition.heading.restructuredtext",
+            "foreground": "var(pink)"
         },
         // Rust specific rules
         {
