@@ -66,7 +66,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Enums",
+            "name": "Enum values",
             "scope": "constant.other.enum",
             "foreground": "var(orange)",
             "font_style": "italic"
@@ -105,6 +105,12 @@
             "name": "Data structures, types and other constructs",
             "scope": "entity.name",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "Constants",
+            "scope": "entity.name.constant",
+            "foreground": "var(orange)",
+            "font_style": "italic"
         },
         {
             "name": "Section names",
@@ -355,7 +361,7 @@
         },
         // Java specific rules
         {
-            "name": "Java enum values and other constants",
+            "name": "Java constants",
             "scope": "constant.other.java",
             "foreground": "var(orange)",
             "font_style": "italic"
@@ -380,6 +386,12 @@
             "name": "JavaScript arrow function symbol",
             "scope": "storage.type.function.arrow.js",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "JavaScript constants",
+            "scope": "variable.other.constant.js",
+            "foreground": "var(orange)",
+            "font_style": "italic"
         },
         {
             "name": "JavaScript jQuery Dollar",
@@ -563,6 +575,12 @@
             "scope": "keyword.operator.logical.python",
             "foreground": "var(blue)"
         },
+        {
+            "name": "Python constants",
+            "scope": "variable.other.constant.python",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
         // Regular Expression specific rules
         {
             "name": "RegExp embedded in other languages",
@@ -586,7 +604,7 @@
         },
         {
             "name": "RegExp assertions and mode modifiers",
-            "scope": "storage.modifier.mode.regexp, constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, punctuation.definition.group.no-capture.regexp",
+            "scope": "constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, storage.modifier.mode.regexp, punctuation.definition.group.no-capture.regexp",
             "foreground": "var(blue)"
         },
         {
@@ -595,8 +613,13 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "RegExp character classes and anchors",
-            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, keyword.other.any.regexp, keyword.control.anchor.regexp, keyword.control.anchors.regexp",
+            "name": "RegExp anchors",
+            "scope": "keyword.control.anchor.regexp, keyword.control.anchors.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RegExp character classes",
+            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, keyword.other.any.regexp",
             "foreground": "var(violet)"
         },
         // reStructuredText specific rules
@@ -606,6 +629,12 @@
             "foreground": "var(pink)"
         },
         // Rust specific rules
+        {
+            "name": "Rust constants",
+            "scope": "constant.other.rust, variable.other.constant.rust",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
         {
             "name": "Rust annotation parameters",
             "scope": "meta.annotation.parameters.rust",
