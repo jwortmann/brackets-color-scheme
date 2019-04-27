@@ -237,8 +237,18 @@
         },
         {
             "name": "CSS properties",
-            "scope": "support.type.property-name.css",
+            "scope": "support.type.property-name.css, support.type.property-name.media.css",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "CSS special color keywords",
+            "scope": "support.constant.color.w3c-special-color-keyword.css",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS font names",
+            "scope": "support.constant.font-name.css",
+            "foreground": "var(orange)"
         },
         {
             "name": "CSS media type",
@@ -247,7 +257,7 @@
         },
         {
             "name": "CSS property values",
-            "scope": "support.constant.font-name.css, support.constant.property-value.css",
+            "scope": "support.constant.property-value.css",
             "foreground": "var(orange)"
         },
         {
@@ -276,7 +286,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "CSS vendor prefixes",
+            "name": "CSS vendor prefix",
             "scope": "support.type.vendor-prefix.css",
             "foreground": "var(textcolor)"
         },
@@ -438,12 +448,12 @@
             "foreground": "var(green)"
         },
         {
-            "name": "LaTeX parenthesis",
+            "name": "LaTeX parentheses and brackets",
             "scope": "constant.character.parenthesis.tex, constant.character.bracket.tex",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "LaTeX brace character",
+            "name": "LaTeX escaped brace character",
             "scope": "constant.character.brace.escape.tex",
             "foreground": "var(blue)"
         },
