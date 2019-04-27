@@ -11,17 +11,19 @@ This package for [Sublime Text 3](https://www.sublimetext.com/) provides two col
 The color scheme can be installed via Sublime Text's package manager [Package Control](https://sublime.wbond.net/installation).
 From the Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
 
-Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into your user directory of Sublime Text.
-To access the user directory, choose `Preferences > Browse Packages...` within Sublime Text and open the folder `User`.
-Notice that there will be no automatic updates for the package without using Package Control.
+Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into a folder in the packages directory of Sublime Text, e.g. your User package.
+To access your User package, choose `Preferences > Browse Packages...` within Sublime Text and open the folder `User`.
+Notice that there will be no automatic updates for this package without using Package Control.
 
 The color scheme can be activated under `Preferences > Color Scheme...`.
 
-## Screenshots
+## Preview
 
-![Brackets Light](http://i.imgur.com/5HoE6I2.png)
+![Brackets Light](https://i.imgur.com/VtvY5mc.png)
 
-![Brackets Dark](http://i.imgur.com/HZ0acdw.png)
+![Brackets Dark](https://i.imgur.com/nvxmeUv.png)
+
+The font used in the preview images is [Fira Code](https://github.com/tonsky/FiraCode).
 
 ## Color palette
 
@@ -34,6 +36,7 @@ The color scheme can be activated under `Preferences > Color Scheme...`.
 | Orange | ![Orange](http://via.placeholder.com/20/e88501/e88501) `#E88501` | ![Orange](http://via.placeholder.com/20/d89333/d89333) `#D89333` |
 | Green | ![Green](http://via.placeholder.com/20/6d8600/6d8600) `#6D8600` | ![Green](http://via.placeholder.com/20/85a300/85a300) `#85A300` |
 | Violet | ![Violet](http://via.placeholder.com/20/8757ad/8757ad) `#8757AD` | ![Violet](http://via.placeholder.com/20/b77fdb/b77fdb) `#B77FDB` |
+| Pink | ![Pink](http://via.placeholder.com/20/d33682/d33682) `#D33682` | ![Pink](http://via.placeholder.com/20/d85896/d85896) `#D85896` |
 | Diff inserted | ![Diff inserted](http://via.placeholder.com/20/229922/229922) `#229922` | ![Diff inserted](http://via.placeholder.com/20/229922/229922) `#229922` |
 | Diff deleted | ![Diff deleted](http://via.placeholder.com/20/dd4444/dd4444) `#DD4444` | ![Diff deleted](http://via.placeholder.com/20/dd4444/dd4444) `#DD4444` |
 
