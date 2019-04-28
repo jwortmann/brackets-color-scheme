@@ -123,6 +123,12 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(violet)",
+            "font_style": "italic"
+        },
+        {
             "name": "Illegal statements",
             "scope": "invalid.illegal",
             "foreground": "var(red)"
