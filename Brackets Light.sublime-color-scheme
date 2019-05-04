@@ -12,7 +12,8 @@
         "pink":      "#D33682",
         "red":       "#DC322F",
         "red2":      "#DD4444",
-        "violet":    "#8757AD"
+        "violet":    "#8757AD",
+        "--yellowish": "var(orange)" // SublimeLinter popupCss warning
     },
     "globals":
     {
