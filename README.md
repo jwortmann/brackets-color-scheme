@@ -45,8 +45,4 @@ The font used in the preview images is [Fira Code](https://github.com/tonsky/Fir
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
 The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/3/color_schemes.html#customization).
 
-For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into your user directory of Sublime Text.
-
-## License
-
-Released under the [MIT License](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE).
+For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into your User package.

@@ -356,7 +356,7 @@
         // HTML/XML specific rules
         {
             "name": "HTML/XML tag attribute names",
-            "scope": "text entity.other.attribute-name",
+            "scope": "text entity.other.attribute-name, comment.block.documentation entity.other.attribute-name",
             "foreground": "var(green)"
         },
         // INI specific rules
@@ -592,6 +592,11 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Python annotations",
+            "scope": "variable.annotation support.function.builtin.python",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "Python constants",
             "scope": "variable.other.constant.python",
             "foreground": "var(orange)",
@@ -652,7 +657,7 @@
             "font_style": "italic"
         },
         {
-            "name": "Rust annotation parameters",
+            "name": "Rust annotations",
             "scope": "meta.annotation.parameters.rust",
             "foreground": "var(pink)"
         },
