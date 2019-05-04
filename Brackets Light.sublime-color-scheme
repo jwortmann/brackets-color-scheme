@@ -592,6 +592,13 @@
             "scope": "meta.link.inet.markdown punctuation.definition.link.begin.markdown, meta.link.inet.markdown punctuation.definition.link.end.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.begin.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.end.markdown",
             "foreground": "var(violet)"
         },
+        // PHP specific rules
+        {
+            "name": "PHP library constants",
+            "scope": "support.constant.core.php, support.constant.std.php, support.constant.ext.php, support.constant.parser-token.php",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
         // Python specific rules
         {
             "name": "Python logical operators",
