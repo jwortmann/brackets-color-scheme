@@ -47,12 +47,6 @@
             "foreground": "var(grey)"
         },
         {
-            "name": "Documentation comments",
-            "scope": "comment.block.documentation",
-            "foreground": "var(grey)",
-            "font_style": "italic"
-        },
-        {
             "name": "Language-specific characters",
             "scope": "constant.character",
             "foreground": "var(orange)"
