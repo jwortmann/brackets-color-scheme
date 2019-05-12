@@ -4,11 +4,11 @@
 [![Version](https://img.shields.io/github/release/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/tags)
 [![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme.svg)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
 
-This package for [Sublime Text 3](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the default themes of [Adobe Brackets](http://brackets.io/).
+This package for [Sublime Text 3](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the built-in themes of [Adobe Brackets](http://brackets.io/).
 
 ## Installation
 
-The color scheme can be installed via Sublime Text's package manager [Package Control](https://sublime.wbond.net/installation).
+The color scheme can be installed via Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
 From the Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
 
 Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into a folder in the packages directory of Sublime Text, e.g. your User package.
