@@ -365,6 +365,18 @@
             "scope": "keyword.operator.logical.fortran",
             "foreground": "var(blue)"
         },
+        // Git specific rules
+        {
+            "name": "Git email punctuation",
+            "scope": "punctuation.separator.email.git",
+            "foreground": "var(violet)"
+        },
+        // Groovy specific rules
+        {
+            "name": "Groovy interpolated strings",
+            "scope": "string source.groovy.embedded.source - string source.groovy.embedded.source string",
+            "foreground": "var(textcolor)"
+        },
         // HTML/XML specific rules
         {
             "name": "HTML/XML tag attribute names",
@@ -599,6 +611,16 @@
         },
         // PHP specific rules
         {
+            "name": "PHP punctuation",
+            "scope": "punctuation.definition.expression.php, punctuation.section.block.begin.php, punctuation.section.block.end.php, punctuation.section.brackets.begin.php, punctuation.section.brackets.end.php, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, punctuation.section.group.begin.php, punctuation.section.group.end.php",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PHP constants in strings",
+            "scope": "string constant.other.php",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "PHP library constants",
             "scope": "support.constant.core.php, support.constant.std.php, support.constant.ext.php, support.constant.parser-token.php",
             "foreground": "var(orange)",
@@ -680,7 +702,18 @@
             "scope": "meta.annotation.parameters.rust",
             "foreground": "var(pink)"
         },
+        // Scala specific rules
+        {
+            "name": "Scala expressions in interpolated strings",
+            "scope": "string punctuation.definition.expression.scala",
+            "foreground": "var(textcolor)"
+        },
         // ShellScript specific rules
+        {
+            "name": "ShellScript variable punctuation",
+            "scope": "punctuation.definition.variable.shell",
+            "foreground": "var(textcolor)"
+        },
         {
             "name": "ShellScript command options",
             "scope": "variable.parameter.option.shell",
