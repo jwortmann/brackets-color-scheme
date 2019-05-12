@@ -166,8 +166,13 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Separators",
+            "name": "Separator symbols",
             "scope": "punctuation.separator",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Terminator symbols",
+            "scope": "punctuation.terminator",
             "foreground": "var(textcolor)"
         },
         {
@@ -209,6 +214,11 @@
             "name": "Language-specific variables",
             "scope": "variable.language",
             "foreground": "var(blue)"
+        },
+        {
+            "name": "Generic variables",
+            "scope": "variable.other - variable.other.readwrite.js",
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Function or method arguments",
