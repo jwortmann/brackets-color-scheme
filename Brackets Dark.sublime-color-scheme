@@ -371,6 +371,12 @@
             "scope": "punctuation.separator.email.git",
             "foreground": "var(violet)"
         },
+        // Go specific rules
+        {
+            "name": "Go floating point numbers",
+            "scope": "source.go constant.numeric punctuation.separator",
+            "foreground": "var(green)"
+        },
         // Groovy specific rules
         {
             "name": "Groovy interpolated strings",
