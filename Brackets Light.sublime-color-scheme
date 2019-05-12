@@ -718,6 +718,12 @@
             "scope": "variable.parameter.option.shell",
             "foreground": "var(green)"
         },
+        // SQL specific rules
+        {
+            "name": "SQL embedded in other languages",
+            "scope": "string source.sql - string source.sql string, string text.sql - string text.sql string",
+            "foreground": "var(textcolor)"
+        },
         // Sublime-syntax specific rules
         {
             "name": "Sublime-syntax include",
