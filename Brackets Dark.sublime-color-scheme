@@ -242,6 +242,11 @@
             "scope": "punctuation.separator.decimal.clojure",
             "foreground": "var(green)"
         },
+        {
+            "name": "Clojure ratio slash",
+            "scope": "punctuation.separator.ratio.clojure",
+            "foreground": "var(green)"
+        },
         // CSS specific rules
         {
             "name": "CSS selectors",
