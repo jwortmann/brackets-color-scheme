@@ -186,7 +186,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Numeric type identifiers",
+            "name": "Numeric type suffixes",
             "scope": "storage.type.numeric",
             "foreground": "var(green)"
         },
@@ -357,11 +357,11 @@
         // Fortran specific rules
         {
             "name": "Fortran format descriptors",
-            "scope": "constant.numeric.format-descriptor.fortran, meta.format-string.fortran",
+            "scope": "meta.format-string.fortran constant.numeric.format-descriptor.fortran",
             "foreground": "var(orange)"
         },
         {
-            "name": "Fortran type declaration colons",
+            "name": "Fortran type declaration double-colon",
             "scope": "keyword.control.double-colon.fortran",
             "foreground": "var(textcolor)"
         },
