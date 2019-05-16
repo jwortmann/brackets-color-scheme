@@ -263,12 +263,12 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "CSS namespace prefixes",
+            "name": "CSS namespace prefix",
             "scope": "entity.other.namespace-prefix.css",
             "foreground": "var(blue)"
         },
         {
-            "name": "CSS properties",
+            "name": "CSS property names",
             "scope": "support.type.property-name.css, support.type.property-name.media.css",
             "foreground": "var(violet)"
         },
@@ -309,7 +309,7 @@
         },
         {
             "name": "CSS at-rule",
-            "scope": "keyword.control.at-rule",
+            "scope": "keyword.control.at-rule, keyword.control.at-rule support.type.property-vendor.css",
             "foreground": "var(violet)"
         },
         {
