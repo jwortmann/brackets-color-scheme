@@ -706,9 +706,39 @@
         },
         // reStructuredText specific rules
         {
-            "name": "reStructuredText headings",
-            "scope": "punctuation.definition.heading.restructuredtext",
+            "name": "RST heading",
+            "scope": "markup.heading.restructuredtext",
             "foreground": "var(pink)"
+        },
+        {
+            "name": "RST hyperlink",
+            "scope": "(meta.link.inline.restructuredtext | meta.link.reference.def.restructuredtext) & (markup.underline.link.restructuredtext | punctuation.definition.location.restructuredtext)",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "RST link label",
+            "scope": "string.other.link.title.restructuredtext, punctuation.definition.link.restructuredtext, punctuation.definition.string.restructuredtext",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "RST footnote label",
+            "scope": "(meta.link.footnote.numeric.restructuredtext | meta.link.footnote.def.restructuredtext) & (constant.other.footnote.link | punctuation.definition.constant.restructuredtext)",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RST citation label",
+            "scope": "meta.link.citation.restructuredtext & (constant.other.citation.link.restructuredtext | punctuation.definition.constant.restructuredtext)",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RST reference punctuation",
+            "scope": "(meta.link.footnote.def.restructuredtext | meta.link.reference.def.restructuredtext) & punctuation.definition.link.restructuredtext",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "RST preformatted text",
+            "scope": "markup.raw.restructuredtext - meta.raw.block.restructuredtext",
+            "foreground": "var(grey)"
         },
         // Rust specific rules
         {
