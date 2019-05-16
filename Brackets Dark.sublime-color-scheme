@@ -151,6 +151,16 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Error",
+            "scope": "markup.error",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Warning",
+            "scope": "markup.warning",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "Accessor symbols",
             "scope": "punctuation.accessor",
             "foreground": "var(textcolor)"
@@ -790,16 +800,6 @@
             "foreground": "#565656"
         },
         // SublimeLinter rules
-        {
-            "name": "SublimeLinter error",
-            "scope": "markup.error.sublime_linter",
-            "foreground": "var(red)"
-        },
-        {
-            "name": "SublimeLinter warning",
-            "scope": "markup.warning.sublime_linter",
-            "foreground": "var(orange)"
-        },
         {
             "name": "SublimeLinter console output filename",
             "scope": "entity.name.filename.sublime_linter",
