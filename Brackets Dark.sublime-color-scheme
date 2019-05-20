@@ -439,6 +439,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "JavaScript keywords: delete|typeof|void|instanceof|in",
+            "scope": "keyword.operator.js",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "JavaScript keys",
             "scope": "meta.object-literal.key.js, meta.object-literal.key.js string, meta.object-literal.key.dollar.js",
             "foreground": "var(violet)"
