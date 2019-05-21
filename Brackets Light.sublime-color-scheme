@@ -140,12 +140,12 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Operators (symbolic)",
+            "name": "Symbolic operators",
             "scope": "keyword.operator",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Operators (written)",
+            "name": "Textual operators",
             "scope": "keyword.operator.word",
             "foreground": "var(blue)"
         },
@@ -438,7 +438,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "JavaScript keywords: delete|typeof|void|instanceof|in",
+            "name": "JavaScript textual operators",
             "scope": "keyword.operator.js",
             "foreground": "var(blue)"
         },
@@ -806,6 +806,22 @@
             "name": "Textile quotes",
             "scope": "markup.quote.textile",
             "foreground": "var(blue)"
+        },
+        // Babel JavaScript/JSON rules
+        {
+            "name": "Babel JavaScript keys",
+            "scope": "constant.other.object.key.js string.unquoted.label.js",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Babel JSON keys (up to 3 levels)",
+            "scope": "meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Babel JSON values (up to 3 levels)",
+            "scope": "meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string",
+            "foreground": "var(orange)"
         },
         // GitGutter rules
         {
