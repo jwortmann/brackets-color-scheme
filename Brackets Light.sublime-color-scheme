@@ -636,6 +636,11 @@
         },
         // PHP specific rules
         {
+            "name": "PHP instanceof keyword",
+            "scope": "keyword.operator.type.php",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "PHP punctuation",
             "scope": "punctuation.definition.expression.php, punctuation.section.block.begin.php, punctuation.section.block.end.php, punctuation.section.brackets.begin.php, punctuation.section.brackets.end.php, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, punctuation.section.group.begin.php, punctuation.section.group.end.php",
             "foreground": "var(textcolor)"
