@@ -181,6 +181,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "Decimal separator",
+            "scope": "punctuation.separator.decimal",
+            "foreground": "var(green)"
+        },
+        {
             "name": "Terminator symbols",
             "scope": "punctuation.terminator",
             "foreground": "var(textcolor)"
@@ -247,11 +252,6 @@
             "foreground": "var(textcolor)"
         },
         // Clojure specific rules
-        {
-            "name": "Clojure decimal separator",
-            "scope": "punctuation.separator.decimal.clojure",
-            "foreground": "var(green)"
-        },
         {
             "name": "Clojure ratio slash",
             "scope": "punctuation.separator.ratio.clojure",
@@ -388,8 +388,8 @@
         },
         // Go specific rules
         {
-            "name": "Go floating point numbers",
-            "scope": "source.go constant.numeric punctuation.separator",
+            "name": "Go floating point exponent designator",
+            "scope": "punctuation.separator.exponent.go",
             "foreground": "var(green)"
         },
         // Groovy specific rules
