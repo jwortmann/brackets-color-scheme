@@ -823,6 +823,11 @@
             "scope": "string source.sql - string source.sql string, string text.sql - string text.sql string",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "SQL multiple-part names",
+            "scope": "constant.other.database-name.sql, constant.other.table-name.sql",
+            "foreground": "var(textcolor)"
+        },
         // Sublime-syntax specific rules
         {
             "name": "Sublime-syntax include",
