@@ -829,6 +829,48 @@
             "scope": "keyword.operator.include.sublime-syntax",
             "foreground": "var(blue)"
         },
+        // Swift specific rules (https://packagecontrol.io/packages/Swift)
+        {
+            "name": "Swift function declaration",
+            "scope": "entity.type.function.swift",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Swift predefined constants",
+            "scope": "keyword.constant.boolean.swift, constant.nil.swift",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Swift type casting operator",
+            "scope": "keyword.operator.type-casting.swift",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Swift annotations",
+            "scope": "storage.modifier.attribute.swift",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Swift string interpolation punctuation",
+            "scope": "meta.literal.string.swift support.punctuation.expression",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Swift imported module",
+            "scope": "support.type.module.import.swift",
+            "foreground": "var(violet)"
+        },
+        // Swift specific rules (https://packagecontrol.io/packages/Decent%20Swift%20Syntax)
+        {
+            "name": "Swift class declaration",
+            "scope": "source.swift entity.name.type support.class",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Swift annotations",
+            "scope": "source.swift storage.type.decorator",
+            "foreground": "var(pink)"
+        },
         // Textile specific rules
         {
             "name": "Textile deleted",
