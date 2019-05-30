@@ -322,6 +322,17 @@
             "scope": "support.type.vendor-prefix.css",
             "foreground": "var(textcolor)"
         },
+        // D specific rules
+        {
+            "name": "D numeric base prefix",
+            "scope": "punctuation.definition.numeric.binary.d, punctuation.definition.numeric.hexadecimal.d",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "D numeric type suffix",
+            "scope": "storage.type.integer.d, storage.type.float.d",
+            "foreground": "var(green)"
+        },
         // Diff specific rules
         {
             "name": "Diff changed lines",
@@ -363,7 +374,7 @@
             "scope": "meta.separator.diff",
             "foreground": "var(violet)"
         },
-        // Fortran specific rules
+        // Fortran specific rules (https://packagecontrol.io/packages/Fortran)
         {
             "name": "Fortran format descriptors",
             "scope": "meta.format-string.fortran constant.numeric.format-descriptor.fortran",
@@ -403,7 +414,7 @@
             "scope": "text entity.other.attribute-name, comment.block.documentation entity.other.attribute-name",
             "foreground": "var(green)"
         },
-        // INI specific rules
+        // INI specific rules (https://packagecontrol.io/packages/INI)
         {
             "name": "INI section names",
             "scope": "entity.section.ini, punctuation.definition.section.ini",
@@ -673,7 +684,7 @@
             "foreground": "var(orange)",
             "font_style": "italic"
         },
-        // RAML specific rules
+        // RAML specific rules (https://packagecontrol.io/packages/RAML%20Syntax%20Highlighter)
         {
             "name": "RAML header",
             "scope": "source.raml constant.language.directive.yaml",
@@ -897,7 +908,7 @@
             "scope": "markup.quote.textile",
             "foreground": "var(blue)"
         },
-        // Babel JavaScript/JSON rules
+        // Babel JavaScript/JSON rules (https://packagecontrol.io/packages/Babel)
         {
             "name": "Babel JavaScript keys",
             "scope": "constant.other.object.key.js string.unquoted.label.js",
