@@ -314,7 +314,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "CSS logic operators",
+            "name": "CSS logical operators",
             "scope": "keyword.operator.logic.css, keyword.operator.logic.media.css",
             "foreground": "var(blue)"
         },
@@ -543,6 +543,12 @@
             "name": "LaTeX puncutation braces",
             "scope": "punctuation.definition.group.brace.begin.latex, punctuation.definition.group.brace.end.latex",
             "foreground": "var(textcolor)"
+        },
+        // LESS specific rules (https://packagecontrol.io/packages/LESS)
+        {
+            "name": "LESS logical operators",
+            "scope": "keyword.operator.logic.mixin.less",
+            "foreground": "var(blue)"
         },
         // Lua specific rules
         {
