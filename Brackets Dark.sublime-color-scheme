@@ -409,6 +409,17 @@
             "scope": "string source.groovy.embedded.source - string source.groovy.embedded.source string",
             "foreground": "var(textcolor)"
         },
+        // Haskell specific rules
+        {
+            "name": "Haskell arrows",
+            "scope": "keyword.other.arrow.haskell, keyword.other.big-arrow.haskell",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Haskell double-colon",
+            "scope": "keyword.other.double-colon.haskell",
+            "foreground": "var(textcolor)"
+        },
         // HTML/XML specific rules
         {
             "name": "HTML/XML tag attribute names",
@@ -439,7 +450,7 @@
             "font_style": "italic"
         },
         {
-            "name": "Java lambda functions",
+            "name": "Java lambda function arrow",
             "scope": "storage.type.function.anonymous.java",
             "foreground": "var(textcolor)"
         },
@@ -652,6 +663,12 @@
             "scope": "meta.link.inet.markdown punctuation.definition.link.begin.markdown, meta.link.inet.markdown punctuation.definition.link.end.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.begin.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.end.markdown",
             "foreground": "var(violet)"
         },
+        // Perl specific rules
+        {
+            "name": "Perl arrow",
+            "scope": "keyword.accessor.arrow.perl",
+            "foreground": "var(textcolor)"
+        },
         // PHP specific rules
         {
             "name": "PHP instanceof keyword",
@@ -824,6 +841,11 @@
             "scope": "string punctuation.definition.expression.scala",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "Scala arrows",
+            "scope": "storage.type.function.arrow.lambda.scala, storage.type.function.arrow.case.scala",
+            "foreground": "var(textcolor)"
+        },
         // ShellScript specific rules
         {
             "name": "ShellScript variable punctuation",
@@ -914,6 +936,12 @@
             "name": "Textile quotes",
             "scope": "markup.quote.textile",
             "foreground": "var(blue)"
+        },
+        // TypeScript specific rules (https://packagecontrol.io/packages/TypeScript)
+        {
+            "name": "TypeScript arrow function",
+            "scope": "storage.type.function.arrow.ts",
+            "foreground": "var(textcolor)"
         },
         // Babel JavaScript/JSON rules (https://packagecontrol.io/packages/Babel)
         {
