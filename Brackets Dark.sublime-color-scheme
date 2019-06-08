@@ -232,7 +232,7 @@
         },
         {
             "name": "Generic variables",
-            "scope": "variable.other - variable.other.readwrite.js",
+            "scope": "variable.other",
             "foreground": "var(textcolor)"
         },
         {
@@ -466,8 +466,8 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "JavaScript keys",
-            "scope": "meta.object-literal.key.js, meta.object-literal.key.js string, meta.object-literal.key.dollar.js",
+            "name": "JavaScript object keys",
+            "scope": "meta.object-literal.key.js, meta.object-literal.key.js string, meta.object-literal.key.dollar.js, meta.object-literal.key.dollar.only.js",
             "foreground": "var(violet)"
         },
         {
@@ -482,9 +482,9 @@
             "font_style": "italic"
         },
         {
-            "name": "JavaScript jQuery Dollar",
-            "scope": "variable.other.dollar.only.js",
-            "foreground": "var(textcolor)"
+            "name": "JavaScript annotations",
+            "scope": "meta.annotation variable.other.readwrite.js",
+            "foreground": "var(pink)"
         },
         // JSON specific rules
         {
