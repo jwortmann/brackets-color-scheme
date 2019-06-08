@@ -852,6 +852,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "ShellScript single and double brackets",
+            "scope": "support.function.test.begin.shell, support.function.test.end.shell, support.function.double-brace.begin.shell, support.function.double-brace.end.shell",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "ShellScript command options",
             "scope": "variable.parameter.option.shell",
             "foreground": "var(green)"
