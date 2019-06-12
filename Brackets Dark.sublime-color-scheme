@@ -375,6 +375,12 @@
             "scope": "meta.separator.diff",
             "foreground": "var(violet)"
         },
+        // Dockerfile specific rules (https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
+        {
+            "name": "Dockerfile CMD & ENTRYPOINT instructions",
+            "scope": "keyword.operator.dockerfile",
+            "foreground": "var(blue)"
+        },
         // Fortran specific rules (https://packagecontrol.io/packages/Fortran)
         {
             "name": "Fortran format descriptors",
