@@ -829,6 +829,16 @@
             "scope": "markup.raw.restructuredtext - meta.raw.block.restructuredtext",
             "foreground": "var(grey)"
         },
+        {
+            "name": "RST field punctuation",
+            "scope": "punctuation.definition.field.restructuredtext",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "RST interpreted text",
+            "scope": "markup.other.command.restructuredtext - punctuation.definition.interpreted.restructuredtext",
+            "foreground": "var(orange)"
+        },
         // Rust specific rules
         {
             "name": "Rust constants",
