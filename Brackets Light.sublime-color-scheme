@@ -696,6 +696,27 @@
             "foreground": "var(orange)",
             "font_style": "italic"
         },
+        // PowerShell specific rules (https://packagecontrol.io/packages/PowerShell)
+        {
+            "name": "PowerShell variables Dollar-symbol",
+            "scope": "keyword.other.variable.definition.powershell",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PowerShell at-symbol",
+            "scope": "keyword.other.array.begin.powershell, keyword.other.hashtable.begin.powershell",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PowerShell semicolon",
+            "scope": "keyword.other.statement-separator.powershell",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PowerShell interpolated string brackets",
+            "scope": "string.quoted.double.powershell punctuation.section",
+            "foreground": "var(textcolor)"
+        },
         // Python specific rules
         {
             "name": "Python logical operators",
