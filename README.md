@@ -37,7 +37,7 @@ The font used in the preview images is [Fira Code](https://github.com/tonsky/Fir
 | green | ![green](http://via.placeholder.com/20/6d8600/6d8600) `#6D8600` | ![green](http://via.placeholder.com/20/85a300/85a300) `#85A300` | numbers, HTML/XML tag attributes |
 | violet | ![violet](http://via.placeholder.com/20/8757ad/8757ad) `#8757AD` | ![violet](http://via.placeholder.com/20/b77fdb/b77fdb) `#B77FDB` | user defined functions, JSON keys, CSS property names |
 | pink | ![pink](http://via.placeholder.com/20/d33682/d33682) `#D33682` | ![pink](http://via.placeholder.com/20/d85896/d85896) `#D85896` | annotations, headings in markup languages |
-| red | ![red](http://via.placeholder.com/20/dc322f) `#DC322F` | ![red](http://via.placeholder.com/20/dc322f) `#DC322F` | invalid syntax |
+| red | ![red](http://via.placeholder.com/20/dc322f/dc322f) `#DC322F` | ![red](http://via.placeholder.com/20/dc322f/dc322f) `#DC322F` | invalid syntax |
 | green2 | ![green2](http://via.placeholder.com/20/229922/229922) `#229922` | ![green2](http://via.placeholder.com/20/229922/229922) `#229922` | diff inserted |
 | red2 | ![red2](http://via.placeholder.com/20/dd4444/dd4444) `#DD4444` | ![red2](http://via.placeholder.com/20/dd4444/dd4444) `#DD4444` | diff deleted |
 
