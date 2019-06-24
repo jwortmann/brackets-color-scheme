@@ -409,6 +409,12 @@
             "scope": "punctuation.separator.exponent.go",
             "foreground": "var(green)"
         },
+        // Graphviz specific rules
+        {
+            "name": "Graphviz cluster subgraph",
+            "scope": "variable.annotation.cluster.dot",
+            "foreground": "var(violet)"
+        },
         // Groovy specific rules
         {
             "name": "Groovy interpolated strings",
