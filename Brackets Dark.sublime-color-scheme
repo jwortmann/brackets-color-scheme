@@ -981,8 +981,23 @@
         },
         // TypeScript specific rules (https://packagecontrol.io/packages/TypeScript)
         {
+            "name": "TypeScript textual operators",
+            "scope": "source.ts keyword.operator.expression",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "TypeScript types",
+            "scope": "entity.name.type.ts, entity.name.type.module.ts",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "TypeScript arrow function",
             "scope": "storage.type.function.arrow.ts",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "TypeScript asterisk placeholder",
+            "scope": "constant.language.import-export-all.ts",
             "foreground": "var(textcolor)"
         },
         // Babel JavaScript/JSON specific rules (https://packagecontrol.io/packages/Babel)
