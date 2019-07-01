@@ -1112,6 +1112,32 @@
             "scope": "punctuation.definition.variable.begin.sublime-syntax, punctuation.definition.variable.end.sublime-syntax",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "PackageDev Theme rule key",
+            "scope": "meta.main-key keyword.other.main.sublime-theme, meta.rule-key keyword.other.rule.sublime-theme, meta.rule-key storage.modifier.selector.sublime-theme, meta.interpolation-key keyword.other.interpolation.sublime-theme, meta.texture-key keyword.other.texture.sublime-theme, meta.rule-key keyword.other.rule.sublime-theme & (constant.other.layer.sublime-theme | punctuation.accessor.dot.sublime-theme)",
+            "foreground": "var(violet)",
+            "font_style": "italic"
+        },
+        {
+            "name": "PackageDev Theme class-selector",
+            "scope": "entity.name.class-selector.sublime-theme",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "PackageDev Theme variable name string punctuation",
+            "scope": "meta.variable-name.sublime-theme punctuation.definition.string",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "PackageDev Theme interpolation value string punctuation",
+            "scope": "meta.interpolation-mapping.sublime-theme meta.mapping.value punctuation.definition.string",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "PackageDev Theme var parenthesis",
+            "scope": "meta.rule.sublime-theme meta.function-call punctuation.definition.group",
+            "foreground": "var(textcolor)"
+        },
         // SublimeLinter specific rules (https://packagecontrol.io/packages/SublimeLinter)
         {
             "name": "SublimeLinter console output filename",
