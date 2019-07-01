@@ -1108,6 +1108,17 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "PackageDev Menu key",
+            "scope": "keyword.other.main.sublime-menu",
+            "foreground": "var(violet)",
+            "font_style": "italic"
+        },
+        {
+            "name": "PackageDev Menu id value",
+            "scope": "entity.name.id.sublime-menu",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "PackageDev Settings namespace",
             "scope": "keyword.other.namespace.sublime-settings",
             "foreground": "var(violet)"
