@@ -567,6 +567,21 @@
             "scope": "punctuation.definition.group.brace.begin.latex, punctuation.definition.group.brace.end.latex",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "BibTeX citation-keys",
+            "scope": "entity.name.type.entry-key.bibtex",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "BibTeX field names",
+            "scope": "string.unquoted.key.bibtex",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "BibTeX braces",
+            "scope": "string.quoted.other.braces.bibtex punctuation.definition.string",
+            "foreground": "var(textcolor)"
+        },
         // LESS specific rules (https://packagecontrol.io/packages/LESS)
         {
             "name": "LESS logical operators",
