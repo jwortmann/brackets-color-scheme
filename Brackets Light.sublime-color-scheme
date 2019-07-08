@@ -155,6 +155,11 @@
             "foreground": "var(red)"
         },
         {
+            "name": "Info",
+            "scope": "markup.info",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "Warning",
             "scope": "markup.warning",
             "foreground": "var(orange)"
