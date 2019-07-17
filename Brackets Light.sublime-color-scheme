@@ -1117,13 +1117,19 @@
         },
         {
             "name": "PackageDev Keymap predefined keyword",
-            "scope": "keyword.other.main.sublime-keymap",
+            "scope": "keyword.other.main.sublime-keymap, support.function.context.sublime-keymap",
             "foreground": "var(violet)",
             "font_style": "italic"
         },
         {
             "name": "PackageDev Keymap keyboard key",
-            "scope": "support.function.modifier.key.sublime-keymap",
+            "scope": "support.constant.key.named.sublime-keymap, support.function.modifier.key.sublime-keymap",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "PackageDev Keymap operator keyword",
+            "scope": "keyword.operator.context.key-value.sublime-keymap",
             "foreground": "var(orange)",
             "font_style": "italic"
         },
