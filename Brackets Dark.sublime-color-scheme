@@ -746,6 +746,11 @@
         },
         // Python specific rules
         {
+            "name": "Python import punctuation",
+            "scope": "keyword.control.import.relative.python",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "Python logical operators",
             "scope": "keyword.operator.logical.python",
             "foreground": "var(blue)"
