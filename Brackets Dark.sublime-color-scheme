@@ -1196,6 +1196,12 @@
             "scope": "meta.rule.sublime-theme meta.function-call punctuation.definition.group",
             "foreground": "var(textcolor)"
         },
+        // SublimeGDB specific rules (https://packagecontrol.io/packages/SublimeGDB)
+        {
+            "name": "SublimeGDB breakpoint",
+            "scope": "keyword.gdb - keyword.gdb.returncode",
+            "foreground": "var(red2)"
+        },
         // SublimeLinter specific rules (https://packagecontrol.io/packages/SublimeLinter)
         {
             "name": "SublimeLinter console output filename",
