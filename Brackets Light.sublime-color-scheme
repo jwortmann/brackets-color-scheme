@@ -407,6 +407,12 @@
             "scope": "punctuation.separator.email.git",
             "foreground": "var(violet)"
         },
+        // Gnuplot specific rules (https://packagecontrol.io/packages/Gnuplot)
+        {
+            "name": "Gnuplot punctuations",
+            "scope": "punctuation.definition.range.begin.gnuplot, punctuation.definition.range.end.gnuplot",
+            "foreground": "var(textcolor)"
+        },
         // Go specific rules
         {
             "name": "Go floating point exponent designator",
