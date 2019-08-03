@@ -947,6 +947,16 @@
             "scope": "constant.other.database-name.sql, constant.other.table-name.sql",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "SQL operators",
+            "scope": "keyword.operator.logical.sql, keyword.operator.assignment.alias.sql",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "SQL asterisk",
+            "scope": "variable.language.star.sql",
+            "foreground": "var(textcolor)"
+        },
         // Swift specific rules (https://packagecontrol.io/packages/Swift)
         {
             "name": "Swift function declaration",
