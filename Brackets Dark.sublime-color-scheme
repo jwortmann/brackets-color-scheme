@@ -408,6 +408,11 @@
             "scope": "punctuation.separator.email.git",
             "foreground": "var(violet)"
         },
+        {
+            "name": "Git filename punctuation",
+            "scope": "punctuation.separator.path.extension.fnmatch.git",
+            "foreground": "var(violet)"
+        },
         // Gnuplot specific rules (https://packagecontrol.io/packages/Gnuplot)
         {
             "name": "Gnuplot punctuations",
