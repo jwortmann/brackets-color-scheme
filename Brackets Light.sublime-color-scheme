@@ -303,6 +303,11 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "CSS property value unquoted strings",
+            "scope": "meta.property-value.css string.unquoted.css - meta.function-call",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "CSS units",
             "scope": "constant.numeric.css keyword.other.unit.css",
             "foreground": "var(green)"
