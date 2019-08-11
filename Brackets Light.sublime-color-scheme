@@ -13,7 +13,7 @@
         "red":       "#DC322F",
         "red2":      "#DD4444",
         "violet":    "#8757AD",
-        "--yellowish": "#E88501" // SublimeLinter popupCss warning
+        "--yellowish": "#E88501"
     },
     "globals":
     {
@@ -410,6 +410,11 @@
             "name": "Fortran logical operators",
             "scope": "keyword.operator.logical.fortran",
             "foreground": "var(blue)"
+        },
+        {
+            "name": "Fortran subroutine-call",
+            "scope": "source.modern-fortran support.function.any-method",
+            "foreground": "var(violet)"
         },
         // Git specific rules
         {
