@@ -1039,6 +1039,17 @@
             "scope": "markup.quote.textile",
             "foreground": "var(blue)"
         },
+        // TOML specific rules (https://packagecontrol.io/packages/TOML)
+        {
+            "name": "TOML section names",
+            "scope": "entity.name.table.toml",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "TOML key names",
+            "scope": "entity.name.tag.toml",
+            "foreground": "var(violet)"
+        },
         // TypeScript specific rules (https://packagecontrol.io/packages/TypeScript)
         {
             "name": "TypeScript textual operators",
