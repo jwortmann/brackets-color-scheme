@@ -472,7 +472,7 @@
         // INI specific rules (https://packagecontrol.io/packages/INI)
         {
             "name": "INI section names",
-            "scope": "entity.section.ini, punctuation.definition.section.ini",
+            "scope": "entity.section.ini",
             "foreground": "var(pink)"
         },
         {
@@ -481,9 +481,9 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "INI key values",
-            "scope": "string.name.value.ini",
-            "foreground": "var(blue)"
+            "scope": "INI quotes",
+            "scope": "punctuation.definition.quote.ini",
+            "foreground": "var(orange)"
         },
         // Java specific rules
         {
