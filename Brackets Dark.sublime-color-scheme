@@ -424,6 +424,11 @@
         },
         // Git specific rules
         {
+            "name": "Git Config variables",
+            "scope": "meta.mapping.key variable.other.readwrite.git.config",
+            "foreground": "var(violet)"
+        },
+        {
             "name": "Git email punctuation",
             "scope": "punctuation.separator.email.git",
             "foreground": "var(violet)"
