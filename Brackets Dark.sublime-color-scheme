@@ -452,6 +452,17 @@
             "scope": "string source.groovy.embedded.source - string source.groovy.embedded.source string",
             "foreground": "var(textcolor)"
         },
+        // Handlebars specific rules (https://packagecontrol.io/packages/Handlebars)
+        {
+            "name": "Handlebars tag attribute name",
+            "scope": "source.handlebars.embedded entity.other.attribute-name",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Handlebars template",
+            "scope": "variable.parameter.handlebars, entity.other.attribute-name.handlebars",
+            "foreground": "var(textcolor)"
+        },
         // Haskell specific rules
         {
             "name": "Haskell arrows",
