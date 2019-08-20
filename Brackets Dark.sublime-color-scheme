@@ -21,7 +21,7 @@
         "foreground": "var(textcolor)",
         "caret": "#C5C8C6",
         "block_caret": "#C5C8C6",
-        "line_highlight": "#2F2F2F",
+        "line_highlight": "#413F3D80",
         "misspelling": "var(red)",
         "fold_marker": "#444444",
         "accent": "var(blue)",
