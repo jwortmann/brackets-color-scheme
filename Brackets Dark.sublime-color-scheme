@@ -984,6 +984,11 @@
         },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
+            "name": "Sass function call",
+            "scope": "source.sass support.function",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "Sass placeholder",
             "scope": "entity.other.attribute-name.placeholder.sass",
             "foreground": "var(blue)"
@@ -997,6 +1002,52 @@
         {
             "name": "Scala arrow",
             "scope": "storage.type.function.arrow.lambda.scala, storage.type.function.arrow.case.scala",
+            "foreground": "var(textcolor)"
+        },
+        // SCSS specific rules >> https://packagecontrol.io/packages/SCSS
+        {
+            "name": "SCSS property",
+            "scope": "support.type.property-name.scss",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "SCSS attribute",
+            "scope": "entity.other.attribute-name.attribute.scss",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "SCSS pseudo-class/pseudo-element",
+            "scope": "source.scss entity.other.attribute-name.pseudo-class.css, source.scss entity.other.attribute-name.pseudo-element.css",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "SCSS property value",
+            "scope": "support.constant.property-value.scss, support.constant.font-name.scss",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "SCSS function call",
+            "scope": "source.scss support.function",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "SCSS function argument",
+            "scope": "variable.parameter.url.scss",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "SCSS unit",
+            "scope": "keyword.other.unit.scss",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "SCSS misc symbols",
+            "scope": "support.constant.mathematical-symbols.scss, entity.name.tag.wildcard.scss, entity.name.tag.reference.scss",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "SCSS string interpolation",
+            "scope": "variable.interpolation.scss",
             "foreground": "var(textcolor)"
         },
         // ShellScript specific rules
