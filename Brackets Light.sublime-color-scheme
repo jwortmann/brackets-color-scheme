@@ -266,6 +266,22 @@
             "scope": "punctuation.separator.ratio.clojure",
             "foreground": "var(green)"
         },
+        // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
+        {
+            "name": "CoffeeScript string interpolation",
+            "scope": "source.coffee.embedded",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "CoffeeScript keyword",
+            "scope": "keyword.operator.new.coffee",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CoffeeScript arrow",
+            "scope": "storage.type.function.coffee",
+            "foreground": "var(textcolor)"
+        },
         // CSS specific rules
         {
             "name": "CSS attribute/class/id",
@@ -352,6 +368,22 @@
             "name": "D numeric type suffix",
             "scope": "storage.type.integer.d, storage.type.float.d",
             "foreground": "var(green)"
+        },
+        // Dart specific rules >> https://packagecontrol.io/packages/Dart
+        {
+            "name": "Dart class/function definition",
+            "scope": "class.name.dart, function.name.dart",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Dart string interpolation",
+            "scope": "string.interpolated & (interpolation.dart | keyword.other.dart | variable.parameter.dart)",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Dart ternary operator",
+            "scope": "keyword.control.ternary.dart",
+            "foreground": "var(textcolor)"
         },
         // Diff specific rules
         {
@@ -457,7 +489,7 @@
         },
         // Groovy specific rules
         {
-            "name": "Groovy interpolated string",
+            "name": "Groovy string interpolation",
             "scope": "string source.groovy.embedded.source - string source.groovy.embedded.source string",
             "foreground": "var(textcolor)"
         },
@@ -748,7 +780,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "PHP interpolated string constant",
+            "name": "PHP string interpolation constant",
             "scope": "string constant.other.php",
             "foreground": "var(textcolor)"
         },
@@ -775,9 +807,15 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "PowerShell interpolated string brackets",
+            "name": "PowerShell string interpolation brackets",
             "scope": "string.quoted.double.powershell punctuation.section",
             "foreground": "var(textcolor)"
+        },
+        // Pug specific rules >> https://packagecontrol.io/packages/Pug
+        {
+            "name": "Pug class/id",
+            "scope": "entity.other.attribute-name.class.pug, entity.other.attribute-name.id.pug",
+            "foreground": "var(blue)"
         },
         // Python specific rules
         {
@@ -951,7 +989,7 @@
         },
         // Scala specific rules
         {
-            "name": "Scala interpolated string expression",
+            "name": "Scala string interpolation expression",
             "scope": "string punctuation.definition.expression.scala",
             "foreground": "var(textcolor)"
         },
