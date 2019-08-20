@@ -20,6 +20,7 @@
         "background": "#F8F8F8",
         "foreground": "var(textcolor)",
         "caret": "#000000",
+        "block_caret": "#00000080",
         "line_highlight": "#EBEFEF",
         "misspelling": "var(red)",
         "fold_marker": "#FFFFFF",
