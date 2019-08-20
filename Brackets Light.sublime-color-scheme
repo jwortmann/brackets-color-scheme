@@ -636,8 +636,8 @@
         },
         // Markdown specific rules
         {
-            "name": "Markdown heading",
-            "scope": "markup.heading.markdown, markup.heading.1.markdown, markup.heading.2.markdown, markup.heading.1.setext.markdown, markup.heading.2.setext.markdown",
+            "name": "Markdown heading punctuation",
+            "scope": "punctuation.definition.heading.begin.markdown, punctuation.definition.heading.end.markdown, punctuation.definition.heading.setext.markdown",
             "foreground": "var(pink)"
         },
         {
