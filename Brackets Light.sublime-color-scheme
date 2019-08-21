@@ -1233,6 +1233,17 @@
             "scope": "constant.language.import-export-all.ts",
             "foreground": "var(textcolor)"
         },
+        // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
+        {
+            "name": "VBScript symbolic operator",
+            "scope": "source.vbs keyword.operator.js",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "VBScript textual operator",
+            "scope": "source.vbs keyword.operator.asp",
+            "foreground": "var(blue)"
+        },
         // Babel specific rules >> https://packagecontrol.io/packages/Babel
         {
             "name": "Babel JavaScript key",
