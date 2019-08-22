@@ -13,17 +13,17 @@ From the Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose 
 
 Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into a folder in the packages directory of Sublime Text, e.g. your User package.
 To access your User package, choose `Preferences > Browse Packages...` within Sublime Text and open the folder `User`.
-Notice that there will be no automatic updates for this package without using Package Control.
+Notice that there will be no automatic updates for this package if not using Package Control.
 
-The color scheme can be activated under `Preferences > Color Scheme...`.
+The color scheme can then be activated from the menu under `Preferences > Color Scheme...`.
 
 ## Preview
 
-![Brackets Light](https://i.imgur.com/VtvY5mc.png)
+![Brackets Light](https://i.imgur.com/hCvUKuH.png)
 
-![Brackets Dark](https://i.imgur.com/nvxmeUv.png)
+![Brackets Dark](https://i.imgur.com/KLOsBrO.png)
 
-The font used in the preview images is [Fira Code](https://github.com/tonsky/FiraCode).
+The font used in the preview images is [Fira Mono](https://github.com/mozilla/Fira).
 
 ## Color palette
 
