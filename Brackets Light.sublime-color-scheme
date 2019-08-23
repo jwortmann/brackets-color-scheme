@@ -326,7 +326,7 @@
         },
         {
             "name": "CSS unit keyword",
-            "scope": "constant.numeric.css keyword.other.unit.css",
+            "scope": "keyword.other.unit.css",
             "foreground": "var(green)"
         },
         {
@@ -357,6 +357,22 @@
         {
             "name": "CSS wildcard asterisk",
             "scope": "entity.name.tag.wildcard.css",
+            "foreground": "var(textcolor)"
+        },
+        // CSS specific rules >> https://packagecontrol.io/packages/CSS3
+        {
+            "name": "CSS pseudo-class/pseudo-element",
+            "scope": "entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "CSS unquoted font name",
+            "scope": "meta.property-value.font-family.css string.unquoted.identifier.css",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "CSS variable",
+            "scope": "support.type.property-name.custom.css",
             "foreground": "var(textcolor)"
         },
         // D specific rules
@@ -1014,11 +1030,6 @@
             "name": "SCSS attribute",
             "scope": "entity.other.attribute-name.attribute.scss",
             "foreground": "var(blue)"
-        },
-        {
-            "name": "SCSS pseudo-class/pseudo-element",
-            "scope": "source.scss entity.other.attribute-name.pseudo-class.css, source.scss entity.other.attribute-name.pseudo-element.css",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "SCSS property value",
