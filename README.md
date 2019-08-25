@@ -1,21 +1,21 @@
 # Brackets Color Scheme
 
-[![License](https://img.shields.io/github/license/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE)
-[![Version](https://img.shields.io/github/release/jwortmann/brackets-color-scheme.svg)](https://github.com/jwortmann/brackets-color-scheme/tags)
-[![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme.svg)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
+[![License](https://img.shields.io/github/license/jwortmann/brackets-color-scheme)](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE)
+[![Version](https://img.shields.io/github/v/tag/jwortmann/brackets-color-scheme?label=version)](https://github.com/jwortmann/brackets-color-scheme/tags)
+[![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
 
 This package for [Sublime Text 3](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the built-in themes of [Adobe Brackets](http://brackets.io/).
 
 ## Installation
 
 The color scheme can be installed via Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
-From the Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
+From the command palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
 
-Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into a folder in the packages directory of Sublime Text, e.g. your User package.
-To access your User package, choose `Preferences > Browse Packages...` within Sublime Text and open the folder `User`.
+Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and place them into a folder in the packages directory of Sublime Text, e.g. the `Packages/User` package.
+To access the packages directory, choose `Preferences > Browse Packages...` from the Sublime Text menu.
 Notice that there will be no automatic updates for this package if not using Package Control.
 
-The color scheme can then be activated from the menu under `Preferences > Color Scheme...`.
+The color scheme can then be activated from the menu under `Preferences > Color Scheme...` or via the `UI: Select Color Scheme` command from the command palette.
 
 ## Preview
 
@@ -47,4 +47,4 @@ This color scheme uses color definitions and highlighting rules based on a JSON 
 The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/3/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
 
-For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into your User package.
+For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into e.g. the `Packages/User` package.
