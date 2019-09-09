@@ -598,6 +598,23 @@
             "scope": "meta.annotation variable.other.readwrite.js",
             "foreground": "var(pink)"
         },
+        // JavaScript specific rules >> https://packagecontrol.io/packages/Babel
+        {
+            "name": "JavaScript mapping key",
+            "scope": "constant.other.object.key.js string.unquoted.label.js",
+            "foreground": "var(violet)"
+        },
+        // JSON specific rules >> https://packagecontrol.io/packages/Babel
+        {
+            "name": "JSON mapping key",
+            "scope": "meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "JSON mapping value",
+            "scope": "meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string",
+            "foreground": "var(orange)"
+        },
         // LaTeX specific rules
         {
             "name": "LaTeX environment",
@@ -852,12 +869,42 @@
         },
         {
             "name": "Python annotation",
-            "scope": "variable.annotation support.function.builtin.python",
+            "scope": "variable.annotation support.function.builtin.python, meta.annotation meta.generic-name.python - meta.annotation.arguments",
             "foreground": "var(pink)"
         },
         {
             "name": "Python constant",
             "scope": "variable.other.constant.python",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        // Python specific rules >> https://packagecontrol.io/packages/Python%203
+        {
+            "name": "Python logical operator",
+            "scope": "keyword.operator.bool.logical.python.3",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Python annotation",
+            "scope": "meta.function.decorator support.function.decorator.python.3",
+            "foreground": "var(pink)"
+        },
+        // Python specific rules >> https://packagecontrol.io/packages/MagicPython
+        {
+            "name": "Python annotation",
+            "scope": "meta.function.decorator entity.name.function.decorator.python, meta.function.decorator support.type.python",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Python constant",
+            "scope": "constant.other.caps.python",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        // Python specific rules >> https://packagecontrol.io/packages/Python%20Improved
+        {
+            "name": "Python constant",
+            "scope": "constant.other.allcaps.python",
             "foreground": "var(orange)",
             "font_style": "italic"
         },
@@ -1254,22 +1301,6 @@
             "name": "VBScript textual operator",
             "scope": "source.vbs keyword.operator.asp",
             "foreground": "var(blue)"
-        },
-        // Babel specific rules >> https://packagecontrol.io/packages/Babel
-        {
-            "name": "Babel JavaScript key",
-            "scope": "constant.other.object.key.js string.unquoted.label.js",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Babel JSON key",
-            "scope": "meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Babel JSON value",
-            "scope": "meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string",
-            "foreground": "var(orange)"
         },
         // GitGutter specific rules >> https://packagecontrol.io/packages/GitGutter
         {
