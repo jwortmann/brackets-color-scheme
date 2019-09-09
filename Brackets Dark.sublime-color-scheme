@@ -10,6 +10,7 @@
         "grey":      "#767676",
         "orange":    "#D89333",
         "pink":      "#D85896",
+        "purple":    "#6C71C4",
         "red":       "#DC322F",
         "red2":      "#DD4444",
         "violet":    "#B77FDB",
@@ -139,6 +140,11 @@
             "name": "Keyword",
             "scope": "keyword",
             "foreground": "var(blue)"
+        },
+        {
+            "name": "Preprocessor directive",
+            "scope": "keyword.control.directive, meta.preprocessor keyword",
+            "foreground": "var(purple)"
         },
         {
             "name": "Symbolic operator",
@@ -459,6 +465,11 @@
             "name": "Fortran double-colon",
             "scope": "keyword.control.double-colon.fortran",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Fortran preprocessor directive",
+            "scope": "keyword.control.preprocessor.fortran",
+            "foreground": "var(purple)"
         },
         {
             "name": "Fortran logical operator",
@@ -795,6 +806,12 @@
             "name": "Markdown automatic link/email punctuation",
             "scope": "meta.link.inet.markdown punctuation.definition.link.begin.markdown, meta.link.inet.markdown punctuation.definition.link.end.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.begin.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.end.markdown",
             "foreground": "var(violet)"
+        },
+        // OCaml specific rules
+        {
+            "name": "OCaml preprocessor directive",
+            "scope": "keyword.other.directive.ocaml, keyword.other.directive.line-number.ocaml",
+            "foreground": "var(purple)"
         },
         // Perl specific rules
         {
