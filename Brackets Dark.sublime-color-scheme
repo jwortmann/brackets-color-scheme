@@ -626,6 +626,12 @@
             "scope": "meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string",
             "foreground": "var(orange)"
         },
+        // Julia specific rules >> https://packagecontrol.io/packages/Julia
+        {
+            "name": "Julia macro invocation",
+            "scope": "variable.macro.julia",
+            "foreground": "var(purple)"
+        },
         // LaTeX specific rules
         {
             "name": "LaTeX environment",
@@ -1061,6 +1067,11 @@
             "name": "Rust annotation",
             "scope": "meta.annotation.parameters.rust",
             "foreground": "var(pink)"
+        },
+        {
+            "name": "Rust macro invocation",
+            "scope": "support.macro.rust",
+            "foreground": "var(purple)"
         },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
