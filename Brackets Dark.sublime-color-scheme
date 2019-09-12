@@ -1065,7 +1065,7 @@
         },
         {
             "name": "Rust annotation",
-            "scope": "meta.annotation.parameters.rust",
+            "scope": "meta.annotation.rust punctuation.section.group, meta.annotation.rust variable.function, meta.annotation.parameters.rust",
             "foreground": "var(pink)"
         },
         {
