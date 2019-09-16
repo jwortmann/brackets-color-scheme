@@ -256,6 +256,12 @@
             "scope": "variable.parameter",
             "foreground": "var(orange)"
         },
+        // ASP specific rules
+        {
+            "name": "ASP logical operator",
+            "scope": "keyword.operator.logical.asp",
+            "foreground": "var(blue)"
+        },
         // C# specific rules
         {
             "name": "C# keyword",
