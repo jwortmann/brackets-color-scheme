@@ -813,6 +813,12 @@
             "scope": "meta.link.inet.markdown punctuation.definition.link.begin.markdown, meta.link.inet.markdown punctuation.definition.link.end.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.begin.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.end.markdown",
             "foreground": "var(violet)"
         },
+        // Matlab specific rules
+        {
+            "name": "Matlab intrinsic functions",
+            "scope": "keyword.operator.matlab",
+            "foreground": "var(blue)"
+        },
         // OCaml specific rules
         {
             "name": "OCaml preprocessor directive",
