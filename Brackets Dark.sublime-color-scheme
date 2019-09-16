@@ -256,6 +256,12 @@
             "scope": "variable.parameter",
             "foreground": "var(orange)"
         },
+        // ActionScript specific rules
+        {
+            "name": "ActionScript reserved word",
+            "scope": "keyword.operator.actionscript.2",
+            "foreground": "var(blue)"
+        },
         // ASP specific rules
         {
             "name": "ASP logical operator",
@@ -264,7 +270,7 @@
         },
         // C# specific rules
         {
-            "name": "C# keyword",
+            "name": "C# reserved word",
             "scope": "keyword.operator.new.cs",
             "foreground": "var(blue)"
         },
@@ -286,7 +292,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "CoffeeScript keyword",
+            "name": "CoffeeScript reserved word",
             "scope": "keyword.operator.new.coffee",
             "foreground": "var(blue)"
         },
@@ -839,7 +845,7 @@
         },
         // PHP specific rules
         {
-            "name": "PHP instanceof keyword",
+            "name": "PHP reserved word",
             "scope": "keyword.operator.type.php",
             "foreground": "var(blue)"
         },
