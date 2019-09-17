@@ -529,6 +529,11 @@
         },
         // Groovy specific rules
         {
+            "name": "Groovy reserved word",
+            "scope": "keyword.operator.instanceof.groovy, keyword.operator.as.groovy, keyword.operator.is.groovy",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "Groovy string interpolation",
             "scope": "string source.groovy.embedded.source - string source.groovy.embedded.source string",
             "foreground": "var(textcolor)"
