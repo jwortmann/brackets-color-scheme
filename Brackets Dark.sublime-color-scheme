@@ -271,7 +271,7 @@
         // C# specific rules
         {
             "name": "C# reserved word",
-            "scope": "keyword.operator.new.cs",
+            "scope": "keyword.operator.new.cs, keyword.operator.reflection.cs",
             "foreground": "var(blue)"
         },
         {
