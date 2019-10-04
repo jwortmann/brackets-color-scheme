@@ -1457,6 +1457,17 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "Sublime Keymap context",
+            "scope": "storage.type.context.key-value.sublime-keymap",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Sublime Keymap context variable",
+            "scope": "variable.other.setting.sublime-keymap",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "PackageDev Menu key",
             "scope": "keyword.other.main.sublime-menu",
             "foreground": "var(violet)",
