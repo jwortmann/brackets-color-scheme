@@ -138,7 +138,7 @@
         },
         {
             "name": "Keyword",
-            "scope": "keyword",
+            "scope": "keyword - keyword.operator, keyword.operator.word",
             "foreground": "var(blue)"
         },
         {
@@ -150,11 +150,6 @@
             "name": "Symbolic operator",
             "scope": "keyword.operator",
             "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Textual operator",
-            "scope": "keyword.operator.word",
-            "foreground": "var(blue)"
         },
         {
             "name": "Error",
