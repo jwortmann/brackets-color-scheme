@@ -510,6 +510,16 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "Git Rebase reserved word",
+            "scope": "text.git.rebase keyword.operator",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Git email delimiter bracket",
+            "scope": "punctuation.definition.reference.email.begin.git, punctuation.definition.reference.email.end.git",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "Git email punctuation",
             "scope": "punctuation.separator.email.git",
             "foreground": "var(violet)"
