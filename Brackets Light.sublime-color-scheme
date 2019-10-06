@@ -295,8 +295,8 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "C# lambda function",
-            "scope": "storage.type.function.lambda.cs",
+            "name": "C# arrow operator",
+            "scope": "storage.type.function.cs, storage.type.function.lambda.cs",
             "foreground": "var(textcolor)"
         },
         // Clojure specific rules
