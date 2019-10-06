@@ -172,6 +172,31 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "Inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Changed",
+            "scope": "markup.changed",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Heading",
+            "scope": "markup.heading - comment markup.heading - markup.heading.subject.git",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Quote",
+            "scope": "markup.quote",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "Mapping key",
             "scope": "meta.mapping.key string",
             "foreground": "var(violet)"
@@ -421,21 +446,6 @@
             "foreground": "var(textcolor)"
         },
         // Diff specific rules
-        {
-            "name": "Diff changed line",
-            "scope": "markup.changed.diff",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Diff deleted line",
-            "scope": "markup.deleted.diff",
-            "foreground": "var(red2)"
-        },
-        {
-            "name": "Diff inserted line",
-            "scope": "markup.inserted.diff",
-            "foreground": "var(green2)"
-        },
         {
             "name": "Diff header from-file",
             "scope": "meta.diff.header.from-file",
@@ -746,11 +756,6 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Markdown quote",
-            "scope": "markup.quote.markdown",
-            "foreground": "var(blue)"
-        },
-        {
             "name": "Markdown preformatted text",
             "scope": "markup.raw.inline.markdown, markup.raw.block.markdown, markup.raw.code-fence.markdown-gfm",
             "foreground": "var(grey)"
@@ -1040,11 +1045,6 @@
         },
         // reStructuredText specific rules
         {
-            "name": "RST heading",
-            "scope": "markup.heading.restructuredtext",
-            "foreground": "var(pink)"
-        },
-        {
             "name": "RST hyperlink",
             "scope": "(meta.link.inline.restructuredtext | meta.link.reference.def.restructuredtext) & (markup.underline.link.restructuredtext | punctuation.definition.location.restructuredtext)",
             "foreground": "var(violet)"
@@ -1293,27 +1293,6 @@
             "name": "Swift annotation",
             "scope": "source.swift storage.type.decorator",
             "foreground": "var(pink)"
-        },
-        // Textile specific rules
-        {
-            "name": "Textile deleted",
-            "scope": "markup.deleted.textile",
-            "foreground": "var(red2)"
-        },
-        {
-            "name": "Textile heading",
-            "scope": "markup.heading.textile",
-            "foreground": "var(pink)"
-        },
-        {
-            "name": "Textile inserted",
-            "scope": "markup.inserted.textile",
-            "foreground": "var(green2)"
-        },
-        {
-            "name": "Textile quote",
-            "scope": "markup.quote.textile",
-            "foreground": "var(blue)"
         },
         // TOML specific rules >> https://packagecontrol.io/packages/TOML
         {
