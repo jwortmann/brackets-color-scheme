@@ -431,6 +431,11 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "Dart annotation",
+            "scope": "entity.name.function.annotation.dart, annotation.dart support",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "Dart string interpolation",
             "scope": "string.interpolated & (interpolation.dart | keyword.other.dart | variable.parameter.dart)",
             "foreground": "var(textcolor)"
