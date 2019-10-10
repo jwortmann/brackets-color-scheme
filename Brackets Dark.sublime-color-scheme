@@ -892,6 +892,11 @@
         },
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
+            "name": "PowerShell operator",
+            "scope": "keyword.operator.comparison.powershell, keyword.operator.unary.powershell, keyword.operator.logical.powershell, keyword.operator.bitwise.powershell, keyword.operator.string-format.powershell",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "PowerShell variable punctuation",
             "scope": "keyword.other.variable.definition.powershell",
             "foreground": "var(textcolor)"
@@ -905,6 +910,11 @@
             "name": "PowerShell semicolon",
             "scope": "keyword.other.statement-separator.powershell",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Powershell documentation keyword",
+            "scope": "keyword.operator.documentation.powershell, constant.string.documentation.powershell",
+            "foreground": "var(pink)"
         },
         {
             "name": "PowerShell string interpolation brackets",
