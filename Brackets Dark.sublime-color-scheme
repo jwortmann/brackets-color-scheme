@@ -852,8 +852,13 @@
         },
         // Matlab specific rules
         {
-            "name": "Matlab intrinsic functions",
+            "name": "Matlab intrinsic function",
             "scope": "keyword.operator.matlab",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Matlab predefined variable",
+            "scope": "variable.other.function.matlab",
             "foreground": "var(blue)"
         },
         // OCaml specific rules
