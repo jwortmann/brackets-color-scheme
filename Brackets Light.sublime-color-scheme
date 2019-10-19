@@ -213,13 +213,8 @@
         },
         {
             "name": "Separator symbol",
-            "scope": "punctuation.separator",
+            "scope": "punctuation.separator - punctuation.separator.decimal",
             "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Decimal separator",
-            "scope": "punctuation.separator.decimal",
-            "foreground": "var(green)"
         },
         {
             "name": "Terminator symbol",
