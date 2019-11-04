@@ -228,7 +228,7 @@
         },
         {
             "name": "Type keyword",
-            "scope": "storage.type",
+            "scope": "storage.type - storage.type.numeric",
             "foreground": "var(blue)"
         },
         {
@@ -358,7 +358,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "CSS unit keyword",
+            "name": "CSS unit suffix",
             "scope": "keyword.other.unit.css",
             "foreground": "var(green)"
         },
@@ -621,7 +621,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "JavaScript textual operator",
+            "name": "JavaScript reserved word",
             "scope": "keyword.operator.js",
             "foreground": "var(blue)"
         },
@@ -667,7 +667,7 @@
         {
             "name": "Julia macro invocation",
             "scope": "variable.macro.julia",
-            "foreground": "var(purple)"
+            "foreground": "var(blue)"
         },
         // LaTeX specific rules
         {
@@ -1119,7 +1119,7 @@
         {
             "name": "Rust macro invocation",
             "scope": "support.macro.rust",
-            "foreground": "var(purple)"
+            "foreground": "var(blue)"
         },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
@@ -1170,7 +1170,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "SCSS unit",
+            "name": "SCSS unit suffix",
             "scope": "keyword.other.unit.scss",
             "foreground": "var(green)"
         },
@@ -1238,7 +1238,7 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Stylus unit",
+            "name": "Stylus unit suffix",
             "scope": "constant.numeric.stylus keyword.other.unit.stylus",
             "foreground": "var(green)"
         },
