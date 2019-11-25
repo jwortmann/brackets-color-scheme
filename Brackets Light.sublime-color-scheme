@@ -277,6 +277,12 @@
             "scope": "keyword.operator.actionscript.2",
             "foreground": "var(blue)"
         },
+        // AHK specific rules >> https://packagecontrol.io/packages/AutoHotkey
+        {
+            "name": "AHK preprocessor directive",
+            "scope": "preprocessordirective.ahk keyword.control.ahk, keyword.control.import.ahk",
+            "foreground": "var(purple)"
+        },
         // ASP specific rules
         {
             "name": "ASP logical operator",
