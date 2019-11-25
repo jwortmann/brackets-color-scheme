@@ -677,16 +677,9 @@
         },
         // LaTeX specific rules
         {
-            "name": "LaTeX environment",
-            "scope": "variable.parameter.function.latex",
-            "foreground": "var(orange)",
-            "font_style": "italic"
-        },
-        {
             "name": "LaTeX citation/reference/label",
             "scope": "constant.other.citation.latex, constant.other.reference.latex, entity.name.label.latex",
-            "foreground": "var(violet)",
-            "font_style": "italic"
+            "foreground": "var(violet)"
         },
         {
             "name": "LaTeX array column count parameter",
