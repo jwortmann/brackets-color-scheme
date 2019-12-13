@@ -77,8 +77,7 @@
         {
             "name": "Placeholder in strings",
             "scope": "constant.other.placeholder",
-            "foreground": "var(orange)",
-            "font_style": "italic"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Diff deleted line",
