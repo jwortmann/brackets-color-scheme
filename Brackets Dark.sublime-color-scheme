@@ -888,6 +888,11 @@
             "foreground": "var(orange)",
             "font_style": "italic"
         },
+        {
+            "name": "PHP ampersand reference punctuation",
+            "scope": "storage.modifier.reference.php",
+            "foreground": "var(textcolor)"
+        },
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
             "name": "PowerShell operator",
