@@ -477,6 +477,22 @@
             "scope": "keyword.operator.dockerfile",
             "foreground": "var(blue)"
         },
+        // F# specific rules >> https://packagecontrol.io/packages/F%23
+        {
+            "name": "F# operator",
+            "scope": "keyword.symbol.fsharp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "F# annotation",
+            "scope": "support.function.attribute.fsharp",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "F# placeholder in strings",
+            "scope": "keyword.format.specifier.fsharp",
+            "foreground": "var(textcolor)"
+        },
         // Fortran specific rules >> https://packagecontrol.io/packages/Fortran
         {
             "name": "Fortran format descriptor",
