@@ -1003,6 +1003,12 @@
             "foreground": "var(orange)",
             "font_style": "italic"
         },
+        // R specific rules
+        {
+            "name": "R operator symbol",
+            "scope": "keyword.other.r - comment.line.roxygen.r",
+            "foreground": "var(textcolor)"
+        },
         // RAML specific rules >> https://packagecontrol.io/packages/RAML%20Syntax%20Highlighter
         {
             "name": "RAML header",
