@@ -30,10 +30,10 @@ The font used in the preview images is [Fira Mono](https://github.com/mozilla/Fi
 | Color variable | Brackets Light | Brackets Dark | Example usage |
 | -------------- | -------------- | ------------- | ------------- |
 | | ![background](http://via.placeholder.com/20/f8f8f8/f8f8f8) `#f8f8f8` | ![background](http://via.placeholder.com/20/1d1f21/1d1f21) `#1d1f21` | background |
-| textcolor | ![textcolor](http://via.placeholder.com/20/535353/535353) `#535353` | ![textcolor](http://via.placeholder.com/20/dddddd/dddddd) `#dddddd` | plain text, variables, operators, punctuations |
+| textcolor | ![textcolor](http://via.placeholder.com/20/535353/535353) `#535353` | ![textcolor](http://via.placeholder.com/20/dddddd/dddddd) `#dddddd` | plain text, variables, constants, operators, punctuations |
 | grey | ![grey](http://via.placeholder.com/20/949494/949494) `#949494` | ![grey](http://via.placeholder.com/20/767676/767676) `#767676` | comments |
 | blue | ![blue](http://via.placeholder.com/20/446fbd/446fbd) `#446fbd` | ![blue](http://via.placeholder.com/20/6c9ef8/6c9ef8) `#6c9ef8` | keywords, intrinsic/library functions, tags |
-| orange | ![orange](http://via.placeholder.com/20/e88501/e88501) `#e88501` | ![orange](http://via.placeholder.com/20/d89333/d89333) `#d89333` | strings, constants, arguments in function definitions |
+| orange | ![orange](http://via.placeholder.com/20/e88501/e88501) `#e88501` | ![orange](http://via.placeholder.com/20/d89333/d89333) `#d89333` | strings, builtin constants, arguments in function definitions |
 | green | ![green](http://via.placeholder.com/20/6d8600/6d8600) `#6d8600` | ![green](http://via.placeholder.com/20/85a300/85a300) `#85a300` | numbers, HTML/XML tag attributes |
 | violet | ![violet](http://via.placeholder.com/20/8757ad/8757ad) `#8757ad` | ![violet](http://via.placeholder.com/20/b77fdb/b77fdb) `#b77fdb` | user defined functions, mapping keys, CSS property names |
 | purple | ![purple](http://via.placeholder.com/20/6c71c4/6c71c4) `#6c71c4` | ![purple](http://via.placeholder.com/20/8087e5/8087e5) `#8087e5` | preprocessor directives |

@@ -66,18 +66,12 @@
         {
             "name": "Misc constant",
             "scope": "constant.other",
-            "foreground": "var(orange)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Enum value",
             "scope": "constant.other.enum",
-            "foreground": "var(orange)",
             "font_style": "italic"
-        },
-        {
-            "name": "Placeholder in strings",
-            "scope": "constant.other.placeholder",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "Diff deleted line",
@@ -111,7 +105,7 @@
         {
             "name": "Constant",
             "scope": "entity.name.constant",
-            "foreground": "var(orange)",
+            "foreground": "var(textcolor)",
             "font_style": "italic"
         },
         {
@@ -336,6 +330,11 @@
             "name": "CSS property",
             "scope": "support.type.property-name.css, support.type.property-name.media.css",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "CSS hex color value",
+            "scope": "constant.other.color.rgb-value.css, constant.other.color.rgba-value.css",
+            "foreground": "var(orange)"
         },
         {
             "name": "CSS special color keyword",
@@ -627,7 +626,6 @@
         {
             "name": "Java constant",
             "scope": "constant.other.java",
-            "foreground": "var(orange)",
             "font_style": "italic"
         },
         {
@@ -659,7 +657,6 @@
         {
             "name": "JavaScript constant",
             "scope": "variable.other.constant.js",
-            "foreground": "var(orange)",
             "font_style": "italic"
         },
         {
@@ -894,11 +891,6 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "PHP string interpolation constant",
-            "scope": "string constant.other.php",
-            "foreground": "var(textcolor)"
-        },
-        {
             "name": "PHP library constant",
             "scope": "support.constant.core.php, support.constant.std.php, support.constant.ext.php, support.constant.parser-token.php",
             "foreground": "var(orange)",
@@ -970,7 +962,6 @@
         {
             "name": "Python constant",
             "scope": "variable.other.constant.python",
-            "foreground": "var(orange)",
             "font_style": "italic"
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
@@ -993,14 +984,12 @@
         {
             "name": "Python constant",
             "scope": "constant.other.caps.python",
-            "foreground": "var(orange)",
             "font_style": "italic"
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%20Improved
         {
             "name": "Python constant",
             "scope": "constant.other.allcaps.python",
-            "foreground": "var(orange)",
             "font_style": "italic"
         },
         // R specific rules
@@ -1133,7 +1122,6 @@
         {
             "name": "Rust constant",
             "scope": "constant.other.rust, variable.other.constant.rust",
-            "foreground": "var(orange)",
             "font_style": "italic"
         },
         {
@@ -1185,6 +1173,11 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "SCSS hex color value",
+            "scope": "constant.other.color.rgb-value.scss",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "SCSS function call",
             "scope": "source.scss support.function",
             "foreground": "var(orange)"
@@ -1229,11 +1222,6 @@
         {
             "name": "SQL embedded in other language",
             "scope": "string source.sql - string source.sql string, string text.sql - string text.sql string",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "SQL multiple-part name",
-            "scope": "constant.other.database-name.sql, constant.other.table-name.sql",
             "foreground": "var(textcolor)"
         },
         {
@@ -1321,7 +1309,7 @@
         {
             "name": "Swift string interpolation punctuation",
             "scope": "meta.literal.string.swift support.punctuation.expression",
-            "foreground": "var(orange)"
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Swift imported module",
