@@ -1074,7 +1074,7 @@
         },
         {
             "name": "Regex character class",
-            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, keyword.other.any.regexp",
+            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, constant.other.character-class.escape.unicode-property.regexp, keyword.other.any.regexp",
             "foreground": "var(violet)"
         },
         // reStructuredText specific rules
