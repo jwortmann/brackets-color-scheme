@@ -739,6 +739,11 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "LaTeX option parameter",
+            "scope": "variable.parameter.bracket.latex",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "BibTeX citation-key",
             "scope": "entity.name.type.entry-key.bibtex",
             "foreground": "var(pink)"
