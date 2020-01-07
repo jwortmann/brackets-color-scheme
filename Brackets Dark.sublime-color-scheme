@@ -1401,6 +1401,32 @@
             "scope": "markup.untracked.git_gutter",
             "foreground": "#565656"
         },
+        // LSP specific rules >> https://packagecontrol.io/packages/LSP
+        {
+            "name": "LSP diagnostics filename",
+            "scope": "output.lsp.diagnostics meta.diagnostic.preamble.lsp string.unquoted.lsp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "LSP diagnostics linter name",
+            "scope": "output.lsp.diagnostics comment.line.lsp",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "LSP log arrows",
+            "scope": "output.lsp.log storage.modifier.lsp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "LSP log server name",
+            "scope": "output.lsp.log variable.function.lsp",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "LSP log unhandled",
+            "scope": "output.lsp.log invalid.deprecated.lsp",
+            "foreground": "var(red)"
+        },
         // PackageDev specific rules >> https://packagecontrol.io/packages/PackageDev
         {
             "name": "PackageDev JSON predefined key",
