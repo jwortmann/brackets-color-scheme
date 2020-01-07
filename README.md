@@ -32,8 +32,8 @@ The font used in the preview images is [Fira Mono](https://github.com/mozilla/Fi
 | | ![background](http://via.placeholder.com/20/f8f8f8/f8f8f8) `#f8f8f8` | ![background](http://via.placeholder.com/20/1d1f21/1d1f21) `#1d1f21` | background |
 | textcolor | ![textcolor](http://via.placeholder.com/20/535353/535353) `#535353` | ![textcolor](http://via.placeholder.com/20/dddddd/dddddd) `#dddddd` | plain text, variables, constants, operators, punctuations |
 | grey | ![grey](http://via.placeholder.com/20/949494/949494) `#949494` | ![grey](http://via.placeholder.com/20/767676/767676) `#767676` | comments |
-| blue | ![blue](http://via.placeholder.com/20/446fbd/446fbd) `#446fbd` | ![blue](http://via.placeholder.com/20/6c9ef8/6c9ef8) `#6c9ef8` | keywords, intrinsic/library functions, tags |
-| orange | ![orange](http://via.placeholder.com/20/e88501/e88501) `#e88501` | ![orange](http://via.placeholder.com/20/d89333/d89333) `#d89333` | strings, builtin constants, arguments in function definitions |
+| blue | ![blue](http://via.placeholder.com/20/446fbd/446fbd) `#446fbd` | ![blue](http://via.placeholder.com/20/6c9ef8/6c9ef8) `#6c9ef8` | keywords, intrinsic/library functions and classes, tags |
+| orange | ![orange](http://via.placeholder.com/20/e88501/e88501) `#e88501` | ![orange](http://via.placeholder.com/20/d89333/d89333) `#d89333` | strings, built-in constants, arguments in function definitions |
 | green | ![green](http://via.placeholder.com/20/6d8600/6d8600) `#6d8600` | ![green](http://via.placeholder.com/20/85a300/85a300) `#85a300` | numbers, HTML/XML tag attributes |
 | violet | ![violet](http://via.placeholder.com/20/8757ad/8757ad) `#8757ad` | ![violet](http://via.placeholder.com/20/b77fdb/b77fdb) `#b77fdb` | user defined functions, mapping keys, CSS property names |
 | purple | ![purple](http://via.placeholder.com/20/6c71c4/6c71c4) `#6c71c4` | ![purple](http://via.placeholder.com/20/8087e5/8087e5) `#8087e5` | preprocessor directives |
@@ -42,10 +42,10 @@ The font used in the preview images is [Fira Mono](https://github.com/mozilla/Fi
 | green2 | ![green2](http://via.placeholder.com/20/229922/229922) `#229922` | ![green2](http://via.placeholder.com/20/229922/229922) `#229922` | diff inserted |
 | red2 | ![red2](http://via.placeholder.com/20/dd4444/dd4444) `#dd4444` | ![red2](http://via.placeholder.com/20/dd4444/dd4444) `#dd4444` | diff deleted |
 
-## Customization and backward compatibility
+## Customization and legacy version support
 
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
 The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/3/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
 
-For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip a [previous release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into e.g. the `Packages/User` package.
+For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip an [older release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into e.g. the `Packages/User` package.
