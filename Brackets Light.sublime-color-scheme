@@ -683,9 +683,9 @@
         },
         // Julia specific rules >> https://packagecontrol.io/packages/Julia
         {
-            "name": "Julia macro invocation",
+            "name": "Julia macro",
             "scope": "variable.macro.julia",
-            "foreground": "var(blue)"
+            "foreground": "var(purple)"
         },
         // LaTeX specific rules
         {
