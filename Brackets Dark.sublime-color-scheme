@@ -1458,6 +1458,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "PackageDev XML/PList keyword",
+            "scope": "text.xml.plist.textmate.preferences & (meta.inside-dict-key.plist keyword | meta.inside-value.string.plist support)",
+            "foreground": "var(violet)"
+        },
+        {
             "name": "PackageDev YAML reserved word",
             "scope": "source.yaml.sublime keyword.operator.include.sublime-syntax",
             "foreground": "var(blue)"
@@ -1475,7 +1480,7 @@
         },
         {
             "name": "PackageDev scope selector punctuation",
-            "scope": "(source.json.sublime | text.xml.sublime) & punctuation.separator.scope-segments.scope-selector",
+            "scope": "(source.json.sublime | text.xml.sublime | text.xml.plist.textmate.preferences) & punctuation.separator.scope-segments.scope-selector",
             "foreground": "var(orange)"
         },
         // SublimeGDB specific rules >> https://packagecontrol.io/packages/SublimeGDB
