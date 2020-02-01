@@ -1427,6 +1427,11 @@
             "scope": "output.lsp.log invalid.deprecated.lsp",
             "foreground": "var(red)"
         },
+        {
+            "name": "LSP references filename",
+            "scope": "output.lsp.references entity.name.file.references.lsp",
+            "foreground": "var(blue)"
+        },
         // PackageDev specific rules >> https://packagecontrol.io/packages/PackageDev
         {
             "name": "PackageDev JSON predefined key",
