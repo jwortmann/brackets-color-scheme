@@ -734,8 +734,8 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "LaTeX user command declaration",
-            "scope": "entity.name.newcommand.latex",
+            "name": "LaTeX command or operator declaration",
+            "scope": "entity.name.newcommand.latex, entity.name.declare-math-operator.latex, entity.name.definition.tex",
             "foreground": "var(blue)"
         },
         {
