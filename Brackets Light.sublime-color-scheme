@@ -1454,7 +1454,7 @@
         },
         {
             "name": "PackageDev JSON value",
-            "scope": "source.json.sublime meta.mapping.value & (meta.interpolation-mapping punctuation.definition.string | support.constant.command-name | entity.name.variant.sublime-build | entity.name.id.sublime-menu | entity.name.class-selector.sublime-theme | support.constant.mnemonic.sublime-menu | variable.other.setting.sublime-keymap)",
+            "scope": "source.json.sublime meta.mapping.value & (support.constant.command-name | entity.name.variant.sublime-build | entity.name.id.sublime-menu | entity.name.class-selector.sublime-theme | support.constant.mnemonic.sublime-menu | variable.other.setting.sublime-keymap)",
             "foreground": "var(orange)",
             "font_style": ""
         },
