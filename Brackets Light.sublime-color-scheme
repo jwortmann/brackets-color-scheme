@@ -634,6 +634,16 @@
             "scope": "storage.type.function.anonymous.java",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "Java import classname",
+            "scope": "support.class.import.java",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java namespace",
+            "scope": "support.type.package.java",
+            "foreground": "var(textcolor)"
+        },
         // JavaScript specific rules
         {
             "name": "JavaScript generator function asterisk",
