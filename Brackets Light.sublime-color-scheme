@@ -1494,6 +1494,12 @@
             "scope": "output.lsp.references entity.name.file.references.lsp",
             "foreground": "var(blue)"
         },
+        // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
+        {
+            "name": "OverrideAudit warning/expired",
+            "scope": "text.override-audit.overridereport keyword.control.expired",
+            "foreground": "var(orange)"
+        },
         // PackageDev specific rules >> https://packagecontrol.io/packages/PackageDev
         {
             "name": "PackageDev JSON predefined key",

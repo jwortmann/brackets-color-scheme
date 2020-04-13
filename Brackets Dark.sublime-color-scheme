@@ -1463,6 +1463,12 @@
             "scope": "markup.untracked.git_gutter",
             "foreground": "#565656"
         },
+        // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
+        {
+            "name": "OverrideAudit warning/expired",
+            "scope": "text.override-audit.overridereport keyword.control.expired",
+            "foreground": "var(orange)"
+        },
         // LSP specific rules >> https://packagecontrol.io/packages/LSP
         {
             "name": "LSP diagnostics filename",
