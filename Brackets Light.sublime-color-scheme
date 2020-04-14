@@ -262,7 +262,7 @@
         },
         {
             "name": "Function argument",
-            "scope": "variable.parameter - meta.function-call",
+            "scope": "variable.parameter - meta.function-call - meta.annotation",
             "foreground": "var(orange)"
         },
         // ActionScript specific rules
