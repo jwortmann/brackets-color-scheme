@@ -696,6 +696,16 @@
             "foreground": "var(violet)"
         },
         {
+            "name": "JavaScript template string backticks",
+            "scope": "string.interpolated.js keyword.other.template",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "JavaScript template string interpolation",
+            "scope": "string.interpolated.js keyword.other.substitution",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "JSX tag attribute",
             "scope": "meta.jsx entity.other.attribute-name",
             "foreground": "var(green)"
