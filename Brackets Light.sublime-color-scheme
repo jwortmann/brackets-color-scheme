@@ -686,6 +686,11 @@
         },
         // JavaScript specific rules >> https://packagecontrol.io/packages/Babel
         {
+            "name": "JavaScript reserved word",
+            "scope": "keyword.operator.new.js, keyword.operator.module.js",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "JavaScript mapping key",
             "scope": "constant.other.object.key.js string.unquoted.label.js",
             "foreground": "var(violet)"
@@ -1405,23 +1410,23 @@
         },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
-            "name": "TypeScript textual operator",
-            "scope": "source.ts keyword.operator.expression",
+            "name": "TypeScript reserved word",
+            "scope": "keyword.operator.new.ts, keyword.operator.new.tsx, source.ts keyword.operator.expression, source.tsx keyword.operator.expression",
             "foreground": "var(blue)"
         },
         {
             "name": "TypeScript type",
-            "scope": "entity.name.type.ts, entity.name.type.module.ts",
+            "scope": "entity.name.type.ts, entity.name.type.tsx, entity.name.type.module.ts, entity.name.type.module.tsx",
             "foreground": "var(blue)"
         },
         {
             "name": "TypeScript arrow function",
-            "scope": "storage.type.function.arrow.ts",
+            "scope": "storage.type.function.arrow.ts, storage.type.function.arrow.tsx",
             "foreground": "var(textcolor)"
         },
         {
             "name": "TypeScript placeholder asterisk",
-            "scope": "constant.language.import-export-all.ts",
+            "scope": "constant.language.import-export-all.ts, constant.language.import-export-all.tsx",
             "foreground": "var(textcolor)"
         },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
