@@ -120,6 +120,16 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Tag attribute",
+            "scope": "meta.tag entity.other.attribute-name",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "CSS selector class/id/attribute",
+            "scope": "entity.other.attribute-name - meta.tag",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
             "foreground": "var(violet)",
@@ -294,6 +304,11 @@
             "scope": "storage.type.function.cs, storage.type.function.lambda.cs",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "C# documentation comment tag attribute",
+            "scope": "comment.block.documentation entity.other.attribute-name",
+            "foreground": "var(green)"
+        },
         // Clojure specific rules
         {
             "name": "Clojure ratio",
@@ -318,9 +333,9 @@
         },
         // CSS specific rules
         {
-            "name": "CSS attribute/class/id",
-            "scope": "entity.other.attribute-name.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css",
-            "foreground": "var(blue)"
+            "name": "CSS selector pseudo-class/pseudo-element",
+            "scope": "entity.other.pseudo-class, entity.other.pseudo-element",
+            "foreground": "var(textcolor)"
         },
         {
             "name": "CSS namespace prefix",
@@ -399,8 +414,8 @@
         },
         // CSS specific rules >> https://packagecontrol.io/packages/CSS3
         {
-            "name": "CSS pseudo-class/pseudo-element",
-            "scope": "entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+            "name": "CSS selector pseudo-class/pseudo-element",
+            "scope": "entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element",
             "foreground": "var(textcolor)"
         },
         {
@@ -581,7 +596,7 @@
         },
         // Handlebars specific rules >> https://packagecontrol.io/packages/Handlebars
         {
-            "name": "Handlebars tag attribute name",
+            "name": "Handlebars inline-script tag attribute",
             "scope": "source.handlebars.embedded entity.other.attribute-name",
             "foreground": "var(green)"
         },
@@ -600,12 +615,6 @@
             "name": "Haskell double-colon",
             "scope": "keyword.other.double-colon.haskell",
             "foreground": "var(textcolor)"
-        },
-        // HTML/XML specific rules
-        {
-            "name": "HTML/XML tag attribute name",
-            "scope": "text entity.other.attribute-name, comment.block.documentation entity.other.attribute-name",
-            "foreground": "var(green)"
         },
         // INI specific rules >> https://packagecontrol.io/packages/INI
         {
@@ -680,6 +689,11 @@
             "name": "JavaScript mapping key",
             "scope": "constant.other.object.key.js string.unquoted.label.js",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "JSX tag attribute",
+            "scope": "meta.jsx entity.other.attribute-name",
+            "foreground": "var(green)"
         },
         // JSON specific rules >> https://packagecontrol.io/packages/Babel
         {
@@ -848,6 +862,11 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "Markdown link/image attribute",
+            "scope": "entity.other.attribute-name.markdown",
+            "foreground": "var(green)"
+        },
+        {
             "name": "Markdown reference definition link url",
             "scope": "meta.link.reference.def.markdown markup.underline.link.markdown",
             "foreground": "var(orange)"
@@ -998,12 +1017,6 @@
             "name": "PowerShell string interpolation brackets",
             "scope": "string.quoted.double.powershell punctuation.section",
             "foreground": "var(textcolor)"
-        },
-        // Pug specific rules >> https://packagecontrol.io/packages/Pug
-        {
-            "name": "Pug class/id",
-            "scope": "entity.other.attribute-name.class.pug, entity.other.attribute-name.id.pug",
-            "foreground": "var(blue)"
         },
         // Python specific rules
         {
@@ -1207,11 +1220,6 @@
             "scope": "source.sass support.function",
             "foreground": "var(orange)"
         },
-        {
-            "name": "Sass placeholder",
-            "scope": "entity.other.attribute-name.placeholder.sass",
-            "foreground": "var(blue)"
-        },
         // Scala specific rules
         {
             "name": "Scala string interpolation expression",
@@ -1228,11 +1236,6 @@
             "name": "SCSS property",
             "scope": "support.type.property-name.scss",
             "foreground": "var(violet)"
-        },
-        {
-            "name": "SCSS attribute",
-            "scope": "entity.other.attribute-name.attribute.scss",
-            "foreground": "var(blue)"
         },
         {
             "name": "SCSS property value",
@@ -1302,11 +1305,6 @@
             "foreground": "var(textcolor)"
         },
         // Stylus specific rules >> https://packagecontrol.io/packages/Stylus
-        {
-            "name": "Stylus attribute/class/id",
-            "scope": "entity.other.attribute-name.stylus, entity.other.attribute-name.class.stylus, entity.other.attribute-name.id.stylus",
-            "foreground": "var(blue)"
-        },
         {
             "name": "Stylus property name",
             "scope": "support.type.property-name.stylus, support.type.property-name.media.stylus",
