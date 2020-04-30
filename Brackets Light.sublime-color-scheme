@@ -1450,6 +1450,17 @@
             "scope": "source.vbs keyword.operator.asp",
             "foreground": "var(blue)"
         },
+        // Vue specific rules >> https://packagecontrol.io/packages/Vue%20Syntax%20Highlight
+        {
+            "name": "Vue tag attribute name punctuation",
+            "scope": "text.html.vue meta.tag punctuation.definition.attribute",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Vue tag attribute value punctuation",
+            "scope": "text.html.vue meta.tag punctuation.definition.string",
+            "foreground": "var(orange)"
+        },
         // GitGutter specific rules >> https://packagecontrol.io/packages/GitGutter
         {
             "name": "GitGutter deleted",
