@@ -287,6 +287,22 @@
             "scope": "preprocessordirective.ahk keyword.control.ahk, keyword.control.import.ahk",
             "foreground": "var(purple)"
         },
+        // Apache specific rules >> https://packagecontrol.io/packages/ApacheConf
+        {
+            "name": "Apache number",
+            "scope": "constant.integer.apacheconf",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Apache tag",
+            "scope": "entity.tag.apacheconf",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Apache reserved word",
+            "scope": "entity.status.apacheconf, entity.helper.apacheconf",
+            "foreground": "var(blue)"
+        },
         // ASP specific rules
         {
             "name": "ASP logical operator",
