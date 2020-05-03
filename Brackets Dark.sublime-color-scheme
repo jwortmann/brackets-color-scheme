@@ -968,6 +968,22 @@
             "scope": "variable.other.function.matlab",
             "foreground": "var(blue)"
         },
+        // NGINX specific rules >> https://packagecontrol.io/packages/nginx
+        {
+            "name": "NGINX context",
+            "scope": "storage.type.context.nginx - meta.context.upstream",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "NGINX unknown directive",
+            "scope": "keyword.directive.module.unsupported.nginx",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "NGINX IP address",
+            "scope": "string.ipaddress.nginx",
+            "foreground": "var(green)"
+        },
         // OCaml specific rules
         {
             "name": "OCaml preprocessor directive",
