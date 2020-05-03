@@ -724,7 +724,7 @@
         // Julia specific rules >> https://packagecontrol.io/packages/Julia
         {
             "name": "Julia macro",
-            "scope": "variable.macro.julia",
+            "scope": "variable.macro.julia, punctuation.definition.macro.julia, support.function.macro.julia",
             "foreground": "var(purple)"
         },
         // LaTeX specific rules
