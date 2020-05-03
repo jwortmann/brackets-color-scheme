@@ -743,6 +743,17 @@
             "scope": "variable.macro.julia, punctuation.definition.macro.julia, support.function.macro.julia",
             "foreground": "var(purple)"
         },
+        // Laravel Blade specific rules >> https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter
+        {
+            "name": "Laravel Blade template directive",
+            "scope": "text.html.blade punctuation.section.embedded & (entity.name.tag.block.any.html | constant.other.inline-data.html)",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Laravel Blade template custom directive",
+            "scope": "text.html.blade custom.compiler.blade.php & (support.function | support.function constant.other.inline-data.html)",
+            "foreground": "var(blue)"
+        },
         // LaTeX specific rules
         {
             "name": "LaTeX citation/reference/label",
