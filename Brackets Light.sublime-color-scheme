@@ -644,7 +644,7 @@
             "foreground": "var(violet)"
         },
         {
-            "scope": "INI quotes",
+            "name": "INI quotes",
             "scope": "punctuation.definition.quote.ini",
             "foreground": "var(orange)"
         },
@@ -1217,44 +1217,64 @@
         },
         // reStructuredText specific rules
         {
-            "name": "RST hyperlink",
-            "scope": "(meta.link.inline.restructuredtext | meta.link.reference.def.restructuredtext) & (markup.underline.link.restructuredtext | punctuation.definition.location.restructuredtext)",
+            "name": "RST link label",
+            "scope": "string.other.link.title.restructuredtext",
             "foreground": "var(violet)"
         },
         {
-            "name": "RST link label",
-            "scope": "string.other.link.title.restructuredtext, punctuation.definition.link.restructuredtext, punctuation.definition.string.restructuredtext",
+            "name": "RST link label punctuation",
+            "scope": "punctuation.definition.link.restructuredtext - meta.link.reference.def - meta.link.footnote.def - meta.link.citation.def, punctuation.definition.string.restructuredtext",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "RST link target",
+            "scope": "markup.underline.link.restructuredtext",
+            "foreground": "var(orange)"
         },
         {
             "name": "RST footnote label",
-            "scope": "(meta.link.footnote.numeric.restructuredtext | meta.link.footnote.def.restructuredtext) & (constant.other.footnote.link | punctuation.definition.constant.restructuredtext)",
+            "scope": "text.restructuredtext meta.link.footnote constant.other.footnote.link",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "RST footnote label punctuation",
+            "scope": "meta.link.footnote punctuation.definition.constant.restructuredtext",
             "foreground": "var(blue)"
         },
         {
             "name": "RST citation label",
-            "scope": "meta.link.citation.restructuredtext & (constant.other.citation.link.restructuredtext | punctuation.definition.constant.restructuredtext)",
+            "scope": "text.restructuredtext meta.link.citation constant.other.citation.link",
             "foreground": "var(blue)"
         },
         {
-            "name": "RST reference punctuation",
-            "scope": "(meta.link.footnote.def.restructuredtext | meta.link.reference.def.restructuredtext) & punctuation.definition.link.restructuredtext",
-            "foreground": "var(textcolor)"
+            "name": "RST citation label punctuation",
+            "scope": "meta.link.citation punctuation.definition.constant.restructuredtext",
+            "foreground": "var(blue)"
         },
         {
-            "name": "RST preformatted text",
-            "scope": "markup.raw.restructuredtext - meta.raw.block.restructuredtext",
-            "foreground": "var(grey)"
+            "name": "RST directive",
+            "scope": "meta.other.directive.restructuredtext - punctuation",
+            "foreground": "var(blue)"
         },
         {
-            "name": "RST field punctuation",
+            "name": "RST field name punctuation",
             "scope": "punctuation.definition.field.restructuredtext",
             "foreground": "var(textcolor)"
         },
         {
             "name": "RST interpreted text",
-            "scope": "markup.other.command.restructuredtext - punctuation.definition.interpreted.restructuredtext",
+            "scope": "markup.other.command.restructuredtext",
             "foreground": "var(orange)"
+        },
+        {
+            "name": "RST inline literal",
+            "scope": "markup.raw.restructuredtext - meta.raw.block",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "RST block literal",
+            "scope": "meta.raw.block markup.raw.restructuredtext",
+            "foreground": "var(grey)"
         },
         // Rust specific rules
         {
