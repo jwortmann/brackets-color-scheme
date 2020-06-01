@@ -289,11 +289,6 @@
         },
         // Apache specific rules >> https://packagecontrol.io/packages/ApacheConf
         {
-            "name": "Apache number",
-            "scope": "constant.integer.apacheconf",
-            "foreground": "var(green)"
-        },
-        {
             "name": "Apache tag",
             "scope": "entity.tag.apacheconf",
             "foreground": "var(blue)"
