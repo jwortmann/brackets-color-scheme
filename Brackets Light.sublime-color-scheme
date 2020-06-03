@@ -503,6 +503,17 @@
             "scope": "keyword.operator.dockerfile",
             "foreground": "var(blue)"
         },
+        // DotENV specific rules >> https://packagecontrol.io/packages/DotENV
+        {
+            "name": "DotENV key",
+            "scope": "variable.other.env - string",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "DotENV template punctuation",
+            "scope": "source.env string.interpolated keyword.other.template",
+            "foreground": "var(textcolor)"
+        },
         // F# specific rules >> https://packagecontrol.io/packages/F%23
         {
             "name": "F# operator",
