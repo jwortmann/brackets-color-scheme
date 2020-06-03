@@ -1476,6 +1476,22 @@
             "scope": "source.swift storage.type.decorator",
             "foreground": "var(pink)"
         },
+        // Textile specific rules
+        {
+            "name": "Textile link title",
+            "scope": "string.other.link.title.textile, string.other.link.description.title.textile, markup.underline.link.image.textile",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Textile link target",
+            "scope": "markup.underline.link.textile, constant.other.reference.link.textile",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Textile attribute",
+            "scope": "entity.name.type.textile",
+            "foreground": "var(blue)"
+        },
         // TOML specific rules >> https://packagecontrol.io/packages/TOML
         {
             "name": "TOML section name",
