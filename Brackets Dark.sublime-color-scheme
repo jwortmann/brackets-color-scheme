@@ -441,6 +441,11 @@
         },
         // D specific rules
         {
+            "name": "D arrow function",
+            "scope": "keyword.declaration.function.lambda.d",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "D numeric base prefix",
             "scope": "punctuation.definition.numeric.binary.d, punctuation.definition.numeric.hexadecimal.d",
             "foreground": "var(green)"
