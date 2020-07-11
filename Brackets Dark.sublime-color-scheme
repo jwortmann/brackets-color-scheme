@@ -28,6 +28,7 @@
         "fold_marker": "color(var(grey) alpha(0.75))",
         "accent": "var(blue)",
         "gutter_foreground": "var(grey)",
+        "gutter_foreground_highlight": "#fff",
         "line_diff_width": "3",
         "line_diff_added": "var(green2)",
         "line_diff_modified": "var(orange)",
