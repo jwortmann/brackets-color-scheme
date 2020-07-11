@@ -25,7 +25,7 @@
         "block_caret": "color(#000 alpha(0.5))",
         "line_highlight": "color(#dee6e6 alpha(0.5))",
         "misspelling": "var(red)",
-        "fold_marker": "#fff",
+        "fold_marker": "color(var(grey) alpha(0.5))",
         "accent": "var(blue)",
         "gutter_foreground": "var(grey)",
         "line_diff_width": "3",
