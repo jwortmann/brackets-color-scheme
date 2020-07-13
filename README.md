@@ -1,15 +1,15 @@
 # Brackets Color Scheme
 
 [![License](https://img.shields.io/github/license/jwortmann/brackets-color-scheme)](https://github.com/jwortmann/brackets-color-scheme/blob/master/LICENSE)
-[![Version](https://img.shields.io/github/v/tag/jwortmann/brackets-color-scheme?label=version)](https://github.com/jwortmann/brackets-color-scheme/tags)
+[![Version](https://img.shields.io/github/v/release/jwortmann/brackets-color-scheme?label=version)](https://github.com/jwortmann/brackets-color-scheme/releases)
 [![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
 
-This package for [Sublime Text 3](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the built-in themes of [Adobe Brackets](http://brackets.io/).
+This package for [Sublime Text](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the built-in themes of [Adobe Brackets](http://brackets.io/).
 
 ## Installation
 
 The color scheme can be installed via Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
-From the command palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
+From the command palette choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
 
 Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and put them into a folder in the packages directory of Sublime Text, e.g. the `Packages/User` package.
 To access the packages directory, choose `Preferences > Browse Packages...` from the Sublime Text menu.
@@ -42,10 +42,8 @@ The font used in the preview images is [Fira Mono](https://github.com/mozilla/Fi
 | green2 | ![green2](http://via.placeholder.com/20/229922/229922) `#229922` | ![green2](http://via.placeholder.com/20/229922/229922) `#229922` | diff inserted |
 | red2 | ![red2](http://via.placeholder.com/20/dd4444/dd4444) `#dd4444` | ![red2](http://via.placeholder.com/20/dd4444/dd4444) `#dd4444` | diff deleted |
 
-## Customization and legacy version support
+## Customization
 
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
-The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/3/color_schemes.html#customization) in the official documentation.
+The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
-
-For older versions of Sublime Text (Sublime Text 2 & Sublime Text 3 Build < 3170) you can still download and unzip an [older release](https://github.com/jwortmann/brackets-color-scheme/releases/tag/v1.0.4) of this package and place the corresponding `.tmTheme` files (TextMate format) into e.g. the `Packages/User` package.
