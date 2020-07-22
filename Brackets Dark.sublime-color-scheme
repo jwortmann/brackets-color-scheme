@@ -152,6 +152,11 @@
             "foreground": "var(purple)"
         },
         {
+            "name": "Lambda function arrow",
+            "scope": "keyword.declaration.function.lambda",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "Symbolic operator",
             "scope": "keyword.operator",
             "foreground": "var(textcolor)"
@@ -441,11 +446,6 @@
             "foreground": "var(textcolor)"
         },
         // D specific rules
-        {
-            "name": "D arrow function",
-            "scope": "keyword.declaration.function.lambda.d",
-            "foreground": "var(textcolor)"
-        },
         {
             "name": "D numeric base prefix",
             "scope": "punctuation.definition.numeric.binary.d, punctuation.definition.numeric.hexadecimal.d",
