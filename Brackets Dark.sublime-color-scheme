@@ -520,6 +520,12 @@
             "scope": "source.env string.interpolated keyword.other.template",
             "foreground": "var(textcolor)"
         },
+        // Erlang specific rules
+        {
+            "name": "Erlang bitwise operator keyword",
+            "scope": "keyword.operator.bitwise.erlang",
+            "foreground": "var(blue)"
+        },
         // F# specific rules >> https://packagecontrol.io/packages/F%23
         {
             "name": "F# operator",
