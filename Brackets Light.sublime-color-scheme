@@ -1154,44 +1154,6 @@
             "scope": "keyword.other.r - comment.line.roxygen.r",
             "foreground": "var(textcolor)"
         },
-        // RAML specific rules >> https://packagecontrol.io/packages/RAML%20Syntax%20Highlighter
-        {
-            "name": "RAML header",
-            "scope": "source.raml constant.language.directive.yaml",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "RAML key",
-            "scope": "source.raml & (entity.name.function.yaml | constant.numeric.yaml)",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "RAML HTTP method",
-            "scope": "source.raml constant.character.method.yaml",
-            "foreground": "var(blue)",
-            "font_style": "italic"
-        },
-        {
-            "name": "RAML HTTP response key",
-            "scope": "source.raml support.type.function.yaml",
-            "foreground": "var(green)"
-        },
-        {
-            "name": "RAML resource node",
-            "scope": "source.raml entity.name.tag.yaml, source.raml keyword.other.omap.yaml",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "RAML include tag",
-            "scope": "source.raml meta.key-value.include.path",
-            "foreground": "var(violet)",
-            "font_style": "italic"
-        },
-        {
-            "name": "RAML base URI",
-            "scope": "source.raml meta.link support.type.tag.yaml",
-            "foreground": "var(textcolor)"
-        },
         // Regular Expression specific rules
         {
             "name": "Regex embedded in other language",
