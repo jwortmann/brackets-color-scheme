@@ -51,12 +51,12 @@
             "foreground": "var(grey)"
         },
         {
-            "name": "Language-specific character",
+            "name": "Escaped or special character",
             "scope": "constant.character",
             "foreground": "var(orange)"
         },
         {
-            "name": "Language-specific constant",
+            "name": "Built-in constant",
             "scope": "constant.language",
             "foreground": "var(orange)"
         },
@@ -76,25 +76,25 @@
             "font_style": "italic"
         },
         {
-            "name": "Diff deleted line",
+            "name": "Inline diff deleted line",
             "scope": "diff.deleted",
             "background": "color(var(red2) alpha(0.15))",
             "foreground_adjust": "lightness(- 10%)"
         },
         {
-            "name": "Diff deleted region",
+            "name": "Inline diff deleted region",
             "scope": "diff.deleted.char",
             "background": "color(var(red2) alpha(0.40))",
             "foreground_adjust": "lightness(- 10%)"
         },
         {
-            "name": "Diff inserted line",
+            "name": "Inline diff inserted line",
             "scope": "diff.inserted",
             "background": "color(var(green2) alpha(0.15))",
             "foreground_adjust": "lightness(- 10%)"
         },
         {
-            "name": "Diff inserted region",
+            "name": "Inline diff inserted region",
             "scope": "diff.inserted.char",
             "background": "color(var(green2) alpha(0.40))",
             "foreground_adjust": "lightness(- 10%)"
@@ -131,13 +131,13 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Inherited class",
+            "name": "Base class or interface",
             "scope": "entity.other.inherited-class",
             "foreground": "var(violet)",
             "font_style": "italic"
         },
         {
-            "name": "Illegal expression",
+            "name": "Invalid expression",
             "scope": "invalid.illegal",
             "foreground": "var(red)"
         },
@@ -157,7 +157,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Symbolic operator",
+            "name": "Operator symbol",
             "scope": "keyword.operator",
             "foreground": "var(textcolor)"
         },
@@ -232,7 +232,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Storage modifier",
+            "name": "Modifier keyword",
             "scope": "storage.modifier",
             "foreground": "var(blue)"
         },
@@ -252,7 +252,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Library or user construct",
+            "name": "Library or built-in construct",
             "scope": "support",
             "foreground": "var(blue)"
         },
@@ -267,12 +267,12 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Language-specific variable",
+            "name": "Built-in variable",
             "scope": "variable.language",
             "foreground": "var(blue)"
         },
         {
-            "name": "Generic variable",
+            "name": "Misc variable",
             "scope": "variable.other",
             "foreground": "var(textcolor)"
         },
@@ -283,7 +283,7 @@
         },
         // ActionScript specific rules
         {
-            "name": "ActionScript reserved word",
+            "name": "ActionScript keyword",
             "scope": "keyword.operator.actionscript.2",
             "foreground": "var(blue)"
         },
@@ -300,19 +300,19 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Apache reserved word",
+            "name": "Apache keyword",
             "scope": "entity.status.apacheconf, entity.helper.apacheconf",
             "foreground": "var(blue)"
         },
         // ASP specific rules
         {
-            "name": "ASP logical operator",
+            "name": "ASP logical operator keyword",
             "scope": "keyword.operator.logical.asp",
             "foreground": "var(blue)"
         },
         // C# specific rules
         {
-            "name": "C# reserved word",
+            "name": "C# keyword",
             "scope": "keyword.operator.new.cs, keyword.operator.reflection.cs",
             "foreground": "var(blue)"
         },
@@ -322,7 +322,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "C# documentation comment tag attribute",
+            "name": "C# tag attribute in doc comment",
             "scope": "comment.block.documentation entity.other.attribute-name",
             "foreground": "var(green)"
         },
@@ -339,18 +339,18 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "CoffeeScript reserved word",
+            "name": "CoffeeScript keyword",
             "scope": "keyword.operator.new.coffee",
             "foreground": "var(blue)"
         },
         {
-            "name": "CoffeeScript arrow",
+            "name": "CoffeeScript lambda function arrow",
             "scope": "storage.type.function.coffee",
             "foreground": "var(textcolor)"
         },
         // CSS specific rules
         {
-            "name": "CSS selector pseudo-class/pseudo-element",
+            "name": "CSS selector pseudo-class/element",
             "scope": "entity.other.pseudo-class, entity.other.pseudo-element",
             "foreground": "var(textcolor)"
         },
@@ -360,7 +360,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "CSS property",
+            "name": "CSS property name",
             "scope": "support.type.property-name.css, support.type.property-name.media.css",
             "foreground": "var(violet)"
         },
@@ -415,7 +415,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "CSS logical operator",
+            "name": "CSS logical operator keyword",
             "scope": "keyword.operator.logic.css, keyword.operator.logic.media.css",
             "foreground": "var(blue)"
         },
@@ -431,7 +431,7 @@
         },
         // CSS specific rules >> https://packagecontrol.io/packages/CSS3
         {
-            "name": "CSS selector pseudo-class/pseudo-element",
+            "name": "CSS selector pseudo-class/element",
             "scope": "entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element",
             "foreground": "var(textcolor)"
         },
@@ -528,7 +528,7 @@
         },
         // F# specific rules >> https://packagecontrol.io/packages/F%23
         {
-            "name": "F# operator",
+            "name": "F# operator symbol",
             "scope": "keyword.symbol.fsharp",
             "foreground": "var(textcolor)"
         },
@@ -538,7 +538,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "F# placeholder in strings",
+            "name": "F# placeholder in string",
             "scope": "keyword.format.specifier.fsharp",
             "foreground": "var(textcolor)"
         },
@@ -559,7 +559,7 @@
             "foreground": "var(purple)"
         },
         {
-            "name": "Fortran logical operator",
+            "name": "Fortran logical operator keyword",
             "scope": "keyword.operator.logical.fortran",
             "foreground": "var(blue)"
         },
@@ -570,7 +570,7 @@
         },
         // Git specific rules
         {
-            "name": "Git Commit reserved word",
+            "name": "Git Commit keyword",
             "scope": "keyword.operator.git.commit",
             "foreground": "var(blue)"
         },
@@ -580,7 +580,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Git Rebase reserved word",
+            "name": "Git Rebase keyword",
             "scope": "text.git.rebase keyword.operator",
             "foreground": "var(blue)"
         },
@@ -619,7 +619,7 @@
         },
         // Groovy specific rules
         {
-            "name": "Groovy reserved word",
+            "name": "Groovy keyword",
             "scope": "keyword.operator.instanceof.groovy, keyword.operator.as.groovy, keyword.operator.is.groovy",
             "foreground": "var(blue)"
         },
@@ -662,7 +662,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "INI quotes",
+            "name": "INI string punctuation",
             "scope": "punctuation.definition.quote.ini",
             "foreground": "var(orange)"
         },
@@ -694,7 +694,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "JavaScript reserved word",
+            "name": "JavaScript keyword",
             "scope": "keyword.operator.js",
             "foreground": "var(blue)"
         },
@@ -704,7 +704,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "JavaScript arrow function",
+            "name": "JavaScript lambda function arrow",
             "scope": "storage.type.function.arrow.js",
             "foreground": "var(textcolor)"
         },
@@ -720,7 +720,7 @@
         },
         // JavaScript specific rules >> https://packagecontrol.io/packages/Babel
         {
-            "name": "JavaScript reserved word",
+            "name": "JavaScript keyword",
             "scope": "keyword.operator.new.js, keyword.operator.module.js",
             "foreground": "var(blue)"
         },
@@ -730,7 +730,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "JavaScript template string backticks",
+            "name": "JavaScript template string punctuation",
             "scope": "string.interpolated.js keyword.other.template",
             "foreground": "var(orange)"
         },
@@ -839,19 +839,19 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "BibTeX braces",
+            "name": "BibTeX brace character",
             "scope": "string.quoted.other.braces.bibtex punctuation.definition.string",
             "foreground": "var(textcolor)"
         },
         // LESS specific rules >> https://packagecontrol.io/packages/LESS
         {
-            "name": "LESS logical operator",
+            "name": "LESS logical operator keyword",
             "scope": "keyword.operator.logic.mixin.less",
             "foreground": "var(blue)"
         },
         // Lua specific rules
         {
-            "name": "Lua logical operator",
+            "name": "Lua logical operator keyword",
             "scope": "keyword.operator.logical.lua",
             "foreground": "var(blue)"
         },
@@ -1004,12 +1004,12 @@
         },
         // Matlab specific rules
         {
-            "name": "Matlab intrinsic function",
+            "name": "Matlab built-in function",
             "scope": "keyword.operator.matlab",
             "foreground": "var(blue)"
         },
         {
-            "name": "Matlab predefined variable",
+            "name": "Matlab built-in variable",
             "scope": "variable.other.function.matlab",
             "foreground": "var(blue)"
         },
@@ -1043,7 +1043,7 @@
         },
         // PHP specific rules
         {
-            "name": "PHP reserved word",
+            "name": "PHP keyword",
             "scope": "keyword.operator.type.php",
             "foreground": "var(blue)"
         },
@@ -1065,7 +1065,7 @@
         },
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
-            "name": "PowerShell operator",
+            "name": "PowerShell operator keyword",
             "scope": "keyword.operator.comparison.powershell, keyword.operator.unary.powershell, keyword.operator.logical.powershell, keyword.operator.bitwise.powershell, keyword.operator.string-format.powershell",
             "foreground": "var(blue)"
         },
@@ -1090,7 +1090,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "PowerShell string interpolation brackets",
+            "name": "PowerShell string interpolation bracket",
             "scope": "string.quoted.double.powershell punctuation.section",
             "foreground": "var(textcolor)"
         },
@@ -1101,17 +1101,17 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Python logical operator",
+            "name": "Python logical operator keyword",
             "scope": "keyword.operator.logical.python",
             "foreground": "var(blue)"
         },
         {
-            "name": "Python dictionary key",
+            "name": "Python dict key",
             "scope": "meta.mapping.key.python meta.generic-name.python",
             "foreground": "var(violet)"
         },
         {
-            "name": "Python annotation",
+            "name": "Python decorator",
             "scope": "variable.annotation support.function.builtin.python, meta.annotation meta.generic-name.python - meta.annotation.arguments",
             "foreground": "var(pink)"
         },
@@ -1122,18 +1122,18 @@
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
         {
-            "name": "Python logical operator",
+            "name": "Python logical operator keyword",
             "scope": "keyword.operator.bool.logical.python.3",
             "foreground": "var(blue)"
         },
         {
-            "name": "Python annotation",
+            "name": "Python decorator",
             "scope": "meta.function.decorator support.function.decorator.python.3",
             "foreground": "var(pink)"
         },
         // Python specific rules >> https://packagecontrol.io/packages/MagicPython
         {
-            "name": "Python annotation",
+            "name": "Python decorator",
             "scope": "meta.function.decorator entity.name.function.decorator.python, meta.function.decorator support.type.python",
             "foreground": "var(pink)"
         },
@@ -1306,7 +1306,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Rust macro invocation",
+            "name": "Rust macro",
             "scope": "support.macro.rust",
             "foreground": "var(blue)"
         },
@@ -1323,13 +1323,13 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Scala arrow",
+            "name": "Scala lambda function arrow",
             "scope": "storage.type.function.arrow.lambda.scala, storage.type.function.arrow.case.scala",
             "foreground": "var(textcolor)"
         },
         // SCSS specific rules >> https://packagecontrol.io/packages/SCSS
         {
-            "name": "SCSS property",
+            "name": "SCSS property name",
             "scope": "support.type.property-name.scss",
             "foreground": "var(violet)"
         },
@@ -1359,7 +1359,7 @@
             "foreground": "var(green)"
         },
         {
-            "name": "SCSS misc symbols",
+            "name": "SCSS misc symbol",
             "scope": "support.constant.mathematical-symbols.scss, entity.name.tag.wildcard.scss, entity.name.tag.reference.scss",
             "foreground": "var(textcolor)"
         },
@@ -1375,7 +1375,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "ShellScript brackets",
+            "name": "ShellScript bracket",
             "scope": "support.function.test.begin.shell, support.function.test.end.shell, support.function.double-brace.begin.shell, support.function.double-brace.end.shell",
             "foreground": "var(textcolor)"
         },
@@ -1391,7 +1391,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "SQL operator",
+            "name": "SQL operator keyword",
             "scope": "keyword.operator.logical.sql, keyword.operator.assignment.alias.sql",
             "foreground": "var(blue)"
         },
@@ -1417,7 +1417,7 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Stylus logical operator",
+            "name": "Stylus logical operator keyword",
             "scope": "keyword.operator.logic.media.stylus",
             "foreground": "var(blue)"
         },
@@ -1432,7 +1432,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Stylus color name",
+            "name": "Stylus built-in color name",
             "scope": "constant.color.w3c-standard-color-name.stylus",
             "foreground": "var(blue)"
         },
@@ -1453,12 +1453,12 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Swift predefined constant",
+            "name": "Swift built-in constant",
             "scope": "keyword.constant.boolean.swift, constant.nil.swift",
             "foreground": "var(orange)"
         },
         {
-            "name": "Swift type casting operator",
+            "name": "Swift keyword",
             "scope": "keyword.operator.type-casting.swift",
             "foreground": "var(blue)"
         },
@@ -1517,7 +1517,7 @@
         },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
-            "name": "TypeScript reserved word",
+            "name": "TypeScript keyword",
             "scope": "keyword.operator.new.ts, keyword.operator.new.tsx, source.ts keyword.operator.expression, source.tsx keyword.operator.expression",
             "foreground": "var(blue)"
         },
@@ -1527,7 +1527,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "TypeScript arrow function",
+            "name": "TypeScript lambda function arrow",
             "scope": "storage.type.function.arrow.ts, storage.type.function.arrow.tsx",
             "foreground": "var(textcolor)"
         },
@@ -1538,12 +1538,12 @@
         },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
         {
-            "name": "VBScript symbolic operator",
+            "name": "VBScript operator symbol",
             "scope": "source.vbs keyword.operator.js",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "VBScript textual operator",
+            "name": "VBScript operator keyword",
             "scope": "source.vbs keyword.operator.asp",
             "foreground": "var(blue)"
         },
@@ -1596,7 +1596,7 @@
             "foreground": "var(purple)"
         },
         {
-            "name": "LSP log arrows",
+            "name": "LSP log arrow",
             "scope": "output.lsp.log storage.modifier.lsp",
             "foreground": "var(textcolor)"
         },
@@ -1623,7 +1623,7 @@
         },
         // PackageDev specific rules >> https://packagecontrol.io/packages/PackageDev
         {
-            "name": "PackageDev JSON predefined key",
+            "name": "PackageDev JSON built-in key",
             "scope": "source.json.sublime meta.mapping.key & (keyword | support | constant.other | entity.name | storage.modifier)",
             "foreground": "var(violet)",
             "font_style": "italic"
@@ -1635,7 +1635,7 @@
             "font_style": ""
         },
         {
-            "name": "PackageDev JSON predefined value",
+            "name": "PackageDev JSON built-in value",
             "scope": "source.json.sublime meta.mapping.value & (support.constant | support.function.modifier.key | storage.type.context.key-value | keyword.operator.context.key-value)",
             "foreground": "var(orange)",
             "font_style": "italic"
@@ -1657,7 +1657,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "PackageDev YAML reserved word",
+            "name": "PackageDev YAML keyword",
             "scope": "source.yaml.sublime keyword.operator.include.sublime-syntax",
             "foreground": "var(blue)"
         },
@@ -1685,12 +1685,12 @@
         },
         // SublimeLinter specific rules >> https://packagecontrol.io/packages/SublimeLinter
         {
-            "name": "SublimeLinter console output filename",
+            "name": "SublimeLinter diagnostics filename",
             "scope": "entity.name.filename.sublime_linter",
             "foreground": "var(blue)"
         },
         {
-            "name": "SublimeLinter console output message",
+            "name": "SublimeLinter diagnostics message",
             "scope": "markup.quote.linter-message.sublime_linter",
             "foreground": "var(textcolor)"
         }
