@@ -761,6 +761,22 @@
             "scope": "variable.macro.julia, punctuation.definition.macro.julia, support.function.macro.julia",
             "foreground": "var(purple)"
         },
+        // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
+        {
+            "name": "Kotlin built-in variable",
+            "scope": "constant.language.kotlin",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Kotlin variable definition",
+            "scope": "entity.name.variable.kotlin",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Kotlin constant",
+            "scope": "constant.other.kotlin",
+            "font_style": "italic"
+        },
         // Laravel Blade specific rules >> https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter
         {
             "name": "Laravel Blade template directive",
