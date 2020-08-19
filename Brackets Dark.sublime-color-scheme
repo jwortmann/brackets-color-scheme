@@ -1493,6 +1493,17 @@
             "scope": "entity.name.tag.toml",
             "foreground": "var(violet)"
         },
+        // Twig specific rules >> https://packagecontrol.io/packages/BetterTwig
+        {
+            "name": "Twig operator keyword",
+            "scope": "keyword.operator.logical.twig - keyword.operator.logical.pipe, keyword.operator.bitwise.twig",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Twig string interpolation punctuation",
+            "scope": "meta.interpolation.twig punctuation.section.interpolation",
+            "foreground": "var(textcolor)"
+        },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
             "name": "TypeScript keyword",
