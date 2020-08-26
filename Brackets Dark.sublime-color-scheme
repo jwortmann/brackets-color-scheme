@@ -520,6 +520,13 @@
             "scope": "source.env string.interpolated keyword.other.template",
             "foreground": "var(textcolor)"
         },
+        // EditorConfig specific rules >> https://github.com/jwortmann/ini-syntax
+        {
+            "name": "EditorConfig key",
+            "scope": "source.ini.editorconfig meta.mapping.key variable.language",
+            "foreground": "var(violet)",
+            "font_style": "italic"
+        },
         // Erlang specific rules
         {
             "name": "Erlang bitwise operator keyword",
