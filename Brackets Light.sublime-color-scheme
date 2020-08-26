@@ -1516,6 +1516,11 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "TypeScript decorator",
+            "scope": "(meta.decorator.ts | meta.decorator.tsx) & (variable.other | entity.name), punctuation.decorator.ts, punctuation.decorator.tsx",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "TypeScript lambda function arrow",
             "scope": "storage.type.function.arrow.ts, storage.type.function.arrow.tsx",
             "foreground": "var(textcolor)"
