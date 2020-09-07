@@ -14,8 +14,8 @@
         "red": "#dc322f",
         "red2": "#d44",
         "violet": "#8757ad",
-        "--yellowish": "#e88501",
-        "--cyanish": "#446fbd"
+        "--yellowish": "#e5bb00",
+        "--cyanish": "#3aadc1"
     },
     "globals":
     {
