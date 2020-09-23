@@ -657,22 +657,6 @@
             "scope": "keyword.other.double-colon.haskell",
             "foreground": "var(textcolor)"
         },
-        // INI specific rules >> https://packagecontrol.io/packages/INI
-        {
-            "name": "INI section name",
-            "scope": "entity.section.ini",
-            "foreground": "var(pink)"
-        },
-        {
-            "name": "INI key",
-            "scope": "keyword.name.ini",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "INI string punctuation",
-            "scope": "punctuation.definition.quote.ini",
-            "foreground": "var(orange)"
-        },
         // Java specific rules
         {
             "name": "Java constant",
