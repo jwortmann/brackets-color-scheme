@@ -207,7 +207,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Accessor symbol",
+            "name": "Accessor punctuation",
             "scope": "punctuation.accessor",
             "foreground": "var(textcolor)"
         },
@@ -222,12 +222,12 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Separator symbol",
+            "name": "Separator punctuation",
             "scope": "punctuation.separator - punctuation.separator.decimal",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Terminator symbol",
+            "name": "Terminator punctuation",
             "scope": "punctuation.terminator",
             "foreground": "var(textcolor)"
         },
@@ -252,7 +252,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Library or built-in construct",
+            "name": "Built-in or library construct",
             "scope": "support",
             "foreground": "var(blue)"
         },
@@ -520,7 +520,7 @@
             "scope": "source.env string.interpolated keyword.other.template",
             "foreground": "var(textcolor)"
         },
-        // EditorConfig specific rules >> https://github.com/jwortmann/ini-syntax
+        // EditorConfig specific rules >> https://packagecontrol.io/packages/INI
         {
             "name": "EditorConfig key",
             "scope": "source.ini.editorconfig meta.mapping.key variable.language",
@@ -1432,7 +1432,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Swift annotation",
+            "name": "Swift attribute",
             "scope": "storage.modifier.attribute.swift",
             "foreground": "var(pink)"
         },
@@ -1453,7 +1453,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Swift annotation",
+            "name": "Swift attribute",
             "scope": "source.swift storage.type.decorator",
             "foreground": "var(pink)"
         },
