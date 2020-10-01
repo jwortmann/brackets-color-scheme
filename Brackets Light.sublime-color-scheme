@@ -1462,6 +1462,12 @@
             "scope": "source.swift storage.type.decorator",
             "foreground": "var(pink)"
         },
+        // SystemVerilog specific rules >> https://packagecontrol.io/packages/SystemVerilog
+        {
+            "name": "SystemVerilog preprocessor directive",
+            "scope": "constant.other.preprocessor.systemverilog",
+            "foreground": "var(purple)"
+        },
         // Textile specific rules
         {
             "name": "Textile link title",
