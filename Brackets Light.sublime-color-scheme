@@ -1202,6 +1202,11 @@
             "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, constant.other.character-class.escape.unicode-property.regexp, keyword.other.any.regexp",
             "foreground": "var(violet)"
         },
+        {
+            "name": "Regex Replace case conversion",
+            "scope": "keyword.operator.case-conversion.regexp-replace",
+            "foreground": "var(blue)"
+        },
         // reStructuredText specific rules
         {
             "name": "RST link label",
