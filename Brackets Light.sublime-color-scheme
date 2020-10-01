@@ -1484,7 +1484,7 @@
             "scope": "entity.name.tag.toml",
             "foreground": "var(violet)"
         },
-        // Twig specific rules >> https://packagecontrol.io/packages/BetterTwig
+        // Twig specific rules >> https://packagecontrol.io/packages/Twig
         {
             "name": "Twig operator keyword",
             "scope": "keyword.operator.logical.twig - keyword.operator.logical.pipe, keyword.operator.bitwise.twig",
