@@ -1554,6 +1554,27 @@
             "scope": "text.html.vue meta.tag punctuation.definition.string",
             "foreground": "var(orange)"
         },
+        // Anaconda specific rules >> https://packagecontrol.io/packages/Anaconda
+        {
+            "name": "Anaconda linter illegal",
+            "scope": "anaconda.outline.illegal",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Anaconda linter warning",
+            "scope": "anaconda.outline.warning",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Anaconda linter violation",
+            "scope": "anaconda.outline.violation",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Anaconda linter underline",
+            "scope": "anaconda.underline.illegal, anaconda.underline.warning, anaconda.underline.violation",
+            "foreground": "var(red)"
+        },
         // GitGutter specific rules >> https://packagecontrol.io/packages/GitGutter
         {
             "name": "GitGutter deleted",
