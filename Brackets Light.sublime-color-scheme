@@ -14,8 +14,10 @@
         "red": "#dc322f",
         "red2": "#d44",
         "violet": "#8757ad",
+        "--orangish": "#e88501",
         "--yellowish": "#e5bb00",
-        "--cyanish": "#3aadc1"
+        "--cyanish": "#3aadc1",
+        "--bluish": "#446fbd"
     },
     "globals":
     {
@@ -49,6 +51,36 @@
             "name": "Comment",
             "scope": "comment",
             "foreground": "var(grey)"
+        },
+        {
+            "name": "Documentation comment: HTML tag",
+            "scope": "comment.block.documentation entity.name.tag, comment.block.documentation punctuation.definition.tag",
+            "foreground": "color(var(blue) alpha(0.7))"
+        },
+        {
+            "name": "Documentation comment: HTML tag attribute",
+            "scope": "comment.block.documentation entity.other.attribute-name",
+            "foreground": "color(var(green) alpha(0.7))"
+        },
+        {
+            "name": "Documentation comment: punctuation",
+            "scope": "comment.block.documentation punctuation.separator",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
+        {
+            "name": "Documentation comment: string",
+            "scope": "comment.block.documentation string",
+            "foreground": "color(var(orange) alpha(0.7))"
+        },
+        {
+            "name": "Documentation comment: tag/keyword",
+            "scope": "comment.block.documentation keyword, comment.line.roxygen keyword, comment.block.documentation storage.modifier",
+            "foreground": "color(var(blue) alpha(0.7))"
+        },
+        {
+            "name": "Documentation comment: parameter",
+            "scope": "comment.block.documentation variable.parameter, comment.line.roxygen variable.parameter",
+            "foreground": "color(var(orange) alpha(0.7)"
         },
         {
             "name": "Escaped or special character",
@@ -1048,6 +1080,16 @@
             "scope": "keyword.accessor.arrow.perl",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "Perl Pod heading",
+            "scope": "comment.block.documentation.perl markup.heading",
+            "foreground": "color(var(pink) alpha(0.7))"
+        },
+        {
+            "name": "Perl Pod formatted text",
+            "scope": "comment.block.documentation.perl & (string.unquoted | entity.name.label | constant.character | markup.quote | markup.bold | markup.italic | markup.underline.link) - markup.heading",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
         // PHP specific rules
         {
             "name": "PHP keyword",
@@ -1158,8 +1200,13 @@
         // R specific rules
         {
             "name": "R operator symbol",
-            "scope": "keyword.other.r - comment.line.roxygen.r",
+            "scope": "keyword.other.r - comment",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "R code section",
+            "scope": "comment.line entity.name.section.r",
+            "foreground": "color(var(pink) alpha(0.7))"
         },
         // Regular Expression specific rules
         {
