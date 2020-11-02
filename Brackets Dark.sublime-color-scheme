@@ -1134,9 +1134,14 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Powershell documentation keyword",
-            "scope": "keyword.operator.documentation.powershell, constant.string.documentation.powershell",
-            "foreground": "var(pink)"
+            "name": "PowerShell documentation header",
+            "scope": "comment.documentation keyword.operator.documentation.powershell",
+            "foreground": "color(var(pink) alpha(0.6))"
+        },
+        {
+            "name": "PowerShell documentation header punctuation",
+            "scope": "comment.documentation constant.string.documentation.powershell",
+            "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "PowerShell string interpolation bracket",
