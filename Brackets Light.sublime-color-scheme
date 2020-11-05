@@ -689,6 +689,11 @@
             "scope": "keyword.other.double-colon.haskell",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "Haskell import module",
+            "scope": "meta.import support.other.module.haskell",
+            "foreground": "var(textcolor)"
+        },
         // Java specific rules
         {
             "name": "Java constant",
