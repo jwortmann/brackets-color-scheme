@@ -19,11 +19,9 @@ The color scheme can then be activated from the menu under `Preferences > Color 
 
 ## Preview
 
-![Brackets Light](https://i.imgur.com/hCvUKuH.png)
+![Brackets Light](https://i.imgur.com/V9CBcJ3.png)
 
-![Brackets Dark](https://i.imgur.com/KLOsBrO.png)
-
-The font used in the preview images is [Fira Mono](https://github.com/mozilla/Fira).
+![Brackets Dark](https://i.imgur.com/O4aqKh9.png)
 
 ## Color palette
 
