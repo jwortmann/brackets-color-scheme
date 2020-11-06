@@ -353,11 +353,6 @@
             "scope": "storage.type.function.cs, storage.type.function.lambda.cs",
             "foreground": "var(textcolor)"
         },
-        {
-            "name": "C# tag attribute in doc comment",
-            "scope": "comment.block.documentation entity.other.attribute-name",
-            "foreground": "var(green)"
-        },
         // Clojure specific rules
         {
             "name": "Clojure ratio",
