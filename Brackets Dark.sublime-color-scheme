@@ -1337,8 +1337,8 @@
             "font_style": "italic"
         },
         {
-            "name": "Rust annotation",
-            "scope": "meta.annotation.rust punctuation.section.group, meta.annotation.rust variable.function, meta.annotation.parameters.rust",
+            "name": "Rust attribute",
+            "scope": "meta.annotation.rust punctuation.section.group - meta.annotation.parameters, meta.annotation.rust variable.function",
             "foreground": "var(pink)"
         },
         {
