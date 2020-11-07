@@ -1148,6 +1148,16 @@
             "scope": "string.quoted.double.powershell punctuation.section",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "PowerShell attribute",
+            "scope": "support.function.attribute.powershell, meta.attribute.powershell punctuation.section.bracket",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "PowerShell attribute argument",
+            "scope": "variable.parameter.attribute.powershell",
+            "foreground": "var(blue)"
+        },
         // Python specific rules
         {
             "name": "Python import statement punctuation/asterisk",
