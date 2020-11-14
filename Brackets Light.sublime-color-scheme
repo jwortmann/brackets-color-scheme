@@ -723,7 +723,7 @@
         },
         {
             "name": "JavaScript lambda function arrow",
-            "scope": "storage.type.function.arrow.js",
+            "scope": "keyword.declaration.function.arrow.js, storage.type.function.arrow.js",
             "foreground": "var(textcolor)"
         },
         {
