@@ -751,6 +751,11 @@
             "scope": "meta.annotation variable.other.readwrite.js",
             "foreground": "var(pink)"
         },
+        {
+            "name": "JSDoc tag",
+            "scope": "comment.block.documentation entity.other.attribute-name.documentation.js",
+            "foreground": "color(var(blue) alpha(0.6))"
+        },
         // JavaScript specific rules >> https://packagecontrol.io/packages/Babel
         {
             "name": "JavaScript keyword",
