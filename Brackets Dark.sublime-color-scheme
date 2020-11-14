@@ -185,6 +185,11 @@
         },
         {
             "name": "Lambda function arrow",
+            "scope": "keyword.declaration.function.anonymous",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Lambda function arrow [ST3]",
             "scope": "keyword.declaration.function.lambda",
             "foreground": "var(textcolor)"
         },
@@ -350,7 +355,12 @@
         },
         {
             "name": "C# arrow operator",
-            "scope": "storage.type.function.cs, storage.type.function.lambda.cs",
+            "scope": "storage.type.function.lambda.cs",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "C# arrow operator [ST3]",
+            "scope": "storage.type.function.cs",
             "foreground": "var(textcolor)"
         },
         // Clojure specific rules
@@ -474,12 +484,12 @@
         },
         // D specific rules
         {
-            "name": "D numeric base prefix",
+            "name": "D numeric base prefix [ST3]",
             "scope": "punctuation.definition.numeric.binary.d, punctuation.definition.numeric.hexadecimal.d",
             "foreground": "var(green)"
         },
         {
-            "name": "D numeric type suffix",
+            "name": "D numeric type suffix [ST3]",
             "scope": "storage.type.integer.d, storage.type.float.d",
             "foreground": "var(green)"
         },
@@ -723,7 +733,12 @@
         },
         {
             "name": "JavaScript lambda function arrow",
-            "scope": "keyword.declaration.function.arrow.js, storage.type.function.arrow.js",
+            "scope": "keyword.declaration.function.arrow.js",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "JavaScript lambda function arrow [ST3]",
+            "scope": "storage.type.function.arrow.js",
             "foreground": "var(textcolor)"
         },
         {
