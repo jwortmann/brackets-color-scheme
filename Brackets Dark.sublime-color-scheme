@@ -54,32 +54,37 @@
         },
         {
             "name": "Documentation comment: HTML tag",
-            "scope": "comment.block.documentation entity.name.tag, comment.block.documentation punctuation.definition.tag",
+            "scope": "comment.block.documentation entity.name.tag, comment.line.documentation entity.name.tag",
+            "foreground": "color(var(blue) alpha(0.6))"
+        },
+        {
+            "name": "Documentation comment: HTML tag punctuation",
+            "scope": "comment.block.documentation punctuation.definition.tag, comment.line.documentation punctuation.definition.tag",
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
             "name": "Documentation comment: HTML tag attribute",
-            "scope": "comment.block.documentation entity.other.attribute-name",
+            "scope": "comment.block.documentation entity.other.attribute-name, comment.line.documentation entity.other.attribute-name",
             "foreground": "color(var(green) alpha(0.6))"
         },
         {
             "name": "Documentation comment: punctuation",
-            "scope": "comment.block.documentation punctuation.separator",
+            "scope": "comment.block.documentation punctuation.separator, comment.line.documentation punctuation.separator",
             "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "Documentation comment: string",
-            "scope": "comment.block.documentation string",
+            "scope": "comment.block.documentation string, comment.line.documentation string",
             "foreground": "color(var(orange) alpha(0.6))"
         },
         {
             "name": "Documentation comment: tag/keyword",
-            "scope": "comment.block.documentation keyword, comment.line.roxygen keyword, comment.block.documentation storage.modifier",
+            "scope": "comment.block.documentation keyword, comment.line.documentation keyword, comment.block.documentation storage.modifier, comment.line.documentation storage.modifier",
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
             "name": "Documentation comment: parameter",
-            "scope": "comment.block.documentation variable.parameter, comment.line.roxygen variable.parameter",
+            "scope": "comment.block.documentation variable.parameter, comment.line.documentation variable.parameter",
             "foreground": "color(var(orange) alpha(0.6)"
         },
         {
@@ -1237,6 +1242,16 @@
             "name": "R code section",
             "scope": "comment.line entity.name.section.r",
             "foreground": "color(var(pink) alpha(0.6))"
+        },
+        {
+            "name": "roxygen tag",
+            "scope": "comment.line.roxygen keyword",
+            "foreground": "color(var(blue) alpha(0.6))"
+        },
+        {
+            "name": "roxygen parameter",
+            "scope": "comment.line.roxygen variable.parameter",
+            "foreground": "color(var(orange) alpha(0.6)"
         },
         // Regular Expression specific rules
         {
