@@ -712,11 +712,6 @@
         },
         // JavaScript specific rules
         {
-            "name": "JavaScript generator function asterisk",
-            "scope": "keyword.generator.asterisk.js",
-            "foreground": "var(textcolor)"
-        },
-        {
             "name": "JavaScript keyword",
             "scope": "keyword.operator.js",
             "foreground": "var(blue)"
