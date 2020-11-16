@@ -1624,6 +1624,56 @@
             "scope": "constant.language.import-export-all.ts, constant.language.import-export-all.tsx",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "JSDoc tag",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & storage.type.class.jsdoc",
+            "foreground": "color(var(blue) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc keyword",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & (keyword.operator.control.jsdoc | constant.language.access-type.jsdoc | constant.language.symbol-type.jsdoc)",
+            "foreground": "color(var(blue) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc parameter",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.jsdoc",
+            "foreground": "color(var(orange) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc optional parameter punctuation",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.jsdoc & (punctuation | keyword.operator)",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc type / author-name / identifier",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & entity.name.type.instance.jsdoc",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc author email",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & constant.other.email.link.underline.jsdoc",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc example description",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & meta.example constant.other.description.jsdoc",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc link",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.link.underline.jsdoc",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc inline link description",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.description.jsdoc",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
+            "name": "JSDoc invalid expression",
+            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & (invalid.illegal.syntax.jsdoc | invalid.illegal.type.jsdoc)",
+            "foreground": "color(var(red) alpha(0.6))"
+        },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
         {
             "name": "VBScript operator symbol",
