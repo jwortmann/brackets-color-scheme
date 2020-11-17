@@ -725,6 +725,16 @@
             "scope": "support.type.package.java",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "JavaDoc link",
+            "scope": "comment.block.documentation markup.underline.link.javadoc",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
+        {
+            "name": "JavaDoc inline-tag punctuation",
+            "scope": "comment.block.documentation meta.inline-tag.javadoc punctuation.section.inline-tag",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
         // JavaScript specific rules
         {
             "name": "JavaScript keyword",
