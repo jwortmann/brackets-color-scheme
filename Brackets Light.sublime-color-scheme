@@ -1625,6 +1625,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "TypeScript template string expression",
+            "scope": "meta.template.expression.ts - meta.template.expression.ts string, meta.template.expression.tsx - meta.template.expression.tsx string",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "JSDoc tag",
             "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & storage.type.class.jsdoc",
             "foreground": "color(var(blue) alpha(0.7))"
