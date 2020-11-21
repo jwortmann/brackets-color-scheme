@@ -88,6 +88,11 @@
             "foreground": "color(var(orange) alpha(0.7)"
         },
         {
+            "name": "Doc comment: link",
+            "scope": "comment.block.documentation markup.underline.link, comment.line.documentation markup.underline.link",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
+        {
             "name": "Escaped or special character",
             "scope": "constant.character",
             "foreground": "var(orange)"
@@ -724,11 +729,6 @@
             "name": "Java namespace",
             "scope": "support.type.package.java",
             "foreground": "var(textcolor)"
-        },
-        {
-            "name": "JavaDoc link",
-            "scope": "comment.block.documentation markup.underline.link.javadoc",
-            "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "JavaDoc inline-tag punctuation",
