@@ -99,7 +99,7 @@
         },
         {
             "name": "Number",
-            "scope": "constant.numeric",
+            "scope": "constant.numeric, punctuation.separator.decimal",
             "foreground": "var(green)"
         },
         {
@@ -655,11 +655,6 @@
             "foreground": "var(textcolor)"
         },
         // Go specific rules
-        {
-            "name": "Go number decimal point",
-            "scope": "punctuation.separator.decimal.go",
-            "foreground": "var(green)"
-        },
         {
             "name": "Go floating point exponent separator [ST3]",
             "scope": "punctuation.separator.exponent.go",
