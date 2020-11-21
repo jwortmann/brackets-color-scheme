@@ -53,37 +53,37 @@
             "foreground": "var(grey)"
         },
         {
-            "name": "Documentation comment: HTML tag",
+            "name": "Doc comment: HTML tag",
             "scope": "comment.block.documentation entity.name.tag, comment.line.documentation entity.name.tag",
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
-            "name": "Documentation comment: HTML tag punctuation",
+            "name": "Doc comment: HTML tag punctuation",
             "scope": "comment.block.documentation punctuation.definition.tag, comment.line.documentation punctuation.definition.tag",
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
-            "name": "Documentation comment: HTML tag attribute",
+            "name": "Doc comment: HTML tag attribute",
             "scope": "comment.block.documentation entity.other.attribute-name, comment.line.documentation entity.other.attribute-name",
             "foreground": "color(var(green) alpha(0.6))"
         },
         {
-            "name": "Documentation comment: punctuation",
+            "name": "Doc comment: punctuation",
             "scope": "comment.block.documentation punctuation.separator, comment.line.documentation punctuation.separator",
             "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
-            "name": "Documentation comment: string",
+            "name": "Doc comment: string",
             "scope": "comment.block.documentation string, comment.line.documentation string",
             "foreground": "color(var(orange) alpha(0.6))"
         },
         {
-            "name": "Documentation comment: tag/keyword",
+            "name": "Doc comment: tag/keyword",
             "scope": "comment.block.documentation keyword, comment.line.documentation keyword, comment.block.documentation storage.modifier, comment.line.documentation storage.modifier",
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
-            "name": "Documentation comment: parameter",
+            "name": "Doc comment: parameter",
             "scope": "comment.block.documentation variable.parameter, comment.line.documentation variable.parameter",
             "foreground": "color(var(orange) alpha(0.6)"
         },
@@ -284,7 +284,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Numeric type suffix",
+            "name": "Numeric type suffix [ST3]",
             "scope": "storage.type.numeric",
             "foreground": "var(green)"
         },
@@ -656,7 +656,7 @@
         },
         // Go specific rules
         {
-            "name": "Go floating point exponent designator",
+            "name": "Go floating point exponent separator [ST3]",
             "scope": "punctuation.separator.exponent.go",
             "foreground": "var(green)"
         },
@@ -1200,7 +1200,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Python dict key",
+            "name": "Python dict unquoted key",
             "scope": "meta.mapping.key.python meta.generic-name.python",
             "foreground": "var(violet)"
         },
