@@ -948,7 +948,7 @@
         {
             "name": "Markdown fenced code block language",
             "scope": "constant.other.language-name.markdown",
-            "foreground": "var(grey)"
+            "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "Markdown horizontal rule",
@@ -1029,7 +1029,7 @@
         {
             "name": "Markdown fenced code block language",
             "scope": "markup.raw.block.fenced.markdown variable.language.fenced.markdown",
-            "foreground": "var(grey)"
+            "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "Markdown horizontal rule",
