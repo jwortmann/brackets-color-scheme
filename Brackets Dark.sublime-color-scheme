@@ -164,7 +164,7 @@
         },
         {
             "name": "Tag attribute",
-            "scope": "meta.tag entity.other.attribute-name",
+            "scope": "meta.tag entity.other.attribute-name - comment",
             "foreground": "var(green)"
         },
         {
