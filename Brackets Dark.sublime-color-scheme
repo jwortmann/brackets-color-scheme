@@ -735,6 +735,11 @@
             "scope": "comment.block.documentation meta.inline-tag.javadoc punctuation.section.inline-tag",
             "foreground": "color(var(textcolor) alpha(0.6))"
         },
+        {
+            "name": "JavaDoc code",
+            "scope": "comment.block.documentation markup.raw.javadoc",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
         // JavaScript specific rules
         {
             "name": "JavaScript keyword",
