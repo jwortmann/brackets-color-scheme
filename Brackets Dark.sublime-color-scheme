@@ -917,6 +917,12 @@
             "scope": "string.quoted.other.braces.bibtex punctuation.definition.string",
             "foreground": "var(textcolor)"
         },
+        // Lisp specific rules
+        {
+            "name": "Lisp operator keyword",
+            "scope": "keyword.operator.logical.lisp, keyword.operator.bitwise.lisp",
+            "foreground": "var(blue)"
+        },
         // LESS specific rules >> https://packagecontrol.io/packages/LESS
         {
             "name": "LESS logical operator keyword",
