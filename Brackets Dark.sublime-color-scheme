@@ -772,6 +772,11 @@
             "foreground": "var(pink)"
         },
         {
+            "name": "JavaScript user-defined class",
+            "scope": "support.class.js",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "JSDoc tag",
             "scope": "comment.block.documentation entity.other.attribute-name.documentation.js",
             "foreground": "color(var(blue) alpha(0.6))"
