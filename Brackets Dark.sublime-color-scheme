@@ -1013,54 +1013,29 @@
         },
         // Markdown specific rules >> https://packagecontrol.io/packages/Markdown%20Extended
         {
+            "name": "Markdown fenced code block with syntax highlighting",
+            "scope": "text.html.markdown markup.raw.block.fenced & (source | text.html.basic | text.xml)",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "Markdown fenced code block language",
-            "scope": "markup.raw.block.fenced.markdown variable.language.fenced.markdown",
+            "scope": "text.html.markdown markup.raw.block.fenced variable.language.fenced",
             "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "Markdown horizontal rule",
-            "scope": "meta.separator.markdown",
+            "scope": "text.html.markdown meta.separator.markdown",
             "foreground": "var(orange)"
         },
         {
-            "name": "Markdown inline link/image label",
-            "scope": "string.other.link.title.markdown, string.other.link.description.markdown",
+            "name": "Markdown link text & image description",
+            "scope": "text.html.markdown string.other.link.title.markdown, text.html.markdown string.other.link.description.markdown, text.html.markdown meta.link.reference.def constant.other.reference.link",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown inline link/image label punctuation",
-            "scope": "punctuation.definition.string.begin.markdown - string, punctuation.definition.string.end.markdown - string",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Markdown inline link/image url punctuation",
-            "scope": "punctuation.definition.metadata.markdown",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Markdown reference-style image id punctuation",
-            "scope": "meta.image.reference.markdown punctuation.definition.constant.markdown",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Markdown reference definition label",
-            "scope": "meta.link.reference.def.markdown constant.other.reference.link.markdown",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Markdown reference definition label punctuation",
-            "scope": "meta.link.reference.def.markdown punctuation.definition.constant.markdown",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Markdown reference definition link url punctuation",
-            "scope": "meta.link.reference.def.markdown punctuation.definition.link.markdown",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Markdown automatic link/email punctuation",
-            "scope": "meta.link.inet.markdown punctuation.definition.link.markdown, meta.link.email.lt-gt.markdown punctuation.definition.link.markdown",
-            "foreground": "var(violet)"
+            "name": "Markdown link text & image description punctuation",
+            "scope": "text.html.markdown meta.link punctuation.definition.string - string, text.html.markdown meta.image punctuation.definition.string - string",
+            "foreground": "color(var(violet) alpha(0.6))"
         },
         // Matlab specific rules
         {
