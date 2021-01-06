@@ -270,7 +270,7 @@
         },
         {
             "name": "Terminator punctuation",
-            "scope": "punctuation.terminator - punctuation.terminator.entity.html",
+            "scope": "punctuation.terminator - constant.character.entity",
             "foreground": "var(textcolor)"
         },
         {
