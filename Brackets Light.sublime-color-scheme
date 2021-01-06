@@ -727,13 +727,18 @@
         },
         {
             "name": "JavaDoc inline-tag punctuation",
-            "scope": "comment.block.documentation meta.inline-tag.javadoc punctuation.section.inline-tag",
+            "scope": "comment.block.documentation.javadoc meta.inline-tag punctuation.section.inline-tag",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "JavaDoc code",
-            "scope": "comment.block.documentation markup.raw.javadoc",
+            "scope": "comment.block.documentation.javadoc meta.inline-tag markup.raw",
             "foreground": "color(var(textcolor) alpha(0.7))"
+        },
+        {
+            "name": "JavaDoc HTML entity",
+            "scope": "comment.block.documentation.javadoc constant.character.entity.named.html",
+            "foreground": "color(var(orange) alpha(0.7))"
         },
         // JavaScript specific rules
         {
