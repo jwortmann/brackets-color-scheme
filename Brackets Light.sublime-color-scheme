@@ -1108,6 +1108,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "PHP user-defined class",
+            "scope": "support.class.php",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "PHP library constant",
             "scope": "support.constant.core.php, support.constant.std.php, support.constant.ext.php, support.constant.parser-token.php",
             "foreground": "var(orange)",
