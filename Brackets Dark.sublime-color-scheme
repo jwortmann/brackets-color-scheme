@@ -569,6 +569,12 @@
             "foreground": "var(violet)",
             "font_style": "italic"
         },
+        // Elixir specific rules >> https://packagecontrol.io/packages/Elixir
+        {
+            "name": "Elixir operator keyword",
+            "scope": "keyword.operator.elixir",
+            "foreground": "var(blue)"
+        },
         // Erlang specific rules
         {
             "name": "Erlang bitwise operator keyword",
