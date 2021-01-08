@@ -768,6 +768,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "JavaScript constructor",
+            "scope": "entity.name.function.constructor.js",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "JavaScript constant",
             "scope": "variable.other.constant.js",
             "font_style": "italic"
