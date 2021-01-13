@@ -374,6 +374,11 @@
             "scope": "punctuation.separator.ratio.clojure",
             "foreground": "var(green)"
         },
+        {
+            "name": "Clojure Regex string",
+            "scope": "string.regexp.clojure - punctuation.definition.string",
+            "foreground": "var(textcolor)"
+        },
         // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
         {
             "name": "CoffeeScript string interpolation",
@@ -786,6 +791,26 @@
             "name": "JavaScript user-defined class",
             "scope": "support.class.js",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "JavaScript Regex string",
+            "scope": "string.regexp.js - punctuation.definition.string",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "JavaScript Regex string mode modifier",
+            "scope": "string.regexp.js keyword.other.js",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Regex (JavaScript) unicode property",
+            "scope": "string.regexp.js support.constant.unicode-property.regexp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Regex (JavaScript) character class ",
+            "scope": "string.regexp.js constant.other.character-class.escape.backslash.regexp, string.regexp.js constant.other.character-class.escape.unicode-property.regexp",
+            "foreground": "var(violet)"
         },
         {
             "name": "JSDoc tag",
@@ -1257,44 +1282,49 @@
         },
         // Regular Expression specific rules
         {
-            "name": "Regex embedded in other language",
-            "scope": "source.regexp, string.regexp.js - punctuation.definition.string, string.regexp.clojure - punctuation.definition.string",
+            "name": "Regex string",
+            "scope": "string source.regexp",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Regex character set",
-            "scope": "constant.other.range.regexp, constant.other.character-class.set.regexp, meta.set.regexp",
+            "name": "Regex metacharacter",
+            "scope": "keyword.operator.quantifier.regexp, keyword.operator.alternation.regexp, keyword.operator.or.regexp, keyword.operator.negation.regexp, keyword.operator.intersection.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Regex group & character set parens/brackets",
+            "scope": "keyword.control.group.regexp, keyword.control.set.regexp",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Regex group/set punctuation",
-            "scope": "keyword.control.group.regexp, keyword.control.set.regexp, punctuation.definition.group.begin.regexp, punctuation.definition.group.end.regexp, punctuation.definition.character-class.begin.regexp, punctuation.definition.character-class.end.regexp",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Regex quantifier/operator",
-            "scope": "keyword.operator.quantifier.regexp, keyword.operator.negation.regexp, keyword.operator.alternation.regexp, keyword.operator.or.regexp, keyword.operator.intersection.regexp",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Regex assertion/mode modifier",
-            "scope": "constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, storage.modifier.mode.regexp, punctuation.definition.group.no-capture.regexp",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Regex reference/conditional",
-            "scope": "keyword.other.named-capture-group.regexp, entity.name.capture-group.regexp, keyword.other.backref-and-recursion.regexp, keyword.other.backref-and-recursion.conditional.regexp, keyword.other.conditional.regexp, keyword.other.conditional.definition.regexp",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Regex anchor",
-            "scope": "keyword.control.anchor.regexp, keyword.control.anchors.regexp",
+            "name": "Regex non-capturing group & assertion",
+            "scope": "punctuation.definition.group.no-capture.regexp, constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp",
             "foreground": "var(blue)"
         },
         {
             "name": "Regex character class",
-            "scope": "keyword.control.character-class.regexp, support.class.character-class.regexp, constant.character.character-class.regexp, constant.other.character-class.escape.backslash.regexp, constant.other.character-class.escape.unicode-property.regexp, keyword.other.any.regexp",
+            "scope": "keyword.control.character-class.regexp, keyword.other.any.regexp",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "Regex character class [PHP, Python]",
+            "scope": "constant.character.character-class.regexp",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Regex POSIX character class",
+            "scope": "constant.other.posix-class.regexp",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Regex back-reference",
+            "scope": "keyword.other.backref-and-recursion.regexp variable.other.backref-and-recursion.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Regex named capture group",
+            "scope": "entity.name.capture-group.regexp",
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Regex Replace case conversion",
@@ -1823,13 +1853,33 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "PackageDev YAML keyword",
-            "scope": "source.yaml.sublime keyword.operator.include.sublime-syntax",
+            "name": "PackageDev sublime-syntax include",
+            "scope": "source.yaml.sublime.syntax keyword.operator.include.sublime-syntax",
             "foreground": "var(blue)"
         },
         {
-            "name": "PackageDev YAML punctuation",
-            "scope": "source.yaml.sublime source.regexp punctuation.definition.variable",
+            "name": "PackageDev sublime-syntax punctuation",
+            "scope": "source.yaml.sublime.syntax source.regexp punctuation.definition.variable",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PackageDev sublime-syntax regex character class",
+            "scope": "source.yaml.sublime.syntax source.regexp support.class.character-class.regexp, source.yaml.sublime.syntax source.regexp keyword.other.character-class.property.regexp",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "PackageDev sublime-syntax regex unicode category",
+            "scope": "source.yaml.sublime.syntax source.regexp keyword.other.character-class.property.regexp support.type.property.regexp",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "PackageDev sublime-syntax regex unrecognized unicode category",
+            "scope": "source.yaml.sublime.syntax source.regexp keyword.other.character-class.property.regexp support.function.property.untested.regexp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PackageDev sublime-syntax regex unicode category punctuation",
+            "scope": "source.yaml.sublime.syntax source.regexp keyword.other.character-class.property.regexp punctuation.definition.property",
             "foreground": "var(textcolor)"
         },
         {
