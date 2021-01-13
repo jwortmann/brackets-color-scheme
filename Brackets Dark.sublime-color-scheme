@@ -604,29 +604,29 @@
         },
         // Fortran specific rules >> https://packagecontrol.io/packages/Fortran
         {
-            "name": "Fortran format descriptor",
-            "scope": "meta.format-string.fortran constant.numeric.format-descriptor.fortran",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Fortran double-colon",
-            "scope": "keyword.control.double-colon.fortran",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Fortran preprocessor directive",
-            "scope": "keyword.control.preprocessor.fortran",
-            "foreground": "var(purple)"
-        },
-        {
-            "name": "Fortran logical operator keyword",
-            "scope": "keyword.operator.logical.fortran",
-            "foreground": "var(blue)"
-        },
-        {
             "name": "Fortran subroutine call",
             "scope": "source.modern-fortran support.function.any-method",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "Fortran logical operator keyword",
+            "scope": "source.modern-fortran keyword.operator.logical, source.fixedform-fortran keyword.operator.logical",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Fortran preprocessor directive",
+            "scope": "source.modern-fortran keyword.control.preprocessor",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Fortran punctuation",
+            "scope": "source.modern-fortran keyword.control.double-colon, source.modern-fortran support.constant.line-continuation",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Fortran format string",
+            "scope": "source.modern-fortran meta.format-string constant.numeric.format-descriptor",
+            "foreground": "var(orange)"
         },
         // Git specific rules
         {
