@@ -195,7 +195,7 @@
         },
         {
             "name": "Lambda function arrow",
-            "scope": "keyword.declaration.function.anonymous",
+            "scope": "keyword.declaration.function.arrow, keyword.declaration.function.anonymous",
             "foreground": "var(textcolor)"
         },
         {
@@ -761,11 +761,6 @@
             "name": "JavaScript mapping key",
             "scope": "meta.object-literal.key.js, meta.object-literal.key.js string, meta.object-literal.key.dollar.js, meta.object-literal.key.dollar.only.js",
             "foreground": "var(violet)"
-        },
-        {
-            "name": "JavaScript lambda function arrow",
-            "scope": "keyword.declaration.function.arrow.js",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "JavaScript lambda function arrow [ST3]",
