@@ -9,11 +9,11 @@ This package for [Sublime Text](https://www.sublimetext.com/) provides two color
 ## Installation
 
 The color scheme can be installed via Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
-From the command palette choose `Package Control: Install Package` and search for `Brackets Color Scheme`.
+From the command palette choose `Package Control: Install Package` and search for *Brackets Color Scheme*.
 
-Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and put them into a folder in the packages directory of Sublime Text, e.g. the `Packages/User` package.
+Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and put them into a folder in the packages directory of Sublime Text, e.g. the *Packages/User* package.
 To access the packages directory, choose `Preferences > Browse Packages...` from the Sublime Text menu.
-Notice that there will be no automatic updates for this package if not using Package Control.
+Notice that there won't be automatic updates for this package if not using Package Control.
 
 The color scheme can then be activated from the menu under `Preferences > Color Scheme...` or via the `UI: Select Color Scheme` command from the command palette.
 
@@ -43,5 +43,24 @@ The color scheme can then be activated from the menu under `Preferences > Color 
 ## Customization
 
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
-The color scheme format allows to customize color variables and override or add user-specific highlighting rules, see [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
+The color scheme format allows to customize color variables and override or add user-specific highlighting rules by creating a `Brackets Light.sublime-color-scheme` and/or `Brackets Dark.sublime-color-scheme` file in the *Packages/User* folder, see [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
+
+## Differences from the Adobe Brackets themes
+
+In general, the color schemes are intended to reproduce the style of the built-in themes in Adobe Brackets, but there are a few minor differences.
+* Some deviations in syntax highlighting are possible due to the different highlighting engines in the editors.
+  Highlighting for certain elements was slightly extended and better support was added for programming languages which are not focused on web development.
+  If you find a bug or possible improvement, feel free to let me know by creating an issue in this repository.
+* In Adobe Brackets, matching tags and brackets are highlighted with a green background color when the caret is next to one.
+  Adjustments of the background color for matching tags or brackets aren't possible in Sublime Text, so they are drawn underlined instead.
+* Sublime Text uses a subtle border and rounded corners for text selections in its built-in color schemes.
+  I chose to follow this style here, but the original style of selections in Adobe Brackets with squared corners and no border can be achieved via the following customization:
+    ```json
+    {
+      "globals": {
+        "selection_border_width": "0",
+        "selection_corner_style": "square"
+      }
+    }
+    ```
