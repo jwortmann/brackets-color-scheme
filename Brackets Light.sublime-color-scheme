@@ -224,6 +224,11 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "Symbol match, LSP DocumentHighlight",
+            "scope": "markup.highlight",
+            "background": "#e5e5d1"
+        },
+        {
             "name": "Inserted",
             "scope": "markup.inserted",
             "foreground": "var(green2)"
