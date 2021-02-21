@@ -607,6 +607,27 @@
             "scope": "keyword.format.specifier.fsharp",
             "foreground": "var(textcolor)"
         },
+        // Fortran specific rules >> https://packagecontrol.io/packages/ModernFortran
+        {
+            "name": "Fortran label",
+            "scope": "source.fortran entity.name.label",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Fortran built-in function",
+            "scope": "source.fortran variable.function.function.intrinsic, source.fortran variable.function.subroutine.intrinsic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Fortran variable or function identifier",
+            "scope": "source.fortran variable.function",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Fortran user-defined class name",
+            "scope": "source.fortran storage.type.class",
+            "foreground": "var(textcolor)"
+        },
         // Fortran specific rules >> https://packagecontrol.io/packages/Fortran
         {
             "name": "Fortran subroutine call",
