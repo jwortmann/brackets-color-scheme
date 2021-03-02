@@ -118,30 +118,6 @@
             "font_style": "italic"
         },
         {
-            "name": "Inline diff deleted line",
-            "scope": "diff.deleted",
-            "background": "color(var(red2) alpha(0.15))",
-            "foreground_adjust": "lightness(+ 5%)"
-        },
-        {
-            "name": "Inline diff deleted region",
-            "scope": "diff.deleted.char",
-            "background": "color(var(red2) alpha(0.40))",
-            "foreground_adjust": "lightness(+ 5%)"
-        },
-        {
-            "name": "Inline diff inserted line",
-            "scope": "diff.inserted",
-            "background": "color(var(green2) alpha(0.15))",
-            "foreground_adjust": "lightness(+ 5%)"
-        },
-        {
-            "name": "Inline diff inserted region",
-            "scope": "diff.inserted.char",
-            "background": "color(var(green2) alpha(0.40))",
-            "foreground_adjust": "lightness(+ 5%)"
-        },
-        {
             "name": "Module/class/type/method name",
             "scope": "entity.name",
             "foreground": "var(violet)"
@@ -209,51 +185,6 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Error",
-            "scope": "markup.error",
-            "foreground": "var(red)"
-        },
-        {
-            "name": "Info",
-            "scope": "markup.info",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Warning",
-            "scope": "markup.warning",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Symbol match, LSP DocumentHighlight",
-            "scope": "markup.highlight",
-            "background": "#383a34"
-        },
-        {
-            "name": "Inserted",
-            "scope": "markup.inserted",
-            "foreground": "var(green2)"
-        },
-        {
-            "name": "Deleted",
-            "scope": "markup.deleted",
-            "foreground": "var(red2)"
-        },
-        {
-            "name": "Changed",
-            "scope": "markup.changed",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Heading",
-            "scope": "markup.heading - comment - markup.heading.subject.git",
-            "foreground": "var(pink)"
-        },
-        {
-            "name": "Mapping key",
-            "scope": "meta.mapping.key string",
-            "foreground": "var(violet)"
-        },
-        {
             "name": "Accessor punctuation",
             "scope": "punctuation.accessor",
             "foreground": "var(textcolor)"
@@ -299,6 +230,11 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "Mapping key",
+            "scope": "meta.mapping.key string",
+            "foreground": "var(violet)"
+        },
+        {
             "name": "Built-in or library construct",
             "scope": "support",
             "foreground": "var(blue)"
@@ -327,6 +263,125 @@
             "name": "Function argument",
             "scope": "variable.parameter - meta.function-call - meta.annotation",
             "foreground": "var(orange)"
+        },
+        {
+            "name": "Heading",
+            "scope": "markup.heading - comment - markup.heading.subject.git",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Changed",
+            "scope": "markup.changed",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Error",
+            "scope": "markup.error",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Warning",
+            "scope": "markup.warning",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Info",
+            "scope": "markup.info",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Symbol match, LSP DocumentHighlight",
+            "scope": "markup.highlight",
+            "background": "#383a34"
+        },
+        {
+            "name": "Inline diff inserted line",
+            "scope": "diff.inserted",
+            "background": "color(var(green2) alpha(0.15))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Inline diff inserted region",
+            "scope": "diff.inserted.char",
+            "background": "color(var(green2) alpha(0.4))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Inline diff deleted line",
+            "scope": "diff.deleted",
+            "background": "color(var(red2) alpha(0.15))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Inline diff deleted region",
+            "scope": "diff.deleted.char",
+            "background": "color(var(red2) alpha(0.4))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Sublime Merge side-by-side diff changed region",
+            "scope": "diff.fill, diff.inserted.side-by-side, diff.deleted.side-by-side",
+            "background": "color(#1d1f21 lightness(+ 3%))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Sublime Merge blame commit separator border",
+            "scope": "blame.border",
+            "background": "#3a3c3d"
+        },
+        {
+            "name": "Sublime Merge merge conflict left view line",
+            "scope": "diff.inserted.merge-left",
+            "background": "color(var(green2) alpha(0.15))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Sublme Merge merge conflict left view region",
+            "scope": "diff.inserted.char.merge-left",
+            "background": "color(var(green2) alpha(0.4))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Sublime Merge merge conflict left view unrelated change border",
+            "scope": "diff.border.merge-left",
+            "background": "color(var(green2) alpha(0.4))"
+        },
+        {
+            "name": "Sublime Merge merge conflict right view line",
+            "scope": "diff.inserted.merge-right",
+            "background": "color(var(blue) alpha(0.15))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Sublme Merge merge conflict right view region",
+            "scope": "diff.inserted.char.merge-right",
+            "background": "color(var(blue) alpha(0.4))",
+            "foreground_adjust": "lightness(+ 5%)"
+        },
+        {
+            "name": "Sublime Merge merge conflict right view unrelated change border",
+            "scope": "diff.border.merge-right",
+            "background": "color(var(blue) alpha(0.4))"
+        },
+        {
+            "name": "Sublime Merge unresolved merge conflict border",
+            "scope": "diff.border.merge-conflict",
+            "background": "color(var(red2) alpha(0.4))"
+        },
+        {
+            "name": "Sublime Merge resolved merge conflict border",
+            "scope": "diff.border.merge-merged",
+            "background": "color(var(green2) alpha(0.4))"
         },
         // ActionScript specific rules
         {
