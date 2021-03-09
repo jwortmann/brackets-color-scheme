@@ -41,6 +41,8 @@
         "selection_corner_radius": "2",
         "find_highlight": "#f6a644",
         "find_highlight_foreground": "#121212",
+        "active_guide": "color(var(blue) alpha(0.5))",
+        "stack_guide": "color(var(blue) alpha(0.25))",
         "brackets_options": "underline",
         "bracket_contents_options": "",
         "tags_options": "stippled_underline"
