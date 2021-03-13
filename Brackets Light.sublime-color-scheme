@@ -203,42 +203,37 @@
         },
         {
             "name": "Doc comment: HTML tag",
-            "scope": "comment.block.documentation entity.name.tag, comment.line.documentation entity.name.tag",
-            "foreground": "color(var(blue) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: HTML tag punctuation",
-            "scope": "comment.block.documentation punctuation.definition.tag, comment.line.documentation punctuation.definition.tag",
+            "scope": "comment entity.name.tag, comment punctuation.definition.tag",
             "foreground": "color(var(blue) alpha(0.7))"
         },
         {
             "name": "Doc comment: HTML tag attribute",
-            "scope": "comment.block.documentation entity.other.attribute-name, comment.line.documentation entity.other.attribute-name",
+            "scope": "comment entity.other.attribute-name",
             "foreground": "color(var(green) alpha(0.7))"
         },
         {
             "name": "Doc comment: string",
-            "scope": "comment.block.documentation string, comment.line.documentation string",
+            "scope": "comment string",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         {
             "name": "Doc comment: punctuation",
-            "scope": "comment.block.documentation punctuation.separator, comment.line.documentation punctuation.separator",
+            "scope": "comment punctuation.separator",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "Doc comment: tag/keyword",
-            "scope": "comment.block.documentation keyword, comment.line.documentation keyword, comment.block.documentation storage.modifier, comment.line.documentation storage.modifier",
+            "scope": "comment keyword, comment storage.modifier",
             "foreground": "color(var(blue) alpha(0.7))"
         },
         {
             "name": "Doc comment: parameter",
-            "scope": "comment.block.documentation variable.parameter, comment.line.documentation variable.parameter",
+            "scope": "comment variable.parameter",
             "foreground": "color(var(orange) alpha(0.7)"
         },
         {
             "name": "Doc comment: link",
-            "scope": "comment.block.documentation markup.underline.link, comment.line.documentation markup.underline.link",
+            "scope": "comment markup.underline.link",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
@@ -801,17 +796,17 @@
         },
         {
             "name": "JavaDoc inline-tag punctuation",
-            "scope": "comment.block.documentation.javadoc meta.inline-tag punctuation.section.inline-tag",
+            "scope": "comment.block.documentation.javadoc punctuation.section.inline-tag",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "JavaDoc code",
-            "scope": "comment.block.documentation.javadoc meta.inline-tag markup.raw",
+            "scope": "comment.block.documentation.javadoc markup.raw",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "JavaDoc HTML entity",
-            "scope": "comment.block.documentation.javadoc constant.character.entity.named.html",
+            "scope": "comment.block.documentation.javadoc constant.character.entity",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         // JavaScript specific rules
@@ -1181,13 +1176,8 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Perl Pod heading",
-            "scope": "comment.block.documentation.perl markup.heading",
-            "foreground": "color(var(pink) alpha(0.7))"
-        },
-        {
-            "name": "Perl Pod formatted text",
-            "scope": "comment.block.documentation.perl & (string.unquoted | entity.name.label | constant.character | markup.quote | markup.bold | markup.italic | markup.underline.link) - markup.heading",
+            "name": "Perl Pod misc",
+            "scope": "source.perl comment.block.documentation & (entity.name.label | constant.character.escape | string.unquoted | markup.heading | markup.underline.link | markup.quote | markup.bold | markup.italic)",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         // PHP specific rules
@@ -1240,13 +1230,8 @@
         },
         {
             "name": "PowerShell documentation header",
-            "scope": "comment.documentation keyword.operator.documentation.powershell",
+            "scope": "source.powershell comment.documentation.embedded keyword.operator",
             "foreground": "color(var(pink) alpha(0.7))"
-        },
-        {
-            "name": "PowerShell documentation header punctuation",
-            "scope": "comment.documentation constant.string.documentation.powershell",
-            "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "PowerShell string interpolation bracket",
@@ -1320,22 +1305,22 @@
         // R specific rules
         {
             "name": "R operator symbol",
-            "scope": "keyword.other.r - comment",
+            "scope": "source.r keyword.other",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "R code section",
-            "scope": "comment.line entity.name.section.r",
+            "name": "R code section comment",
+            "scope": "source.r comment entity.name.section",
             "foreground": "color(var(pink) alpha(0.7))"
         },
         {
-            "name": "roxygen tag",
-            "scope": "comment.line.roxygen keyword",
+            "name": "R doc comment tag",
+            "scope": "source.r comment keyword.other",
             "foreground": "color(var(blue) alpha(0.7))"
         },
         {
-            "name": "roxygen parameter",
-            "scope": "comment.line.roxygen variable.parameter",
+            "name": "R doc comment parameter",
+            "scope": "source.r comment variable.parameter",
             "foreground": "color(var(orange) alpha(0.7)"
         },
         // Regular Expression specific rules
@@ -1721,52 +1706,42 @@
         },
         {
             "name": "JSDoc tag",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & storage.type.class.jsdoc",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation storage.type.class.jsdoc",
             "foreground": "color(var(blue) alpha(0.7))"
         },
         {
             "name": "JSDoc keyword",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & (keyword.operator.control.jsdoc | constant.language.access-type.jsdoc | constant.language.symbol-type.jsdoc)",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation & (keyword.operator.control.jsdoc | constant.language.access-type.jsdoc | constant.language.symbol-type.jsdoc)",
             "foreground": "color(var(blue) alpha(0.7))"
         },
         {
             "name": "JSDoc parameter",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.jsdoc",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation variable.other.jsdoc",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         {
-            "name": "JSDoc optional parameter punctuation",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.jsdoc & (punctuation | keyword.operator)",
+            "name": "JSDoc punctuation",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation variable.other.jsdoc & (punctuation | keyword.operator)",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "JSDoc type / author-name / identifier",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & entity.name.type.instance.jsdoc",
+            "name": "JSDoc type",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation entity.name.type.instance.jsdoc",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "JSDoc author email",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & constant.other.email.link.underline.jsdoc",
+            "name": "JSDoc link & email",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation & (variable.other.link.underline.jsdoc | constant.other.email.link.underline.jsdoc)",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "JSDoc example description",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & meta.example constant.other.description.jsdoc",
+            "name": "JSDoc description",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation & (variable.other.description.jsdoc | constant.other.description.jsdoc)",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "JSDoc link",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.link.underline.jsdoc",
-            "foreground": "color(var(textcolor) alpha(0.7))"
-        },
-        {
-            "name": "JSDoc inline link description",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & variable.other.description.jsdoc",
-            "foreground": "color(var(textcolor) alpha(0.7))"
-        },
-        {
-            "name": "JSDoc invalid expression",
-            "scope": "(comment.block.documentation.ts | comment.block.documentation.tsx) & (invalid.illegal.syntax.jsdoc | invalid.illegal.type.jsdoc)",
+            "name": "JSDoc invalid",
+            "scope": "(source.ts | source.tsx) & comment.block.documentation & (invalid.illegal.syntax.jsdoc | invalid.illegal.type.jsdoc)",
             "foreground": "color(var(red) alpha(0.7))"
         },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
@@ -1846,7 +1821,7 @@
         },
         {
             "name": "LSP diagnostics linter name",
-            "scope": "output.lsp.diagnostics comment.line.lsp",
+            "scope": "output.lsp.diagnostics comment",
             "foreground": "var(purple)"
         },
         {
