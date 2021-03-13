@@ -1771,6 +1771,12 @@
             "scope": "text.html.vue meta.tag punctuation.definition.string",
             "foreground": "var(orange)"
         },
+        // Plugin specific rules
+        {
+            "name": "Find in Files results panel line number context",
+            "scope": "constant.numeric.line-number.find-in-files - match",
+            "foreground": "color(var(green) alpha(0.6))"
+        },
         // Anaconda specific rules >> https://packagecontrol.io/packages/Anaconda
         {
             "name": "Anaconda linter illegal",
