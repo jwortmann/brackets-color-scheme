@@ -66,6 +66,11 @@
             "font_style": "italic"
         },
         {
+            "name": "Filename",
+            "scope": "entity.name.filename",
+            "foreground": "var(purple)"
+        },
+        {
             "name": "Tag name",
             "scope": "entity.name.tag, punctuation.definition.tag",
             "foreground": "var(blue)"
@@ -138,7 +143,7 @@
         },
         {
             "name": "Type keyword",
-            "scope": "storage.type - storage.type.numeric",
+            "scope": "storage.type",
             "foreground": "var(blue)"
         },
         {
@@ -1815,34 +1820,29 @@
         },
         // LSP specific rules >> https://packagecontrol.io/packages/LSP
         {
-            "name": "LSP diagnostics filename",
-            "scope": "output.lsp.diagnostics meta.diagnostic.preamble.lsp string.unquoted.lsp",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "LSP diagnostics linter name",
-            "scope": "output.lsp.diagnostics comment",
+            "name": "LSP diagnostics panel filename",
+            "scope": "output.lsp.diagnostics meta.diagnostic.preamble string",
             "foreground": "var(purple)"
         },
         {
-            "name": "LSP log arrow",
-            "scope": "output.lsp.log storage.modifier.lsp",
+            "name": "LSP log panel arrow",
+            "scope": "output.lsp.log storage.modifier",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "LSP log server name",
-            "scope": "output.lsp.log variable.function.lsp",
+            "name": "LSP log panel arrow unhandled notification",
+            "scope": "output.lsp.log invalid.deprecated",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "LSP log panel server",
+            "scope": "output.lsp.log variable.function",
             "foreground": "var(purple)"
         },
         {
-            "name": "LSP log unhandled",
-            "scope": "output.lsp.log invalid.deprecated.lsp",
-            "foreground": "var(red)"
-        },
-        {
-            "name": "LSP references filename",
-            "scope": "output.lsp.references entity.name.file.references.lsp",
-            "foreground": "var(blue)"
+            "name": "LSP references panel filename",
+            "scope": "output.lsp.references meta.reference.preamble entity.name.file",
+            "foreground": "var(purple)"
         },
         // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
         {
@@ -1933,11 +1933,6 @@
             "foreground": "var(red2)"
         },
         // SublimeLinter specific rules >> https://packagecontrol.io/packages/SublimeLinter
-        {
-            "name": "SublimeLinter diagnostics filename",
-            "scope": "entity.name.filename.sublime_linter",
-            "foreground": "var(blue)"
-        },
         {
             "name": "SublimeLinter diagnostics message",
             "scope": "markup.quote.linter-message.sublime_linter",
