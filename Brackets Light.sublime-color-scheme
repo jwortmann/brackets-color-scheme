@@ -50,90 +50,20 @@
     "rules":
     [
         {
-            "name": "Comment",
-            "scope": "comment",
-            "foreground": "var(grey)"
-        },
-        {
-            "name": "Doc comment: HTML tag",
-            "scope": "comment.block.documentation entity.name.tag, comment.line.documentation entity.name.tag",
-            "foreground": "color(var(blue) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: HTML tag punctuation",
-            "scope": "comment.block.documentation punctuation.definition.tag, comment.line.documentation punctuation.definition.tag",
-            "foreground": "color(var(blue) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: HTML tag attribute",
-            "scope": "comment.block.documentation entity.other.attribute-name, comment.line.documentation entity.other.attribute-name",
-            "foreground": "color(var(green) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: punctuation",
-            "scope": "comment.block.documentation punctuation.separator, comment.line.documentation punctuation.separator",
-            "foreground": "color(var(textcolor) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: string",
-            "scope": "comment.block.documentation string, comment.line.documentation string",
-            "foreground": "color(var(orange) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: tag/keyword",
-            "scope": "comment.block.documentation keyword, comment.line.documentation keyword, comment.block.documentation storage.modifier, comment.line.documentation storage.modifier",
-            "foreground": "color(var(blue) alpha(0.7))"
-        },
-        {
-            "name": "Doc comment: parameter",
-            "scope": "comment.block.documentation variable.parameter, comment.line.documentation variable.parameter",
-            "foreground": "color(var(orange) alpha(0.7)"
-        },
-        {
-            "name": "Doc comment: link",
-            "scope": "comment.block.documentation markup.underline.link, comment.line.documentation markup.underline.link",
-            "foreground": "color(var(textcolor) alpha(0.7))"
-        },
-        {
-            "name": "Escaped or special character",
-            "scope": "constant.character",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Built-in constant",
-            "scope": "constant.language",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Number",
-            "scope": "constant.numeric, punctuation.separator.decimal",
-            "foreground": "var(green)"
-        },
-        {
-            "name": "Misc constant",
-            "scope": "constant.other",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Enum value",
-            "scope": "constant.other.enum",
-            "font_style": "italic"
-        },
-        {
             "name": "Module/class/type/method name",
             "scope": "entity.name",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "Section name",
+            "scope": "entity.name.section",
+            "foreground": "var(pink)"
         },
         {
             "name": "Constant",
             "scope": "entity.name.constant",
             "foreground": "var(textcolor)",
             "font_style": "italic"
-        },
-        {
-            "name": "Section name",
-            "scope": "entity.name.section",
-            "foreground": "var(pink)"
         },
         {
             "name": "Tag name",
@@ -157,9 +87,74 @@
             "font_style": "italic"
         },
         {
-            "name": "Invalid expression",
-            "scope": "invalid.illegal",
-            "foreground": "var(red)"
+            "name": "Built-in variable",
+            "scope": "variable.language",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter - meta.function-call - meta.annotation",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Function call",
+            "scope": "variable.function",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Annotation",
+            "scope": "variable.annotation",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Misc variable",
+            "scope": "variable.other",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric, punctuation.separator.decimal",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Escaped or special character",
+            "scope": "constant.character",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Misc constant",
+            "scope": "constant.other",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Enum value",
+            "scope": "constant.other.enum",
+            "font_style": "italic"
+        },
+        {
+            "name": "Type keyword",
+            "scope": "storage.type - storage.type.numeric",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Numeric type suffix [ST3]",
+            "scope": "storage.type.numeric",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Modifier keyword",
+            "scope": "storage.modifier",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Built-in or library construct",
+            "scope": "support",
+            "foreground": "var(blue)"
         },
         {
             "name": "Keyword",
@@ -167,9 +162,9 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Preprocessor directive",
-            "scope": "keyword.control.directive, meta.preprocessor keyword",
-            "foreground": "var(purple)"
+            "name": "Operator symbol",
+            "scope": "keyword.operator",
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Lambda function arrow",
@@ -182,9 +177,19 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Operator symbol",
-            "scope": "keyword.operator",
-            "foreground": "var(textcolor)"
+            "name": "Preprocessor directive",
+            "scope": "keyword.control.directive, meta.preprocessor keyword",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Mapping key",
+            "scope": "meta.mapping.key string",
+            "foreground": "var(violet)"
         },
         {
             "name": "Accessor punctuation",
@@ -212,59 +217,54 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Modifier keyword",
-            "scope": "storage.modifier",
-            "foreground": "var(blue)"
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(grey)"
         },
         {
-            "name": "Type keyword",
-            "scope": "storage.type - storage.type.numeric",
-            "foreground": "var(blue)"
+            "name": "Doc comment: HTML tag",
+            "scope": "comment.block.documentation entity.name.tag, comment.line.documentation entity.name.tag",
+            "foreground": "color(var(blue) alpha(0.7))"
         },
         {
-            "name": "Numeric type suffix [ST3]",
-            "scope": "storage.type.numeric",
-            "foreground": "var(green)"
+            "name": "Doc comment: HTML tag punctuation",
+            "scope": "comment.block.documentation punctuation.definition.tag, comment.line.documentation punctuation.definition.tag",
+            "foreground": "color(var(blue) alpha(0.7))"
         },
         {
-            "name": "String",
-            "scope": "string",
-            "foreground": "var(orange)"
+            "name": "Doc comment: HTML tag attribute",
+            "scope": "comment.block.documentation entity.other.attribute-name, comment.line.documentation entity.other.attribute-name",
+            "foreground": "color(var(green) alpha(0.7))"
         },
         {
-            "name": "Mapping key",
-            "scope": "meta.mapping.key string",
-            "foreground": "var(violet)"
+            "name": "Doc comment: string",
+            "scope": "comment.block.documentation string, comment.line.documentation string",
+            "foreground": "color(var(orange) alpha(0.7))"
         },
         {
-            "name": "Built-in or library construct",
-            "scope": "support",
-            "foreground": "var(blue)"
+            "name": "Doc comment: punctuation",
+            "scope": "comment.block.documentation punctuation.separator, comment.line.documentation punctuation.separator",
+            "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "Annotation",
-            "scope": "variable.annotation",
-            "foreground": "var(pink)"
+            "name": "Doc comment: tag/keyword",
+            "scope": "comment.block.documentation keyword, comment.line.documentation keyword, comment.block.documentation storage.modifier, comment.line.documentation storage.modifier",
+            "foreground": "color(var(blue) alpha(0.7))"
         },
         {
-            "name": "Function call",
-            "scope": "variable.function",
-            "foreground": "var(violet)"
+            "name": "Doc comment: parameter",
+            "scope": "comment.block.documentation variable.parameter, comment.line.documentation variable.parameter",
+            "foreground": "color(var(orange) alpha(0.7)"
         },
         {
-            "name": "Built-in variable",
-            "scope": "variable.language",
-            "foreground": "var(blue)"
+            "name": "Doc comment: link",
+            "scope": "comment.block.documentation markup.underline.link, comment.line.documentation markup.underline.link",
+            "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "Misc variable",
-            "scope": "variable.other",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Function argument",
-            "scope": "variable.parameter - meta.function-call - meta.annotation",
-            "foreground": "var(orange)"
+            "name": "Invalid expression",
+            "scope": "invalid.illegal",
+            "foreground": "var(red)"
         },
         {
             "name": "Heading",
