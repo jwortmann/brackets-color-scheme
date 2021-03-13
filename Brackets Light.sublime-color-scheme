@@ -67,7 +67,7 @@
         },
         {
             "name": "Tag name",
-            "scope": "entity.name.tag",
+            "scope": "entity.name.tag, punctuation.definition.tag",
             "foreground": "var(blue)"
         },
         {
@@ -103,7 +103,7 @@
         },
         {
             "name": "Annotation",
-            "scope": "variable.annotation",
+            "scope": "variable.annotation, punctuation.definition.annotation",
             "foreground": "var(pink)"
         },
         {
@@ -192,33 +192,13 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Accessor punctuation",
-            "scope": "punctuation.accessor",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Annotation symbol",
-            "scope": "punctuation.definition.annotation",
-            "foreground": "var(pink)"
-        },
-        {
-            "name": "Tag punctuation",
-            "scope": "punctuation.definition.tag",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Separator punctuation",
-            "scope": "punctuation.separator - punctuation.separator.decimal",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Terminator punctuation",
-            "scope": "punctuation.terminator - constant.character.entity",
+            "name": "Punctuation",
+            "scope": "punctuation.separator, punctuation.accessor, punctuation.terminator - constant.character.entity",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Comment",
-            "scope": "comment",
+            "scope": "comment, punctuation.definition.comment",
             "foreground": "var(grey)"
         },
         {
