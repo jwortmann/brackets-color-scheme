@@ -1774,7 +1774,7 @@
         // Plugin specific rules
         {
             "name": "Find in Files results panel line number context",
-            "scope": "constant.numeric.line-number.find-in-files - match",
+            "scope": "constant.numeric.line-number.find-in-files",
             "foreground": "color(var(green) alpha(0.7))"
         },
         // Anaconda specific rules >> https://packagecontrol.io/packages/Anaconda
@@ -1826,11 +1826,6 @@
         },
         // LSP specific rules >> https://packagecontrol.io/packages/LSP
         {
-            "name": "LSP diagnostics panel filename",
-            "scope": "output.lsp.diagnostics meta.diagnostic.preamble string",
-            "foreground": "var(purple)"
-        },
-        {
             "name": "LSP log panel arrow",
             "scope": "output.lsp.log storage.modifier",
             "foreground": "var(textcolor)"
@@ -1846,7 +1841,12 @@
             "foreground": "var(purple)"
         },
         {
-            "name": "LSP references panel filename",
+            "name": "LSP diagnostics panel filename [ST3]",
+            "scope": "output.lsp.diagnostics meta.diagnostic.preamble string",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "LSP references panel filename [ST3]",
             "scope": "output.lsp.references meta.reference.preamble entity.name.file",
             "foreground": "var(purple)"
         },
