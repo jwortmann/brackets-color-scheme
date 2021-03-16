@@ -282,9 +282,9 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Symbol match, LSP DocumentHighlight",
+            "name": "LSP DocumentHighlight, Quick View Highlight",
             "scope": "markup.highlight",
-            "background": "#e5e5d1"
+            "background": "rgba(200, 200, 150, 0.4)"
         },
         {
             "name": "Inline diff inserted line",
