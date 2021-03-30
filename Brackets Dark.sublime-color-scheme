@@ -183,7 +183,7 @@
         },
         {
             "name": "Preprocessor directive",
-            "scope": "keyword.control.directive, meta.preprocessor keyword",
+            "scope": "keyword.control.directive, meta.preprocessor keyword.control.import, keyword.control.preprocessor, keyword.other.preprocessor",
             "foreground": "var(purple)"
         },
         {
@@ -675,11 +675,6 @@
             "name": "Fortran logical operator keyword",
             "scope": "source.modern-fortran keyword.operator.logical, source.fixedform-fortran keyword.operator.logical",
             "foreground": "var(blue)"
-        },
-        {
-            "name": "Fortran preprocessor directive",
-            "scope": "source.modern-fortran keyword.control.preprocessor",
-            "foreground": "var(purple)"
         },
         {
             "name": "Fortran punctuation",
