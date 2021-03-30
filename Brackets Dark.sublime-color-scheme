@@ -454,7 +454,7 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "CSS hex color value",
+            "name": "CSS hex-color",
             "scope": "constant.other.color.rgb-value.css, constant.other.color.rgba-value.css",
             "foreground": "var(orange)"
         },
@@ -1485,7 +1485,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "SCSS hex color value",
+            "name": "SCSS hex-color",
             "scope": "constant.other.color.rgb-value.scss",
             "foreground": "var(orange)"
         },
@@ -1575,6 +1575,11 @@
         {
             "name": "Stylus property value constant",
             "scope": "constant.property-value.stylus",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Stylus hex-color",
+            "scope": "constant.other.color.rgb-value.stylus",
             "foreground": "var(orange)"
         },
         {
