@@ -688,34 +688,39 @@
         },
         // Git specific rules
         {
-            "name": "Git Commit keyword",
-            "scope": "keyword.operator.git.commit",
+            "name": "Git commit hash",
+            "scope": "text.git constant.other.hash",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Git keyword",
+            "scope": "text.git keyword.operator - text.git.config, text.git keyword.other",
             "foreground": "var(blue)"
         },
         {
-            "name": "Git Config variable",
-            "scope": "meta.mapping.key variable.other.readwrite.git.config",
+            "name": "Git branch name",
+            "scope": "text.git constant.language.branch-name",
             "foreground": "var(violet)"
         },
         {
-            "name": "Git Rebase keyword",
-            "scope": "text.git.rebase keyword.operator",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Git email delimiter bracket",
-            "scope": "punctuation.definition.reference.email.begin.git, punctuation.definition.reference.email.end.git",
+            "name": "Git email angle brackets",
+            "scope": "text.git punctuation.definition.reference.email",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Git email punctuation",
-            "scope": "punctuation.separator.email.git",
+            "name": "Git email @-symbol & dot",
+            "scope": "text.git punctuation.separator.email",
             "foreground": "var(violet)"
         },
         {
-            "name": "Git filename punctuation",
-            "scope": "punctuation.separator.path.extension.fnmatch.git",
+            "name": "Git Config key",
+            "scope": "text.git meta.mapping.key variable.other",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "Git Rebase commit subject",
+            "scope": "text.git string.unquoted.subject",
+            "foreground": "var(textcolor)"
         },
         // Gnuplot specific rules >> https://packagecontrol.io/packages/Gnuplot
         {
