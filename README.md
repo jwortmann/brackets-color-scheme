@@ -4,18 +4,18 @@
 [![Version](https://img.shields.io/github/v/release/jwortmann/brackets-color-scheme?label=version)](https://github.com/jwortmann/brackets-color-scheme/releases)
 [![Downloads](https://img.shields.io/packagecontrol/dt/Brackets%20Color%20Scheme)](https://packagecontrol.io/packages/Brackets%20Color%20Scheme)
 
-This package for [Sublime Text](https://www.sublimetext.com/) provides two color schemes (light and dark) that are similar to the built-in themes of [Adobe Brackets](http://brackets.io/).
+This package for Sublime Text provides two color schemes (light and dark) that are similar to the built-in themes of Adobe Brackets.
 
 ## Installation
 
 The color scheme can be installed via Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
-From the command palette choose `Package Control: Install Package` and search for *Brackets Color Scheme*.
+From the command palette select *Package Control: Install Package* and search for *Brackets Color Scheme*.
 
-Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and put them into a folder in the packages directory of Sublime Text, e.g. the *Packages/User* package.
-To access the packages directory, choose `Preferences > Browse Packages...` from the Sublime Text menu.
-Notice that there won't be automatic updates for this package if not using Package Control.
+Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and put them into a folder in the packages directory of Sublime Text, e.g. the <span style="text-decoration: underline dotted">Packages/User/</span> folder.
+To access the packages directory, select *Preferences > Browse Packages...* from the Sublime Text menu.
+Note that there won't be automatic updates for this package if not using Package Control.
 
-The color scheme can then be activated from the menu under `Preferences > Color Scheme...` or via the `UI: Select Color Scheme` command from the command palette.
+The color scheme can then be activated from the menu under *Preferences > Color Scheme...* or via the *UI: Select Color Scheme* command from the command palette.
 
 ## Preview
 
@@ -43,19 +43,49 @@ The color scheme can then be activated from the menu under `Preferences > Color 
 ## Customization
 
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
-The color scheme format allows to customize color variables and override or add user-specific highlighting rules by creating a `Brackets Light.sublime-color-scheme` and/or `Brackets Dark.sublime-color-scheme` file in the *Packages/User* folder, see [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
+The color scheme format allows to customize color variables and override or add user-specific highlighting rules by creating a <span style="text-decoration: underline dotted">Brackets Light.sublime-color-scheme</span> and/or <span style="text-decoration: underline dotted">Brackets Dark.sublime-color-scheme</span> file in the <span style="text-decoration: underline dotted">Packages/User/</span> folder, see [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
+
+## Usage in Sublime Merge
+
+The color schemes can be used in Sublime Merge as well and contain special rules which provide a tweaked style for certain elements of the diff and merge conflict views.
+For now, adjusting the color scheme in Sublime Merge requires a bit of manual configuration to the default light and dark themes:
+
+From the Sublime Merge menu select *Preferences > Browse Packages...* and navigate into the <span style="text-decoration: underline dotted">User<span style="text-decoration: underline dotted"> folder.
+Then, for the light theme, create new settings files with names
+* <span style="text-decoration: underline dotted">Commit Message - Merge.sublime-settings</span>
+* <span style="text-decoration: underline dotted">Diff - Merge.sublime-settings</span>
+* <span style="text-decoration: underline dotted">File Mode - Merge.sublime-settings</span>
+
+and with the following content in each of the files:
+```json
+{
+  "color_scheme": "Brackets Light.sublime-color-scheme"
+}
+```
+
+Correspondingly, for the dark theme create the files
+* <span style="text-decoration: underline dotted">Commit Message - Merge Dark.sublime-settings</span>
+* <span style="text-decoration: underline dotted">Diff - Merge Dark.sublime-settings</span>
+* <span style="text-decoration: underline dotted">File Mode - Merge Dark.sublime-settings</span>
+
+with the following content:
+```json
+{
+  "color_scheme": "Brackets Dark.sublime-color-scheme"
+}
+```
 
 ## Differences from the Adobe Brackets themes
 
 In general, the color schemes are intended to reproduce the style of the built-in themes in Adobe Brackets, but there are a few minor differences.
-* Some deviations in syntax highlighting are possible due to the different highlighting engines in the editors.
-  Highlighting for certain elements was slightly extended and better support was added for programming languages which are not focused on web development.
+* Deviations in syntax highlighting are possible due to the different highlighting engines in the editors.
+  The highlighting for certain elements was slightly extended and better support was added for programming languages which are not focused on web development.
   If you find a bug or possible improvement, feel free to let me know by creating an issue in this repository.
 * In Adobe Brackets, matching tags and brackets are highlighted with a green background color when the caret is next to one.
   Adjustments of the background color for matching tags or brackets aren't possible in Sublime Text, so they are drawn underlined instead.
 * Sublime Text uses a subtle border and rounded corners for text selections in its built-in color schemes.
-  I chose to follow this style here, but the original style of selections in Adobe Brackets with squared corners and no border can be achieved via the following customization:
+  I chose to follow this style here, but the original style of selections in Adobe Brackets with squared corners and without border can be achieved via the following customization:
     ```json
     {
       "globals": {
