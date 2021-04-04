@@ -53,6 +53,7 @@ For now, adjusting the color scheme in Sublime Merge requires a bit of manual co
 
 From the Sublime Merge menu select *Preferences > Browse Packages...* and navigate into the *User* folder.
 Then, for the light theme, create new settings files with names
+
 * `Commit Message - Merge.sublime-settings`
 * `Diff - Merge.sublime-settings`
 * `File Mode - Merge.sublime-settings`
@@ -65,6 +66,7 @@ and with the following content in each of the files:
 ```
 
 Correspondingly, for the dark theme create the files
+
 * `Commit Message - Merge Dark.sublime-settings`
 * `Diff - Merge Dark.sublime-settings`
 * `File Mode - Merge Dark.sublime-settings`
@@ -79,18 +81,21 @@ with the following content:
 ## Differences from the Adobe Brackets themes
 
 In general, the color schemes are intended to reproduce the style of the built-in themes in Adobe Brackets, but there are a few minor differences.
+
 * Deviations in syntax highlighting are possible due to the different highlighting engines in the editors.
   The highlighting for certain elements was slightly extended and better support was added for programming languages which are not focused on web development.
   If you find a bug or possible improvement, feel free to let me know by creating an issue in this repository.
+
 * In Adobe Brackets, matching tags and brackets are highlighted with a green background color when the caret is next to one.
   Adjustments of the background color for matching tags or brackets aren't possible in Sublime Text, so they are drawn underlined instead.
+
 * Sublime Text uses a subtle border and rounded corners for text selections in its built-in color schemes.
   I chose to follow this style here, but the original style of selections in Adobe Brackets with squared corners and without border can be achieved via the following customization:
-    ```json
-    {
-      "globals": {
-        "selection_border_width": "0",
-        "selection_corner_style": "square"
-      }
+  ```json
+  {
+    "globals": {
+      "selection_border_width": "0",
+      "selection_corner_style": "square"
     }
-    ```
+  }
+  ```
