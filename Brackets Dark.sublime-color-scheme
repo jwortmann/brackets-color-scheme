@@ -875,43 +875,6 @@
             "scope": "comment.block.documentation entity.other.attribute-name.documentation.js",
             "foreground": "color(var(blue) alpha(0.6))"
         },
-        // JavaScript specific rules >> https://packagecontrol.io/packages/Babel
-        {
-            "name": "JavaScript keyword",
-            "scope": "keyword.operator.new.js, keyword.operator.module.js",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "JavaScript mapping key",
-            "scope": "constant.other.object.key.js string.unquoted.label.js",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "JavaScript template string punctuation",
-            "scope": "string.interpolated.js keyword.other.template",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "JavaScript template string interpolation",
-            "scope": "string.interpolated.js keyword.other.substitution",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "JSX tag attribute",
-            "scope": "meta.jsx entity.other.attribute-name",
-            "foreground": "var(green)"
-        },
-        // JSON specific rules >> https://packagecontrol.io/packages/Babel
-        {
-            "name": "JSON mapping key",
-            "scope": "meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json string, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "JSON mapping value",
-            "scope": "meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string",
-            "foreground": "var(orange)"
-        },
         // Julia specific rules >> https://packagecontrol.io/packages/Julia
         {
             "name": "Julia macro",
