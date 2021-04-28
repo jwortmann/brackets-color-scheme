@@ -1270,6 +1270,11 @@
             "scope": "constant.other.allcaps.python",
             "font_style": "italic"
         },
+        {
+            "name": "Python comment todo/fixme annotation",
+            "scope": "comment.line.note.notation.python",
+            "foreground": "color(var(red) alpha(0.7))"
+        },
         // R specific rules
         {
             "name": "R operator symbol",
