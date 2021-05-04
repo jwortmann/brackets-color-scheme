@@ -790,6 +790,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "Java array punctuation",
+            "scope": "source.java storage.modifier.array",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "Java import classname",
             "scope": "support.class.import.java",
             "foreground": "var(textcolor)"
@@ -1655,6 +1660,12 @@
         {
             "name": "Twig string interpolation punctuation",
             "scope": "meta.interpolation.twig punctuation.section.interpolation",
+            "foreground": "var(textcolor)"
+        },
+        // TypeScript specific rules
+        {
+            "name": "TypeScript array punctuation",
+            "scope": "source.ts storage.modifier.array",
             "foreground": "var(textcolor)"
         },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
