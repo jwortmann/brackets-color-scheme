@@ -287,7 +287,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "LSP DocumentHighlight, Quick View Highlight",
+            "name": "LSP DocumentHighlight",
             "scope": "markup.highlight",
             "background": "rgba(200, 200, 150, 0.4)"
         },
@@ -881,6 +881,11 @@
             "scope": "variable.macro.julia, punctuation.definition.macro.julia, support.function.macro.julia",
             "foreground": "var(purple)"
         },
+        {
+            "name": "Julia symbol",
+            "scope": "source.julia constant.other.symbol",
+            "font_style": "italic"
+        },
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
             "name": "Kotlin built-in variable",
@@ -1407,6 +1412,12 @@
             "name": "RST block literal",
             "scope": "meta.raw.block markup.raw.restructuredtext",
             "foreground": "var(grey)"
+        },
+        // Ruby specific rules
+        {
+            "name": "Ruby symbol",
+            "scope": "source.ruby constant.other.symbol",
+            "font_style": "italic"
         },
         // Rust specific rules
         {
