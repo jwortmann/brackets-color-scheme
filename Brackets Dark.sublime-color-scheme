@@ -1668,6 +1668,11 @@
             "scope": "source.ts storage.modifier.array",
             "foreground": "var(textcolor)"
         },
+        {
+            "name": "TypeScript variable declaration modifier symbol",
+            "scope": "source.ts storage.modifier.optional, source.ts storage.modifier.definite",
+            "foreground": "var(textcolor)"
+        },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
             "name": "TypeScript keyword",
