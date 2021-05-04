@@ -1419,6 +1419,11 @@
             "scope": "source.ruby constant.other.symbol",
             "font_style": "italic"
         },
+        {
+            "name": "Ruby base class namespace",
+            "scope": "source.ruby entity.other.inherited-class support.other.namespace",
+            "foreground": "var(textcolor)"
+        },
         // Rust specific rules
         {
             "name": "Rust constant",
