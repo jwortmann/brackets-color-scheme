@@ -86,6 +86,9 @@ In general, the color schemes are intended to reproduce the style of the built-i
   The highlighting for certain elements was slightly extended and better support was added for programming languages which are not focused on web development.
   If you find a bug or possible improvement, feel free to let me know by creating an issue in this repository.
 
+* Italic font style was sparely added to syntax highlighting.
+  It is possible to disable all italic text via the setting `"font_options": ["no_italic"]` in your *Preferences.sublime-settings* file.
+
 * In Adobe Brackets, matching tags and brackets are highlighted with a green background color when the caret is next to one.
   Adjustments of the background color for matching tags or brackets aren't possible in Sublime Text, so they are drawn underlined instead.
 
