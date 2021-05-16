@@ -1866,7 +1866,7 @@
         },
         {
             "name": "PackageDev JSON built-in value",
-            "scope": "source.json.sublime meta.mapping.value & (support.constant | support.function.modifier.key | storage.type.context.key-value | keyword.operator.context.key-value)",
+            "scope": "source.json.sublime meta.mapping.value & (support.constant | support.function.modifier.key | storage.type.context.key-value | keyword.operator.context.key-value | entity.other.attribute-name)",
             "foreground": "var(orange)",
             "font_style": "italic"
         },
