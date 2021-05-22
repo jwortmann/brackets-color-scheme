@@ -8,14 +8,10 @@ This package for Sublime Text provides two color schemes (light and dark) that a
 
 ## Installation
 
-The color scheme can be installed via Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
+The color scheme can be installed with Sublime Text's package manager [Package Control](https://packagecontrol.io/installation).
 From the command palette select *Package Control: Install Package* and search for *Brackets Color Scheme*.
 
-Alternatively you can [download](https://github.com/jwortmann/brackets-color-scheme/archive/master.zip) and unzip the files from this repository and put them into a folder in the packages directory of Sublime Text, e.g. the *Packages/User/* folder.
-To access the packages directory, select *Preferences > Browse Packages...* from the Sublime Text menu.
-Note that there won't be automatic updates for this package if not using Package Control.
-
-The color scheme can then be activated from the menu under *Preferences > Color Scheme...* or via the *UI: Select Color Scheme* command from the command palette.
+The color scheme can then be activated from the menu under *Preferences > Select Color Scheme...* or via the *UI: Select Color Scheme* command from the command palette.
 
 ## Preview
 
@@ -43,13 +39,13 @@ The color scheme can then be activated from the menu under *Preferences > Color 
 ## Customization
 
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
-The color scheme format allows to customize color variables and override or add user-specific highlighting rules by creating a `Brackets Light.sublime-color-scheme` and/or `Brackets Dark.sublime-color-scheme` file in the *Packages/User/* folder, see [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
+The color scheme format allows to customize color variables and override or add user-specific highlighting rules via the *Preferences > Customize Color Scheme* entry from the menu, see also [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
 
 ## Usage in Sublime Merge
 
-The color schemes can be used in Sublime Merge as well and contain special rules which provide a tweaked style for certain elements of the diff and merge conflict views.
-For now, adjusting the color scheme in Sublime Merge requires a bit of manual configuration to the default light and dark themes:
+The color scheme can be used in Sublime Merge as well and contains special rules which provide a tweaked style for certain elements of the diff and merge conflict views.
+For now, changing the color scheme in Sublime Merge requires a bit of manual configuration in the default light and dark themes:
 
 From the Sublime Merge menu select *Preferences > Browse Packages...* and navigate into the *User* folder.
 Then, for the light theme, create new settings files with names

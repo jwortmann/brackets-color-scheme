@@ -24,7 +24,8 @@
         "background": "#f8f8f8",
         "foreground": "var(textcolor)",
         "caret": "#000",
-        "block_caret": "rgba(0, 0, 0, 0.5)",
+        "block_caret": "rgba(0, 0, 0, 0.25)",
+        "block_caret_border": "color(var(textcolor) alpha(0.7))",
         "line_highlight": "rgba(222, 230, 230, 0.5)",
         "misspelling": "var(red)",
         "fold_marker": "color(var(grey) alpha(0.5))",
@@ -37,10 +38,13 @@
         "line_diff_deleted": "var(red2)",
         "selection": "#abdffa",
         "inactive_selection": "#d5dee3",
+        "inactive_selection_border": "#bdc5c9",
         "selection_corner_style": "round",
         "selection_corner_radius": "2",
         "find_highlight": "#f7c44e",
         "find_highlight_foreground": "#121212",
+        "scroll_highlight": "var(grey)",
+        "scroll_selected_highlight": "var(orange)",
         "active_guide": "color(var(blue) alpha(0.8))",
         "stack_guide": "color(var(blue) alpha(0.4))",
         "brackets_options": "underline",
@@ -203,7 +207,7 @@
         },
         {
             "name": "Punctuation",
-            "scope": "punctuation.separator, punctuation.accessor, punctuation.terminator - constant.character.entity",
+            "scope": "punctuation.separator - punctuation.separator.path, punctuation.accessor, punctuation.terminator - constant.character.entity",
             "foreground": "var(textcolor)"
         },
         {
@@ -333,7 +337,7 @@
             "foreground_adjust": "lightness(- 10%)"
         },
         {
-            "name": "Sublme Merge merge conflict left view region",
+            "name": "Sublime Merge merge conflict left view region",
             "scope": "diff.inserted.char.merge-left",
             "background": "color(var(green2) alpha(0.4))",
             "foreground_adjust": "lightness(- 10%)"
@@ -460,6 +464,11 @@
         },
         {
             "name": "CSS special color keyword",
+            "scope": "support.constant.color.w3c.special.css",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS special color keyword [ST3]",
             "scope": "support.constant.color.w3c-special-color-keyword.css",
             "foreground": "var(orange)"
         },
@@ -1872,13 +1881,13 @@
         },
         {
             "name": "PackageDev JSON value",
-            "scope": "source.json.sublime meta.mapping.value & (support.constant.command-name | entity.name.variant.sublime-build | entity.name.id.sublime-menu | entity.name.class-selector.sublime-theme | support.constant.mnemonic.sublime-menu | variable.other.setting.sublime-keymap)",
+            "scope": "source.json.sublime meta.mapping.value & (support.constant.command-name | entity.name.variant.sublime-build | entity.name.id.sublime-menu | entity.name.class-selector.sublime-theme | support.constant.mnemonic.sublime-menu | variable.other.setting.sublime-keymap | keyword.other.namespace.sublime-settings)",
             "foreground": "var(orange)",
             "font_style": ""
         },
         {
             "name": "PackageDev JSON punctuation",
-            "scope": "source.json.sublime & (source.scope-selector punctuation.section.group | meta.function-call punctuation.definition.group)",
+            "scope": "source.json.sublime & (source.scope-selector punctuation.section.group | meta.function-call punctuation.definition.group | meta.function-call punctuation.section.group)",
             "foreground": "var(textcolor)"
         },
         {
