@@ -890,6 +890,11 @@
             "scope": "comment.block.documentation entity.other.attribute-name.documentation.js",
             "foreground": "color(var(blue) alpha(0.7))"
         },
+        {
+            "name": "JSX & TSX punctuation for toggle_comment workaround",
+            "scope": "meta.jsx comment punctuation.definition.interpolation",
+            "foreground": "var(textcolor)"
+        },
         // Julia specific rules >> https://packagecontrol.io/packages/Julia
         {
             "name": "Julia macro",
