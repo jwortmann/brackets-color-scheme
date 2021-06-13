@@ -1,2 +1,3 @@
+img export-ignore
 .gitattributes export-ignore
 *.sublime-color-scheme linguist-language=jsonc

@@ -15,9 +15,9 @@ The color scheme can then be activated from the menu under *Preferences > Select
 
 ## Preview
 
-![Brackets Light](https://i.imgur.com/V9CBcJ3.png)
+![Brackets Light](img/brackets_light.png)
 
-![Brackets Dark](https://i.imgur.com/O4aqKh9.png)
+![Brackets Dark](img/brackets_dark.png)
 
 ## Color palette
 
