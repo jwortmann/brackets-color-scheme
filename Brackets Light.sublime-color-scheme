@@ -253,7 +253,7 @@
         },
         {
             "name": "Invalid expression",
-            "scope": "invalid.illegal",
+            "scope": "invalid - invalid.deprecated",
             "foreground": "var(red)"
         },
         {
