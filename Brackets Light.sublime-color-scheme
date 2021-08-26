@@ -17,7 +17,9 @@
         "--orangish": "#e88501",
         "--yellowish": "#e5bb00",
         "--cyanish": "#3aadc1",
-        "--bluish": "#446fbd"
+        "--bluish": "#446fbd",
+        "operator_symbol": "var(textcolor)",
+        "operator_keyword": "var(blue)"
     },
     "globals":
     {
@@ -173,23 +175,28 @@
         },
         {
             "name": "Keyword",
-            "scope": "keyword - keyword.operator, keyword.operator.word",
+            "scope": "keyword - keyword.operator",
             "foreground": "var(blue)"
         },
         {
             "name": "Operator symbol",
             "scope": "keyword.operator",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
+        },
+        {
+            "name": "Operator keyword",
+            "scope": "keyword.operator.word",
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Lambda function arrow",
             "scope": "keyword.declaration.function.arrow, keyword.declaration.function.anonymous",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "Lambda function arrow [ST3]",
             "scope": "keyword.declaration.function.lambda",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "Preprocessor directive",
@@ -377,9 +384,9 @@
         },
         // ActionScript specific rules
         {
-            "name": "ActionScript keyword",
+            "name": "ActionScript operator keyword",
             "scope": "source.actionscript keyword.operator - keyword.operator.symbolic",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // Apache specific rules >> https://packagecontrol.io/packages/ApacheConf
         {
@@ -400,20 +407,20 @@
         },
         // ASP specific rules
         {
-            "name": "ASP logical operator keyword",
+            "name": "ASP operator keyword",
             "scope": "source.asp keyword.operator.logical",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // C# specific rules
         {
-            "name": "C# keyword",
+            "name": "C# operator keyword",
             "scope": "source.cs keyword.operator.new, source.cs keyword.operator.reflection",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "C# lambda function arrow [ST3]",
             "scope": "source.cs storage.type.function",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         // Clojure specific rules
         {
@@ -428,14 +435,14 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "CoffeeScript keyword",
+            "name": "CoffeeScript operator keyword",
             "scope": "source.coffee keyword.operator.new",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "CoffeeScript lambda function arrow",
             "scope": "source.coffee storage.type.function",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         // CSS specific rules
         {
@@ -509,14 +516,14 @@
             "foreground": "var(purple)"
         },
         {
-            "name": "CSS logical operator keyword",
+            "name": "CSS operator keyword",
             "scope": "keyword.operator.logic.css",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
-            "name": "CSS media logical operator keyword [ST3]",
+            "name": "CSS media operator keyword [ST3]",
             "scope": "keyword.operator.logic.media.css",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "CSS vendor prefix",
@@ -577,9 +584,9 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Dart ternary operator",
+            "name": "Dart operator symbol",
             "scope": "source.dart keyword.control.ternary",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         // Diff specific rules
         {
@@ -609,9 +616,9 @@
         },
         // Dockerfile specific rules >> https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting
         {
-            "name": "Dockerfile keyword",
+            "name": "Dockerfile operator keyword",
             "scope": "source.dockerfile keyword.operator",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // DotENV specific rules >> https://packagecontrol.io/packages/DotENV
         {
@@ -635,19 +642,19 @@
         {
             "name": "Elixir operator keyword",
             "scope": "source.elixir keyword.operator.elixir",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // Erlang specific rules
         {
-            "name": "Erlang bitwise operator keyword",
+            "name": "Erlang operator keyword",
             "scope": "source.erlang keyword.operator.bitwise",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // F# specific rules >> https://packagecontrol.io/packages/F%23
         {
             "name": "F# operator symbol",
             "scope": "source.fsharp keyword.symbol",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "F# attribute",
@@ -687,9 +694,9 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Fortran logical operator keyword",
+            "name": "Fortran operator keyword",
             "scope": "source.modern-fortran keyword.operator.logical, source.fixedform-fortran keyword.operator.logical",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Fortran punctuation",
@@ -708,9 +715,9 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Git keyword",
+            "name": "Git operator keyword",
             "scope": "text.git keyword.operator - text.git.config",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Git branch name",
@@ -747,9 +754,9 @@
         },
         // Groovy specific rules
         {
-            "name": "Groovy keyword",
+            "name": "Groovy operator keyword",
             "scope": "source.groovy keyword.operator.instanceof, source.groovy keyword.operator.as, source.groovy keyword.operator.is",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Groovy string interpolation",
@@ -769,9 +776,9 @@
         },
         // Haskell specific rules
         {
-            "name": "Haskell operator symbols",
+            "name": "Haskell operator symbol",
             "scope": "source.haskell keyword.other.arrow, source.haskell keyword.other.big-arrow, source.haskell keyword.other.double-colon",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "Haskell import module name",
@@ -787,7 +794,7 @@
         {
             "name": "Java lambda function arrow",
             "scope": "source.java storage.type.function.anonymous",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "Java array punctuation",
@@ -821,9 +828,9 @@
         },
         // JavaScript specific rules
         {
-            "name": "JavaScript keyword",
+            "name": "JavaScript operator keyword",
             "scope": "keyword.operator.js",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "JavaScript unquoted object-key",
@@ -838,7 +845,7 @@
         {
             "name": "JavaScript lambda function arrow [ST3]",
             "scope": "storage.type.function.arrow.js",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "JavaScript constructor",
@@ -998,19 +1005,19 @@
         {
             "name": "Lisp operator keyword",
             "scope": "source.lisp keyword.operator.logical, source.lisp keyword.operator.bitwise",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // LESS specific rules >> https://packagecontrol.io/packages/LESS
         {
             "name": "LESS operator keyword",
             "scope": "source.less keyword.operator.logic",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // Lua specific rules
         {
-            "name": "Lua logical operator keyword",
+            "name": "Lua operator keyword",
             "scope": "source.lua keyword.operator.logical",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         // Markdown specific rules
         {
@@ -1170,14 +1177,14 @@
         },
         // PHP specific rules
         {
-            "name": "PHP keyword",
+            "name": "PHP operator keyword",
             "scope": "source.php keyword.operator.type",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
-            "name": "PHP operator",
-            "scope": "source.php storage.type.nullable",
-            "foreground": "var(textcolor)"
+            "name": "PHP operator symbol",
+            "scope": "source.php storage.type.nullable, source.php storage.modifier.reference",
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "PHP string interpolation punctuation",
@@ -1196,11 +1203,6 @@
             "font_style": "italic"
         },
         {
-            "name": "PHP ampersand reference punctuation",
-            "scope": "source.php storage.modifier.reference",
-            "foreground": "var(textcolor)"
-        },
-        {
             "name": "PHP embedding tag punctuation",
             "scope": "embedding.php punctuation.section.embedded",
             "foreground": "var(textcolor)"
@@ -1209,7 +1211,7 @@
         {
             "name": "PowerShell operator keyword",
             "scope": "source.powershell keyword.operator.comparison, source.powershell keyword.operator.unary, source.powershell keyword.operator.logical, source.powershell keyword.operator.bitwise, source.powershell keyword.operator.string-format",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "PowerShell variable punctuation",
@@ -1253,9 +1255,9 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Python logical operator keyword",
+            "name": "Python operator keyword",
             "scope": "source.python keyword.operator.logical",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Python dict unquoted key",
@@ -1274,9 +1276,9 @@
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
         {
-            "name": "Python logical operator keyword",
+            "name": "Python operator keyword",
             "scope": "source.python.3 keyword.operator.bool.logical",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Python decorator",
@@ -1298,7 +1300,7 @@
         {
             "name": "R operator symbol",
             "scope": "source.r keyword.other",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "R code section comment",
@@ -1459,7 +1461,7 @@
         {
             "name": "Scala arrow [ST3]",
             "scope": "source.scala storage.type.function.arrow",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         // SCSS specific rules >> https://packagecontrol.io/packages/SCSS
         {
@@ -1522,7 +1524,7 @@
         {
             "name": "SQL operator keyword",
             "scope": "source.sql keyword.operator.logical, source.sql keyword.operator.assignment.alias",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "SQL wildcard asterisk",
@@ -1551,9 +1553,9 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Stylus logical operator keyword",
+            "name": "Stylus operator keyword",
             "scope": "source.stylus keyword.operator.logic",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Stylus vendor prefix",
@@ -1594,7 +1596,7 @@
         {
             "name": "Swift operator keyword",
             "scope": "source.swift keyword.operator.type-casting",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "Swift attribute",
@@ -1657,18 +1659,18 @@
         },
         // TypeScript specific rules
         {
-            "name": "TypeScript keyword",
+            "name": "TypeScript operator keyword",
             "scope": "source.ts keyword.operator.type.extends, source.tsx keyword.operator.type.extends",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
+        },
+        {
+            "name": "TypeScript operator symbol",
+            "scope": "source.ts storage.modifier.optional, source.tsx storage.modifier.optional, source.ts storage.modifier.definite, source.tsx storage.modifier.definite",
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "TypeScript array punctuation",
             "scope": "source.ts storage.modifier.array, source.tsx storage.modifier.array",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "TypeScript variable declaration modifier symbol",
-            "scope": "source.ts storage.modifier.optional, source.tsx storage.modifier.optional, source.ts storage.modifier.definite, source.tsx storage.modifier.definite",
             "foreground": "var(textcolor)"
         },
         {
@@ -1678,9 +1680,9 @@
         },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
-            "name": "TypeScript keyword",
+            "name": "TypeScript operator keyword",
             "scope": "source.ts keyword.operator.new, source.tsx keyword.operator.new, source.ts keyword.operator.expression, source.tsx keyword.operator.expression",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "TypeScript type",
@@ -1695,7 +1697,7 @@
         {
             "name": "TypeScript lambda function arrow",
             "scope": "source.ts storage.type.function.arrow, source.tsx storage.type.function.arrow",
-            "foreground": "var(textcolor)"
+            "foreground": "var(operator_symbol)"
         },
         {
             "name": "TypeScript import asterisk",
@@ -1749,14 +1751,14 @@
         },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
         {
-            "name": "VBScript operator symbol",
-            "scope": "source.vbs keyword.operator.js",
-            "foreground": "var(textcolor)"
-        },
-        {
             "name": "VBScript operator keyword",
             "scope": "source.vbs keyword.operator.asp",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
+        },
+        {
+            "name": "VBScript operator symbol",
+            "scope": "source.vbs keyword.operator.js",
+            "foreground": "var(operator_symbol)"
         },
         // Vue specific rules >> https://packagecontrol.io/packages/Vue%20Syntax%20Highlight
         {
@@ -1890,9 +1892,9 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "PackageDev sublime-syntax include",
+            "name": "PackageDev sublime-syntax operator keyword",
             "scope": "source.yaml.sublime.syntax keyword.operator.include.sublime-syntax",
-            "foreground": "var(blue)"
+            "foreground": "var(operator_keyword)"
         },
         {
             "name": "PackageDev sublime-syntax punctuation",
