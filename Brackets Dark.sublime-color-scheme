@@ -516,7 +516,7 @@
             "foreground": "var(purple)"
         },
         {
-            "name": "CSS logical operator keyword",
+            "name": "CSS operator keyword",
             "scope": "keyword.operator.logic.css",
             "foreground": "var(operator_keyword)"
         },
@@ -1240,7 +1240,7 @@
         },
         {
             "name": "PowerShell attribute",
-            "scope": "source.powershell support.function.attribute, source.powershell  meta.attribute.powershell punctuation.section.bracket",
+            "scope": "source.powershell support.function.attribute, source.powershell meta.attribute punctuation.section.bracket",
             "foreground": "var(pink)"
         },
         {

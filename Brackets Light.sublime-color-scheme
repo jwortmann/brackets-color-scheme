@@ -250,7 +250,7 @@
         },
         {
             "name": "Doc comment: parameter",
-            "scope": "comment variable.parameter",
+            "scope": "comment.block.documentation variable.parameter",
             "foreground": "color(var(orange) alpha(0.7)"
         },
         {
@@ -1240,7 +1240,7 @@
         },
         {
             "name": "PowerShell attribute",
-            "scope": "support.function.attribute.powershell, meta.attribute.powershell punctuation.section.bracket",
+            "scope": "source.powershell support.function.attribute.powershell, source.powershell meta.attribute punctuation.section.bracket",
             "foreground": "var(pink)"
         },
         {
