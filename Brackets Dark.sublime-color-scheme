@@ -208,7 +208,7 @@
         },
         {
             "name": "Punctuation",
-            "scope": "punctuation.separator - punctuation.separator.path, punctuation.accessor, punctuation.terminator - constant.character.entity",
+            "scope": "punctuation.separator - punctuation.separator.path - punctuation.separator.email - punctuation.separator.domain, punctuation.accessor, punctuation.terminator - punctuation.terminator.entity",
             "foreground": "var(textcolor)"
         },
         {
@@ -378,57 +378,47 @@
         // ActionScript specific rules
         {
             "name": "ActionScript keyword",
-            "scope": "keyword.operator.actionscript.2",
+            "scope": "source.actionscript keyword.operator - keyword.operator.symbolic",
             "foreground": "var(blue)"
-        },
-        // AHK specific rules >> https://packagecontrol.io/packages/AutoHotkey
-        {
-            "name": "AHK preprocessor directive",
-            "scope": "preprocessordirective.ahk keyword.control.ahk, keyword.control.import.ahk",
-            "foreground": "var(purple)"
         },
         // Apache specific rules >> https://packagecontrol.io/packages/ApacheConf
         {
             "name": "Apache tag",
-            "scope": "entity.tag.apacheconf",
+            "scope": "source.apacheconf entity.tag",
             "foreground": "var(blue)"
         },
         {
             "name": "Apache keyword",
-            "scope": "entity.status.apacheconf, entity.helper.apacheconf",
+            "scope": "source.apacheconf entity.status, source.apacheconf entity.helper",
             "foreground": "var(blue)"
+        },
+        // AutoHotkey specific rules >> https://packagecontrol.io/packages/AutoHotkey
+        {
+            "name": "AutoHotkey preprocessor directive",
+            "scope": "source.ahk preprocessordirective keyword.control, source.ahk importline keyword.control.import",
+            "foreground": "var(purple)"
         },
         // ASP specific rules
         {
             "name": "ASP logical operator keyword",
-            "scope": "keyword.operator.logical.asp",
+            "scope": "source.asp keyword.operator.logical",
             "foreground": "var(blue)"
         },
         // C# specific rules
         {
             "name": "C# keyword",
-            "scope": "keyword.operator.new.cs, keyword.operator.reflection.cs",
+            "scope": "source.cs keyword.operator.new, source.cs keyword.operator.reflection",
             "foreground": "var(blue)"
         },
         {
-            "name": "C# arrow operator",
-            "scope": "storage.type.function.lambda.cs",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "C# arrow operator [ST3]",
-            "scope": "storage.type.function.cs",
+            "name": "C# lambda function arrow [ST3]",
+            "scope": "source.cs storage.type.function",
             "foreground": "var(textcolor)"
         },
         // Clojure specific rules
         {
-            "name": "Clojure ratio",
-            "scope": "punctuation.separator.ratio.clojure",
-            "foreground": "var(green)"
-        },
-        {
             "name": "Clojure Regex string",
-            "scope": "string.regexp.clojure - punctuation.definition.string",
+            "scope": "source.clojure string.regexp - punctuation.definition.string",
             "foreground": "var(textcolor)"
         },
         // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
@@ -439,12 +429,12 @@
         },
         {
             "name": "CoffeeScript keyword",
-            "scope": "keyword.operator.new.coffee",
+            "scope": "source.coffee keyword.operator.new",
             "foreground": "var(blue)"
         },
         {
             "name": "CoffeeScript lambda function arrow",
-            "scope": "storage.type.function.coffee",
+            "scope": "source.coffee storage.type.function",
             "foreground": "var(textcolor)"
         },
         // CSS specific rules
@@ -460,7 +450,12 @@
         },
         {
             "name": "CSS property name",
-            "scope": "support.type.property-name.css, support.type.property-name.media.css",
+            "scope": "support.type.property-name.css",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "CSS property name media [ST3]",
+            "scope": "support.type.property-name.media.css",
             "foreground": "var(violet)"
         },
         {
@@ -494,12 +489,12 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "CSS unit suffix",
-            "scope": "keyword.other.unit.css",
+            "name": "CSS unit suffix [ST3]",
+            "scope": "constant.numeric keyword.other.unit.css",
             "foreground": "var(green)"
         },
         {
-            "name": "CSS variable",
+            "name": "CSS variable [ST3]",
             "scope": "support.type.custom-property.css",
             "foreground": "var(textcolor)"
         },
@@ -509,13 +504,18 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "CSS at-rule",
+            "name": "CSS at-rule [ST3]",
             "scope": "keyword.control.at-rule, keyword.control.at-rule support.type.property-vendor.css",
-            "foreground": "var(violet)"
+            "foreground": "var(purple)"
         },
         {
             "name": "CSS logical operator keyword",
-            "scope": "keyword.operator.logic.css, keyword.operator.logic.media.css",
+            "scope": "keyword.operator.logic.css",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CSS media logical operator keyword [ST3]",
+            "scope": "keyword.operator.logic.media.css",
             "foreground": "var(blue)"
         },
         {
@@ -523,57 +523,62 @@
             "scope": "support.type.vendor-prefix.css",
             "foreground": "var(textcolor)"
         },
-        {
-            "name": "CSS wildcard asterisk",
-            "scope": "entity.name.tag.wildcard.css",
-            "foreground": "var(textcolor)"
-        },
         // CSS specific rules >> https://packagecontrol.io/packages/CSS3
         {
-            "name": "CSS selector pseudo-class/element",
-            "scope": "entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element",
+            "name": "CSS selector pseudo-class",
+            "scope": "source.css meta.rule entity.other.attribute-name.pseudo-class",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "CSS selector pseudo-element",
+            "scope": "source.css meta.rule entity.other.attribute-name.pseudo-element",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "CSS unit suffix",
+            "scope": "source.css meta.rule keyword.other.unit",
+            "foreground": "var(green)"
         },
         {
             "name": "CSS unquoted font name",
-            "scope": "meta.property-value.font-family.css string.unquoted.identifier.css",
+            "scope": "source.css meta.rule meta.property-value.font-family string.unquoted",
             "foreground": "var(textcolor)"
         },
         {
             "name": "CSS variable",
-            "scope": "support.type.property-name.custom.css",
+            "scope": "source.css meta.rule support.type.property-name.custom",
             "foreground": "var(textcolor)"
         },
         // D specific rules
         {
             "name": "D numeric base prefix [ST3]",
-            "scope": "punctuation.definition.numeric.binary.d, punctuation.definition.numeric.hexadecimal.d",
+            "scope": "source.d punctuation.definition.numeric.binary, source.d punctuation.definition.numeric.hexadecimal",
             "foreground": "var(green)"
         },
         {
             "name": "D numeric type suffix [ST3]",
-            "scope": "storage.type.integer.d, storage.type.float.d",
+            "scope": "source.d storage.type.integer, source.d storage.type.float",
             "foreground": "var(green)"
         },
         // Dart specific rules >> https://packagecontrol.io/packages/Dart
         {
             "name": "Dart class/function definition",
-            "scope": "class.name.dart, function.name.dart",
+            "scope": "source.dart class.name, source.dart function.name",
             "foreground": "var(violet)"
         },
         {
             "name": "Dart annotation",
-            "scope": "entity.name.function.annotation.dart, annotation.dart support",
+            "scope": "source.dart entity.name.function.annotation, source.dart annotation support.type",
             "foreground": "var(pink)"
         },
         {
             "name": "Dart string interpolation",
-            "scope": "string.interpolated & (interpolation.dart | keyword.other.dart | variable.parameter.dart)",
+            "scope": "source.dart string.interpolated interpolation, source.dart string.interpolated keyword.other, source.dart string.interpolated variable.parameter",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Dart ternary operator",
-            "scope": "keyword.control.ternary.dart",
+            "scope": "source.dart keyword.control.ternary",
             "foreground": "var(textcolor)"
         },
         // Diff specific rules
@@ -604,14 +609,14 @@
         },
         // Dockerfile specific rules >> https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting
         {
-            "name": "Dockerfile CMD/ENTRYPOINT instruction",
-            "scope": "keyword.operator.dockerfile",
+            "name": "Dockerfile keyword",
+            "scope": "source.dockerfile keyword.operator",
             "foreground": "var(blue)"
         },
         // DotENV specific rules >> https://packagecontrol.io/packages/DotENV
         {
             "name": "DotENV key",
-            "scope": "variable.other.env - string",
+            "scope": "source.env variable.other - string",
             "foreground": "var(violet)"
         },
         {
@@ -629,29 +634,29 @@
         // Elixir specific rules >> https://packagecontrol.io/packages/Elixir
         {
             "name": "Elixir operator keyword",
-            "scope": "keyword.operator.elixir",
+            "scope": "source.elixir keyword.operator.elixir",
             "foreground": "var(blue)"
         },
         // Erlang specific rules
         {
             "name": "Erlang bitwise operator keyword",
-            "scope": "keyword.operator.bitwise.erlang",
+            "scope": "source.erlang keyword.operator.bitwise",
             "foreground": "var(blue)"
         },
         // F# specific rules >> https://packagecontrol.io/packages/F%23
         {
             "name": "F# operator symbol",
-            "scope": "keyword.symbol.fsharp",
+            "scope": "source.fsharp keyword.symbol",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "F# annotation",
-            "scope": "support.function.attribute.fsharp",
+            "name": "F# attribute",
+            "scope": "source.fsharp support.function.attribute",
             "foreground": "var(pink)"
         },
         {
-            "name": "F# placeholder in string",
-            "scope": "keyword.format.specifier.fsharp",
+            "name": "F# string placeholder",
+            "scope": "source.fsharp keyword.format.specifier",
             "foreground": "var(textcolor)"
         },
         // Fortran specific rules >> https://packagecontrol.io/packages/ModernFortran
@@ -704,7 +709,7 @@
         },
         {
             "name": "Git keyword",
-            "scope": "text.git keyword.operator - text.git.config, text.git keyword.other",
+            "scope": "text.git keyword.operator - text.git.config",
             "foreground": "var(blue)"
         },
         {
@@ -713,47 +718,37 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Git email angle brackets",
-            "scope": "text.git punctuation.definition.reference.email",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Git email @-symbol & dot",
-            "scope": "text.git punctuation.separator.email",
-            "foreground": "var(violet)"
-        },
-        {
             "name": "Git Config key",
-            "scope": "text.git meta.mapping.key variable.other",
+            "scope": "text.git.config meta.mapping.key variable.other",
             "foreground": "var(violet)"
         },
         {
-            "name": "Git Rebase commit subject",
-            "scope": "text.git string.unquoted.subject",
+            "name": "Git Log email angle brackets",
+            "scope": "text.git.log punctuation.definition.reference.email",
             "foreground": "var(textcolor)"
         },
         // Gnuplot specific rules >> https://packagecontrol.io/packages/Gnuplot
         {
             "name": "Gnuplot brackets",
-            "scope": "punctuation.definition.range.begin.gnuplot, punctuation.definition.range.end.gnuplot",
+            "scope": "source.gnuplot punctuation.definition.range",
             "foreground": "var(textcolor)"
         },
         // Go specific rules
         {
             "name": "Go floating point exponent separator [ST3]",
-            "scope": "punctuation.separator.exponent.go",
+            "scope": "source.go punctuation.separator.exponent",
             "foreground": "var(green)"
         },
         // Graphviz specific rules
         {
             "name": "Graphviz cluster subgraph",
-            "scope": "variable.annotation.cluster.dot",
+            "scope": "source.dot variable.annotation.cluster",
             "foreground": "var(violet)"
         },
         // Groovy specific rules
         {
             "name": "Groovy keyword",
-            "scope": "keyword.operator.instanceof.groovy, keyword.operator.as.groovy, keyword.operator.is.groovy",
+            "scope": "source.groovy keyword.operator.instanceof, source.groovy keyword.operator.as, source.groovy keyword.operator.is",
             "foreground": "var(blue)"
         },
         {
@@ -774,29 +769,24 @@
         },
         // Haskell specific rules
         {
-            "name": "Haskell arrow",
-            "scope": "keyword.other.arrow.haskell, keyword.other.big-arrow.haskell",
+            "name": "Haskell operator symbols",
+            "scope": "source.haskell keyword.other.arrow, source.haskell keyword.other.big-arrow, source.haskell keyword.other.double-colon",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Haskell double-colon",
-            "scope": "keyword.other.double-colon.haskell",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Haskell import module",
-            "scope": "meta.import support.other.module.haskell",
+            "name": "Haskell import module name",
+            "scope": "source.haskell meta.import support.other.module",
             "foreground": "var(textcolor)"
         },
         // Java specific rules
         {
             "name": "Java constant",
-            "scope": "constant.other.java",
+            "scope": "source.java constant.other",
             "font_style": "italic"
         },
         {
             "name": "Java lambda function arrow",
-            "scope": "storage.type.function.anonymous.java",
+            "scope": "source.java storage.type.function.anonymous",
             "foreground": "var(textcolor)"
         },
         {
@@ -806,12 +796,12 @@
         },
         {
             "name": "Java import classname",
-            "scope": "support.class.import.java",
+            "scope": "source.java support.class.import",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Java namespace",
-            "scope": "support.type.package.java",
+            "scope": "source.java support.type.package",
             "foreground": "var(textcolor)"
         },
         {
@@ -836,8 +826,13 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "JavaScript mapping key",
-            "scope": "meta.object-literal.key.js, meta.object-literal.key.js string, meta.object-literal.key.dollar.js, meta.object-literal.key.dollar.only.js",
+            "name": "JavaScript unquoted object-key",
+            "scope": "meta.mapping.key.js",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "JavaScript object-key [ST3]",
+            "scope": "source.js meta.object-literal.key, source.js meta.object-literal.key string",
             "foreground": "var(violet)"
         },
         {
@@ -898,7 +893,7 @@
         // Julia specific rules >> https://packagecontrol.io/packages/Julia
         {
             "name": "Julia macro",
-            "scope": "variable.macro.julia, punctuation.definition.macro.julia, support.function.macro.julia",
+            "scope": "source.julia variable.macro, source.julia punctuation.definition.macro, source.julia support.function.macro",
             "foreground": "var(purple)"
         },
         {
@@ -909,17 +904,17 @@
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
             "name": "Kotlin built-in variable",
-            "scope": "constant.language.kotlin",
+            "scope": "source.Kotlin constant.language",
             "foreground": "var(blue)"
         },
         {
             "name": "Kotlin variable definition",
-            "scope": "entity.name.variable.kotlin",
+            "scope": "source.Kotlin entity.name.variable",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Kotlin constant",
-            "scope": "constant.other.kotlin",
+            "scope": "source.Kotlin constant.other",
             "font_style": "italic"
         },
         // Laravel Blade specific rules >> https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter
@@ -935,91 +930,86 @@
         },
         // LaTeX specific rules
         {
-            "name": "LaTeX citation/reference/label",
-            "scope": "constant.other.citation.latex, constant.other.reference.latex, entity.name.label.latex",
+            "name": "LaTeX citation/reference",
+            "scope": "text.tex constant.other.citation, text.tex constant.other.reference",
             "foreground": "var(violet)"
         },
         {
-            "name": "LaTeX array column count parameter",
-            "scope": "constant.numeric.array-count.latex",
-            "foreground": "var(textcolor)"
-        },
-        {
             "name": "LaTeX number",
-            "scope": "constant.numeric.math.tex",
+            "scope": "text.tex constant.numeric",
             "foreground": "var(textcolor)"
         },
         {
             "name": "LaTeX newline spacing parameter",
-            "scope": "constant.numeric.newline.latex",
+            "scope": "text.tex constant.numeric.newline",
             "foreground": "var(blue)"
         },
         {
             "name": "LaTeX inline math punctuation",
-            "scope": "string.other.math.latex",
+            "scope": "text.tex string.other.math punctuation.definition.string",
             "foreground": "var(green)"
         },
         {
             "name": "LaTeX brackets",
-            "scope": "constant.character.parenthesis.tex, constant.character.bracket.tex, punctuation.definition.group.brace.begin.latex, punctuation.definition.group.brace.end.latex",
+            "scope": "text.tex constant.character.parenthesis, text.tex constant.character.bracket",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "LaTeX escaped brace character",
-            "scope": "constant.character.brace.escape.tex",
+            "name": "LaTeX escaped brace",
+            "scope": "text.tex constant.character.brace.escape",
             "foreground": "var(blue)"
         },
         {
-            "name": "LaTeX whitespace character",
-            "scope": "constant.character.space.tex, constant.character.escape.tex",
+            "name": "LaTeX special whitespace character",
+            "scope": "text.tex constant.character.space, text.tex constant.character.escape",
             "foreground": "var(blue)"
         },
         {
             "name": "LaTeX array delimiter",
-            "scope": "constant.character.ampersand.tex, constant.character.newline.latex",
+            "scope": "text.tex constant.character.ampersand, text.tex constant.character.newline",
             "foreground": "var(blue)"
         },
         {
             "name": "LaTeX command or operator declaration",
-            "scope": "entity.name.newcommand.latex, entity.name.declare-math-operator.latex, entity.name.definition.tex",
+            "scope": "text.tex entity.name.newcommand, text.tex entity.name.declare-math-operator, text.tex entity.name.definition",
             "foreground": "var(blue)"
         },
         {
             "name": "LaTeX option parameter",
-            "scope": "variable.parameter.bracket.latex",
+            "scope": "text.tex variable.parameter.bracket",
             "foreground": "var(textcolor)"
         },
         {
             "name": "BibTeX citation-key",
-            "scope": "entity.name.type.entry-key.bibtex",
+            "scope": "text.bibtex entity.name.type.entry-key",
             "foreground": "var(pink)"
         },
         {
-            "name": "BibTeX field name",
-            "scope": "string.unquoted.key.bibtex",
+            "name": "BibTeX field name [ST3]",
+            "scope": "text.bibtex meta.key-assignment string.unquoted.key",
             "foreground": "var(violet)"
         },
         {
             "name": "BibTeX brace character",
-            "scope": "string.quoted.other.braces.bibtex punctuation.definition.string",
+            "scope": "text.bibtex string.quoted.other.braces punctuation.definition.string",
             "foreground": "var(textcolor)"
         },
         // Lisp specific rules
         {
             "name": "Lisp operator keyword",
-            "scope": "keyword.operator.logical.lisp, keyword.operator.bitwise.lisp",
+            "scope": "source.lisp keyword.operator.logical, source.lisp keyword.operator.bitwise",
             "foreground": "var(blue)"
         },
         // LESS specific rules >> https://packagecontrol.io/packages/LESS
         {
-            "name": "LESS logical operator keyword",
-            "scope": "keyword.operator.logic.mixin.less",
+            "name": "LESS operator keyword",
+            "scope": "source.less keyword.operator.logic",
             "foreground": "var(blue)"
         },
         // Lua specific rules
         {
             "name": "Lua logical operator keyword",
-            "scope": "keyword.operator.logical.lua",
+            "scope": "source.lua keyword.operator.logical",
             "foreground": "var(blue)"
         },
         // Markdown specific rules
@@ -1137,35 +1127,40 @@
         },
         {
             "name": "Matlab built-in variable",
-            "scope": "variable.other.function.matlab",
+            "scope": "source.matlab variable.other.function",
             "foreground": "var(blue)"
         },
         // NGINX specific rules >> https://packagecontrol.io/packages/nginx
         {
             "name": "NGINX context",
-            "scope": "storage.type.context.nginx - meta.context.upstream",
+            "scope": "source.nginx storage.type.context",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "NGINX directive",
+            "scope": "source.nginx keyword.directive",
             "foreground": "var(violet)"
         },
         {
             "name": "NGINX unknown directive",
-            "scope": "keyword.directive.module.unsupported.nginx",
+            "scope": "source.nginx keyword.directive.module.unsupported",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "NGINX IP address",
-            "scope": "string.ipaddress.nginx",
+            "name": "NGINX number",
+            "scope": "source.nginx string.ipaddress",
             "foreground": "var(green)"
         },
         // OCaml specific rules
         {
             "name": "OCaml preprocessor directive",
-            "scope": "keyword.other.directive.ocaml, keyword.other.directive.line-number.ocaml",
+            "scope": "source.ocaml keyword.other.directive",
             "foreground": "var(purple)"
         },
         // Perl specific rules
         {
-            "name": "Perl arrow",
-            "scope": "keyword.accessor.arrow.perl",
+            "name": "Perl punctuation [ST3]",
+            "scope": "source.perl keyword.accessor.arrow",
             "foreground": "var(textcolor)"
         },
         {
@@ -1176,49 +1171,59 @@
         // PHP specific rules
         {
             "name": "PHP keyword",
-            "scope": "keyword.operator.type.php",
+            "scope": "source.php keyword.operator.type",
             "foreground": "var(blue)"
         },
         {
-            "name": "PHP punctuation",
-            "scope": "punctuation.definition.expression.php, punctuation.section.block.begin.php, punctuation.section.block.end.php, punctuation.section.brackets.begin.php, punctuation.section.brackets.end.php, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, punctuation.section.group.begin.php, punctuation.section.group.end.php",
+            "name": "PHP operator",
+            "scope": "source.php storage.type.nullable",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PHP string interpolation punctuation",
+            "scope": "source.php string punctuation.definition.expression, source.php string punctuation.section.brackets, source.php punctuation.section.block, source.php punctuation.section.group",
             "foreground": "var(textcolor)"
         },
         {
             "name": "PHP user-defined class",
-            "scope": "support.class.php",
+            "scope": "source.php support.class - support.class.builtin",
             "foreground": "var(textcolor)"
         },
         {
             "name": "PHP library constant",
-            "scope": "support.constant.core.php, support.constant.std.php, support.constant.ext.php, support.constant.parser-token.php",
+            "scope": "source.php support.constant",
             "foreground": "var(orange)",
             "font_style": "italic"
         },
         {
             "name": "PHP ampersand reference punctuation",
-            "scope": "storage.modifier.reference.php",
+            "scope": "source.php storage.modifier.reference",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PHP embedding tag punctuation",
+            "scope": "embedding.php punctuation.section.embedded",
             "foreground": "var(textcolor)"
         },
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
             "name": "PowerShell operator keyword",
-            "scope": "keyword.operator.comparison.powershell, keyword.operator.unary.powershell, keyword.operator.logical.powershell, keyword.operator.bitwise.powershell, keyword.operator.string-format.powershell",
+            "scope": "source.powershell keyword.operator.comparison, source.powershell keyword.operator.unary, source.powershell keyword.operator.logical, source.powershell keyword.operator.bitwise, source.powershell keyword.operator.string-format",
             "foreground": "var(blue)"
         },
         {
             "name": "PowerShell variable punctuation",
-            "scope": "keyword.other.variable.definition.powershell",
+            "scope": "source.powershell keyword.other.variable.definition",
             "foreground": "var(textcolor)"
         },
         {
             "name": "PowerShell at-symbol",
-            "scope": "keyword.other.array.begin.powershell, keyword.other.hashtable.begin.powershell",
+            "scope": "source.powershell keyword.other.array, source.powershell keyword.other.hashtable",
             "foreground": "var(textcolor)"
         },
         {
             "name": "PowerShell semicolon",
-            "scope": "keyword.other.statement-separator.powershell",
+            "scope": "source.powershell keyword.other.statement-separator",
             "foreground": "var(textcolor)"
         },
         {
@@ -1227,77 +1232,66 @@
             "foreground": "color(var(pink) alpha(0.6))"
         },
         {
-            "name": "PowerShell string interpolation bracket",
-            "scope": "string.quoted.double.powershell punctuation.section",
+            "name": "PowerShell string interpolation punctuation",
+            "scope": "source.powershell string punctuation.section",
             "foreground": "var(textcolor)"
         },
         {
             "name": "PowerShell attribute",
-            "scope": "support.function.attribute.powershell, meta.attribute.powershell punctuation.section.bracket",
+            "scope": "source.powershell support.function.attribute, source.powershell  meta.attribute.powershell punctuation.section.bracket",
             "foreground": "var(pink)"
         },
         {
-            "name": "PowerShell attribute argument",
-            "scope": "variable.parameter.attribute.powershell",
+            "name": "PowerShell attribute built-in argument name",
+            "scope": "source.powershell variable.parameter.attribute",
             "foreground": "var(blue)"
         },
         // Python specific rules
         {
             "name": "Python import statement punctuation/asterisk",
-            "scope": "keyword.control.import.relative.python, constant.language.import-all.python",
+            "scope": "source.python keyword.control.import.relative, source.python constant.language.import-all",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Python logical operator keyword",
-            "scope": "keyword.operator.logical.python",
+            "scope": "source.python keyword.operator.logical",
             "foreground": "var(blue)"
         },
         {
             "name": "Python dict unquoted key",
-            "scope": "meta.mapping.key.python meta.generic-name.python",
+            "scope": "source.python meta.mapping.key meta.generic-name",
             "foreground": "var(violet)"
         },
         {
             "name": "Python decorator",
-            "scope": "variable.annotation support.function.builtin.python, meta.annotation meta.generic-name.python - meta.annotation.arguments",
+            "scope": "source.python variable.annotation support.function.builtin, source.python meta.annotation meta.generic-name - meta.annotation.arguments",
             "foreground": "var(pink)"
         },
         {
             "name": "Python constant",
-            "scope": "variable.other.constant.python",
+            "scope": "source.python variable.other.constant",
             "font_style": "italic"
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
         {
             "name": "Python logical operator keyword",
-            "scope": "keyword.operator.bool.logical.python.3",
+            "scope": "source.python.3 keyword.operator.bool.logical",
             "foreground": "var(blue)"
         },
         {
             "name": "Python decorator",
-            "scope": "meta.function.decorator support.function.decorator.python.3",
+            "scope": "source.python.3 meta.function.decorator support.function.decorator",
             "foreground": "var(pink)"
-        },
-        // Python specific rules >> https://packagecontrol.io/packages/MagicPython
-        {
-            "name": "Python decorator",
-            "scope": "meta.function.decorator entity.name.function.decorator.python, meta.function.decorator support.type.python",
-            "foreground": "var(pink)"
-        },
-        {
-            "name": "Python constant",
-            "scope": "constant.other.caps.python",
-            "font_style": "italic"
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%20Improved
         {
             "name": "Python constant",
-            "scope": "constant.other.allcaps.python",
+            "scope": "source.python constant.other.allcaps",
             "font_style": "italic"
         },
         {
             "name": "Python comment todo/fixme annotation",
-            "scope": "comment.line.note.notation.python",
+            "scope": "source.python comment.line.note.notation",
             "foreground": "color(var(red) alpha(0.6))"
         },
         // R specific rules
@@ -1375,62 +1369,52 @@
         // reStructuredText specific rules
         {
             "name": "RST link label",
-            "scope": "string.other.link.title.restructuredtext",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "RST link label punctuation",
-            "scope": "punctuation.definition.link.restructuredtext - meta.link.reference.def - meta.link.footnote.def - meta.link.citation.def, punctuation.definition.string.restructuredtext",
+            "scope": "text.restructuredtext meta.link string.other.link.title",
             "foreground": "var(violet)"
         },
         {
             "name": "RST link target",
-            "scope": "markup.underline.link.restructuredtext",
+            "scope": "text.restructuredtext meta.link markup.underline.link",
             "foreground": "var(orange)"
         },
         {
-            "name": "RST footnote label",
-            "scope": "text.restructuredtext meta.link.footnote constant.other.footnote.link",
-            "foreground": "var(blue)"
+            "name": "RST inline link target punctuation",
+            "scope": "text.restructuredtext meta.link.inline punctuation.definition.location",
+            "foreground": "color(var(orange) alpha(0.6))"
         },
         {
-            "name": "RST footnote label punctuation",
-            "scope": "meta.link.footnote punctuation.definition.constant.restructuredtext",
-            "foreground": "var(blue)"
+            "name": "RST footnote & citation label",
+            "scope": "text.restructuredtext meta.link constant.other",
+            "foreground": "var(violet)"
         },
         {
-            "name": "RST citation label",
-            "scope": "text.restructuredtext meta.link.citation constant.other.citation.link",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "RST citation label punctuation",
-            "scope": "meta.link.citation punctuation.definition.constant.restructuredtext",
-            "foreground": "var(blue)"
+            "name": "RST footnote & citation label punctuation",
+            "scope": "text.restructuredtext meta.link constant punctuation.definition.constant",
+            "foreground": "color(var(violet) alpha(0.6))"
         },
         {
             "name": "RST directive",
-            "scope": "meta.other.directive.restructuredtext - punctuation",
+            "scope": "text.restructuredtext meta.other.directive - punctuation",
             "foreground": "var(blue)"
         },
         {
             "name": "RST field name punctuation",
-            "scope": "punctuation.definition.field.restructuredtext",
+            "scope": "text.restructuredtext punctuation.definition.field",
             "foreground": "var(textcolor)"
         },
         {
             "name": "RST interpreted text",
-            "scope": "markup.other.command.restructuredtext",
+            "scope": "text.restructuredtext markup.other.command",
             "foreground": "var(orange)"
         },
         {
             "name": "RST inline literal",
-            "scope": "markup.raw.restructuredtext - meta.raw.block",
+            "scope": "text.restructuredtext markup.raw - meta.raw.block",
             "foreground": "var(grey)"
         },
         {
             "name": "RST block literal",
-            "scope": "meta.raw.block markup.raw.restructuredtext",
+            "scope": "text.restructuredtext meta.raw.block markup.raw",
             "foreground": "var(grey)"
         },
         // Ruby specific rules
@@ -1447,18 +1431,18 @@
         // Rust specific rules
         {
             "name": "Rust constant",
-            "scope": "constant.other.rust, variable.other.constant.rust",
+            "scope": "source.rust constant.other - constant.other.placeholder, source.rust variable.other.constant",
             "font_style": "italic"
         },
         {
             "name": "Rust attribute",
-            "scope": "meta.annotation.rust punctuation.section.group - meta.annotation.parameters, meta.annotation.rust variable.function",
+            "scope": "source.rust meta.annotation variable.function - meta.annotation.parameters, source.rust meta.annotation punctuation.section.group - meta.annotation.parameters",
             "foreground": "var(pink)"
         },
         {
             "name": "Rust macro",
-            "scope": "support.macro.rust",
-            "foreground": "var(blue)"
+            "scope": "source.rust support.macro",
+            "foreground": "var(purple)"
         },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
@@ -1469,23 +1453,23 @@
         // Scala specific rules
         {
             "name": "Scala string interpolation expression",
-            "scope": "string punctuation.definition.expression.scala",
+            "scope": "source.scala string punctuation.definition.expression",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Scala lambda function arrow",
-            "scope": "storage.type.function.arrow.lambda.scala, storage.type.function.arrow.case.scala",
+            "name": "Scala arrow [ST3]",
+            "scope": "source.scala storage.type.function.arrow",
             "foreground": "var(textcolor)"
         },
         // SCSS specific rules >> https://packagecontrol.io/packages/SCSS
         {
             "name": "SCSS property name",
-            "scope": "support.type.property-name.scss",
+            "scope": "source.scss support.type.property-name.scss",
             "foreground": "var(violet)"
         },
         {
             "name": "SCSS property value",
-            "scope": "support.constant.property-value.scss, support.constant.font-name.scss",
+            "scope": "source.scss support.constant.property-value.scss, source.scss support.constant.font-name.scss",
             "foreground": "var(orange)"
         },
         {
@@ -1495,38 +1479,38 @@
         },
         {
             "name": "SCSS function argument",
-            "scope": "variable.parameter.url.scss",
+            "scope": "source.scss variable.parameter.url.scss",
             "foreground": "var(textcolor)"
         },
         {
             "name": "SCSS unit suffix",
-            "scope": "keyword.other.unit.scss",
+            "scope": "source.scss keyword.other.unit.scss",
             "foreground": "var(green)"
         },
         {
             "name": "SCSS misc symbol",
-            "scope": "support.constant.mathematical-symbols.scss, entity.name.tag.wildcard.scss, entity.name.tag.reference.scss",
+            "scope": "source.scss support.constant.mathematical-symbols.scss, source.scss entity.name.tag.wildcard.scss, source.scss entity.name.tag.reference.scss",
             "foreground": "var(textcolor)"
         },
         {
             "name": "SCSS string interpolation",
-            "scope": "variable.interpolation.scss",
+            "scope": "source.scss variable.interpolation.scss",
             "foreground": "var(textcolor)"
         },
         // ShellScript specific rules
         {
             "name": "ShellScript variable punctuation",
-            "scope": "punctuation.definition.variable.shell",
+            "scope": "source.shell punctuation.definition.variable",
             "foreground": "var(textcolor)"
         },
         {
             "name": "ShellScript bracket",
-            "scope": "support.function.test.begin.shell, support.function.test.end.shell, support.function.double-brace.begin.shell, support.function.double-brace.end.shell",
+            "scope": "source.shell support.function.test.begin, source.shell support.function.test.end, source.shell support.function.double-brace",
             "foreground": "var(textcolor)"
         },
         {
             "name": "ShellScript option",
-            "scope": "variable.parameter.option.shell",
+            "scope": "source.shell variable.parameter.option",
             "foreground": "var(green)"
         },
         // SQL specific rules
@@ -1537,89 +1521,94 @@
         },
         {
             "name": "SQL operator keyword",
-            "scope": "keyword.operator.logical.sql, keyword.operator.assignment.alias.sql",
+            "scope": "source.sql keyword.operator.logical, source.sql keyword.operator.assignment.alias",
             "foreground": "var(blue)"
         },
         {
             "name": "SQL wildcard asterisk",
-            "scope": "variable.language.star.sql",
+            "scope": "source.sql variable.language.wildcard.asterisk",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "SQL wildcard asterisk [ST3]",
+            "scope": "source.sql variable.language.star",
             "foreground": "var(textcolor)"
         },
         // Stylus specific rules >> https://packagecontrol.io/packages/Stylus
         {
             "name": "Stylus property name",
-            "scope": "support.type.property-name.stylus, support.type.property-name.media.stylus",
+            "scope": "source.stylus support.type.property-name",
             "foreground": "var(violet)"
         },
         {
             "name": "Stylus media type",
-            "scope": "support.constant.media.stylus",
+            "scope": "source.stylus support.constant.media",
             "foreground": "var(green)"
         },
         {
             "name": "Stylus unit suffix",
-            "scope": "constant.numeric.stylus keyword.other.unit.stylus",
+            "scope": "source.stylus constant.numeric keyword.other.unit",
             "foreground": "var(green)"
         },
         {
             "name": "Stylus logical operator keyword",
-            "scope": "keyword.operator.logic.media.stylus",
+            "scope": "source.stylus keyword.operator.logic",
             "foreground": "var(blue)"
         },
         {
             "name": "Stylus vendor prefix",
-            "scope": "support.type.vendor-prefix.stylus",
+            "scope": "source.stylus support.type.vendor-prefix",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Stylus property value constant",
-            "scope": "constant.property-value.stylus",
+            "scope": "source.stylus support.constant.property-value, source.stylus constant.property-value",
             "foreground": "var(orange)"
         },
         {
             "name": "Stylus built-in color name",
-            "scope": "constant.color.w3c-standard-color-name.stylus",
+            "scope": "source.stylus constant.color.w3c-standard-color-name",
             "foreground": "var(blue)"
         },
         {
             "name": "Stylus animation keyframe selector",
-            "scope": "entity.other.animation-keyframe.stylus",
+            "scope": "source.stylus entity.other.animation-keyframe",
             "foreground": "var(blue)"
         },
         {
             "name": "Stylus function call",
-            "scope": "entity.function-name.stylus",
+            "scope": "source.stylus entity.function-name",
             "foreground": "var(blue)"
         },
         // Swift specific rules >> https://packagecontrol.io/packages/Swift
         {
             "name": "Swift function declaration",
-            "scope": "entity.type.function.swift",
+            "scope": "source.swift entity.type.function",
             "foreground": "var(violet)"
         },
         {
             "name": "Swift built-in constant",
-            "scope": "keyword.constant.boolean.swift, constant.nil.swift",
+            "scope": "source.swift keyword.constant.boolean, source.swift constant.nil",
             "foreground": "var(orange)"
         },
         {
-            "name": "Swift keyword",
-            "scope": "keyword.operator.type-casting.swift",
+            "name": "Swift operator keyword",
+            "scope": "source.swift keyword.operator.type-casting",
             "foreground": "var(blue)"
         },
         {
             "name": "Swift attribute",
-            "scope": "storage.modifier.attribute.swift",
+            "scope": "source.swift storage.modifier.attribute",
             "foreground": "var(pink)"
         },
         {
             "name": "Swift string interpolation punctuation",
-            "scope": "meta.literal.string.swift support.punctuation.expression",
+            "scope": "source.swift meta.literal.string support.punctuation.expression",
             "foreground": "var(textcolor)"
         },
         {
             "name": "Swift imported module",
-            "scope": "support.type.module.import.swift",
+            "scope": "source.swift support.type.module.import",
             "foreground": "var(violet)"
         },
         // Swift specific rules >> https://packagecontrol.io/packages/Decent%20Swift%20Syntax
@@ -1636,87 +1625,86 @@
         // SystemVerilog specific rules >> https://packagecontrol.io/packages/SystemVerilog
         {
             "name": "SystemVerilog preprocessor directive",
-            "scope": "constant.other.preprocessor.systemverilog",
+            "scope": "source.systemverilog constant.other.preprocessor",
             "foreground": "var(purple)"
         },
         // Textile specific rules
         {
             "name": "Textile link title",
-            "scope": "string.other.link.title.textile, string.other.link.description.title.textile, markup.underline.link.image.textile",
+            "scope": "text.html.textile string.other.link.title, text.html.textile string.other.link.description.title, text.html.textile markup.underline.link.image",
             "foreground": "var(violet)"
         },
         {
             "name": "Textile link target",
-            "scope": "markup.underline.link.textile, constant.other.reference.link.textile",
+            "scope": "text.html.textile markup.underline.link, text.html.textile constant.other.reference.link",
             "foreground": "var(orange)"
         },
         {
             "name": "Textile attribute",
-            "scope": "entity.name.type.textile",
+            "scope": "text.html.textile entity.name.type",
             "foreground": "var(blue)"
         },
         // TOML specific rules >> https://packagecontrol.io/packages/TOML
         {
             "name": "TOML section name",
-            "scope": "entity.name.table.toml",
+            "scope": "source.toml entity.name.table",
             "foreground": "var(pink)"
         },
         {
             "name": "TOML key",
-            "scope": "entity.name.tag.toml",
+            "scope": "source.toml entity.name.tag",
             "foreground": "var(violet)"
-        },
-        // Twig specific rules >> https://packagecontrol.io/packages/Twig
-        {
-            "name": "Twig operator keyword",
-            "scope": "keyword.operator.logical.twig - keyword.operator.logical.pipe, keyword.operator.bitwise.twig",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Twig string interpolation punctuation",
-            "scope": "meta.interpolation.twig punctuation.section.interpolation",
-            "foreground": "var(textcolor)"
         },
         // TypeScript specific rules
         {
+            "name": "TypeScript keyword",
+            "scope": "source.ts keyword.operator.type.extends, source.tsx keyword.operator.type.extends",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "TypeScript array punctuation",
-            "scope": "source.ts storage.modifier.array",
+            "scope": "source.ts storage.modifier.array, source.tsx storage.modifier.array",
             "foreground": "var(textcolor)"
         },
         {
             "name": "TypeScript variable declaration modifier symbol",
-            "scope": "source.ts storage.modifier.optional, source.ts storage.modifier.definite",
+            "scope": "source.ts storage.modifier.optional, source.tsx storage.modifier.optional, source.ts storage.modifier.definite, source.tsx storage.modifier.definite",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "TypeScript decorator function",
+            "scope": "source.ts meta.annotation variable.function, source.tsx meta.annotation variable.function",
+            "foreground": "var(pink)"
         },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
             "name": "TypeScript keyword",
-            "scope": "keyword.operator.new.ts, keyword.operator.new.tsx, source.ts keyword.operator.expression, source.tsx keyword.operator.expression",
+            "scope": "source.ts keyword.operator.new, source.tsx keyword.operator.new, source.ts keyword.operator.expression, source.tsx keyword.operator.expression",
             "foreground": "var(blue)"
         },
         {
             "name": "TypeScript type",
-            "scope": "entity.name.type.ts, entity.name.type.tsx, entity.name.type.module.ts, entity.name.type.module.tsx",
+            "scope": "source.ts entity.name.type.ts, source.tsx entity.name.type.tsx, source.ts entity.name.type.module.ts, source.tsx entity.name.type.module.tsx",
             "foreground": "var(blue)"
         },
         {
             "name": "TypeScript decorator",
-            "scope": "(meta.decorator.ts | meta.decorator.tsx) & (variable.other | entity.name), punctuation.decorator.ts, punctuation.decorator.tsx",
+            "scope": "source.ts meta.decorator variable.other, source.tsx meta.decorator variable.other, source.ts meta.decorator entity.name.function, source.tsx meta.decorator entity.name.function, source.ts meta.decorator punctuation.decorator, source.tsx meta.decorator punctuation.decorator",
             "foreground": "var(pink)"
         },
         {
             "name": "TypeScript lambda function arrow",
-            "scope": "storage.type.function.arrow.ts, storage.type.function.arrow.tsx",
+            "scope": "source.ts storage.type.function.arrow, source.tsx storage.type.function.arrow",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "TypeScript placeholder asterisk",
-            "scope": "constant.language.import-export-all.ts, constant.language.import-export-all.tsx",
+            "name": "TypeScript import asterisk",
+            "scope": "source.ts constant.language.import-export-all, source.tsx constant.language.import-export-all",
             "foreground": "var(textcolor)"
         },
         {
             "name": "TypeScript template string expression",
-            "scope": "meta.template.expression.ts - meta.template.expression.ts string, meta.template.expression.tsx - meta.template.expression.tsx string",
+            "scope": "source.ts meta.template.expression - meta.template.expression string, source.tsx meta.template.expression - meta.template.expression string",
             "foreground": "var(textcolor)"
         },
         {
