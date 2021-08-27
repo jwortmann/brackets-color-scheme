@@ -14,10 +14,10 @@
         "red": "#dc322f",
         "red2": "#d44",
         "violet": "#8757ad",
-        "--orangish": "#e88501",
+        "--orangish": "var(orange)",
         "--yellowish": "#e5bb00",
         "--cyanish": "#3aadc1",
-        "--bluish": "#446fbd",
+        "--bluish": "var(blue)",
         "operator_symbol": "var(textcolor)",
         "operator_keyword": "var(blue)"
     },
