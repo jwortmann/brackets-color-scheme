@@ -399,17 +399,17 @@
             "scope": "source.apacheconf entity.status, source.apacheconf entity.helper",
             "foreground": "var(blue)"
         },
-        // AutoHotkey specific rules >> https://packagecontrol.io/packages/AutoHotkey
-        {
-            "name": "AutoHotkey preprocessor directive",
-            "scope": "source.ahk preprocessordirective keyword.control, source.ahk importline keyword.control.import",
-            "foreground": "var(purple)"
-        },
         // ASP specific rules
         {
             "name": "ASP operator keyword",
             "scope": "source.asp keyword.operator.logical",
             "foreground": "var(operator_keyword)"
+        },
+        // AutoHotkey specific rules >> https://packagecontrol.io/packages/AutoHotkey
+        {
+            "name": "AutoHotkey preprocessor directive",
+            "scope": "source.ahk preprocessordirective keyword.control, source.ahk importline keyword.control.import",
+            "foreground": "var(purple)"
         },
         // C# specific rules
         {
@@ -446,8 +446,13 @@
         },
         // CSS specific rules
         {
-            "name": "CSS selector pseudo-class/element",
-            "scope": "entity.other.pseudo-class, entity.other.pseudo-element",
+            "name": "CSS selector pseudo-class",
+            "scope": "entity.other.pseudo-class",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "CSS selector pseudo-element",
+            "scope": "entity.other.pseudo-element",
             "foreground": "var(textcolor)"
         },
         {
@@ -893,7 +898,7 @@
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
-            "name": "JSX & TSX punctuation for toggle_comment workaround",
+            "name": "JSX & TSX punctuation for toggle_comment workaround [sublimehq/Packages#2787]",
             "scope": "meta.jsx comment punctuation.definition.interpolation",
             "foreground": "var(textcolor)"
         },
