@@ -19,7 +19,8 @@
         "--cyanish": "#3aadc1",
         "--bluish": "var(blue)",
         "operator_symbol": "var(textcolor)",
-        "operator_keyword": "var(blue)"
+        "operator_keyword": "var(blue)",
+        "punctuation": "var(textcolor)"
     },
     "globals":
     {
@@ -216,7 +217,12 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.separator - punctuation.separator.path - punctuation.separator.email - punctuation.separator.domain, punctuation.accessor, punctuation.terminator - punctuation.terminator.entity",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
+        },
+        {
+            "name": "Brackets",
+            "scope": "punctuation.section, punctuation.definition.group, punctuation.definition.generic",
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Comment",
@@ -241,7 +247,7 @@
         {
             "name": "Doc comment: punctuation",
             "scope": "comment punctuation.separator",
-            "foreground": "color(var(textcolor) alpha(0.7))"
+            "foreground": "color(var(punctuation) alpha(0.7))"
         },
         {
             "name": "Doc comment: tag/keyword",
@@ -422,6 +428,11 @@
             "scope": "source.cs storage.type.function",
             "foreground": "var(operator_symbol)"
         },
+        {
+            "name": "C# string placeholder punctuation",
+            "scope": "source.cs punctuation.definition.placeholder",
+            "foreground": "var(punctuation)"
+        },
         // Clojure specific rules
         {
             "name": "Clojure Regex string",
@@ -564,7 +575,7 @@
         // D specific rules
         {
             "name": "D numeric base prefix [ST3]",
-            "scope": "source.d punctuation.definition.numeric.binary, source.d punctuation.definition.numeric.hexadecimal",
+            "scope": "source.d punctuation.definition.numeric",
             "foreground": "var(green)"
         },
         {
@@ -585,8 +596,13 @@
         },
         {
             "name": "Dart string interpolation",
-            "scope": "source.dart string.interpolated interpolation, source.dart string.interpolated keyword.other, source.dart string.interpolated variable.parameter",
+            "scope": "source.dart string.interpolated interpolation, source.dart string.interpolated variable.parameter",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Dart string interpolation punctuation",
+            "scope": "source.dart string.interpolated keyword.other",
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Dart operator symbol",
@@ -634,7 +650,7 @@
         {
             "name": "DotENV template punctuation",
             "scope": "source.env string.interpolated keyword.other.template",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         // EditorConfig specific rules >> https://packagecontrol.io/packages/INI
         {
@@ -706,7 +722,7 @@
         {
             "name": "Fortran punctuation",
             "scope": "source.modern-fortran keyword.control.double-colon, source.modern-fortran support.constant.line-continuation",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Fortran format string",
@@ -737,13 +753,13 @@
         {
             "name": "Git Log email angle brackets",
             "scope": "text.git.log punctuation.definition.reference.email",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         // Gnuplot specific rules >> https://packagecontrol.io/packages/Gnuplot
         {
             "name": "Gnuplot brackets",
             "scope": "source.gnuplot punctuation.definition.range",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         // Go specific rules
         {
@@ -804,7 +820,7 @@
         {
             "name": "Java array punctuation",
             "scope": "source.java storage.modifier.array",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Java import classname",
@@ -819,7 +835,7 @@
         {
             "name": "JavaDoc inline-tag punctuation",
             "scope": "comment.block.documentation.javadoc punctuation.section.inline-tag",
-            "foreground": "color(var(textcolor) alpha(0.7))"
+            "foreground": "color(var(punctuation) alpha(0.7))"
         },
         {
             "name": "JavaDoc code",
@@ -888,7 +904,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Regex (JavaScript) character class ",
+            "name": "Regex (JavaScript) character class",
             "scope": "string.regexp.js constant.other.character-class.escape.backslash.regexp, string.regexp.js constant.other.character-class.escape.unicode-property.regexp",
             "foreground": "var(violet)"
         },
@@ -900,7 +916,7 @@
         {
             "name": "JSX & TSX punctuation for toggle_comment workaround [sublimehq/Packages#2787]",
             "scope": "meta.jsx comment punctuation.definition.interpolation",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         // Julia specific rules >> https://packagecontrol.io/packages/Julia
         {
@@ -1002,9 +1018,9 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "BibTeX brace character",
+            "name": "BibTeX brace string punctuation",
             "scope": "text.bibtex string.quoted.other.braces punctuation.definition.string",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         // Lisp specific rules
         {
@@ -1173,7 +1189,7 @@
         {
             "name": "Perl punctuation [ST3]",
             "scope": "source.perl keyword.accessor.arrow",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Perl Pod misc",
@@ -1193,8 +1209,8 @@
         },
         {
             "name": "PHP string interpolation punctuation",
-            "scope": "source.php string punctuation.definition.expression, source.php string punctuation.section.brackets, source.php punctuation.section.block, source.php punctuation.section.group",
-            "foreground": "var(textcolor)"
+            "scope": "source.php string punctuation.definition.expression",
+            "foreground": "var(punctuation)"
         },
         {
             "name": "PHP user-defined class",
@@ -1208,7 +1224,7 @@
             "font_style": "italic"
         },
         {
-            "name": "PHP embedding tag punctuation",
+            "name": "PHP embedding tag",
             "scope": "embedding.php punctuation.section.embedded",
             "foreground": "var(textcolor)"
         },
@@ -1226,12 +1242,12 @@
         {
             "name": "PowerShell at-symbol",
             "scope": "source.powershell keyword.other.array, source.powershell keyword.other.hashtable",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "PowerShell semicolon",
             "scope": "source.powershell keyword.other.statement-separator",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "PowerShell documentation header",
@@ -1239,13 +1255,8 @@
             "foreground": "color(var(pink) alpha(0.7))"
         },
         {
-            "name": "PowerShell string interpolation punctuation",
-            "scope": "source.powershell string punctuation.section",
-            "foreground": "var(textcolor)"
-        },
-        {
             "name": "PowerShell attribute",
-            "scope": "source.powershell support.function.attribute.powershell, source.powershell meta.attribute punctuation.section.bracket",
+            "scope": "source.powershell support.function.attribute, source.powershell meta.attribute punctuation.section.bracket",
             "foreground": "var(pink)"
         },
         {
@@ -1255,9 +1266,14 @@
         },
         // Python specific rules
         {
-            "name": "Python import statement punctuation/asterisk",
-            "scope": "source.python keyword.control.import.relative, source.python constant.language.import-all",
+            "name": "Python import statement asterisk",
+            "scope": "source.python constant.language.import-all",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Python import statement punctuation",
+            "scope": "source.python keyword.control.import.relative",
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Python operator keyword",
@@ -1278,6 +1294,11 @@
             "name": "Python constant",
             "scope": "source.python variable.other.constant",
             "font_style": "italic"
+        },
+        {
+            "name": "Python string placeholder punctuation",
+            "scope": "source.python punctuation.definition.placeholder",
+            "foreground": "var(punctuation)"
         },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
         {
@@ -1407,7 +1428,7 @@
         {
             "name": "RST field name punctuation",
             "scope": "text.restructuredtext punctuation.definition.field",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "RST interpreted text",
@@ -1429,6 +1450,11 @@
             "name": "Ruby symbol",
             "scope": "source.ruby constant.other.symbol",
             "font_style": "italic"
+        },
+        {
+            "name": "Ruby parameters punctuation",
+            "scope": "source.ruby punctuation.definition.parameters",
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Ruby base class namespace",
@@ -1459,9 +1485,9 @@
         },
         // Scala specific rules
         {
-            "name": "Scala string interpolation expression",
+            "name": "Scala string interpolation punctuation",
             "scope": "source.scala string punctuation.definition.expression",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Scala arrow [ST3]",
@@ -1513,7 +1539,7 @@
         {
             "name": "ShellScript bracket",
             "scope": "source.shell support.function.test.begin, source.shell support.function.test.end, source.shell support.function.double-brace",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "ShellScript option",
@@ -1611,7 +1637,7 @@
         {
             "name": "Swift string interpolation punctuation",
             "scope": "source.swift meta.literal.string support.punctuation.expression",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "Swift imported module",
@@ -1676,7 +1702,7 @@
         {
             "name": "TypeScript array punctuation",
             "scope": "source.ts storage.modifier.array, source.tsx storage.modifier.array",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "TypeScript decorator function",
@@ -1732,7 +1758,7 @@
         {
             "name": "JSDoc punctuation",
             "scope": "(source.ts | source.tsx) & comment.block.documentation variable.other.jsdoc & (punctuation | keyword.operator)",
-            "foreground": "color(var(textcolor) alpha(0.7))"
+            "foreground": "color(var(punctuation) alpha(0.7))"
         },
         {
             "name": "JSDoc type",
@@ -1885,11 +1911,6 @@
             "scope": "source.json.sublime meta.mapping.value & (support.constant.command-name | entity.name.variant.sublime-build | entity.name.id.sublime-menu | entity.name.class-selector.sublime-theme | support.constant.mnemonic.sublime-menu | variable.other.setting.sublime-keymap | keyword.other.namespace.sublime-settings)",
             "foreground": "var(orange)",
             "font_style": ""
-        },
-        {
-            "name": "PackageDev JSON punctuation",
-            "scope": "source.json.sublime & (source.scope-selector punctuation.section.group | meta.function-call punctuation.definition.group | meta.function-call punctuation.section.group)",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "PackageDev XML/PList keyword",
