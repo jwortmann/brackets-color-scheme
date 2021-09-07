@@ -1204,7 +1204,7 @@
         },
         {
             "name": "PHP operator symbol",
-            "scope": "source.php storage.type.nullable, source.php storage.modifier.reference",
+            "scope": "source.php storage.type.nullable, source.php storage.modifier.reference, source.php punctuation.definition.arrow-function",
             "foreground": "var(operator_symbol)"
         },
         {
