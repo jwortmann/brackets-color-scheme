@@ -611,14 +611,9 @@
         },
         // Diff specific rules
         {
-            "name": "Diff header from-file",
-            "scope": "meta.diff.header.from-file",
-            "foreground": "var(red2)"
-        },
-        {
-            "name": "Diff header to-file",
-            "scope": "meta.diff.header.to-file",
-            "foreground": "var(green2)"
+            "name": "Diff header",
+            "scope": "meta.diff.header",
+            "foreground": "var(purple)"
         },
         {
             "name": "Diff index",
@@ -627,13 +622,13 @@
         },
         {
             "name": "Diff range information",
-            "scope": "meta.diff.range",
+            "scope": "meta.diff.range, meta.diff.range entity.name.section",
             "foreground": "var(grey)"
         },
         {
             "name": "Diff separator line",
             "scope": "meta.separator.diff",
-            "foreground": "var(violet)"
+            "foreground": "var(grey)"
         },
         // Dockerfile specific rules >> https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting
         {
