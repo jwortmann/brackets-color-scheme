@@ -39,8 +39,14 @@ The color scheme can then be activated from the menu under *Preferences > Select
 ## Customization
 
 This color scheme uses color definitions and highlighting rules based on a JSON format, which was introduced in Sublime Text 3.1 (Build 3170).
-The color scheme format allows to customize color variables and override or add user-specific highlighting rules via the *Preferences > Customize Color Scheme* entry from the menu, see also [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
+The color scheme format allows to customize color variables and override or add user-specific highlighting rules via the *UI: Customize Color Scheme* entry from the command palette, see also [this example](https://www.sublimetext.com/docs/color_schemes.html#customization) in the official documentation.
 For the color variable names used by this scheme, refer to the color palette above.
+
+Apart from the listed color names, the following additional variables are used by this scheme and can be modified to tweak highlighting colors for certain tokens:
+
+* *operator_symbol* (default: "textcolor")
+* *operator_keyword* (default: "blue")
+* *punctuation* (default: "textcolor")
 
 ## Usage in Sublime Merge
 
