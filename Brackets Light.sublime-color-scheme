@@ -1801,7 +1801,7 @@
         {
             "name": "Find in Files results panel line number context",
             "scope": "constant.numeric.line-number.find-in-files",
-            "foreground": "color(var(green) alpha(0.7))"
+            "foreground": "color(var(green) alpha(0.5))"
         },
         // Anaconda specific rules >> https://packagecontrol.io/packages/Anaconda
         {
