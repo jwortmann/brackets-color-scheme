@@ -221,7 +221,7 @@
         },
         {
             "name": "Brackets",
-            "scope": "punctuation.section, punctuation.definition.group, punctuation.definition.generic",
+            "scope": "punctuation.section, punctuation.definition.group, punctuation.definition.generic, punctuation.definition.sequence, punctuation.definition.mapping",
             "foreground": "var(punctuation)"
         },
         {
