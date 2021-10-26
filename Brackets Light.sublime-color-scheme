@@ -1116,6 +1116,56 @@
             "scope": "text.html.markdown punctuation.definition.attributes",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
+        {
+            "name": "Markdown CriticMarkup addition",
+            "scope": "text.html.markdown markup.critic.addition",
+            "background": "color(var(green2) alpha(0.1))"
+        },
+        {
+            "name": "Markdown CriticMarkup addition punctuation",
+            "scope": "text.html.markdown markup.critic.addition punctuation.definition.critic",
+            "foreground": "color(var(green2) alpha(0.6))"
+        },
+        {
+            "name": "Markdown CriticMarkup deletion",
+            "scope": "text.html.markdown markup.critic.deletion",
+            "background": "color(var(red2) alpha(0.1))"
+        },
+        {
+            "name": "Markdown CriticMarkup deletion punctuation",
+            "scope": "text.html.markdown markup.critic.deletion punctuation.definition.critic",
+            "foreground": "color(var(red2) alpha(0.6))"
+        },
+        {
+            "name": "Markdown CriticMarkup substitution",
+            "scope": "text.html.markdown markup.critic.substitution",
+            "background": "color(var(orange) alpha(0.1))"
+        },
+        {
+            "name": "Markdown CriticMarkup substitution punctuation",
+            "scope": "text.html.markdown markup.critic.substitution punctuation.definition.critic, text.html.markdown markup.critic.substitution punctuation.separator.critic",
+            "foreground": "color(var(orange) alpha(0.6))"
+        },
+        {
+            "name": "Markdown CriticMarkup comment",
+            "scope": "text.html.markdown markup.critic.comment",
+            "background": "color(var(grey) alpha(0.1))"
+        },
+        {
+            "name": "Markdown CriticMarkup comment punctuation",
+            "scope": "text.html.markdown markup.critic.comment punctuation.definition.critic",
+            "foreground": "color(var(grey) alpha(0.6))"
+        },
+        {
+            "name": "Markdown CriticMarkup highlight",
+            "scope": "text.html.markdown markup.critic.highlight",
+            "background": "color(var(blue) alpha(0.1))"
+        },
+        {
+            "name": "Markdown CriticMarkup highlight punctuation",
+            "scope": "text.html.markdown markup.critic.highlight punctuation.definition.critic",
+            "foreground": "color(var(blue) alpha(0.6))"
+        },
         // Markdown specific rules >> https://packagecontrol.io/packages/Markdown%20Extended
         {
             "name": "Markdown fenced code block with syntax highlighting",
