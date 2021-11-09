@@ -828,18 +828,18 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "JavaDoc inline-tag punctuation",
-            "scope": "comment.block.documentation.javadoc punctuation.section.inline-tag",
+            "name": "JavaDoc inline-tag punctuation [ST3]",
+            "scope": "source.java comment.block.documentation punctuation.section.inline-tag",
             "foreground": "color(var(punctuation) alpha(0.7))"
         },
         {
             "name": "JavaDoc code",
-            "scope": "comment.block.documentation.javadoc markup.raw",
+            "scope": "source.java comment.block.documentation markup.raw",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
             "name": "JavaDoc HTML entity",
-            "scope": "comment.block.documentation.javadoc constant.character.entity",
+            "scope": "source.java comment.block.documentation constant.character.entity",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         // JavaScript specific rules
