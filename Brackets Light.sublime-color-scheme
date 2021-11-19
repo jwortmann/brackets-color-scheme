@@ -262,7 +262,8 @@
         {
             "name": "Doc comment: link",
             "scope": "comment markup.underline.link",
-            "foreground": "color(var(textcolor) alpha(0.7))"
+            "foreground": "color(var(textcolor) alpha(0.7))",
+            "font_style": "underline"
         },
         {
             "name": "Invalid expression",
