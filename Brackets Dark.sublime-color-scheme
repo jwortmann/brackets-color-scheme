@@ -819,6 +819,11 @@
             "foreground": "var(punctuation)"
         },
         {
+            "name": "Java fully-qualified classname",
+            "scope": "source.java meta.path storage.type.class - meta.function.parameters",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "Java import classname",
             "scope": "source.java meta.import entity.name.class, source.java support.class.import",
             "foreground": "var(textcolor)"
