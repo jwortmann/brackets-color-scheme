@@ -808,7 +808,7 @@
             "font_style": "italic"
         },
         {
-            "name": "Java lambda function arrow",
+            "name": "Java lambda function arrow [ST3]",
             "scope": "source.java storage.type.function.anonymous",
             "foreground": "var(operator_symbol)"
         },
@@ -819,11 +819,41 @@
         },
         {
             "name": "Java import classname",
-            "scope": "source.java support.class.import",
+            "scope": "source.java meta.import entity.name.class, source.java support.class.import",
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Java namespace",
+            "name": "Java import wildcard",
+            "scope": "source.java meta.import variable.language.wildcard",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java exports namespace",
+            "scope": "source.java meta.exports entity.name.namespace",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java uses classname",
+            "scope": "source.java meta.uses entity.name.class",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java opens namespace",
+            "scope": "source.java meta.opens entity.name.namespace",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java provides classname",
+            "scope": "source.java meta.provides entity.name.class",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java requires namespace",
+            "scope": "source.java meta.requires entity.name.namespace",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Java namespace [ST3]",
             "scope": "source.java support.type.package",
             "foreground": "var(textcolor)"
         },
