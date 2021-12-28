@@ -311,6 +311,11 @@
             "background": "rgba(200, 200, 150, 0.4)"
         },
         {
+            "name": "LSP SemanticTokens",
+            "scope": "meta.semantic-token",
+            "background": "#00000001"
+        },
+        {
             "name": "Inline diff inserted line",
             "scope": "diff.inserted",
             "background": "color(var(green2) alpha(0.15))",
