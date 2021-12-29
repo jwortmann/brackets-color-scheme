@@ -1888,6 +1888,27 @@
             "scope": "text.html.vue meta.tag punctuation.definition.string",
             "foreground": "var(orange)"
         },
+        // YAML specific rules
+        {
+            "name": "YAML header reserved directive",
+            "scope": "source.yaml meta.directive support.other.directive.reserved, source.yaml meta.directive string.unquoted",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "YAML header tag declaration",
+            "scope": "source.yaml meta.directive support.type.tag-prefix",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "YAML tag",
+            "scope": "source.yaml storage.type.tag-handle",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "YAML anchor punctuation",
+            "scope": "source.yaml punctuation.definition.anchor",
+            "foreground": "var(violet)"
+        },
         // Plugin specific rules
         {
             "name": "Find in Files results panel line number context",
