@@ -257,7 +257,7 @@
         {
             "name": "Doc comment: parameter",
             "scope": "comment.block.documentation variable.parameter",
-            "foreground": "color(var(orange) alpha(0.6)"
+            "foreground": "color(var(orange) alpha(0.6))"
         },
         {
             "name": "Doc comment: link",
@@ -1427,7 +1427,7 @@
         {
             "name": "R doc comment parameter",
             "scope": "source.r comment variable.parameter",
-            "foreground": "color(var(orange) alpha(0.6)"
+            "foreground": "color(var(orange) alpha(0.6))"
         },
         // Regular Expression specific rules
         {
