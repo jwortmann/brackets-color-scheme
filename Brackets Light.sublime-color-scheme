@@ -14,10 +14,8 @@
         "red": "#dc322f",
         "red2": "#d44",
         "violet": "#8757ad",
-        "--orangish": "var(orange)",
         "--yellowish": "#e5bb00",
         "--cyanish": "#0083e8",
-        "--bluish": "var(blue)",
         "operator_symbol": "var(textcolor)",
         "operator_keyword": "var(blue)",
         "punctuation": "var(textcolor)"
