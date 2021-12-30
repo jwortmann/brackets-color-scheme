@@ -1299,13 +1299,23 @@
             "foreground": "var(operator_symbol)"
         },
         {
+            "name": "PHP attribute",
+            "scope": "source.php punctuation.definition.attribute, source.php meta.attribute support.class - meta.attribute meta.group, source.php meta.attribute support.other.namespace - meta.attribute meta.group, source.php meta.attribute punctuation.separator.namespace - meta.attribute meta.group",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "PHP string interpolation punctuation",
             "scope": "source.php string punctuation.definition.expression",
             "foreground": "var(punctuation)"
         },
         {
+            "name": "PHP heredoc identifier",
+            "scope": "source.php entity.name.tag.heredoc",
+            "foreground": "var(purple)"
+        },
+        {
             "name": "PHP user-defined class",
-            "scope": "source.php support.class - support.class.builtin",
+            "scope": "source.php support.class - support.class.builtin, source.php support.other.namespace",
             "foreground": "var(textcolor)"
         },
         {
@@ -1318,6 +1328,11 @@
             "name": "PHP embedding tag",
             "scope": "embedding.php punctuation.section.embedded",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "PHP doc comment invalid",
+            "scope": "source.php comment.block.documentation invalid.illegal",
+            "foreground": "color(var(red) alpha(0.6))"
         },
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
