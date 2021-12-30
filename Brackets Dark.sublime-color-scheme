@@ -16,7 +16,7 @@
         "violet": "#b77fdb",
         "--orangish": "var(orange)",
         "--yellowish": "#d3cd69",
-        "--cyanish": "#44cde5",
+        "--cyanish": "#6bbeff",
         "--bluish": "var(blue)",
         "operator_symbol": "var(textcolor)",
         "operator_keyword": "var(blue)",
