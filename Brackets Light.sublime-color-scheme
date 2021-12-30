@@ -968,7 +968,8 @@
         {
             "name": "Julia code section comment",
             "scope": "source.julia comment entity.name.section",
-            "foreground": "color(var(pink) alpha(0.7))"
+            "foreground": "var(grey)",
+            "font_style": "bold"
         },
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
@@ -1240,14 +1241,19 @@
         },
         // Matlab specific rules
         {
-            "name": "Matlab built-in function",
+            "name": "Matlab built-in function [ST3]",
             "scope": "keyword.operator.matlab",
             "foreground": "var(blue)"
         },
         {
-            "name": "Matlab built-in variable",
+            "name": "Matlab built-in variable [ST3]",
             "scope": "source.matlab variable.other.function",
             "foreground": "var(blue)"
+        },
+        {
+            "name": "Matlab code section comment",
+            "scope": "source.matlab comment.line.double-percentage - punctuation",
+            "font_style": "bold"
         },
         // NGINX specific rules >> https://packagecontrol.io/packages/nginx
         {
@@ -1332,7 +1338,7 @@
         {
             "name": "PHP doc comment invalid",
             "scope": "source.php comment.block.documentation invalid.illegal",
-            "foreground": "color(var(red) alpha(0.6))"
+            "foreground": "color(var(red) alpha(0.7))"
         },
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
@@ -1358,7 +1364,8 @@
         {
             "name": "PowerShell documentation header",
             "scope": "source.powershell comment.documentation.embedded keyword.operator",
-            "foreground": "color(var(pink) alpha(0.7))"
+            "foreground": "var(grey)",
+            "font_style": "bold"
         },
         {
             "name": "PowerShell attribute",
@@ -1426,7 +1433,7 @@
         {
             "name": "Python comment todo/fixme annotation",
             "scope": "source.python comment.line.note.notation",
-            "foreground": "color(var(red) alpha(0.6))"
+            "foreground": "color(var(red) alpha(0.7))"
         },
         // R specific rules
         {
@@ -1437,7 +1444,8 @@
         {
             "name": "R code section comment",
             "scope": "source.r comment entity.name.section",
-            "foreground": "color(var(pink) alpha(0.7))"
+            "foreground": "var(grey)",
+            "font_style": "bold"
         },
         {
             "name": "R doc comment tag",
