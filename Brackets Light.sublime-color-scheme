@@ -965,6 +965,11 @@
             "scope": "source.julia constant.other.symbol",
             "font_style": "italic"
         },
+        {
+            "name": "Julia code section comment",
+            "scope": "source.julia comment entity.name.section",
+            "foreground": "color(var(pink) alpha(0.7))"
+        },
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
             "name": "Kotlin built-in variable",
