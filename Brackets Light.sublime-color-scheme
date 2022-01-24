@@ -254,7 +254,7 @@
         },
         {
             "name": "Doc comment: parameter",
-            "scope": "comment.block.documentation variable.parameter",
+            "scope": "comment variable.parameter",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         {
