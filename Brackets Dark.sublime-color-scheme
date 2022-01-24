@@ -309,11 +309,6 @@
             "background": "rgba(200, 200, 150, 0.2)"
         },
         {
-            "name": "LSP SemanticTokens",
-            "scope": "meta.semantic-token",
-            "background": "#00000001"
-        },
-        {
             "name": "Inline diff inserted line",
             "scope": "diff.inserted",
             "background": "color(var(green2) alpha(0.15))",
@@ -436,12 +431,6 @@
             "name": "C# string placeholder punctuation",
             "scope": "source.cs punctuation.definition.placeholder",
             "foreground": "var(punctuation)"
-        },
-        // Clojure specific rules
-        {
-            "name": "Clojure Regex string",
-            "scope": "source.clojure string.regexp - punctuation.definition.string",
-            "foreground": "var(textcolor)"
         },
         // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
         {
@@ -921,26 +910,6 @@
             "name": "JavaScript user-defined class",
             "scope": "support.class.js",
             "foreground": "var(textcolor)"
-        },
-        {
-            "name": "JavaScript Regex string",
-            "scope": "string.regexp.js - punctuation.definition.string",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "JavaScript Regex string mode modifier",
-            "scope": "string.regexp.js keyword.other.js",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Regex (JavaScript) unicode property",
-            "scope": "string.regexp.js support.constant.unicode-property.regexp",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Regex (JavaScript) character class",
-            "scope": "string.regexp.js constant.other.character-class.escape.backslash.regexp, string.regexp.js constant.other.character-class.escape.unicode-property.regexp",
-            "foreground": "var(violet)"
         },
         {
             "name": "JSDoc tag",
@@ -1462,18 +1431,48 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Regex metacharacter",
-            "scope": "keyword.operator.quantifier.regexp, keyword.operator.alternation.regexp, keyword.operator.or.regexp, keyword.operator.negation.regexp, keyword.operator.intersection.regexp",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Regex group & character set parens/brackets",
-            "scope": "keyword.control.group.regexp, keyword.control.set.regexp",
+            "name": "Regex string [JavaScript]",
+            "scope": "string.regexp.js - punctuation.definition.string",
             "foreground": "var(textcolor)"
         },
         {
+            "name": "Regex string [Clojure ST3]",
+            "scope": "source.clojure string.regexp - punctuation.definition.string",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Regex metacharacter",
+            "scope": "keyword.operator.quantifier.regexp, keyword.operator.alternation.regexp, keyword.operator.or.regexp, source.regexp meta.set keyword.operator.logical, keyword.operator.negation.regexp, keyword.operator.intersection.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Regex character set brackets",
+            "scope": "source.regexp punctuation.definition.set",
+            "foreground": "var(punctuation)"
+        },
+        {
+            "name": "Regex character set brackets [JavaScript]",
+            "scope": "string.regexp.js punctuation.definition.character-class",
+            "foreground": "var(punctuation)"
+        },
+        {
+            "name": "Regex character set brackets [PHP]",
+            "scope": "source.regexp.php punctuation.definition.character-class",
+            "foreground": "var(punctuation)"
+        },
+        {
+            "name": "Regex group & character set parens/brackets [ST3]",
+            "scope": "keyword.control.group.regexp, keyword.control.set.regexp",
+            "foreground": "var(punctuation)"
+        },
+        {
             "name": "Regex non-capturing group & assertion",
-            "scope": "punctuation.definition.group.no-capture.regexp, constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp",
+            "scope": "constant.other.assertion.regexp",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Regex non-capturing group & assertion [JavaScript]",
+            "scope": "punctuation.definition.group.no-capture.regexp, punctuation.definition.group.assertion.regexp",
             "foreground": "var(blue)"
         },
         {
@@ -1482,7 +1481,12 @@
             "foreground": "var(violet)"
         },
         {
-            "name": "Regex character class [PHP, Python]",
+            "name": "Regex character class [JavaScript]",
+            "scope": "string.regexp.js constant.other.character-class.escape.backslash.regexp, string.regexp.js constant.other.character-class.escape.unicode-property.regexp",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Regex character class [PHP]",
             "scope": "constant.character.character-class.regexp",
             "foreground": "var(violet)"
         },
@@ -1490,6 +1494,11 @@
             "name": "Regex POSIX character class",
             "scope": "constant.other.posix-class.regexp",
             "foreground": "var(violet)"
+        },
+        {
+            "name": "Regex unicode property [JavaScript]",
+            "scope": "string.regexp.js support.constant.unicode-property.regexp",
+            "foreground": "var(textcolor)"
         },
         {
             "name": "Regex back-reference",
@@ -1989,6 +1998,11 @@
             "foreground": "#565656"
         },
         // LSP specific rules >> https://packagecontrol.io/packages/LSP
+        {
+            "name": "LSP SemanticTokens",
+            "scope": "meta.semantic-token",
+            "background": "#00000001"
+        },
         {
             "name": "LSP log panel arrow",
             "scope": "output.lsp.log storage.modifier",
