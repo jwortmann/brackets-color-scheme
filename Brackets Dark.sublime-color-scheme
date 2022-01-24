@@ -1057,17 +1057,17 @@
         },
         {
             "name": "Markdown code",
-            "scope": "text.html.markdown markup.raw",
+            "scope": "text.html.markdown markup.raw - markup.raw.code-fence, text.html.markdown markup.raw.code-fence.markdown-gfm",
             "foreground": "var(grey)"
-        },
-        {
-            "name": "Markdown fenced code block with syntax highlighting",
-            "scope": "text.html.markdown markup.raw.code-fence - markup.raw.code-fence.markdown-gfm",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "Markdown fenced code block punctuation",
             "scope": "text.html.markdown punctuation.definition.raw.code-fence",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Markdown fenced code block info string",
+            "scope": "text.html.markdown meta.code-fence.definition.begin.text",
             "foreground": "var(grey)"
         },
         {
