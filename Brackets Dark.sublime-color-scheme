@@ -99,7 +99,7 @@
         },
         {
             "name": "Built-in variable",
-            "scope": "variable.language",
+            "scope": "variable.language - variable.language.wildcard.asterisk",
             "foreground": "var(blue)"
         },
         {
@@ -515,9 +515,14 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "CSS function call",
+            "name": "CSS function",
             "scope": "source.css support.function",
             "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS unknown function",
+            "scope": "source.css variable.function",
+            "foreground": "var(textcolor)"
         },
         {
             "name": "CSS at-rule [ST3]",
@@ -818,11 +823,6 @@
         {
             "name": "Java import classname",
             "scope": "source.java meta.import entity.name.class, source.java support.class.import",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Java import wildcard",
-            "scope": "source.java meta.import variable.language.wildcard",
             "foreground": "var(textcolor)"
         },
         {
@@ -1677,11 +1677,6 @@
             "name": "SQL operator keyword",
             "scope": "source.sql keyword.operator.logical, source.sql keyword.operator.assignment.alias",
             "foreground": "var(operator_keyword)"
-        },
-        {
-            "name": "SQL wildcard asterisk",
-            "scope": "source.sql variable.language.wildcard.asterisk",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "SQL wildcard asterisk [ST3]",
