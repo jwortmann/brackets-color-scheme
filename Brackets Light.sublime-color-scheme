@@ -432,6 +432,11 @@
             "scope": "source.cs punctuation.definition.placeholder",
             "foreground": "var(punctuation)"
         },
+        {
+            "name": "C# comment todo annotation",
+            "scope": "source.cs comment.line.todo",
+            "foreground": "color(var(red) alpha(0.7))"
+        },
         // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
         {
             "name": "CoffeeScript string interpolation",
