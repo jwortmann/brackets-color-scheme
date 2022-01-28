@@ -416,6 +416,12 @@
             "scope": "source.ahk preprocessordirective keyword.control, source.ahk importline keyword.control.import",
             "foreground": "var(purple)"
         },
+        // C/C++ specific rules
+        {
+            "name": "C/C++ code section comment",
+            "scope": "(source.c | source.c++ | source.objc | source.objc++) & comment meta.toc-list.banner",
+            "font_style": "bold"
+        },
         // C# specific rules
         {
             "name": "C# operator keyword",
