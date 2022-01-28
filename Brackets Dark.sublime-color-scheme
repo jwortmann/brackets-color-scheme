@@ -1385,6 +1385,11 @@
             "scope": "source.python punctuation.definition.placeholder",
             "foreground": "var(punctuation)"
         },
+        {
+            "name": "Python f-string interpolation modifier symbol",
+            "scope": "source.python meta.interpolation storage.modifier.debug",
+            "foreground": "var(operator_symbol)"
+        },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
         {
             "name": "Python operator keyword",
