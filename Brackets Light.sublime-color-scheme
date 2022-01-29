@@ -57,12 +57,12 @@
     [
         {
             "name": "Module/class/type/method name",
-            "scope": "entity.name",
+            "scope": "entity.name - comment",
             "foreground": "var(violet)"
         },
         {
             "name": "Section name",
-            "scope": "entity.name.section",
+            "scope": "entity.name.section - comment",
             "foreground": "var(pink)"
         },
         {
@@ -226,6 +226,11 @@
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
             "foreground": "var(grey)"
+        },
+        {
+            "name": "Code section comment",
+            "scope": "comment entity.name.section",
+            "font_style": "bold"
         },
         {
             "name": "Doc comment: HTML tag",
@@ -943,12 +948,6 @@
             "scope": "source.julia constant.other.symbol",
             "font_style": "italic"
         },
-        {
-            "name": "Julia code section comment",
-            "scope": "source.julia comment entity.name.section",
-            "foreground": "var(grey)",
-            "font_style": "bold"
-        },
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
             "name": "Kotlin built-in variable",
@@ -1423,12 +1422,6 @@
             "name": "R operator symbol",
             "scope": "source.r keyword.other",
             "foreground": "var(operator_symbol)"
-        },
-        {
-            "name": "R code section comment",
-            "scope": "source.r comment entity.name.section",
-            "foreground": "var(grey)",
-            "font_style": "bold"
         },
         {
             "name": "R doc comment tag",
