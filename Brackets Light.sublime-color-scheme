@@ -57,7 +57,7 @@
     [
         {
             "name": "Module/class/type/method name",
-            "scope": "entity.name - comment",
+            "scope": "entity.name - entity.name.section",
             "foreground": "var(violet)"
         },
         {
