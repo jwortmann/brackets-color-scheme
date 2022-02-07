@@ -1607,6 +1607,11 @@
             "scope": "source.rust support.macro",
             "foreground": "var(purple)"
         },
+        {
+            "name": "Rust user-defined type",
+            "scope": "source.rust storage.type.source",
+            "foreground": "var(textcolor)"
+        },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
             "name": "Sass function call",
