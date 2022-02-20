@@ -772,6 +772,21 @@
         },
         // Go specific rules
         {
+            "name": "Go compiler directive comment",
+            "scope": "source.go comment meta.keyword.annotation, source.go comment meta.variable.function",
+            "foreground": "color(var(purple) alpha(0.6))"
+        },
+        {
+            "name": "Go compiler directive comment argument",
+            "scope": "source.go comment meta.variable.parameter",
+            "foreground": "color(var(orange) alpha(0.6))"
+        },
+        {
+            "name": "Go compiler directive comment punctuation",
+            "scope": "source.go comment meta.punctuation",
+            "foreground": "color(var(punctuation) alpha(0.6))"
+        },
+        {
             "name": "Go floating point exponent separator [ST3]",
             "scope": "source.go punctuation.separator.exponent",
             "foreground": "var(green)"
