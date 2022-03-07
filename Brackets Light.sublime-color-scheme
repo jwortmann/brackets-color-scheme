@@ -772,17 +772,17 @@
         },
         // Go specific rules
         {
-            "name": "Go compiler directive comment",
+            "name": "Go comment directive",
             "scope": "source.go comment meta.keyword.annotation, source.go comment meta.variable.function",
             "foreground": "color(var(purple) alpha(0.7))"
         },
         {
-            "name": "Go compiler directive comment argument",
-            "scope": "source.go comment meta.variable.parameter",
-            "foreground": "color(var(orange) alpha(0.7))"
+            "name": "Go comment directive argument",
+            "scope": "source.go comment meta.annotation.parameters",
+            "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
-            "name": "Go compiler directive comment punctuation",
+            "name": "Go comment directive punctuation",
             "scope": "source.go comment meta.punctuation",
             "foreground": "color(var(punctuation) alpha(0.7))"
         },
