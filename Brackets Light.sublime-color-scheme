@@ -434,6 +434,11 @@
             "foreground": "var(operator_keyword)"
         },
         {
+            "name": "C# operator symbol",
+            "scope": "source.cs storage.type.nullable",
+            "foreground": "var(operator_symbol)"
+        },
+        {
             "name": "C# lambda function arrow [ST3]",
             "scope": "source.cs storage.type.function",
             "foreground": "var(operator_symbol)"
