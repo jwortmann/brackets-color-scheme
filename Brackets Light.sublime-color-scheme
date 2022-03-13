@@ -219,7 +219,7 @@
         },
         {
             "name": "Brackets",
-            "scope": "punctuation.section, punctuation.definition.group, punctuation.definition.generic, punctuation.definition.sequence, punctuation.definition.mapping",
+            "scope": "punctuation.section - source.yaml.sublime.syntax comment, punctuation.definition.group, punctuation.definition.generic, punctuation.definition.sequence, punctuation.definition.mapping",
             "foreground": "var(punctuation)"
         },
         {
