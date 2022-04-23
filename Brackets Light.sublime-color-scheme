@@ -552,6 +552,11 @@
         },
         {
             "name": "CSS operator keyword",
+            "scope": "keyword.operator.logical.css",
+            "foreground": "var(operator_keyword)"
+        },
+        {
+            "name": "CSS operator keyword [ST4126, Sass, SCSS]",
             "scope": "keyword.operator.logic.css",
             "foreground": "var(operator_keyword)"
         },
