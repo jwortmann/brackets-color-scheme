@@ -451,7 +451,8 @@
         {
             "name": "C# comment todo annotation",
             "scope": "source.cs comment.line.todo",
-            "foreground": "color(var(red) alpha(0.6))"
+            "foreground": "color(var(red2) alpha(0.6))",
+            "font_style": "glow"
         },
         // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
         {
