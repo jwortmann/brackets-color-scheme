@@ -2150,6 +2150,57 @@
             "name": "SublimeLinter diagnostics message",
             "scope": "markup.quote.linter-message.sublime_linter",
             "foreground": "var(textcolor)"
+        },
+        // [x]it! specific rules >> https://packagecontrol.io/packages/xit!
+        {
+            "name": "[x]it! title",
+            "scope": "source.xit markup.other.title",
+            "font_style": "bold"
+        },
+        {
+            "name": "[x]it! open checkbox",
+            "scope": "source.xit markup.other.checkbox.open",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "[x]it! ongoing checkbox",
+            "scope": "source.xit markup.other.checkbox.ongoing",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "[x]it! priority",
+            "scope": "source.xit markup.other.priority",
+            "font_style": "glow"
+        },
+        {
+            "name": "[x]it! priority dimmed",
+            "scope": "source.xit comment markup.other.priority",
+            "foreground": "color(var(red2) alpha(0.6))"
+        },
+        {
+            "name": "[x]it! due date",
+            "scope": "source.xit markup.other.due_date",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "[x]it! due date dimmed",
+            "scope": "source.xit comment markup.other.due_date",
+            "foreground": "color(var(orange) alpha(0.6))"
+        },
+        {
+            "name": "[x]it! tag",
+            "scope": "source.xit markup.other.tag",
+            "font_style": "italic"
+        },
+        {
+            "name": "[x]it! tag name",
+            "scope": "source.xit markup.other.tag.name",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "[x]it! tag name dimmed",
+            "scope": "source.xit comment markup.other.tag.name",
+            "foreground": "color(var(blue) alpha(0.6))"
         }
     ]
 }
