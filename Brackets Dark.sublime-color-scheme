@@ -1719,7 +1719,7 @@
         },
         {
             "name": "ShellScript bracket",
-            "scope": "source.shell support.function.test.begin, source.shell support.function.test.end, source.shell support.function.double-brace",
+            "scope": "source.shell support.function.test.begin, source.shell support.function.test.end, source.shell support.function.double-brace, source.shell keyword.control.conditional.patterns",
             "foreground": "var(punctuation)"
         },
         {
