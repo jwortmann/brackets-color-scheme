@@ -1172,6 +1172,21 @@
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
+            "name": "Markdown bold",
+            "scope": "text.html.markdown markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown italic",
+            "scope": "text.html.markdown markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown bold italic",
+            "scope": "text.html.markdown markup.bold & text.html.markdown markup.italic",
+            "font_style": "bold italic"
+        },
+        {
             "name": "Markdown CriticMarkup addition",
             "scope": "text.html.markdown markup.critic.addition",
             "background": "color(var(green2) alpha(0.1))"
