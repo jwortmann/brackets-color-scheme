@@ -1366,7 +1366,7 @@
         // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
         {
             "name": "PowerShell operator keyword",
-            "scope": "source.powershell keyword.operator.comparison, source.powershell keyword.operator.unary, source.powershell keyword.operator.logical, source.powershell keyword.operator.bitwise, source.powershell keyword.operator.string-format",
+            "scope": "source.powershell keyword.operator.comparison, source.powershell keyword.operator.unary, source.powershell keyword.operator.logical - keyword.operator.logical.pipe, source.powershell keyword.operator.bitwise, source.powershell keyword.operator.string-format",
             "foreground": "var(operator_keyword)"
         },
         {
