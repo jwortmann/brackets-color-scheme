@@ -233,6 +233,11 @@
             "font_style": "bold"
         },
         {
+            "name": "Shebang interpreter name",
+            "scope": "comment constant.language.shebang",
+            "foreground": "color(var(textcolor) alpha(0.6))"
+        },
+        {
             "name": "Doc comment: HTML tag",
             "scope": "comment entity.name.tag, comment punctuation.definition.tag",
             "foreground": "color(var(blue) alpha(0.6))"
