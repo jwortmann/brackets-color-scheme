@@ -2088,6 +2088,13 @@
             "scope": "output.lsp.references meta.reference.preamble entity.name.file",
             "foreground": "var(purple)"
         },
+        // LSP-pyright specific rules >> https://packagecontrol.io/packages/LSP-pyright
+        {
+            "name": "LSP-pyright hover popup type prefix",
+            "scope": "source.python.lsp storage.type.python",
+            "foreground": "var(textcolor)",
+            "font_style": "italic"
+        },
         // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
         {
             "name": "OverrideAudit warning/expired",
