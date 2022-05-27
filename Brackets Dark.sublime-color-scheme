@@ -1090,6 +1090,12 @@
             "scope": "source.lua keyword.operator.logical",
             "foreground": "var(operator_keyword)"
         },
+        // Makefile specific rules
+        {
+            "name": "Makefile punctuation",
+            "scope": "source.makefile keyword.other.block",
+            "foreground": "var(punctuation)"
+        },
         // Markdown specific rules
         {
             "name": "Markdown blockquote",
