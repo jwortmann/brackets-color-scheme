@@ -1092,9 +1092,24 @@
         },
         // Makefile specific rules
         {
+            "name": "Makefile target",
+            "scope": "source.makefile entity.name.function",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "Makefile punctuation",
-            "scope": "source.makefile keyword.other.block",
+            "scope": "source.makefile keyword.other.block, source.makefile keyword.other.single-character-variable",
             "foreground": "var(punctuation)"
+        },
+        {
+            "name": "Makefile variable reference",
+            "scope": "source.makefile variable.parameter",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Makefile command silencing operator & call function",
+            "scope": "source.makefile constant.language - source.shell",
+            "foreground": "var(blue)"
         },
         // Markdown specific rules
         {
