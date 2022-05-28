@@ -1198,6 +1198,11 @@
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
+            "name": "Markdown table alignment punctuation",
+            "scope": "text.html.markdown punctuation.definition.table-cell-alignment",
+            "foreground": "var(punctuation)"
+        },
+        {
             "name": "Markdown bold",
             "scope": "text.html.markdown markup.bold",
             "font_style": "bold"
