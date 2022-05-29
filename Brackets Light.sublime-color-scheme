@@ -1218,6 +1218,11 @@
             "font_style": "bold italic"
         },
         {
+            "name": "Markdown LaTeX formatted math punctuation",
+            "scope": "text.html.markdown punctuation.definition.math",
+            "foreground": "var(green)"
+        },
+        {
             "name": "Markdown CriticMarkup addition",
             "scope": "text.html.markdown markup.critic.addition",
             "background": "color(var(green2) alpha(0.1))"
