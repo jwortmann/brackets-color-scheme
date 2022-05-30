@@ -435,7 +435,7 @@
         // C# specific rules
         {
             "name": "C# operator keyword",
-            "scope": "source.cs keyword.operator.new, source.cs keyword.operator.reflection",
+            "scope": "source.cs keyword.operator.new, source.cs keyword.operator.reflection, source.cs keyword.operator.logical - meta.preprocessor",
             "foreground": "var(operator_keyword)"
         },
         {
