@@ -99,7 +99,7 @@
         },
         {
             "name": "Built-in variable",
-            "scope": "variable.language - variable.language.wildcard.asterisk",
+            "scope": "variable.language - variable.language.anonymous - variable.language.wildcard.asterisk",
             "foreground": "var(blue)"
         },
         {
