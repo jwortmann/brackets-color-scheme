@@ -2090,6 +2090,11 @@
         },
         // LSP specific rules >> https://packagecontrol.io/packages/LSP
         {
+            "name": "LSP DocumentLink",
+            "scope": "markup.underline.link.lsp",
+            "foreground": "var(grey)"
+        },
+        {
             "name": "LSP SemanticTokens",
             "scope": "meta.semantic-token",
             "background": "#00000001"
