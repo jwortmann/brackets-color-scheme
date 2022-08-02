@@ -2100,6 +2100,21 @@
             "background": "#00000001"
         },
         {
+            "name": "LSP signature help popup",
+            "scope": "entity.name.function.sighelp.lsp",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "LSP signature help popup parameter",
+            "scope": "variable.parameter.sighelp.lsp",
+            "foreground": "color(var(orange) alpha(0.8))"
+        },
+        {
+            "name": "LSP signature help popup highlighted parameter",
+            "scope": "variable.parameter.sighelp.active.lsp",
+            "foreground": "var(orange)"
+        },
+        {
             "name": "LSP log panel arrow",
             "scope": "output.lsp.log storage.modifier",
             "foreground": "var(textcolor)"
@@ -2126,10 +2141,9 @@
         },
         // LSP-pyright specific rules >> https://packagecontrol.io/packages/LSP-pyright
         {
-            "name": "LSP-pyright hover popup type prefix",
+            "name": "LSP-pyright hover popup kind prefix",
             "scope": "source.python.lsp storage.type.python",
-            "foreground": "var(textcolor)",
-            "font_style": "italic"
+            "foreground": "var(textcolor)"
         },
         // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
         {
