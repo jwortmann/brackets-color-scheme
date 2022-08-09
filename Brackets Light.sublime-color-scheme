@@ -2187,9 +2187,14 @@
             "foreground": "var(operator_keyword)"
         },
         {
+            "name": "PackageDev sublime-syntax include file",
+            "scope": "source.yaml.sublime.syntax support.module.file-path",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "PackageDev sublime-syntax punctuation",
             "scope": "source.yaml.sublime.syntax source.regexp punctuation.definition.variable",
-            "foreground": "var(textcolor)"
+            "foreground": "var(punctuation)"
         },
         {
             "name": "PackageDev sublime-syntax regex character class",
