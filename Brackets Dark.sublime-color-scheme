@@ -2108,7 +2108,7 @@
         {
             "name": "LSP DocumentLink",
             "scope": "markup.underline.link.lsp",
-            "foreground": "var(grey)"
+            "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "LSP SemanticTokens",
