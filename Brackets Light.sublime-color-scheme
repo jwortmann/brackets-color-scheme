@@ -18,7 +18,8 @@
         "--cyanish": "#0083e8",
         "operator_symbol": "var(textcolor)",
         "operator_keyword": "var(blue)",
-        "punctuation": "var(textcolor)"
+        "punctuation": "var(textcolor)",
+        "type": "var(textcolor)"
     },
     "globals":
     {
@@ -434,6 +435,11 @@
         },
         // C# specific rules
         {
+            "name": "C# class name",
+            "scope": "source.cs support.type",
+            "foreground": "var(type)"
+        },
+        {
             "name": "C# operator keyword",
             "scope": "source.cs keyword.operator.new, source.cs keyword.operator.reflection, source.cs keyword.operator.logical - meta.preprocessor",
             "foreground": "var(operator_keyword)"
@@ -714,6 +720,11 @@
         },
         // Fortran specific rules >> https://packagecontrol.io/packages/ModernFortran
         {
+            "name": "Fortran class name",
+            "scope": "source.fortran storage.type.class",
+            "foreground": "var(type)"
+        },
+        {
             "name": "Fortran label",
             "scope": "source.fortran entity.name.label",
             "foreground": "var(pink)"
@@ -726,11 +737,6 @@
         {
             "name": "Fortran variable or function identifier",
             "scope": "source.fortran variable.function",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Fortran user-defined class name",
-            "scope": "source.fortran storage.type.class",
             "foreground": "var(textcolor)"
         },
         // Fortran specific rules >> https://packagecontrol.io/packages/Fortran
@@ -787,6 +793,11 @@
             "foreground": "var(punctuation)"
         },
         // Go specific rules
+        {
+            "name": "Go user-defined type",
+            "scope": "source.go storage.type",
+            "foreground": "var(type)"
+        },
         {
             "name": "Go comment directive",
             "scope": "source.go comment meta.keyword.annotation, source.go comment meta.variable.function",
@@ -848,6 +859,11 @@
         },
         // Java specific rules
         {
+            "name": "Java class name",
+            "scope": "source.java storage.type.class",
+            "foreground": "var(type)"
+        },
+        {
             "name": "Java constant",
             "scope": "source.java constant.other",
             "font_style": "italic"
@@ -863,12 +879,7 @@
             "foreground": "var(punctuation)"
         },
         {
-            "name": "Java fully-qualified classname",
-            "scope": "source.java meta.path storage.type.class - meta.function.parameters",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Java import classname",
+            "name": "Java import class name",
             "scope": "source.java meta.import entity.name.class, source.java support.class.import",
             "foreground": "var(textcolor)"
         },
@@ -878,7 +889,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Java uses classname",
+            "name": "Java uses class name",
             "scope": "source.java meta.uses entity.name.class",
             "foreground": "var(textcolor)"
         },
@@ -888,7 +899,7 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Java provides classname",
+            "name": "Java provides class name",
             "scope": "source.java meta.provides entity.name.class",
             "foreground": "var(textcolor)"
         },
@@ -918,6 +929,11 @@
             "foreground": "color(var(orange) alpha(0.7))"
         },
         // JavaScript specific rules
+        {
+            "name": "JavaScript user-defined class",
+            "scope": "support.class.js",
+            "foreground": "var(type)"
+        },
         {
             "name": "JavaScript operator keyword",
             "scope": "keyword.operator.js",
@@ -952,11 +968,6 @@
             "name": "JavaScript annotation",
             "scope": "meta.annotation variable.other.readwrite.js",
             "foreground": "var(pink)"
-        },
-        {
-            "name": "JavaScript user-defined class",
-            "scope": "support.class.js",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "JSDoc tag",
@@ -1354,6 +1365,11 @@
         },
         // PHP specific rules
         {
+            "name": "PHP user-defined class",
+            "scope": "source.php support.class - support.class.builtin, source.php support.other.namespace",
+            "foreground": "var(type)"
+        },
+        {
             "name": "PHP operator keyword",
             "scope": "source.php keyword.operator.type",
             "foreground": "var(operator_keyword)"
@@ -1377,11 +1393,6 @@
             "name": "PHP heredoc identifier",
             "scope": "source.php entity.name.tag.heredoc",
             "foreground": "var(purple)"
-        },
-        {
-            "name": "PHP user-defined class",
-            "scope": "source.php support.class - support.class.builtin, source.php support.other.namespace",
-            "foreground": "var(textcolor)"
         },
         {
             "name": "PHP library constant",
@@ -1659,6 +1670,11 @@
         },
         // Ruby specific rules
         {
+            "name": "Ruby user-defined class",
+            "scope": "source.ruby support.class",
+            "foreground": "var(type)"
+        },
+        {
             "name": "Ruby symbol",
             "scope": "source.ruby constant.other.symbol",
             "font_style": "italic"
@@ -1675,6 +1691,11 @@
         },
         // Rust specific rules
         {
+            "name": "Rust user-defined type",
+            "scope": "source.rust storage.type.source",
+            "foreground": "var(type)"
+        },
+        {
             "name": "Rust constant",
             "scope": "source.rust constant.other - constant.other.placeholder, source.rust variable.other.constant",
             "font_style": "italic"
@@ -1688,11 +1709,6 @@
             "name": "Rust macro",
             "scope": "source.rust support.macro",
             "foreground": "var(purple)"
-        },
-        {
-            "name": "Rust user-defined type",
-            "scope": "source.rust storage.type.source",
-            "foreground": "var(textcolor)"
         },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
@@ -1923,14 +1939,14 @@
         },
         // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
         {
+            "name": "TypeScript type",
+            "scope": "source.ts entity.name.type.ts, source.tsx entity.name.type.tsx, source.ts entity.name.type.module.ts, source.tsx entity.name.type.module.tsx",
+            "foreground": "var(type)"
+        },
+        {
             "name": "TypeScript operator keyword",
             "scope": "source.ts keyword.operator.new, source.tsx keyword.operator.new, source.ts keyword.operator.expression, source.tsx keyword.operator.expression",
             "foreground": "var(operator_keyword)"
-        },
-        {
-            "name": "TypeScript type",
-            "scope": "source.ts entity.name.type.ts, source.tsx entity.name.type.tsx, source.ts entity.name.type.module.ts, source.tsx entity.name.type.module.tsx",
-            "foreground": "var(blue)"
         },
         {
             "name": "TypeScript decorator",
