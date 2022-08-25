@@ -23,18 +23,18 @@ The color scheme can then be activated from the menu under *Preferences > Select
 
 | Color variable | Brackets Light | Brackets Dark | Example usage |
 | -------------- | -------------- | ------------- | ------------- |
-| | ![background](https://via.placeholder.com/20/f8f8f8/f8f8f8) `#f8f8f8` | ![background](https://via.placeholder.com/20/1d1f21/1d1f21) `#1d1f21` | background |
-| textcolor | ![textcolor](https://via.placeholder.com/20/535353/535353) `#535353` | ![textcolor](https://via.placeholder.com/20/dddddd/dddddd) `#dddddd` | plain text, variables, constants, operators, punctuations |
-| grey | ![grey](https://via.placeholder.com/20/949494/949494) `#949494` | ![grey](https://via.placeholder.com/20/767676/767676) `#767676` | comments |
-| blue | ![blue](https://via.placeholder.com/20/446fbd/446fbd) `#446fbd` | ![blue](https://via.placeholder.com/20/6c9ef8/6c9ef8) `#6c9ef8` | keywords, intrinsic/library functions and classes, tags |
-| orange | ![orange](https://via.placeholder.com/20/e88501/e88501) `#e88501` | ![orange](https://via.placeholder.com/20/d89333/d89333) `#d89333` | strings, built-in constants, arguments in function definitions |
-| green | ![green](https://via.placeholder.com/20/6d8600/6d8600) `#6d8600` | ![green](https://via.placeholder.com/20/85a300/85a300) `#85a300` | numbers, HTML/XML tag attributes |
-| violet | ![violet](https://via.placeholder.com/20/8757ad/8757ad) `#8757ad` | ![violet](https://via.placeholder.com/20/b77fdb/b77fdb) `#b77fdb` | user defined functions, mapping keys, CSS property names |
-| purple | ![purple](https://via.placeholder.com/20/6c71c4/6c71c4) `#6c71c4` | ![purple](https://via.placeholder.com/20/8087e5/8087e5) `#8087e5` | preprocessor directives, macros |
-| pink | ![pink](https://via.placeholder.com/20/d33682/d33682) `#d33682` | ![pink](https://via.placeholder.com/20/d85896/d85896) `#d85896` | annotations, headings in markup languages |
-| red | ![red](https://via.placeholder.com/20/dc322f/dc322f) `#dc322f` | ![red](https://via.placeholder.com/20/dc322f/dc322f) `#dc322f` | invalid syntax |
-| green2 | ![green2](https://via.placeholder.com/20/229922/229922) `#229922` | ![green2](https://via.placeholder.com/20/229922/229922) `#229922` | diff inserted |
-| red2 | ![red2](https://via.placeholder.com/20/dd4444/dd4444) `#dd4444` | ![red2](https://via.placeholder.com/20/dd4444/dd4444) `#dd4444` | diff deleted |
+| | `#f8f8f8` | `#1d1f21` | background |
+| textcolor | `#535353` | `#dddddd` | plain text, variables, constants, operators, punctuations |
+| grey | `#949494` | `#767676` | comments |
+| blue | `#446fbd` | `#6c9ef8` | keywords, intrinsic/library functions and classes, tags |
+| orange | `#e88501` | `#d89333` | strings, built-in constants, arguments in function definitions |
+| green | `#6d8600` | `#85a300` | numbers, HTML/XML tag attributes |
+| violet | `#8757ad` | `#b77fdb` | user defined functions, mapping keys, CSS property names |
+| purple | `#6c71c4` | `#8087e5` | preprocessor directives, macros |
+| pink | `#d33682` | `#d85896` | annotations, headings in markup languages |
+| red | `#dc322f` | `#dc322f` | invalid syntax |
+| green2 | `#229922` | `#229922` | diff inserted |
+| red2 | `#dd4444` | `#dd4444` | diff deleted |
 
 ## Customization
 
