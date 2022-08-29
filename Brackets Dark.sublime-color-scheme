@@ -320,6 +320,11 @@
             "background": "rgba(200, 200, 150, 0.2)"
         },
         {
+            "name": "LSP Hover",
+            "scope": "markup.highlight.hover",
+            "background": "color(var(--cyanish) alpha(0.15))"
+        },
+        {
             "name": "Inline diff inserted line",
             "scope": "diff.inserted",
             "background": "color(var(green2) alpha(0.15))",
