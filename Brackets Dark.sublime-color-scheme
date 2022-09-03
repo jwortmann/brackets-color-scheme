@@ -2143,10 +2143,10 @@
         {
             "name": "LSP log panel arrow unhandled notification",
             "scope": "output.lsp.log invalid.deprecated",
-            "foreground": "var(orange)"
+            "foreground": "var(grey)"
         },
         {
-            "name": "LSP log panel server",
+            "name": "LSP log panel server name",
             "scope": "output.lsp.log variable.function",
             "foreground": "var(purple)"
         },
