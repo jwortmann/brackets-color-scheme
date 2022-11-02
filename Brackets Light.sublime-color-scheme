@@ -1484,6 +1484,11 @@
             "font_style": "italic"
         },
         {
+            "name": "Python type annotation",
+            "scope": "source.python meta.function.parameters.annotation meta.generic-name, source.python meta.function.annotation.return meta.generic-name, source.python meta.variable.annotation meta.generic-name",
+            "foreground": "var(type)"
+        },
+        {
             "name": "Python string placeholder punctuation",
             "scope": "source.python punctuation.definition.placeholder",
             "foreground": "var(punctuation)"
