@@ -1715,6 +1715,11 @@
             "scope": "source.rust support.macro",
             "foreground": "var(purple)"
         },
+        {
+            "name": "Rust operator and modifier symbols",
+            "scope": "source.rust storage.modifier.relaxed-bounds",
+            "foreground": "var(operator_symbol)"
+        },
         // Sass specific rules >> https://packagecontrol.io/packages/Sass
         {
             "name": "Sass function call",
