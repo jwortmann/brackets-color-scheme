@@ -1469,11 +1469,6 @@
             "foreground": "var(operator_keyword)"
         },
         {
-            "name": "Python dict unquoted key",
-            "scope": "source.python meta.mapping.key meta.generic-name",
-            "foreground": "var(violet)"
-        },
-        {
             "name": "Python decorator",
             "scope": "source.python variable.annotation support.function.builtin, source.python meta.annotation meta.generic-name - meta.annotation.arguments",
             "foreground": "var(pink)"
