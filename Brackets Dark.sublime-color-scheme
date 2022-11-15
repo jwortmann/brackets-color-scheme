@@ -30,7 +30,7 @@
         "block_caret_border": "color(var(textcolor) alpha(0.6))",
         "line_highlight": "rgba(65, 63, 61, 0.5)",
         "misspelling": "var(red)",
-        "fold_marker": "color(var(grey) alpha(0.75))",
+        "fold_marker": "var(--yellowish)",
         "accent": "var(blue)",
         "gutter_foreground": "var(grey)",
         "gutter_foreground_highlight": "#fff",
