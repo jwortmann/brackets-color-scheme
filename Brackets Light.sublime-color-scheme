@@ -1181,7 +1181,7 @@
         {
             "name": "Markdown inline link & image attribute",
             "scope": "text.html.markdown entity.other.attribute-name.markdown",
-            "foreground": "var(pink)"
+            "foreground": "var(purple)"
         },
         {
             "name": "Markdown link text & image description punctuation",
