@@ -1288,6 +1288,12 @@
             "scope": "text.html.markdown markup.critic.highlight punctuation.definition.critic",
             "foreground": "color(var(blue) alpha(0.6))"
         },
+        // Quarto >> https://packagecontrol.io/packages/Quarto
+        {
+            "name": "Quarto Markdown citation and cross reference",
+            "scope": "text.html.markdown.quarto keyword.other.cite, text.html.markdown.quarto constant.other.cite",
+            "foreground": "var(purple)"
+        },
         // Markdown specific rules >> https://packagecontrol.io/packages/Markdown%20Extended
         {
             "name": "Markdown fenced code block with syntax highlighting",
