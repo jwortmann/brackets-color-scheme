@@ -2174,7 +2174,7 @@
         // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
         {
             "name": "OverrideAudit warning/expired",
-            "scope": "text.override-audit.overridereport keyword.control.expired",
+            "scope": "text.override-audit keyword.control.expired",
             "foreground": "var(orange)"
         },
         // PackageDev specific rules >> https://packagecontrol.io/packages/PackageDev
