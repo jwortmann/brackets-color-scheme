@@ -1079,6 +1079,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "LaTeX package name",
+            "scope": "text.tex meta.preamble support.class",
+            "foreground": "var(textcolor)"
+        },
+        {
             "name": "BibTeX citation-key",
             "scope": "text.bibtex entity.name.type.entry-key",
             "foreground": "var(pink)"
