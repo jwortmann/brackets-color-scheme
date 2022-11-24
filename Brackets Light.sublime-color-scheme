@@ -1000,6 +1000,11 @@
             "scope": "source.julia constant.other.symbol",
             "font_style": "italic"
         },
+        {
+            "name": "Julia user-defined type",
+            "scope": "source.julia meta.type meta.generic-name - meta.parametric-type.parameters",
+            "foreground": "var(type)"
+        },
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
             "name": "Kotlin built-in variable",
