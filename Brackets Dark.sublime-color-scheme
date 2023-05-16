@@ -2153,13 +2153,8 @@
         },
         {
             "name": "LSP signature help popup",
-            "scope": "entity.name.function.sighelp.lsp",
+            "scope": "entity.name.function.sighelp.lsp, variable.parameter.sighelp.lsp",
             "foreground": "var(textcolor)"
-        },
-        {
-            "name": "LSP signature help popup parameter",
-            "scope": "variable.parameter.sighelp.lsp",
-            "foreground": "color(var(orange) alpha(0.8))"
         },
         {
             "name": "LSP signature help popup highlighted parameter",
