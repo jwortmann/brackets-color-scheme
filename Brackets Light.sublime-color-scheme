@@ -865,6 +865,11 @@
         // Java specific rules
         {
             "name": "Java class name",
+            "scope": "source.java support.class",
+            "foreground": "var(type)"
+        },
+        {
+            "name": "Java class name [ST4123 - ST4150]",
             "scope": "source.java storage.type.class",
             "foreground": "var(type)"
         },
