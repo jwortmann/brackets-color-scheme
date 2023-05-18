@@ -799,6 +799,11 @@
         },
         // Go specific rules
         {
+            "name": "Go operator keyword",
+            "scope": "source.go keyword.operator.type",
+            "foreground": "var(operator_keyword)"
+        },
+        {
             "name": "Go user-defined type",
             "scope": "source.go storage.type",
             "foreground": "var(type)"
