@@ -1184,57 +1184,72 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Markdown link text & image description",
-            "scope": "text.html.markdown meta.link.inline.description, text.html.markdown meta.link.reference.description, text.html.markdown meta.link.reference.literal.description, text.html.markdown entity.name.reference.link, text.html.markdown meta.image.inline.description, text.html.markdown meta.image.reference.description",
+            "name": "Markdown link text",
+            "scope": "text.html.markdown meta.link.inline.description, text.html.markdown meta.link.reference.description, text.html.markdown meta.link.reference.literal.description",
             "foreground": "var(violet)"
         },
         {
-            "name": "Markdown link & image url",
+            "name": "Markdown link text punctuation",
+            "scope": "text.html.markdown meta.link.inline punctuation.definition.link, text.html.markdown meta.link.reference.description punctuation.definition.link, text.html.markdown meta.link.reference.literal.description punctuation.definition.link",
+            "foreground": "color(var(violet) alpha(0.7))"
+        },
+        {
+            "name": "Markdown link destination",
             "scope": "text.html.markdown markup.underline.link",
             "foreground": "var(orange)"
         },
         {
-            "name": "Markdown footnote id",
-            "scope": "text.html.markdown meta.link.reference.literal.footnote-id",
-            "foreground": "var(violet)"
-        },
-        {
-            "name": "Markdown reference-style link & image id",
-            "scope": "text.html.markdown meta.link.reference constant.other.reference.link, text.html.markdown meta.image.reference constant.other.reference.link",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "Markdown inline link & image attribute",
-            "scope": "text.html.markdown entity.other.attribute-name.markdown",
-            "foreground": "var(purple)"
-        },
-        {
-            "name": "Markdown link text & image description punctuation",
-            "scope": "text.html.markdown punctuation.definition.link - meta.link.inet - meta.link.email - meta.link.reference.def - meta.image.inline, text.html.markdown punctuation.definition.image, text.html.markdown meta.link.reference.def punctuation.definition.reference",
-            "foreground": "color(var(violet) alpha(0.7))"
-        },
-        {
-            "name": "Markdown reference definition punctuation [ST4126]",
-            "scope": "text.html.markdown meta.link.reference.def punctuation.definition.constant",
-            "foreground": "color(var(violet) alpha(0.7))"
-        },
-        {
-            "name": "Markdown link & image url punctuation",
+            "name": "Markdown link destination punctuation",
             "scope": "text.html.markdown punctuation.definition.metadata",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         {
-            "name": "Markdown reference-style link & image id punctuation",
-            "scope": "text.html.markdown punctuation.definition.constant - meta.link.reference.def",
+            "name": "Markdown image description",
+            "scope": "text.html.markdown meta.image.inline.description, text.html.markdown meta.image.reference.description",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown image description punctuation",
+            "scope": "text.html.markdown punctuation.definition.image",
+            "foreground": "color(var(violet) alpha(0.7))"
+        },
+        {
+            "name": "Markdown image destination punctuation",
+            "scope": "text.html.markdown meta.image.inline punctuation.definition.link",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         {
-            "name": "Markdown automatic link & email punctuation",
-            "scope": "text.html.markdown meta.link.inet punctuation.definition.link, text.html.markdown meta.link.email punctuation.definition.link, text.html.markdown meta.link.reference.def punctuation.definition.link, text.html.markdown meta.image.inline punctuation.definition.link",
+            "name": "Markdown link reference definition label",
+            "scope": "text.html.markdown entity.name.reference.link",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown link reference definition label punctuation",
+            "scope": "text.html.markdown meta.link.reference.def punctuation.definition.reference",
+            "foreground": "color(var(violet) alpha(0.7))"
+        },
+        {
+            "name": "Markdown autolink punctuation",
+            "scope": "text.html.markdown meta.link.inet punctuation.definition.link, text.html.markdown meta.link.email punctuation.definition.link, text.html.markdown meta.link.reference.def punctuation.definition.link",
             "foreground": "color(var(orange) alpha(0.7))"
         },
         {
-            "name": "Markdown inline link & image attributes punctuation",
+            "name": "Markdown footnote label",
+            "scope": "text.html.markdown meta.link.reference.literal.footnote-id",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown footnote label punctuation",
+            "scope": "text.html.markdown meta.link.reference.footnote punctuation.definition.link",
+            "foreground": "color(var(violet) alpha(0.7))"
+        },
+        {
+            "name": "Markdown link attribute",
+            "scope": "text.html.markdown entity.other.attribute-name.markdown",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Markdown link attributes punctuation",
             "scope": "text.html.markdown punctuation.definition.attributes",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
