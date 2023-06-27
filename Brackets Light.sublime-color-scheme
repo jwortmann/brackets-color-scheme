@@ -1539,6 +1539,41 @@
             "scope": "source.python meta.interpolation storage.modifier.debug",
             "foreground": "var(operator_symbol)"
         },
+        {
+            "name": "Python type comment prefix",
+            "scope": "source.python comment keyword.other.type",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
+        {
+            "name": "Python type comment punctuation",
+            "scope": "source.python comment punctuation.section.brackets, source.python comment punctuation.accessor",
+            "foreground": "color(var(punctuation) alpha(0.7))"
+        },
+        {
+            "name": "Python type comment built-in type",
+            "scope": "source.python comment support.type",
+            "foreground": "color(var(blue) alpha(0.7))"
+        },
+        {
+            "name": "Python type comment typing class",
+            "scope": "source.python comment support.class",
+            "foreground": "color(var(blue) alpha(0.7))"
+        },
+        {
+            "name": "Python type comment module & user-defined class",
+            "scope": "source.python comment meta.generic-name",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
+        {
+            "name": "Python type comment constant",
+            "scope": "source.python comment constant.language",
+            "foreground": "color(var(orange) alpha(0.7))"
+        },
+        {
+            "name": "Python type comment invalid",
+            "scope": "source.python comment invalid.illegal",
+            "foreground": "color(var(textcolor) alpha(0.7))"
+        },
         // Python specific rules >> https://packagecontrol.io/packages/Python%203
         {
             "name": "Python operator keyword",
