@@ -2099,6 +2099,12 @@
             "scope": "(source.ts | source.tsx) & comment.block.documentation & (invalid.illegal.syntax.jsdoc | invalid.illegal.type.jsdoc)",
             "foreground": "color(var(red) alpha(0.7))"
         },
+        // Typst specific rules >> https://packagecontrol.io/packages/Typst
+        {
+            "name": "Typst math mode brackets",
+            "scope": "text.typst markup.math constant.character.parenthesis",
+            "foreground": "var(textcolor)"
+        },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
         {
             "name": "VBScript operator keyword",
