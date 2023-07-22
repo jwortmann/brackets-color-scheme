@@ -1175,7 +1175,7 @@
         },
         {
             "name": "Markdown fenced code block language",
-            "scope": "text.html.markdown meta.code-fence constant.other.language-name",
+            "scope": "meta.code-fence constant.other.language-name",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
         {
@@ -2101,9 +2101,74 @@
         },
         // Typst specific rules >> https://packagecontrol.io/packages/Typst
         {
+            "name": "Typst label",
+            "scope": "text.typst entity.name.label, text.typst punctuation.definition.label",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Typst reference",
+            "scope": "text.typst constant.other.reference",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Typst preformatted text",
+            "scope": "text.typst markup.raw, text.typst punctuation.definition.raw.code-fence",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Typst bold",
+            "scope": "text.typst markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Typst italic",
+            "scope": "text.typst markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Typst bold italic",
+            "scope": "text.typst markup.bold & text.typst markup.italic",
+            "font_style": "bold italic"
+        },
+        {
+            "name": "Typst link",
+            "scope": "text.typst markup.underline.link",
+            "font_style": "underline"
+        },
+        {
+            "name": "Typst expression hash",
+            "scope": "text.typst punctuation.definition.expression",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Typst variable",
+            "scope": "text.typst constant.other.symbol",
+            "foreground": "var(--cyanish)" // exceptional
+        },
+        {
+            "name": "Typst math mode delimiter",
+            "scope": "text.typst markup.math punctuation.definition.math",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Typst math mode number",
+            "scope": "text.typst markup.math constant.numeric",
+            "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Typst math mode and expression function call",
+            "scope": "text.typst markup.math support.function, text.typst meta.expression support.function",
+            "foreground": "var(violet)"
+        },
+        {
             "name": "Typst math mode brackets",
             "scope": "text.typst markup.math constant.character.parenthesis",
             "foreground": "var(textcolor)"
+        },
+        {
+            "name": "Typst math mode tabstop",
+            "scope": "text.typst markup.math constant.character.ampersand",
+            "foreground": "var(blue)"
         },
         // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
         {
