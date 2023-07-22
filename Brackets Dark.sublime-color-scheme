@@ -124,6 +124,11 @@
             "foreground": "var(textcolor)"
         },
         {
+            "name": "Math variable",
+            "scope": "variable.other.math",
+            "font_style": "italic"
+        },
+        {
             "name": "Number",
             "scope": "constant.numeric, punctuation.separator.decimal",
             "foreground": "var(green)"
