@@ -135,7 +135,7 @@
         },
         {
             "name": "Escaped or special character",
-            "scope": "constant.character",
+            "scope": "constant.character - constant.character.escape.url",
             "foreground": "var(orange)"
         },
         {
