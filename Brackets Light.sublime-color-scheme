@@ -574,7 +574,7 @@
         },
         {
             "name": "CSS operator keyword",
-            "scope": "keyword.operator.logical.css",
+            "scope": "keyword.operator.logical.css - meta.attribute-selector",
             "foreground": "var(operator_keyword)"
         },
         {
