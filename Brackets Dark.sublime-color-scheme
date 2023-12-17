@@ -260,7 +260,7 @@
         },
         {
             "name": "Doc comment: punctuation",
-            "scope": "comment punctuation.separator",
+            "scope": "comment punctuation.separator, comment punctuation.section, comment punctuation.accessor",
             "foreground": "color(var(punctuation) alpha(0.6))"
         },
         {
@@ -1550,11 +1550,6 @@
             "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
-            "name": "Python type comment punctuation",
-            "scope": "source.python comment punctuation.section.brackets, source.python comment punctuation.accessor",
-            "foreground": "color(var(punctuation) alpha(0.6))"
-        },
-        {
             "name": "Python type comment built-in type",
             "scope": "source.python comment support.type",
             "foreground": "color(var(blue) alpha(0.6))"
@@ -1573,6 +1568,11 @@
             "name": "Python type comment constant",
             "scope": "source.python comment constant.language",
             "foreground": "color(var(orange) alpha(0.6))"
+        },
+        {
+            "name": "Python type comment error code",
+            "scope": "source.python comment constant.other.error-code",
+            "foreground": "color(var(textcolor) alpha(0.6))"
         },
         {
             "name": "Python type comment invalid",
