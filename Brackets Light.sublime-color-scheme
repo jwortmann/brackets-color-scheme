@@ -1160,7 +1160,7 @@
         // Markdown specific rules
         {
             "name": "Markdown blockquote",
-            "scope": "text.html.markdown markup.quote",
+            "scope": "text.html.markdown markup.quote - markup.quote.alert",
             "foreground": "var(blue)"
         },
         {
@@ -1332,6 +1332,56 @@
             "name": "Markdown CriticMarkup highlight punctuation",
             "scope": "text.html.markdown markup.critic.highlight punctuation.definition.critic",
             "foreground": "color(var(blue) alpha(0.6))"
+        },
+        {
+            "name": "Markdown GFM alert note",
+            "scope": "text.html.markdown markup.heading.alert.note - punctuation.definition.heading, text.html.markdown markup.quote.alert.note punctuation.definition.blockquote",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Markdown GFM alert note heading punctuation",
+            "scope": "text.html.markdown markup.heading.alert.note punctuation.definition.heading",
+            "foreground": "color(var(blue) alpha(0.7))"
+        },
+        {
+            "name": "Markdown GFM alert tip",
+            "scope": "text.html.markdown markup.heading.alert.tip - punctuation.definition.heading, text.html.markdown markup.quote.alert.tip punctuation.definition.blockquote",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Markdown GFM alert tip heading punctuation",
+            "scope": "text.html.markdown markup.heading.alert.tip punctuation.definition.heading",
+            "foreground": "color(var(green2) alpha(0.7))"
+        },
+        {
+            "name": "Markdown GFM alert important",
+            "scope": "text.html.markdown markup.heading.alert.important - punctuation.definition.heading, text.html.markdown markup.quote.alert.important punctuation.definition.blockquote",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown GFM alert important heading punctuation",
+            "scope": "text.html.markdown markup.heading.alert.important punctuation.definition.heading",
+            "foreground": "color(var(violet) alpha(0.7))"
+        },
+        {
+            "name": "Markdown GFM alert warning",
+            "scope": "text.html.markdown markup.heading.alert.warning - punctuation.definition.heading, text.html.markdown markup.quote.alert.warning punctuation.definition.blockquote",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown GFM alert warning heading punctuation",
+            "scope": "text.html.markdown markup.heading.alert.warning punctuation.definition.heading",
+            "foreground": "color(var(orange) alpha(0.7))"
+        },
+        {
+            "name": "Markdown GFM alert caution",
+            "scope": "text.html.markdown markup.heading.alert.caution - punctuation.definition.heading, text.html.markdown markup.quote.alert.caution punctuation.definition.blockquote",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Markdown GFM alert caution heading punctuation",
+            "scope": "text.html.markdown markup.heading.alert.caution punctuation.definition.heading",
+            "foreground": "color(var(red2) alpha(0.7))"
         },
         // Quarto >> https://packagecontrol.io/packages/Quarto
         {
