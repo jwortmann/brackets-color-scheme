@@ -1571,7 +1571,7 @@
         },
         {
             "name": "Python decorator",
-            "scope": "source.python variable.annotation support.function.builtin, source.python meta.annotation meta.generic-name - meta.annotation.arguments - meta.function-call.arguments",
+            "scope": "source.python variable.annotation support.function.builtin, source.python meta.annotation meta.generic-name - meta.annotation.arguments - meta.function-call.arguments, source.python meta.annotation punctuation.accessor.dot - meta.function-call.arguments",
             "foreground": "var(pink)"
         },
         {
