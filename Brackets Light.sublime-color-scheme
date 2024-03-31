@@ -676,6 +676,21 @@
             "scope": "meta.separator.diff",
             "foreground": "#9c8819"
         },
+        {
+            "name": "Diff inserted trailing whitespace",
+            "scope": "source.diff markup.inserted meta.whitespace",
+            "background": "color(var(green2) alpha(0.15))"
+        },
+        {
+            "name": "Diff deleted trailing whitespace",
+            "scope": "source.diff markup.deleted meta.whitespace",
+            "background": "color(var(red2) alpha(0.15))"
+        },
+        {
+            "name": "Diff changed trailing whitespace",
+            "scope": "source.diff markup.changed meta.whitespace",
+            "background": "color(var(orange) alpha(0.15))"
+        },
         // Dockerfile specific rules >> https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting
         {
             "name": "Dockerfile operator keyword",
