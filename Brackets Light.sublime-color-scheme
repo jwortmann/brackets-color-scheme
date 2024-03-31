@@ -669,12 +669,12 @@
         {
             "name": "Diff range information",
             "scope": "meta.diff.range, meta.diff.range entity.name.section",
-            "foreground": "var(grey)"
+            "foreground": "#9c8819"
         },
         {
             "name": "Diff separator line",
             "scope": "meta.separator.diff",
-            "foreground": "var(grey)"
+            "foreground": "#9c8819"
         },
         // Dockerfile specific rules >> https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting
         {
