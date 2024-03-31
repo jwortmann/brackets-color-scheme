@@ -1000,6 +1000,11 @@
             "foreground": "color(var(blue) alpha(0.6))"
         },
         {
+            "name": "JSX & TSX component dot notation",
+            "scope": "meta.tag.name.js punctuation.accessor",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "JSX & TSX punctuation for toggle_comment workaround [sublimehq/Packages#2787]",
             "scope": "meta.jsx comment punctuation.definition.interpolation",
             "foreground": "var(punctuation)"
