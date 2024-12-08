@@ -857,7 +857,7 @@
         // Groovy specific rules
         {
             "name": "Groovy operator keyword",
-            "scope": "source.groovy keyword.operator.instanceof, source.groovy keyword.operator.as, source.groovy keyword.operator.is",
+            "scope": "source.groovy keyword.operator.instanceof, source.groovy keyword.operator.as, source.groovy keyword.operator.is, source.groovy keyword.operator.new, source.groovy keyword.operator.reflection",
             "foreground": "var(operator_keyword)"
         },
         {
