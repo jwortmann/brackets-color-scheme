@@ -2294,6 +2294,16 @@
             "scope": "constant.numeric.line-number.find-in-files",
             "foreground": "color(var(green) alpha(0.4))"
         },
+        {
+            "name": "Syntax Test results panel FAILED",
+            "scope": "text.syntax-tests meta.summary.failure markup.heading",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Syntax Test results panel Success",
+            "scope": "text.syntax-tests meta.summary.success markup.heading",
+            "foreground": "var(green2)"
+        },
         // Anaconda specific rules >> https://packagecontrol.io/packages/Anaconda
         {
             "name": "Anaconda linter illegal",
