@@ -190,7 +190,7 @@
         },
         {
             "name": "Operator keyword",
-            "scope": "keyword.operator.word",
+            "scope": "keyword.operator.word, keyword.operator.iteration.in",
             "foreground": "var(operator_keyword)"
         },
         {
