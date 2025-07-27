@@ -130,7 +130,7 @@
         },
         {
             "name": "Number",
-            "scope": "constant.numeric, punctuation.separator.decimal",
+            "scope": "constant.numeric, punctuation.separator.decimal - text.tex.latex - text.typst",
             "foreground": "var(green)"
         },
         {
