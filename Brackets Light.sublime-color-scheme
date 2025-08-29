@@ -2231,8 +2231,8 @@
             "foreground": "var(textcolor)"
         },
         {
-            "name": "Typst math mode and expression function call",
-            "scope": "text.typst markup.math support.function, text.typst meta.expression support.function",
+            "name": "Typst expression function call",
+            "scope": "text.typst meta.expression support.function",
             "foreground": "var(violet)"
         },
         {
