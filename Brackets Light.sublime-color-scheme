@@ -1042,19 +1042,9 @@
         },
         // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
         {
-            "name": "Kotlin built-in variable",
-            "scope": "source.Kotlin constant.language",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Kotlin variable definition",
-            "scope": "source.Kotlin entity.name.variable",
-            "foreground": "var(textcolor)"
-        },
-        {
-            "name": "Kotlin constant",
-            "scope": "source.Kotlin constant.other",
-            "font_style": "italic"
+            "name": "Kotlin annotation",
+            "scope": "source.kotlin meta.annotation entity.name.annotation",
+            "foreground": "var(pink)"
         },
         // Laravel Blade specific rules >> https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter
         {
