@@ -414,7 +414,7 @@
             "scope": "source.actionscript keyword.operator - keyword.operator.symbolic",
             "foreground": "var(operator_keyword)"
         },
-        // Apache specific rules >> https://packagecontrol.io/packages/ApacheConf
+        // Apache specific rules >> https://packages.sublimetext.io/packages/ApacheConf
         {
             "name": "Apache tag",
             "scope": "source.apacheconf entity.tag",
@@ -431,7 +431,7 @@
             "scope": "source.asp keyword.operator.logical",
             "foreground": "var(operator_keyword)"
         },
-        // AutoHotkey specific rules >> https://packagecontrol.io/packages/AutoHotkey
+        // AutoHotkey specific rules >> https://packages.sublimetext.io/packages/AutoHotkey
         {
             "name": "AutoHotkey preprocessor directive",
             "scope": "source.ahk preprocessordirective keyword.control, source.ahk importline keyword.control.import",
@@ -475,7 +475,7 @@
             "foreground": "color(var(red2) alpha(0.7))",
             "font_style": "glow"
         },
-        // CoffeeScript specific rules >> https://packagecontrol.io/packages/Better%20CoffeeScript
+        // CoffeeScript specific rules >> https://packages.sublimetext.io/packages/Better%20CoffeeScript
         {
             "name": "CoffeeScript string interpolation",
             "scope": "source.coffee.embedded",
@@ -592,7 +592,7 @@
             "scope": "support.type.vendor-prefix.css",
             "foreground": "var(textcolor)"
         },
-        // CSS specific rules >> https://packagecontrol.io/packages/CSS3
+        // CSS specific rules >> https://packages.sublimetext.io/packages/CSS3
         {
             "name": "CSS selector pseudo-class",
             "scope": "source.css meta.rule entity.other.attribute-name.pseudo-class",
@@ -629,7 +629,7 @@
             "scope": "source.d storage.type.integer, source.d storage.type.float",
             "foreground": "var(green)"
         },
-        // Dart specific rules >> https://packagecontrol.io/packages/Dart
+        // Dart specific rules >> https://packages.sublimetext.io/packages/Dart
         {
             "name": "Dart class/function definition",
             "scope": "source.dart class.name, source.dart function.name",
@@ -691,13 +691,13 @@
             "scope": "source.diff markup.changed meta.whitespace",
             "background": "color(var(orange) alpha(0.15))"
         },
-        // Dockerfile specific rules >> https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting
+        // Dockerfile specific rules >> https://packages.sublimetext.io/packages/Dockerfile%20Syntax%20Highlighting
         {
             "name": "Dockerfile operator keyword",
             "scope": "source.dockerfile keyword.operator",
             "foreground": "var(operator_keyword)"
         },
-        // DotENV specific rules >> https://packagecontrol.io/packages/DotENV
+        // DotENV specific rules >> https://packages.sublimetext.io/packages/DotENV
         {
             "name": "DotENV key",
             "scope": "source.env variable.other - string",
@@ -708,14 +708,14 @@
             "scope": "source.env string.interpolated keyword.other.template",
             "foreground": "var(punctuation)"
         },
-        // EditorConfig specific rules >> https://packagecontrol.io/packages/INI
+        // EditorConfig specific rules >> https://packages.sublimetext.io/packages/INI
         {
             "name": "EditorConfig key",
             "scope": "source.ini.editorconfig meta.mapping.key variable.language",
             "foreground": "var(violet)",
             "font_style": "italic"
         },
-        // Elixir specific rules >> https://packagecontrol.io/packages/Elixir
+        // Elixir specific rules >> https://packages.sublimetext.io/packages/Elixir
         {
             "name": "Elixir operator keyword",
             "scope": "source.elixir keyword.operator.elixir",
@@ -727,7 +727,7 @@
             "scope": "source.erlang keyword.operator.bitwise",
             "foreground": "var(operator_keyword)"
         },
-        // F# specific rules >> https://packagecontrol.io/packages/F%23
+        // F# specific rules >> https://packages.sublimetext.io/packages/F%23
         {
             "name": "F# operator symbol",
             "scope": "source.fsharp keyword.symbol",
@@ -743,7 +743,7 @@
             "scope": "source.fsharp keyword.format.specifier",
             "foreground": "var(textcolor)"
         },
-        // Fortran specific rules >> https://packagecontrol.io/packages/ModernFortran
+        // Fortran specific rules >> https://packages.sublimetext.io/packages/ModernFortran
         {
             "name": "Fortran class name",
             "scope": "source.fortran storage.type.class",
@@ -764,7 +764,7 @@
             "scope": "source.fortran variable.function",
             "foreground": "var(textcolor)"
         },
-        // Fortran specific rules >> https://packagecontrol.io/packages/Fortran
+        // Fortran specific rules >> https://packages.sublimetext.io/packages/Fortran
         {
             "name": "Fortran subroutine call",
             "scope": "source.modern-fortran support.function.any-method",
@@ -811,7 +811,7 @@
             "scope": "text.git.log punctuation.definition.reference.email",
             "foreground": "var(punctuation)"
         },
-        // Gnuplot specific rules >> https://packagecontrol.io/packages/Gnuplot
+        // Gnuplot specific rules >> https://packages.sublimetext.io/packages/Gnuplot
         {
             "name": "Gnuplot brackets",
             "scope": "source.gnuplot punctuation.definition.range",
@@ -865,7 +865,7 @@
             "scope": "string source.groovy.embedded.source - string source.groovy.embedded.source string",
             "foreground": "var(textcolor)"
         },
-        // Handlebars specific rules >> https://packagecontrol.io/packages/Handlebars
+        // Handlebars specific rules >> https://packages.sublimetext.io/packages/Handlebars
         {
             "name": "Handlebars inline-script tag attribute",
             "scope": "source.handlebars.embedded entity.other.attribute-name",
@@ -1024,7 +1024,7 @@
             "scope": "meta.jsx comment punctuation.definition.interpolation",
             "foreground": "var(punctuation)"
         },
-        // Julia specific rules >> https://packagecontrol.io/packages/Julia
+        // Julia specific rules >> https://packages.sublimetext.io/packages/Julia
         {
             "name": "Julia macro",
             "scope": "source.julia variable.macro, source.julia punctuation.definition.macro, source.julia support.function.macro",
@@ -1040,13 +1040,13 @@
             "scope": "source.julia meta.type meta.generic-name - meta.parametric-type.parameters",
             "foreground": "var(type)"
         },
-        // Kotlin specific rules >> https://packagecontrol.io/packages/Kotlin
+        // Kotlin specific rules >> https://packages.sublimetext.io/packages/Kotlin
         {
             "name": "Kotlin annotation",
             "scope": "source.kotlin meta.annotation entity.name.annotation",
             "foreground": "var(pink)"
         },
-        // Laravel Blade specific rules >> https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter
+        // Laravel Blade specific rules >> https://packages.sublimetext.io/packages/Laravel%20Blade%20Highlighter
         {
             "name": "Laravel Blade template directive",
             "scope": "text.html.blade punctuation.section.embedded & (entity.name.tag.block.any.html | constant.other.inline-data.html)",
@@ -1134,7 +1134,7 @@
             "scope": "source.lisp keyword.operator.logical, source.lisp keyword.operator.bitwise",
             "foreground": "var(operator_keyword)"
         },
-        // LESS specific rules >> https://packagecontrol.io/packages/LESS
+        // LESS specific rules >> https://packages.sublimetext.io/packages/LESS
         {
             "name": "LESS operator keyword",
             "scope": "source.less keyword.operator.logic",
@@ -1393,13 +1393,13 @@
             "scope": "text.html.markdown markup.heading.alert.caution punctuation.definition.heading",
             "foreground": "color(var(red2) alpha(0.7))"
         },
-        // Quarto >> https://packagecontrol.io/packages/Quarto
+        // Quarto >> https://packages.sublimetext.io/packages/Quarto
         {
             "name": "Quarto Markdown citation and cross reference",
             "scope": "text.html.markdown.quarto keyword.other.cite, text.html.markdown.quarto constant.other.cite",
             "foreground": "var(purple)"
         },
-        // Markdown specific rules >> https://packagecontrol.io/packages/Markdown%20Extended
+        // Markdown specific rules >> https://packages.sublimetext.io/packages/Markdown%20Extended
         {
             "name": "Markdown fenced code block with syntax highlighting",
             "scope": "text.html.markdown markup.raw.block.fenced & (source | text.html.basic | text.xml)",
@@ -1441,7 +1441,7 @@
             "scope": "source.matlab comment.line.double-percentage - punctuation",
             "font_style": "bold"
         },
-        // NGINX specific rules >> https://packagecontrol.io/packages/nginx
+        // NGINX specific rules >> https://packages.sublimetext.io/packages/nginx
         {
             "name": "NGINX context",
             "scope": "source.nginx storage.type.context",
@@ -1526,7 +1526,7 @@
             "scope": "source.php comment.block.documentation invalid.illegal",
             "foreground": "color(var(red) alpha(0.7))"
         },
-        // PowerShell specific rules >> https://packagecontrol.io/packages/PowerShell
+        // PowerShell specific rules >> https://packages.sublimetext.io/packages/PowerShell
         {
             "name": "PowerShell operator keyword",
             "scope": "source.powershell keyword.operator.comparison, source.powershell keyword.operator.unary, source.powershell keyword.operator.logical - keyword.operator.logical.pipe, source.powershell keyword.operator.bitwise, source.powershell keyword.operator.string-format",
@@ -1639,7 +1639,7 @@
             "scope": "source.python comment invalid.illegal",
             "foreground": "color(var(textcolor) alpha(0.7))"
         },
-        // Python specific rules >> https://packagecontrol.io/packages/Python%203
+        // Python specific rules >> https://packages.sublimetext.io/packages/Python%203
         {
             "name": "Python operator keyword",
             "scope": "source.python.3 keyword.operator.bool.logical",
@@ -1650,7 +1650,7 @@
             "scope": "source.python.3 meta.function.decorator support.function.decorator",
             "foreground": "var(pink)"
         },
-        // Python specific rules >> https://packagecontrol.io/packages/Python%20Improved
+        // Python specific rules >> https://packages.sublimetext.io/packages/Python%20Improved
         {
             "name": "Python constant",
             "scope": "source.python constant.other.allcaps",
@@ -1866,7 +1866,7 @@
             "scope": "source.rust storage.modifier.relaxed-bounds",
             "foreground": "var(operator_symbol)"
         },
-        // Sass specific rules >> https://packagecontrol.io/packages/Sass
+        // Sass specific rules >> https://packages.sublimetext.io/packages/Sass
         {
             "name": "Sass function call",
             "scope": "source.sass support.function",
@@ -1883,7 +1883,7 @@
             "scope": "source.scala storage.type.function.arrow",
             "foreground": "var(operator_symbol)"
         },
-        // SCSS specific rules >> https://packagecontrol.io/packages/SCSS
+        // SCSS specific rules >> https://packages.sublimetext.io/packages/SCSS
         {
             "name": "SCSS property name",
             "scope": "source.scss support.type.property-name.scss",
@@ -1951,7 +1951,7 @@
             "scope": "source.sql variable.language.star",
             "foreground": "var(textcolor)"
         },
-        // Stylus specific rules >> https://packagecontrol.io/packages/Stylus
+        // Stylus specific rules >> https://packages.sublimetext.io/packages/Stylus
         {
             "name": "Stylus property name",
             "scope": "source.stylus support.type.property-name",
@@ -1997,7 +1997,7 @@
             "scope": "source.stylus entity.function-name",
             "foreground": "var(blue)"
         },
-        // Swift specific rules >> https://packagecontrol.io/packages/Swift
+        // Swift specific rules >> https://packages.sublimetext.io/packages/Swift
         {
             "name": "Swift function declaration",
             "scope": "source.swift entity.type.function",
@@ -2028,7 +2028,7 @@
             "scope": "source.swift support.type.module.import",
             "foreground": "var(violet)"
         },
-        // Swift specific rules >> https://packagecontrol.io/packages/Decent%20Swift%20Syntax
+        // Swift specific rules >> https://packages.sublimetext.io/packages/Decent%20Swift%20Syntax
         {
             "name": "Swift class declaration",
             "scope": "source.swift entity.name.type support.class",
@@ -2039,7 +2039,7 @@
             "scope": "source.swift storage.type.decorator",
             "foreground": "var(pink)"
         },
-        // SystemVerilog specific rules >> https://packagecontrol.io/packages/SystemVerilog
+        // SystemVerilog specific rules >> https://packages.sublimetext.io/packages/SystemVerilog
         {
             "name": "SystemVerilog preprocessor directive",
             "scope": "source.systemverilog constant.other.preprocessor",
@@ -2061,7 +2061,7 @@
             "scope": "text.html.textile entity.name.type",
             "foreground": "var(blue)"
         },
-        // TOML specific rules >> https://packagecontrol.io/packages/TOML
+        // TOML specific rules >> https://packages.sublimetext.io/packages/TOML
         {
             "name": "TOML section name",
             "scope": "source.toml entity.name.table",
@@ -2093,7 +2093,7 @@
             "scope": "source.ts meta.annotation variable.function, source.tsx meta.annotation variable.function",
             "foreground": "var(pink)"
         },
-        // TypeScript specific rules >> https://packagecontrol.io/packages/TypeScript
+        // TypeScript specific rules >> https://packages.sublimetext.io/packages/TypeScript
         {
             "name": "TypeScript type",
             "scope": "source.ts entity.name.type.ts, source.tsx entity.name.type.tsx, source.ts entity.name.type.module.ts, source.tsx entity.name.type.module.tsx",
@@ -2164,7 +2164,7 @@
             "scope": "(source.ts | source.tsx) & comment.block.documentation & (invalid.illegal.syntax.jsdoc | invalid.illegal.type.jsdoc)",
             "foreground": "color(var(red) alpha(0.7))"
         },
-        // Typst specific rules >> https://packagecontrol.io/packages/Typst
+        // Typst specific rules >> https://packages.sublimetext.io/packages/Typst
         {
             "name": "Typst label",
             "scope": "text.typst entity.name.label, text.typst punctuation.definition.label",
@@ -2235,7 +2235,7 @@
             "scope": "text.typst markup.math constant.character.ampersand",
             "foreground": "var(blue)"
         },
-        // VBScript specific rules >> https://packagecontrol.io/packages/VBScript
+        // VBScript specific rules >> https://packages.sublimetext.io/packages/VBScript
         {
             "name": "VBScript operator keyword",
             "scope": "source.vbs keyword.operator.asp",
@@ -2246,7 +2246,7 @@
             "scope": "source.vbs keyword.operator.js",
             "foreground": "var(operator_symbol)"
         },
-        // Vue specific rules >> https://packagecontrol.io/packages/Vue%20Syntax%20Highlight
+        // Vue specific rules >> https://packages.sublimetext.io/packages/Vue
         {
             "name": "Vue tag attribute name punctuation",
             "scope": "text.html.vue meta.tag punctuation.definition.attribute",
@@ -2294,7 +2294,7 @@
             "scope": "text.syntax-tests meta.summary.success markup.heading",
             "foreground": "var(green2)"
         },
-        // Anaconda specific rules >> https://packagecontrol.io/packages/Anaconda
+        // Anaconda specific rules >> https://packages.sublimetext.io/packages/Anaconda
         {
             "name": "Anaconda linter illegal",
             "scope": "anaconda.outline.illegal",
@@ -2315,7 +2315,7 @@
             "scope": "anaconda.underline.illegal, anaconda.underline.warning, anaconda.underline.violation",
             "foreground": "var(red)"
         },
-        // GitGutter specific rules >> https://packagecontrol.io/packages/GitGutter
+        // GitGutter specific rules >> https://packages.sublimetext.io/packages/GitGutter
         {
             "name": "GitGutter deleted",
             "scope": "markup.deleted.git_gutter",
@@ -2341,7 +2341,7 @@
             "scope": "markup.untracked.git_gutter",
             "foreground": "#565656"
         },
-        // LSP specific rules >> https://packagecontrol.io/packages/LSP
+        // LSP specific rules >> https://packages.sublimetext.io/packages/LSP
         {
             "name": "LSP DocumentLink",
             "scope": "markup.underline.link.lsp",
@@ -2377,19 +2377,19 @@
             "scope": "output.lsp.references meta.reference.preamble entity.name.file",
             "foreground": "var(purple)"
         },
-        // LSP-pyright specific rules >> https://packagecontrol.io/packages/LSP-pyright
+        // LSP-pyright specific rules >> https://packages.sublimetext.io/packages/LSP-pyright
         {
             "name": "LSP-pyright hover popup kind prefix",
             "scope": "source.python.lsp storage.type.python",
             "foreground": "var(textcolor)"
         },
-        // OverrideAudit specific rules >> https://packagecontrol.io/packages/OverrideAudit
+        // OverrideAudit specific rules >> https://packages.sublimetext.io/packages/OverrideAudit
         {
             "name": "OverrideAudit warning/expired",
             "scope": "text.override-audit keyword.control.expired",
             "foreground": "var(orange)"
         },
-        // PackageDev specific rules >> https://packagecontrol.io/packages/PackageDev
+        // PackageDev specific rules >> https://packages.sublimetext.io/packages/PackageDev
         {
             "name": "PackageDev JSON built-in key",
             "scope": "source.json.sublime meta.mapping.key & (keyword | support | constant.other | entity.name | storage.modifier)",
@@ -2465,19 +2465,19 @@
             "scope": "(source.json.sublime | text.xml.sublime | text.xml.plist.textmate.preferences) & punctuation.separator.scope-segments.scope-selector",
             "foreground": "var(orange)"
         },
-        // SublimeGDB specific rules >> https://packagecontrol.io/packages/SublimeGDB
+        // SublimeGDB specific rules >> https://packages.sublimetext.io/packages/SublimeGDB
         {
             "name": "SublimeGDB breakpoint",
             "scope": "keyword.gdb - keyword.gdb.returncode",
             "foreground": "var(red2)"
         },
-        // SublimeLinter specific rules >> https://packagecontrol.io/packages/SublimeLinter
+        // SublimeLinter specific rules >> https://packages.sublimetext.io/packages/SublimeLinter
         {
             "name": "SublimeLinter diagnostics message",
             "scope": "markup.quote.linter-message.sublime_linter",
             "foreground": "var(textcolor)"
         },
-        // [x]it! specific rules >> https://packagecontrol.io/packages/xit!
+        // [x]it! specific rules >> https://packages.sublimetext.io/packages/xit!
         {
             "name": "[x]it! title",
             "scope": "source.xit markup.other.title",
